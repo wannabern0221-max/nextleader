@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>관계자 로그인 | 대한간호학생회 부산 정책국</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="login">
+
+<div class="utility">
+  <div class="container">
+    <span>대한간호학생회 부산 · 정책국</span>
+    <div class="utility-actions">
+      <button type="button" data-open-alert>알림</button>
+      <a href="login.html">관계자 로그인</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/emblem.png" alt="대한간호학생회 부산 로고">
+      <span>
+        <strong>대한간호학생회 부산</strong>
+        <span>정책국 공식 홈페이지</span>
+      </span>
+    </a>
+    <button class="menu-button" aria-label="메뉴 열기">☰</button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="about.html" class="">정책국 소개</a>
+<a href="notice.html" class="">공지사항</a>
+<a href="cards.html" class="">카드뉴스</a>
+<a href="policy.html" class="">정책 콘텐츠</a>
+<a href="schedule.html" class="">일정</a>
+      <a class="header-login" href="login.html">로그인</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">POLICY DIVISION · BUSAN</span>
+      <h1>관계자 로그인</h1>
+      <p>승인된 정책국 구성원을 위한 내부 서비스 입구입니다.</p>
+    </div>
+  </section>
+  <section class="page-content">
+    <div class="container">
+<div class="login-box">
+  <div class="section-head" style="margin-bottom:26px;">
+    <div><span class="eyebrow">MEMBER ACCESS</span><h2 style="margin-top:7px;">관계자 회원가입 신청</h2></div>
+  </div>
+  <form id="signupPreview">
+    <div class="form-grid">
+      <div class="field"><label for="name">이름</label><input id="name" required placeholder="이름 입력"></div>
+      <div class="field"><label for="school">학교</label><input id="school" required placeholder="학교명 입력"></div>
+      <div class="field"><label for="cohort">기수</label><input id="cohort" required placeholder="예: 10기"></div>
+      <div class="field"><label for="department">부서</label><select id="department" required><option value="">선택</option><option>정책1부</option><option>정책2부</option></select></div>
+      <div class="field full"><label for="email">이메일</label><input id="email" type="email" required placeholder="로그인에 사용할 이메일"></div>
+      <div class="field full"><label for="password">비밀번호</label><input id="password" type="password" required placeholder="비밀번호"></div>
+    </div>
+    <div class="form-note">신청 정보인 학교·기수·이름·부서를 확인한 뒤 관리자 또는 수석부장이 가입을 승인합니다. 승인 전에는 공개 메뉴만 이용할 수 있습니다.</div>
+    <button class="btn btn-primary" type="submit" style="width:100%;">가입 신청 미리보기</button>
+  </form>
+</div>
+</div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/emblem.png" alt="">
+      <div>
+        <strong>대한간호학생회 부산</strong>
+        <span>정책국 공식 홈페이지 · 공개 열람용 초안</span>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <div>본 초안의 게시물과 일정은 예시 내용입니다.</div>
+      <div>© 2026 Korean Nursing Students Association · Busan.</div>
+    </div>
+  </div>
+</footer>
+<div class="modal" id="siteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-panel">
+    <div class="modal-head">
+      <h2 id="modalTitle">안내</h2>
+      <button class="modal-close" type="button" data-close-modal aria-label="닫기">×</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <label class="checkbox"><input id="hideToday" type="checkbox"> 오늘 하루 이 팝업 보지 않기</label>
+      <button class="btn btn-primary" type="button" data-close-modal>확인</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+
+</body>
+</html>

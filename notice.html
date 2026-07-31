@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>공지사항 | 대한간호학생회 부산 정책국</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="notice">
+
+<div class="utility">
+  <div class="container">
+    <span>대한간호학생회 부산 · 정책국</span>
+    <div class="utility-actions">
+      <button type="button" data-open-alert>알림</button>
+      <a href="login.html">관계자 로그인</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/emblem.png" alt="대한간호학생회 부산 로고">
+      <span>
+        <strong>대한간호학생회 부산</strong>
+        <span>정책국 공식 홈페이지</span>
+      </span>
+    </a>
+    <button class="menu-button" aria-label="메뉴 열기">☰</button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="about.html" class="">정책국 소개</a>
+<a href="notice.html" class="active">공지사항</a>
+<a href="cards.html" class="">카드뉴스</a>
+<a href="policy.html" class="">정책 콘텐츠</a>
+<a href="schedule.html" class="">일정</a>
+      <a class="header-login" href="login.html">로그인</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">POLICY DIVISION · BUSAN</span>
+      <h1>공지사항</h1>
+      <p>정책국의 주요 소식과 공개 안내를 확인할 수 있습니다.</p>
+    </div>
+  </section>
+  <section class="page-content">
+    <div class="container">
+<div class="list-toolbar"><strong>전체 공지 5건</strong><span class="readonly-note">게시글은 공개 열람만 가능합니다.</span></div>
+<div class="board">
+  <button class="board-row" data-article data-title="정책국 홈페이지 초안 공개 안내" data-body="정책국 홈페이지의 첫 화면과 공개 메뉴 구성을 확인하기 위한 초안입니다."><span class="num">5</span><span class="badge">공지</span><strong>정책국 홈페이지 초안 공개 안내</strong><time>2026.07.31</time></button>
+  <button class="board-row" data-article data-title="8월 정책 카드뉴스 제작 일정" data-body="8월 카드뉴스 제작 일정과 검토 절차를 안내합니다."><span class="num">4</span><span class="badge">일정</span><strong>8월 정책 카드뉴스 제작 일정</strong><time>2026.07.29</time></button>
+  <button class="board-row" data-article data-title="정책 콘텐츠 주제 제안 안내" data-body="정책 콘텐츠 주제 제안 방법과 검토 기준을 안내합니다."><span class="num">3</span><span class="badge">안내</span><strong>정책 콘텐츠 주제 제안 안내</strong><time>2026.07.25</time></button>
+  <button class="board-row" data-article data-title="정책국 정기회의 안내" data-body="부서별 진행 상황과 다음 달 계획을 공유하는 정기회의 안내입니다."><span class="num">2</span><span class="badge">회의</span><strong>정책국 정기회의 안내</strong><time>2026.07.20</time></button>
+  <button class="board-row" data-article data-title="홈페이지 운영 의견 수렴" data-body="초안 확인 후 메뉴 구성과 필요한 기능에 대한 의견을 수렴합니다."><span class="num">1</span><span class="badge">설문</span><strong>홈페이지 운영 의견 수렴</strong><time>2026.07.18</time></button>
+</div>
+</div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/emblem.png" alt="">
+      <div>
+        <strong>대한간호학생회 부산</strong>
+        <span>정책국 공식 홈페이지 · 공개 열람용 초안</span>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <div>본 초안의 게시물과 일정은 예시 내용입니다.</div>
+      <div>© 2026 Korean Nursing Students Association · Busan.</div>
+    </div>
+  </div>
+</footer>
+<div class="modal" id="siteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-panel">
+    <div class="modal-head">
+      <h2 id="modalTitle">안내</h2>
+      <button class="modal-close" type="button" data-close-modal aria-label="닫기">×</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <label class="checkbox"><input id="hideToday" type="checkbox"> 오늘 하루 이 팝업 보지 않기</label>
+      <button class="btn btn-primary" type="button" data-close-modal>확인</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+
+</body>
+</html>
