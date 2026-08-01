@@ -22,34 +22,88 @@
   let warningShown = false;
   let timeoutTimer = null;
 
-  const dispatchReady = () => document.dispatchEvent(new CustomEvent('kna:session-ready', { detail: state }));
+  if (!document.querySelector('link[href*="leader-experience.css"]')) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'assets/leader-experience.css?v=20260801';
+    document.head.appendChild(link);
+  }
 
+  const dispatchReady = () => document.dispatchEvent(new CustomEvent('kna:session-ready', { detail: state }));
   if (!shell || !trigger || !window.SUPABASE_CONFIG_READY || !client) {
     dispatchReady();
     return;
   }
 
   const escapeText = value => String(value ?? '').trim();
+  const isManager = access => {
+    const role = access?.system_role;
+    const managerRoles = ['policy_director','director','senior_manager_div1','senior_manager_div2','senior_manager','policy_general_manager','general_manager'];
+    const managerPermissions = ['member_approve','role_manage','permission_grant','system_manage'];
+    return managerRoles.includes(role) || managerPermissions.some(code => access?.permissions?.includes(code));
+  };
 
   async function loadAccess(userId) {
     try {
       const { data, error } = await client.rpc('get_my_access');
       if (!error && data) return data;
     } catch (_) {}
-
-    const { data, error } = await client
-      .from('profiles')
-      .select('id,name,school,cohort,department,approval_status,position,system_role')
-      .eq('id', userId)
-      .maybeSingle();
+    const { data, error } = await client.from('profiles').select('id,name,school,cohort,department,approval_status,position,system_role').eq('id', userId).maybeSingle();
     if (error) throw error;
-    if (!data) return null;
-    return { ...data, permissions: [] };
+    return data ? { ...data, permissions: [] } : null;
   }
 
   function closePopover() {
     if (popover) popover.hidden = true;
     trigger.setAttribute('aria-expanded', 'false');
+  }
+
+  function removeLeaderNavigation() {
+    document.querySelector('.leader-ribbon')?.remove();
+    document.querySelector('.leader-mobile-dock')?.remove();
+    document.body.classList.remove('has-leader-dock');
+  }
+
+  function currentPage() {
+    return document.body.dataset.page || location.pathname.split('/').pop()?.replace('.html','') || 'index';
+  }
+
+  function buildLeaderNavigation(access) {
+    removeLeaderNavigation();
+    if (access?.approval_status !== 'approved') return;
+
+    const page = currentPage();
+    const activeFor = target => {
+      if (target === 'dashboard') return page === 'dashboard';
+      if (target === 'internal-schedule') return page === 'internal-schedule';
+      if (target === 'board') return page === 'board';
+      if (target === 'quiz') return page === 'quiz';
+      if (target === 'admin') return page === 'admin' || page === 'content-manager';
+      return false;
+    };
+
+    const links = [
+      ['dashboard.html','dashboard','리더 홈'],
+      ['internal-schedule.html','internal-schedule','가능일 조사'],
+      ['board.html','board','익명 소통'],
+      ['quiz.html','quiz','정책 퀴즈']
+    ];
+
+    const ribbon = document.createElement('div');
+    ribbon.className = 'leader-ribbon';
+    ribbon.innerHTML = `<div class="container leader-ribbon-inner"><span class="leader-ribbon-label">리더 메뉴</span>${links.map(([href,key,label]) => `<a href="${href}" class="${activeFor(key) ? 'active' : ''}">${label}</a>`).join('')}${isManager(access) ? `<a href="admin.html" class="manage-link ${activeFor('admin') ? 'active' : ''}">관리센터</a>` : ''}</div>`;
+    document.querySelector('.site-header')?.after(ribbon);
+
+    const dock = document.createElement('nav');
+    dock.className = 'leader-mobile-dock';
+    dock.setAttribute('aria-label','리더 빠른 메뉴');
+    dock.innerHTML = `
+      <a data-dock="home" href="dashboard.html" class="${activeFor('dashboard') ? 'active' : ''}">홈</a>
+      <a data-dock="availability" href="internal-schedule.html" class="${activeFor('internal-schedule') ? 'active' : ''}">가능일</a>
+      <a data-dock="board" href="board.html" class="${activeFor('board') ? 'active' : ''}">소통</a>
+      <a data-dock="account" href="dashboard.html#profile">내 정보</a>`;
+    document.body.appendChild(dock);
+    document.body.classList.add('has-leader-dock');
   }
 
   function renderSignedOut() {
@@ -58,7 +112,8 @@
     trigger.classList.remove('signed-in');
     trigger.setAttribute('aria-expanded', 'false');
     if (popover) popover.hidden = true;
-    portalLinks.forEach(link => link.classList.remove('is-approved'));
+    portalLinks.forEach(link => { link.classList.remove('is-approved'); link.textContent = '리더 홈'; });
+    removeLeaderNavigation();
   }
 
   function renderSignedIn(access) {
@@ -67,17 +122,18 @@
     const approved = access.approval_status === 'approved';
     const isExternalAdmin = access.system_role === 'external_admin';
 
-    trigger.textContent = approved
-      ? (isExternalAdmin ? `${name} · 관리자` : `${name} 리더 · ${escapeText(access.position) || roleLabel}`)
-      : `${name} 리더 · 승인 대기`;
-    trigger.href = 'dashboard.html';
+    trigger.textContent = approved ? (isExternalAdmin ? `${name} · 관리자` : `${name} 리더 · ${escapeText(access.position) || roleLabel}`) : `${name} 리더 · 승인 대기`;
+    trigger.href = approved ? 'dashboard.html' : 'login.html';
     trigger.classList.add('signed-in');
     trigger.setAttribute('aria-expanded', 'false');
 
-    if (summary) {
-      summary.innerHTML = `<strong>${name}${isExternalAdmin ? '' : ' 리더'}</strong><span>${approved ? (escapeText(access.position) || roleLabel) : '승인 대기'}</span>`;
+    if (summary) summary.innerHTML = `<strong>${name}${isExternalAdmin ? '' : ' 리더'}</strong><span>${approved ? (escapeText(access.position) || roleLabel) : '승인 대기'}</span>`;
+    if (popover) {
+      const homeLink = popover.querySelector('a[href="dashboard.html"]');
+      if (homeLink) homeLink.textContent = '리더 홈';
     }
-    portalLinks.forEach(link => link.classList.toggle('is-approved', approved));
+    portalLinks.forEach(link => { link.classList.toggle('is-approved', approved); link.textContent = '리더 홈'; });
+    buildLeaderNavigation(access);
   }
 
   function clearSessionMarkers() {
@@ -85,12 +141,10 @@
     localStorage.removeItem(SESSION_USER_KEY);
     warningShown = false;
   }
-
   function getLastActivity() {
     const value = Number(localStorage.getItem(LAST_ACTIVITY_KEY));
     return Number.isFinite(value) && value > 0 ? value : 0;
   }
-
   function setLastActivity(force = false) {
     if (!state.session || timeoutInProgress) return;
     const now = Date.now();
@@ -101,116 +155,60 @@
     warningShown = false;
     hideTimeoutNotice();
   }
-
   function getTimeoutNotice() {
     let notice = document.querySelector('#sessionTimeoutNotice');
     if (!notice) {
       notice = document.createElement('div');
       notice.id = 'sessionTimeoutNotice';
       notice.className = 'session-timeout-notice';
-      notice.setAttribute('role', 'status');
-      notice.setAttribute('aria-live', 'polite');
+      notice.setAttribute('role','status');
+      notice.setAttribute('aria-live','polite');
       document.body.appendChild(notice);
     }
     return notice;
   }
-
   function showTimeoutNotice() {
     const notice = getTimeoutNotice();
     notice.textContent = '1분 동안 활동이 없으면 보안을 위해 자동으로 로그아웃됩니다.';
     requestAnimationFrame(() => notice.classList.add('show'));
   }
-
-  function hideTimeoutNotice() {
-    document.querySelector('#sessionTimeoutNotice')?.classList.remove('show');
-  }
-
+  function hideTimeoutNotice() { document.querySelector('#sessionTimeoutNotice')?.classList.remove('show'); }
   async function signOutForTimeout() {
     if (timeoutInProgress || !state.session) return;
     timeoutInProgress = true;
     clearSessionMarkers();
-    try {
-      await client.auth.signOut({ scope: 'local' });
-    } catch (error) {
-      console.error('자동 로그아웃 처리 중 오류:', error);
-    }
+    try { await client.auth.signOut({ scope: 'local' }); } catch (error) { console.error(error); }
     const loginUrl = new URL('login.html', window.location.href);
-    loginUrl.searchParams.set('timeout', '1');
+    loginUrl.searchParams.set('timeout','1');
     window.location.replace(loginUrl.href);
   }
-
   async function checkIdleTimeout() {
     if (!state.session || timeoutInProgress) return false;
     const lastActivity = getLastActivity();
-    if (!lastActivity) {
-      setLastActivity(true);
-      return false;
-    }
-
+    if (!lastActivity) { setLastActivity(true); return false; }
     const idleFor = Date.now() - lastActivity;
-    if (idleFor >= IDLE_TIMEOUT_MS) {
-      await signOutForTimeout();
-      return true;
-    }
-
+    if (idleFor >= IDLE_TIMEOUT_MS) { await signOutForTimeout(); return true; }
     if (IDLE_TIMEOUT_MS - idleFor <= WARNING_BEFORE_MS) {
-      if (!warningShown) {
-        warningShown = true;
-        showTimeoutNotice();
-      }
-    } else if (warningShown) {
-      warningShown = false;
-      hideTimeoutNotice();
-    }
+      if (!warningShown) { warningShown = true; showTimeoutNotice(); }
+    } else if (warningShown) { warningShown = false; hideTimeoutNotice(); }
     return false;
   }
-
   function prepareActivityTracking() {
     if (activityListenersReady) return;
     activityListenersReady = true;
-
     const record = () => setLastActivity(false);
-    ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(eventName => {
-      window.addEventListener(eventName, record, { passive: true });
-    });
-
-    window.addEventListener('focus', async () => {
-      const timedOut = await checkIdleTimeout();
-      if (!timedOut) setLastActivity(true);
-    });
-
-    document.addEventListener('visibilitychange', async () => {
-      if (document.visibilityState !== 'visible') return;
-      const timedOut = await checkIdleTimeout();
-      if (!timedOut) setLastActivity(true);
-    });
-
-    window.addEventListener('storage', event => {
-      if (event.key === LAST_ACTIVITY_KEY) {
-        warningShown = false;
-        hideTimeoutNotice();
-      }
-    });
-
+    ['pointerdown','keydown','touchstart','scroll'].forEach(name => window.addEventListener(name, record, { passive: true }));
+    window.addEventListener('focus', async () => { const timedOut = await checkIdleTimeout(); if (!timedOut) setLastActivity(true); });
+    document.addEventListener('visibilitychange', async () => { if (document.visibilityState !== 'visible') return; const timedOut = await checkIdleTimeout(); if (!timedOut) setLastActivity(true); });
+    window.addEventListener('storage', event => { if (event.key === LAST_ACTIVITY_KEY) { warningShown = false; hideTimeoutNotice(); } });
     timeoutTimer = window.setInterval(checkIdleTimeout, 15000);
   }
-
   async function initializeTimeoutForSession(session) {
-    if (!session) {
-      clearSessionMarkers();
-      return false;
-    }
-
+    if (!session) { clearSessionMarkers(); return false; }
     const storedUserId = localStorage.getItem(SESSION_USER_KEY);
-    if (storedUserId !== session.user.id || !getLastActivity()) {
-      state.session = session;
-      setLastActivity(true);
-    } else {
-      state.session = session;
-      const timedOut = await checkIdleTimeout();
-      if (timedOut) return true;
-    }
-
+    state.session = session;
+    if (storedUserId !== session.user.id || !getLastActivity()) setLastActivity(true);
+    else if (await checkIdleTimeout()) return true;
     prepareActivityTracking();
     return false;
   }
@@ -221,11 +219,7 @@
     popover.hidden = !popover.hidden;
     trigger.setAttribute('aria-expanded', String(!popover.hidden));
   });
-
-  document.addEventListener('click', event => {
-    if (!shell.contains(event.target)) closePopover();
-  });
-
+  document.addEventListener('click', event => { if (!shell.contains(event.target)) closePopover(); });
   logoutButton?.addEventListener('click', async () => {
     logoutButton.disabled = true;
     clearSessionMarkers();
@@ -239,46 +233,24 @@
       if (error) throw error;
       state.session = data.session;
       if (!state.session) {
-        state.profile = null;
-        state.access = null;
-        clearSessionMarkers();
-        renderSignedOut();
-        dispatchReady();
-        return;
+        state.profile = null; state.access = null; clearSessionMarkers(); renderSignedOut(); dispatchReady(); return;
       }
-
-      const timedOut = await initializeTimeoutForSession(state.session);
-      if (timedOut) return;
-
+      if (await initializeTimeoutForSession(state.session)) return;
       const access = await loadAccess(state.session.user.id);
-      state.profile = access;
-      state.access = access;
+      state.profile = access; state.access = access;
       renderSignedIn(access || { name: state.session.user.email, approval_status: 'pending', system_role: 'leader', permissions: [] });
     } catch (error) {
       console.error(error);
-      if (state.session) {
-        const emailName = String(state.session.user?.email || '로그인 사용자').split('@')[0];
-        renderSignedIn({
-          name: emailName,
-          approval_status: 'pending',
-          system_role: 'leader',
-          position: '로그인됨',
-          permissions: []
-        });
-      } else {
-        renderSignedOut();
-      }
+      if (state.session) renderSignedIn({ name: String(state.session.user?.email || '로그인 사용자').split('@')[0], approval_status: 'pending', system_role: 'leader', position: '로그인됨', permissions: [] });
+      else renderSignedOut();
     }
     dispatchReady();
   }
 
-  client.auth.onAuthStateChange((event) => {
+  client.auth.onAuthStateChange(event => {
     if (event === 'SIGNED_OUT') {
       clearSessionMarkers();
-      if (timeoutTimer) {
-        clearInterval(timeoutTimer);
-        timeoutTimer = null;
-      }
+      if (timeoutTimer) { clearInterval(timeoutTimer); timeoutTimer = null; }
     }
     setTimeout(refresh, 0);
   });
