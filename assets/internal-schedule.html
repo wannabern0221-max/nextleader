@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="대한간호학생회 부산 정책국 일정 확인">
+  <title>일정 확인 | 대한간호학생회 부산 정책국</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/leader-experience.css?v=20260801">
+</head>
+<body data-page="internal-schedule">
+<div class="utility">
+  <div class="container">
+    <span>대한간호학생회 부산 · 정책국</span>
+    <div class="utility-actions">
+      <button type="button" data-open-alert>알림</button>
+      <div class="session-shell" data-session-shell>
+        <a class="session-trigger" data-session-trigger href="login.html" aria-expanded="false">로그인</a>
+        <div class="session-popover" data-session-popover hidden>
+          <div class="session-summary" data-session-summary><strong>로그인 정보</strong><span>상태 확인 중</span></div>
+          <a href="dashboard.html">리더 홈</a>
+          <button type="button" data-session-logout>로그아웃</button>
+        </div>
+      </div>
+      <a class="utility-portal" data-portal-link href="dashboard.html">리더 홈</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/emblem.png" alt="대한간호학생회 부산 로고">
+      <span><strong>대한간호학생회 부산</strong><span>정책국 공식 홈페이지</span></span>
+    </a>
+    <button class="menu-button" aria-label="메뉴 열기">☰</button>
+    <nav class="nav" aria-label="주요 메뉴"><a href="about.html">정책국 소개</a><a href="notice.html">공지사항</a><a href="cards.html">카드뉴스</a><a href="policy.html">정책 콘텐츠</a><a href="news.html">간호·정책 뉴스</a><a href="schedule.html">일정</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">SCHEDULE CHECK</span>
+      <h1>일정 확인</h1>
+      <p>정책1부와 정책2부 리더의 가능한 날짜를 모아 수석부장이 사업 일정을 정할 수 있도록 돕습니다.</p>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container availability-shell">
+      <section class="availability-intro">
+        <h2>이번 달 일정 가능 여부를 등록해 주세요</h2>
+        <p>날짜를 한 번 누르면 <strong>가능</strong>, 두 번 누르면 <strong>조율 가능</strong>, 세 번 누르면 선택이 해제됩니다. 제출 후에는 리더가 직접 수정하거나 삭제할 수 없고 해당 부서 수석부장 또는 정책국장만 변경할 수 있습니다.</p>
+      </section>
+
+      <section class="availability-card">
+        <div class="availability-toolbar">
+          <button class="month-nav-button" type="button" id="previousMonth" aria-label="이전 달">‹</button>
+          <h2 class="month-title" id="availabilityMonthTitle">연월 불러오는 중</h2>
+          <button class="month-nav-button" type="button" id="nextMonth" aria-label="다음 달">›</button>
+        </div>
+
+        <div class="scope-switch" id="availabilityScopeSwitch" aria-label="부서 선택">
+          <button type="button" data-scope="div1">정책1부</button>
+          <button type="button" data-scope="div2">정책2부</button>
+        </div>
+
+        <div class="availability-layout">
+          <div>
+            <div class="availability-legend">
+              <span><i class="available"></i>가능</span>
+              <span><i class="possible"></i>조율 가능</span>
+              <span><i class="empty"></i>어려움 또는 미선택</span>
+            </div>
+            <div class="availability-calendar" id="availabilityCalendar"></div>
+            <div class="availability-help" id="availabilityHelp">달력에서 가능한 날짜를 눌러 선택하세요.</div>
+          </div>
+
+          <aside>
+            <div class="submission-state" id="availabilitySubmissionState">제출 상태를 확인하고 있습니다.</div>
+            <div class="availability-selection-summary">
+              <div><strong id="availableCount">0</strong><span>가능</span></div>
+              <div><strong id="possibleCount">0</strong><span>조율 가능</span></div>
+            </div>
+            <button class="btn btn-primary" type="button" id="submitAvailability">이 달 일정 응답 제출</button>
+            <div id="availabilityMessage" class="auth-message" aria-live="polite"></div>
+
+            <section class="manager-summary" id="managerSummary" hidden>
+              <hr>
+              <h3>수석부장용 요약</h3>
+              <p class="readonly-note">가능 인원이 많은 날짜가 위에 표시됩니다. 날짜를 누르면 제출한 리더별 상태를 확인하고 변경할 수 있습니다.</p>
+              <div class="recommend-list" id="recommendList"></div>
+              <div id="availabilityDetail"></div>
+            </section>
+          </aside>
+        </div>
+      </section>
+
+      <section class="availability-card confirmed-schedule-section">
+        <div class="confirmed-schedule-head">
+          <div>
+            <h2>확정 일정</h2>
+            <p>일정 응답 현황을 확인한 뒤 수석부장 또는 정책국장이 확정한 사업·회의 일정입니다.</p>
+          </div>
+          <button class="btn btn-outline" type="button" id="toggleConfirmedForm" hidden>확정 일정 등록</button>
+        </div>
+
+        <form class="confirmed-form" id="confirmedScheduleForm" hidden>
+          <div class="form-grid">
+            <div class="field"><label>일정 구분</label><select name="scope"><option value="policy_office">정책국 공통</option><option value="div1">정책1부</option><option value="div2">정책2부</option></select></div>
+            <div class="field"><label>날짜</label><input name="event_date" type="date" required></div>
+            <div class="field"><label>공개 범위</label><select name="visibility"><option value="internal">리더에게만</option><option value="public">홈페이지에도 공개</option></select></div>
+            <div class="field"><label>시작 시간</label><input name="start_time" type="time"></div>
+            <div class="field"><label>종료 시간</label><input name="end_time" type="time"></div>
+          </div>
+          <div class="field full"><label>일정 제목</label><input name="title" maxlength="120" required placeholder="예: 정책1부 카드뉴스 제작 회의"></div>
+          <div class="field full"><label>장소</label><input name="location" maxlength="120" placeholder="선택 입력"></div>
+          <div class="field full"><label>안내</label><textarea name="note" maxlength="1000" placeholder="필요한 준비물이나 안내사항을 입력하세요."></textarea></div>
+          <div class="action-group"><button class="btn btn-primary" type="submit">확정 일정 저장</button><button class="btn btn-outline" type="button" id="cancelConfirmedForm">취소</button></div>
+        </form>
+
+        <div class="confirmed-schedule-list" id="confirmedScheduleList"></div>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><img src="assets/emblem.png" alt="대한간호학생회 부산 로고"><div><strong>대한간호학생회 부산</strong><span>정책국 공식 홈페이지</span></div></div>
+    <div class="footer-copy"><div>리더 기능은 승인된 계정으로 이용할 수 있습니다.</div><div>© 2026 Korean Nursing Students Association · Busan.</div></div>
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="assets/supabase-client.js"></script>
+<script src="assets/site-settings.js?v=20260801"></script>
+<script src="assets/access.js"></script>
+<script src="assets/session-ui.js?v=20260801b"></script>
+<script src="assets/internal-schedule.js?v=20260801b"></script>
+<script src="assets/app.js?v=20260801b"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.account-help-note{margin-bottom:18px}
+.single-auth-shell{max-width:760px;margin:0 auto;grid-template-columns:1fr}
+.duplicate-badge{display:inline-flex;margin-left:8px;padding:2px 7px;border-radius:999px;background:#fff3cd;color:#7a5200;font-size:11px;font-weight:700;vertical-align:middle}
+
+/* 로그인 화면 정리 */
+.login-primary-action{display:block}
+.login-primary-action .btn{width:100%;min-height:50px}
+.login-help-links{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:15px;color:#a4afbc;font-size:13px}
+.login-help-links button{border:0;background:transparent;padding:4px 2px;color:#66788b;font:inherit;font-weight:700;cursor:pointer}
+.login-help-links button:hover,.login-help-links button:focus-visible{color:#123c69;text-decoration:underline;text-underline-offset:3px}
+.session-policy-note{margin:17px 0 0;text-align:center;color:#8b98a7;font-size:12px;line-height:1.6}
+
+/* 계정 찾기 전용 화면 */
+.account-recovery-section{animation:accountPanelIn .18s ease-out}
+@keyframes accountPanelIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.account-recovery-header{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.account-back-button{display:grid;place-items:center;width:40px;height:40px;border:1px solid #d9e3ee;border-radius:50%;background:#fff;color:#123c69;font-size:20px;cursor:pointer;transition:.15s ease}
+.account-back-button:hover,.account-back-button:focus-visible{background:#eef5fb;border-color:#aac6df;transform:translateX(-2px)}
+.account-recovery-kicker{display:block;color:#2f74b5;font-size:11px;font-weight:900;letter-spacing:.12em}
+.account-recovery-header h2{margin:3px 0 0;color:#123c69;font-size:24px}
+.account-subtabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #dce5ef;margin-bottom:24px}
+.account-subtab{position:relative;border:0;background:transparent;padding:13px 10px;color:#8090a1;font-weight:800;cursor:pointer}
+.account-subtab::after{content:"";position:absolute;left:12%;right:12%;bottom:-1px;height:2px;background:transparent}
+.account-subtab.active{color:#123c69}
+.account-subtab.active::after{background:#123c69}
+.account-id-card{display:flex;gap:15px;align-items:flex-start;padding:20px;border:1px solid #dbe6f0;border-radius:14px;background:#f8fbfe}
+.account-id-icon{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border-radius:12px;background:#123c69;color:#fff;font-size:20px;font-weight:900}
+.account-id-card strong{display:block;margin:2px 0 8px;color:#173c61;font-size:16px;line-height:1.5}
+.account-id-card p{margin:0;color:#64778b;font-size:14px;line-height:1.75}
+.account-security-note{margin-top:14px;padding:13px 15px;border-left:3px solid #a9c4dc;background:#f7f9fb;color:#6d7d8d;font-size:13px;line-height:1.7}
+.account-pane[hidden]{display:none!important}
+
+/* 자동 로그아웃 안내 */
+.session-timeout-notice{position:fixed;left:50%;bottom:28px;z-index:9999;transform:translate(-50%,18px);opacity:0;pointer-events:none;max-width:min(92vw,520px);padding:13px 17px;border-radius:12px;background:#173c61;color:#fff;box-shadow:0 14px 36px rgba(10,36,61,.28);font-size:13px;font-weight:700;line-height:1.55;transition:.2s ease}
+.session-timeout-notice.show{transform:translate(-50%,0);opacity:1}
+
+@media (max-width:640px){
+  .login-help-links{margin-top:13px}
+  .account-recovery-header h2{font-size:21px}
+  .account-id-card{padding:17px}
+  .account-id-icon{flex-basis:38px;width:38px;height:38px}
+}
+
+.requested-position-badge{display:block;color:#123c73;font-weight:800;font-size:12px;margin-bottom:7px}.admin-table input[data-position]{min-width:150px}
