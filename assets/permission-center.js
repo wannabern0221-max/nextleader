@@ -6,7 +6,10 @@
   const message=document.querySelector('#permissionCenterMessage');
   const identity=document.querySelector('#permissionIdentity');
   const search=document.querySelector('#permissionSearch');
-  let access=null,rows=[];
+  const positionList=document.querySelector('#positionCatalogList');
+  const positionForm=document.querySelector('#positionCreateForm');
+  const positionInput=document.querySelector('#positionNameInput');
+  let access=null,rows=[],positions=[];
 
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
   const show=(text,type='info')=>{message.className=`auth-message show ${type}`;message.textContent=text;};
@@ -67,12 +70,53 @@
       root.innerHTML='<div class="access-denied"><h2>정책국장 전용 메뉴입니다</h2><p>직책별 권한 안내와 개인별 권한 변경은 정책국장만 이용할 수 있습니다.</p><a class="btn btn-primary" href="dashboard.html">리더 홈으로</a></div>';return;
     }
     identity.textContent=`${access.name} 리더 · ${access.position||'정책국장'}`;
+    await loadPositions();
     renderRoleCards();
     await loadMembers();
   }catch(e){console.error(e);show(e.message||'권한센터를 불러오지 못했습니다.','error');}
 
-  document.querySelector('#permissionRefreshButton')?.addEventListener('click',loadMembers);
+  document.querySelector('#permissionRefreshButton')?.addEventListener('click',async()=>{await loadPositions();await loadMembers();});
   search?.addEventListener('input',renderMembers);
+  positionForm?.addEventListener('submit',createPosition);
+
+
+  async function loadPositions(){
+    if(!positionList)return;
+    positionList.innerHTML='<div class="loading-state">직책 목록을 불러오는 중입니다.</div>';
+    const{data,error}=await client.rpc('list_position_catalog');
+    if(error){positionList.innerHTML='<div class="empty-state">직책 목록을 불러오지 못했습니다.</div>';show(error.message,'error');return;}
+    positions=data||[];
+    renderPositions();
+  }
+
+  function renderPositions(){
+    if(!positionList)return;
+    positionList.innerHTML=positions.map(item=>`<div class="position-catalog-item"><div><strong>${esc(item.position_name)}</strong><span>${item.is_system?'기본 직책':'사용자 추가 직책 · 리더 기본 권한'}</span></div>${item.can_delete?`<button type="button" class="btn btn-outline position-delete" data-position-delete="${item.id}">삭제</button>`:'<span class="position-protected">보호됨</span>'}</div>`).join('');
+    positionList.querySelectorAll('[data-position-delete]').forEach(button=>button.addEventListener('click',()=>deletePosition(Number(button.dataset.positionDelete))));
+  }
+
+  async function createPosition(event){
+    event.preventDefault();
+    const name=String(positionInput?.value||'').trim();
+    if(!name)return;
+    const button=positionForm.querySelector('button[type="submit"]');
+    button.disabled=true;
+    const{error}=await client.rpc('create_custom_position',{p_position_name:name});
+    button.disabled=false;
+    if(error){show(error.message,'error');return;}
+    positionForm.reset();
+    show('새 직책을 추가했습니다. 회원가입과 회원 관리 화면에도 표시됩니다.','success');
+    await loadPositions();
+  }
+
+  async function deletePosition(id){
+    const item=positions.find(row=>Number(row.id)===Number(id));
+    if(!item||!confirm(`'${item.position_name}' 직책을 삭제하시겠습니까?\n기존 회원에게 저장된 직책명은 유지됩니다.`))return;
+    const{error}=await client.rpc('delete_custom_position',{p_position_id:id});
+    if(error){show(error.message,'error');return;}
+    show('직책 목록에서 삭제했습니다.','success');
+    await loadPositions();
+  }
 
   function permissionLabel(code){return window.KNA_ACCESS.labels.permission(code)||code;}
   function renderRoleCards(){
@@ -99,8 +143,11 @@
       const defaults=base[role]||new Set();
       const overrides=new Map((r.permissions||[]).map(x=>[x.code,x.allowed!==false]));
       const effective=new Set(codes.filter(code=>overrides.has(code)?overrides.get(code):defaults.has(code)));
+      const additions=codes.filter(code=>overrides.get(code)===true&&!defaults.has(code));
+      const removals=codes.filter(code=>overrides.get(code)===false&&defaults.has(code));
       const self=r.id===access.id;
-      return `<article class="member-permission-card" data-id="${r.id}"><header><div><strong>${esc(r.name)}${role==='external_admin'?'':' 리더'}</strong><span>${esc(r.department||'정책국')} · ${esc(r.position_title||window.KNA_ACCESS.labels.role(role))}</span><small>${esc(r.school||'')} ${r.cohort?`· ${esc(r.cohort)}`:''}</small></div><span class="status-pill ${r.approval_status}">${r.approval_status==='approved'?'승인 완료':'이용 중지'}</span></header><div class="member-permission-columns"><section><h3>직책 기본 권한 <small>기본값 안내</small></h3><div class="permission-option-grid">${codes.map(code=>`<label class="permission-option ${defaults.has(code)?'is-base':'is-off'}"><input type="checkbox" ${defaults.has(code)?'checked':''} disabled><span>${esc(permissionLabel(code))}</span>${defaults.has(code)?'<em>기본</em>':''}${coreSecurity.has(code)?'<em class="security">보안</em>':''}</label>`).join('')}</div></section><section><h3>개인별 실제 적용 권한 <small>기본 권한도 해제 가능</small></h3><div class="permission-option-grid">${codes.map(code=>{const hasOverride=overrides.has(code);const enabled=effective.has(code);const badge=hasOverride?(enabled?'개별 허용':'개별 해제'):(defaults.has(code)?'직책 기본':'기본 없음');return `<label class="permission-option ${defaults.has(code)?'is-base':''} ${enabled?'is-effective':'is-disabled'}"><input type="checkbox" data-effective="${code}" ${enabled?'checked':''} ${self?'disabled':''}><span>${esc(permissionLabel(code))}</span><em>${badge}</em>${coreSecurity.has(code)?'<em class="security">보안</em>':''}</label>`;}).join('')}</div>${self?'<p class="permission-self-note">현재 정책국장 본인 계정은 핵심 운영 보호를 위해 이 화면에서 변경하지 않습니다.</p>':'<p class="permission-self-note">체크를 해제하면 직책에 포함된 기본 권한도 이 사용자에게만 중지됩니다.</p><button type="button" class="btn btn-primary permission-save" data-save>실제 권한 저장</button>'}</section></div><footer><strong>현재 최종 적용 권한</strong><div class="permission-chip-list">${effective.size?[...effective].map(code=>`<span class="permission-chip effective">${esc(permissionLabel(code))}</span>`).join(''):'<span class="permission-empty">공통 리더 기능만 적용</span>'}</div></footer></article>`;
+      const chips=(items,kind,empty)=>items.length?items.map(code=>`<span class="permission-chip ${kind}">${esc(permissionLabel(code))}${coreSecurity.has(code)?' · 보안':''}</span>`).join(''):`<span class="permission-empty">${empty}</span>`;
+      return `<article class="member-permission-card" data-id="${r.id}"><header><div><strong>${esc(r.name)}${role==='external_admin'?'':' 리더'}</strong><span>${esc(r.department||'정책국')} · ${esc(r.position_title||window.KNA_ACCESS.labels.role(role))}</span><small>${esc(r.school||'')} ${r.cohort?`· ${esc(r.cohort)}`:''}</small></div><span class="status-pill ${r.approval_status}">${r.approval_status==='approved'?'승인 완료':'이용 중지'}</span></header><div class="member-permission-columns"><section class="permission-summary-panel"><h3>직책에 따른 기본 권한 <small>${esc(r.position_title||window.KNA_ACCESS.labels.role(role))} · ${esc(window.KNA_ACCESS.labels.role(role))} 기준</small></h3><div class="permission-chip-list">${chips([...defaults],'base','별도 관리 권한 없음')}</div><h3>개인 추가 권한 <small>오른쪽에서 저장한 항목</small></h3><div class="permission-chip-list">${chips(additions,'effective','추가된 권한 없음')}</div><h3>개인 해제 권한 <small>직책 기본에서 제외</small></h3><div class="permission-chip-list">${chips(removals,'removed','해제된 기본 권한 없음')}</div></section><section><h3>페이지에서 사용할 수 있는 모든 권한 <small>체크 상태가 실제 적용 상태</small></h3><div class="permission-option-grid">${codes.map(code=>{const hasOverride=overrides.has(code);const enabled=effective.has(code);const badge=hasOverride?(enabled?'개인 추가':'개인 해제'):(defaults.has(code)?'직책 기본':'미적용');return `<label class="permission-option ${defaults.has(code)?'is-base':''} ${enabled?'is-effective':'is-disabled'}"><input type="checkbox" data-effective="${code}" ${enabled?'checked':''} ${self?'disabled':''}><span>${esc(permissionLabel(code))}</span><em>${badge}</em>${coreSecurity.has(code)?'<em class="security">보안</em>':''}</label>`;}).join('')}</div>${self?'<p class="permission-self-note">현재 정책국장 본인 계정은 핵심 운영 보호를 위해 이 화면에서 변경하지 않습니다.</p>':'<p class="permission-self-note">체크 후 저장하면 왼쪽의 개인 추가·해제 권한에 바로 반영됩니다.</p><button type="button" class="btn btn-primary permission-save" data-save>선택 권한 저장</button>'}</section></div><footer><strong>현재 최종 적용 권한</strong><div class="permission-chip-list">${chips([...effective],'effective','공통 리더 기능만 적용')}</div></footer></article>`;
     }).join('');
     memberList.querySelectorAll('[data-save]').forEach(btn=>btn.addEventListener('click',()=>savePermissions(btn.closest('article'))));
   }

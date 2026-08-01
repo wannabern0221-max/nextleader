@@ -41,6 +41,19 @@
   requestedPosition?.addEventListener('change', syncRequestedPositionField);
   syncRequestedPositionField();
 
+  async function loadPositionCatalog(){
+    if(!requestedPosition)return;
+    try{
+      const{data,error}=await client.rpc('list_position_catalog');
+      if(error||!Array.isArray(data)||!data.length)return;
+      const current=requestedPosition.value;
+      requestedPosition.innerHTML='<option value="">선택</option>'+data.map(item=>`<option value="${String(item.position_name).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}">${String(item.position_name).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</option>`).join('')+'<option value="기타">기타</option>';
+      if([...requestedPosition.options].some(option=>option.value===current))requestedPosition.value=current;
+      syncRequestedPositionField();
+    }catch(error){console.warn('직책 목록을 불러오지 못했습니다.',error);}
+  }
+  loadPositionCatalog();
+
   const redirectUrl = new URL('login.html?verified=1', window.location.href).href;
   const passwordRecoveryUrl = new URL('reset-password.html', window.location.href).href;
   const koreanError = error => {

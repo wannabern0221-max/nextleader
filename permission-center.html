@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/leader-experience.css?v=20260802-permissions">
-  <link rel="stylesheet" href="assets/permission-center.css?v=20260802-role-permission">
+  <link rel="stylesheet" href="assets/permission-center.css?v=20260802-role-ui3">
 </head>
 <body data-page="permission-center">
 <div class="utility"><div class="container"><span>대한간호학생회 부산 · 정책국</span><div class="utility-actions"><button type="button" data-open-alert>알림</button><div class="session-shell" data-session-shell><a class="session-trigger" data-session-trigger href="login.html" aria-expanded="false">로그인</a><div class="session-popover" data-session-popover hidden><div class="session-summary" data-session-summary><strong>로그인 정보</strong><span>상태 확인 중</span></div><a href="dashboard.html">리더 홈</a><button type="button" data-session-logout>로그아웃</button></div></div><a class="utility-portal" data-portal-link href="dashboard.html">리더 홈</a></div></div></div>
@@ -23,11 +23,22 @@
     </div>
     <div id="permissionCenterMessage" class="auth-message" aria-live="polite"></div>
     <section class="permission-section">
+      <div class="permission-section-head"><div><span class="eyebrow">POSITION MANAGEMENT</span><h2>직책 직접 관리</h2><p>기본 직책은 보호되며 새로 만든 직책은 리더 기본 권한으로 시작합니다.</p></div></div>
+      <div class="position-manager-card">
+        <form id="positionCreateForm" class="position-create-form">
+          <label>새 직책명<input id="positionNameInput" type="text" maxlength="40" placeholder="예: 홍보팀장" required></label>
+          <button class="btn btn-primary" type="submit">직책 추가</button>
+        </form>
+        <p class="position-manager-note">추가한 직책은 회원가입과 회원 관리 화면에 바로 표시됩니다. 삭제해도 기존 회원에게 저장된 직책명은 유지됩니다.</p>
+        <div id="positionCatalogList" class="position-catalog-list"><div class="loading-state">직책 목록을 불러오는 중입니다.</div></div>
+      </div>
+    </section>
+    <section class="permission-section">
       <div class="permission-section-head"><div><span class="eyebrow">DEFAULT ROLE ACCESS</span><h2>직책별 기본 권한</h2><p>기본 권한은 직책에 따라 자동으로 적용되지만 아래 사용자별 설정에서 개별 해제할 수 있습니다.</p></div></div>
       <div id="rolePermissionCards" class="role-permission-grid"><div class="loading-state">직책별 권한을 불러오는 중입니다.</div></div>
     </section>
     <section class="permission-section">
-      <div class="permission-section-head permission-member-head"><div><span class="eyebrow">INDIVIDUAL ACCESS</span><h2>리더별 실제 권한</h2><p>직책 기본 권한을 포함한 최종 적용 권한을 정책국장이 사용자별로 허용하거나 해제할 수 있습니다.</p></div><label class="permission-search">리더 검색<input id="permissionSearch" type="search" placeholder="이름·학교·직책 검색"></label></div>
+      <div class="permission-section-head permission-member-head"><div><span class="eyebrow">INDIVIDUAL ACCESS</span><h2>리더별 실제 권한</h2><p>왼쪽에서 직책 기본·추가·해제 권한을 확인하고 오른쪽에서 전체 권한을 선택해 저장합니다.</p></div><label class="permission-search">리더 검색<input id="permissionSearch" type="search" placeholder="이름·학교·직책 검색"></label></div>
       <div id="memberPermissionList" class="member-permission-list"><div class="loading-state">리더 권한을 불러오는 중입니다.</div></div>
     </section>
   </div></section>
@@ -40,7 +51,7 @@
 <script src="assets/site-settings.js?v=20260802-permissions"></script>
 <script src="assets/access.js?v=20260802-role-add2"></script>
 <script src="assets/session-ui.js?v=20260802-permissions"></script>
-<script src="assets/permission-center.js?v=20260802-role-add2"></script>
+<script src="assets/permission-center.js?v=20260802-role-ui3"></script>
 <script src="assets/app.js?v=20260802-permissions"></script>
 </body>
 </html>
