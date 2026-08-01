@@ -21,11 +21,13 @@
   let timeoutInProgress = false;
   let warningShown = false;
   let timeoutTimer = null;
+  let approvalPollTimer = null;
+  let approvalCounts = { total: 0, members: 0, content: 0, activity: 0 };
 
   if (!document.querySelector('link[href*="leader-experience.css"]')) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'assets/leader-experience.css?v=20260802-ui';
+    link.href = 'assets/leader-experience.css?v=20260802-permissions';
     document.head.appendChild(link);
   }
 
@@ -82,6 +84,7 @@
       if (target === 'activity-documents') return page === 'activity-documents';
       if (target === 'glossary-manager') return page === 'glossary-manager';
       if (target === 'admin') return page === 'admin';
+      if (target === 'permission-center') return page === 'permission-center';
       return false;
     };
 
@@ -97,8 +100,13 @@
 
     const ribbon = document.createElement('div');
     ribbon.className = 'leader-ribbon';
-    const managementLinks = `${isManager(access) ? `<a href="admin.html" class="manage-link ${activeFor('admin') ? 'active' : ''}">관리센터</a>` : ''}${(['policy_director','director'].includes(access.system_role) || String(access.position||access.requested_position||'').replace(/\s+/g,'').includes('정책국장')) ? `<a href="site-manager.html" class="manage-link ${page==='site-manager'?'active':''}">홈페이지 관리</a>` : ''}`;
-    ribbon.innerHTML = `<div class="container leader-ribbon-inner"><div class="leader-ribbon-main"><span class="leader-ribbon-label">리더 메뉴</span>${links.map(([href,key,label]) => `<a href="${href}" class="${activeFor(key) ? 'active' : ''}">${label}</a>`).join('')}</div>${managementLinks?`<div class="leader-ribbon-manage">${managementLinks}</div>`:''}</div>`;
+    const isDirector = ['policy_director','director'].includes(access.system_role) || String(access.position||access.requested_position||'').replace(/\s+/g,'').includes('정책국장');
+    const linkMarkup = links.map(([href,key,label]) => {
+      const badgeKey = key === 'content-manager' ? 'content' : (key === 'activity-documents' ? 'activity' : '');
+      return `<a href="${href}" class="${activeFor(key) ? 'active' : ''}">${label}${badgeKey ? `<span class="approval-menu-badge" data-approval-badge="${badgeKey}" hidden></span>` : ''}</a>`;
+    }).join('');
+    const managementLinks = `${isManager(access) ? `<a href="admin.html" class="manage-link ${activeFor('admin') ? 'active' : ''}">관리센터<span class="approval-menu-badge" data-approval-badge="total" hidden></span></a>` : ''}${isDirector ? `<a href="permission-center.html" class="manage-link ${activeFor('permission-center') ? 'active' : ''}">권한 안내·관리</a><a href="site-manager.html" class="manage-link ${page==='site-manager'?'active':''}">홈페이지 관리</a>` : ''}`;
+    ribbon.innerHTML = `<div class="container leader-ribbon-inner"><div class="leader-ribbon-main"><span class="leader-ribbon-label">리더 메뉴</span>${linkMarkup}</div>${managementLinks?`<div class="leader-ribbon-manage">${managementLinks}</div>`:''}</div>`;
     document.querySelector('.site-header')?.after(ribbon);
 
     const dock = document.createElement('nav');
@@ -108,9 +116,48 @@
       <a data-dock="home" href="dashboard.html" class="${activeFor('dashboard') ? 'active' : ''}">홈</a>
       <a data-dock="availability" href="internal-schedule.html" class="${activeFor('internal-schedule') ? 'active' : ''}">일정</a>
       <a data-dock="board" href="board.html" class="${activeFor('board') ? 'active' : ''}">소통</a>
-      <a data-dock="account" href="dashboard.html#profile">내 정보</a>`;
+      ${isManager(access) ? `<a data-dock="manage" href="admin.html" class="${activeFor('admin') ? 'active' : ''}">관리<span class="approval-menu-badge" data-approval-badge="total" hidden></span></a>` : '<a data-dock="account" href="dashboard.html#profile">내 정보</a>'}`;
     document.body.appendChild(dock);
     document.body.classList.add('has-leader-dock');
+    applyApprovalBadges();
+  }
+
+  function applyApprovalBadges() {
+    document.querySelectorAll('[data-approval-badge]').forEach(node => {
+      const key = node.dataset.approvalBadge || 'total';
+      const count = Number(approvalCounts[key] || 0);
+      node.textContent = count > 99 ? '99+' : String(count);
+      node.hidden = count <= 0;
+      node.setAttribute('aria-label', count > 0 ? `처리 대기 ${count}건` : '처리 대기 없음');
+    });
+    const alertButton = document.querySelector('[data-open-alert]');
+    if (alertButton) {
+      let badge = alertButton.querySelector('.approval-utility-badge');
+      if (!badge) { badge = document.createElement('span'); badge.className = 'approval-utility-badge'; alertButton.appendChild(badge); }
+      const total = Number(approvalCounts.total || 0);
+      badge.textContent = total > 99 ? '99+' : String(total);
+      badge.hidden = total <= 0;
+    }
+  }
+
+  async function refreshApprovalCounts() {
+    if (!state.session || state.access?.approval_status !== 'approved') { approvalCounts = { total:0,members:0,content:0,activity:0 }; applyApprovalBadges(); return approvalCounts; }
+    try {
+      const { data, error } = await client.rpc('get_pending_action_counts_v1');
+      if (error) throw error;
+      approvalCounts = { total:0,members:0,content:0,activity:0, ...(data || {}) };
+      applyApprovalBadges();
+      document.dispatchEvent(new CustomEvent('kna:approval-counts', { detail: approvalCounts }));
+    } catch (error) {
+      console.warn('승인 대기 건수를 불러오지 못했습니다.', error);
+    }
+    return approvalCounts;
+  }
+  window.KNA_REFRESH_APPROVAL_BADGES = refreshApprovalCounts;
+  function startApprovalPolling() {
+    if (approvalPollTimer) clearInterval(approvalPollTimer);
+    refreshApprovalCounts();
+    approvalPollTimer = window.setInterval(refreshApprovalCounts, 45000);
   }
 
   function renderSignedOut() {
@@ -121,6 +168,9 @@
     if (popover) popover.hidden = true;
     portalLinks.forEach(link => { link.classList.remove('is-approved'); link.textContent = '리더 홈'; });
     removeLeaderNavigation();
+    approvalCounts = { total:0,members:0,content:0,activity:0 };
+    if (approvalPollTimer) { clearInterval(approvalPollTimer); approvalPollTimer = null; }
+    applyApprovalBadges();
   }
 
   function renderSignedIn(access) {
@@ -141,6 +191,7 @@
     }
     portalLinks.forEach(link => { link.classList.toggle('is-approved', approved); link.textContent = '리더 홈'; });
     buildLeaderNavigation(access);
+    startApprovalPolling();
   }
 
   function clearSessionMarkers() {
@@ -205,8 +256,8 @@
     activityListenersReady = true;
     const record = () => setLastActivity(false);
     ['pointerdown','keydown','touchstart','scroll'].forEach(name => window.addEventListener(name, record, { passive: true }));
-    window.addEventListener('focus', async () => { const timedOut = await checkIdleTimeout(); if (!timedOut) setLastActivity(true); });
-    document.addEventListener('visibilitychange', async () => { if (document.visibilityState !== 'visible') return; const timedOut = await checkIdleTimeout(); if (!timedOut) setLastActivity(true); });
+    window.addEventListener('focus', async () => { const timedOut = await checkIdleTimeout(); if (!timedOut) { setLastActivity(true); refreshApprovalCounts(); } });
+    document.addEventListener('visibilitychange', async () => { if (document.visibilityState !== 'visible') return; const timedOut = await checkIdleTimeout(); if (!timedOut) { setLastActivity(true); refreshApprovalCounts(); } });
     window.addEventListener('storage', event => { if (event.key === LAST_ACTIVITY_KEY) { warningShown = false; hideTimeoutNotice(); } });
     timeoutTimer = window.setInterval(checkIdleTimeout, 15000);
   }
@@ -258,6 +309,7 @@
     if (event === 'SIGNED_OUT') {
       clearSessionMarkers();
       if (timeoutTimer) { clearInterval(timeoutTimer); timeoutTimer = null; }
+      if (approvalPollTimer) { clearInterval(approvalPollTimer); approvalPollTimer = null; }
     }
     setTimeout(refresh, 0);
   });

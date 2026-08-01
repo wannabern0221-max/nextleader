@@ -16,7 +16,8 @@
       <article><div><h3>5. 정책단어 관리</h3><p>정책단어를 새로 등록하거나 기존 항목을 수정하고 공개·숨김 상태를 관리합니다.</p><a href="glossary-manager.html">정책단어 관리 열기 →</a></div></article>
       <article><div><h3>6. 일정 운영</h3><p>모든 승인 리더는 불가일을 추가 등록할 수 있습니다. 기존 불가일 삭제와 공식 일정 수정·삭제는 관리 권한자가 처리합니다.</p><a href="internal-schedule.html">일정 확인 열기 →</a></div></article>
       <article><div><h3>7. 가입 승인과 직책 인계</h3><p>관리센터에서 가입 신청을 승인하고 실제 직책을 확정합니다. 새 국장을 정책국장으로 확정하면 페이지 관리 권한이 자동으로 이전됩니다.</p><a href="admin.html">관리센터 열기 →</a></div></article>
-      <article><div><h3>8. 페이지 개발자 문의</h3><p>이후 보안 설정이나 페이지 세부 수정이 필요한 경우 페이지 개발자에게 문의해 주세요.</p></div></article>
+      <article><div><h3>8. 권한 안내·관리</h3><p>직책별 기본 권한과 리더별 추가 기능 권한을 확인하고 필요한 기능만 추가로 부여합니다.</p><a href="permission-center.html">권한 안내·관리 열기 →</a></div></article>
+      <article><div><h3>9. 페이지 개발자 문의</h3><p>이후 보안 설정이나 페이지 세부 수정이 필요한 경우 페이지 개발자에게 문의해 주세요.</p></div></article>
     </div>`;
   }catch(error){deny(error.message||'권한을 확인하지 못했습니다.');}
 })();

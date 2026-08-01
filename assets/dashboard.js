@@ -28,7 +28,9 @@
     if (access.approval_status !== 'approved') {
       const label = {pending:'승인 대기',rejected:'신청 반려',suspended:'이용 중지'}[access.approval_status] || access.approval_status;
       root.innerHTML = `<div class="member-panel access-denied"><span class="status-pill ${access.approval_status}">${label}</span><h2>가입 승인이 필요합니다</h2><p>이메일 인증 후 정책국장 또는 해당 부서 수석부장의 승인이 완료되어야 리더 기능을 이용할 수 있습니다.</p><button class="btn btn-outline" id="logoutButton">로그아웃</button></div>`;
-      document.querySelector('#logoutButton')?.addEventListener('click', async () => { await client.auth.signOut(); location.replace('login.html'); });
+      window.KNA_REFRESH_APPROVAL_BADGES?.();
+
+    document.querySelector('#logoutButton')?.addEventListener('click', async () => { await client.auth.signOut(); location.replace('login.html'); });
       return;
     }
 
@@ -51,9 +53,9 @@
           <a class="leader-home-action" href="board.html"><span>02 · 자유로운 의견</span><strong>익명 리더 소통방</strong><small>이름과 직책 그리고 소속을 드러내지 않고 의견을 나눕니다.</small></a>
           <a class="leader-home-action" href="quiz.html"><span>03 · 정책 학습</span><strong>정책 퀴즈</strong><small>쉬움부터 어려움까지 무작위 문제로 정책 지식을 확인합니다.</small></a>
           <a class="leader-home-action" href="notice.html"><span>04 · 정책국 소식</span><strong>공지사항</strong><small>정책국 활동과 중요한 안내를 빠르게 확인합니다.</small></a>
-          ${canWrite ? '<a class="leader-home-action" href="content-manager.html"><span>05 · 콘텐츠 운영</span><strong>콘텐츠 관리</strong><small>작성한 글과 승인 요청 그리고 게시 상태를 확인합니다.</small></a><a class="leader-home-action" href="activity-documents.html"><span>06 · 부서 운영</span><strong>사업자료</strong><small>정책1부·정책2부의 활동보고서와 사업계획 자료를 확인합니다.</small></a><a class="leader-home-action" href="glossary-manager.html"><span>07 · 정책 학습</span><strong>정책단어 작성</strong><small>정책단어를 등록하고 관리 권한자의 검토를 요청합니다.</small></a>' : ''}
-          ${canManage ? '<a class="leader-home-action" href="admin.html"><span>08 · 운영 권한</span><strong>관리센터</strong><small>가입 승인과 직책 그리고 기능 권한을 관리합니다.</small></a>' : ''}
-          ${isDirector ? '<a class="leader-home-action" href="site-manager.html"><span>09 · 공통 설정</span><strong>홈페이지 관리</strong><small>사이트 이름과 메뉴 그리고 공통 환영 팝업을 관리합니다.</small></a><a class="leader-home-action" href="page-editor.html?page=home"><span>10 · 페이지 운영</span><strong>페이지 편집기</strong><small>각 페이지의 문구·디자인·이미지·블록·팝업을 직접 추가하고 수정합니다.</small></a><a class="leader-home-action" href="operations-guide.html"><span>11 · 인계 안내</span><strong>홈페이지 운영 안내</strong><small>차기 정책국장이 알아야 할 사이트 운영 절차를 한눈에 확인합니다.</small></a>' : ''}
+          ${canWrite ? '<a class="leader-home-action" href="content-manager.html"><span>05 · 콘텐츠 운영</span><strong>콘텐츠 관리 <span class="approval-menu-badge" data-approval-badge="content" hidden></span></strong><small>작성한 글과 승인 요청 그리고 게시 상태를 확인합니다.</small></a><a class="leader-home-action" href="activity-documents.html"><span>06 · 부서 운영</span><strong>사업자료 <span class="approval-menu-badge" data-approval-badge="activity" hidden></span></strong><small>정책1부·정책2부의 활동보고서와 사업계획 자료를 확인합니다.</small></a><a class="leader-home-action" href="glossary-manager.html"><span>07 · 정책 학습</span><strong>정책단어 작성</strong><small>정책단어를 등록하고 관리 권한자의 검토를 요청합니다.</small></a>' : ''}
+          ${canManage ? '<a class="leader-home-action" href="admin.html"><span>08 · 운영 권한</span><strong>관리센터 <span class="approval-menu-badge" data-approval-badge="total" hidden></span></strong><small>가입 승인과 직책 그리고 기능 권한을 관리합니다.</small></a>' : ''}
+          ${isDirector ? '<a class="leader-home-action" href="permission-center.html"><span>09 · 권한 운영</span><strong>권한 안내·관리</strong><small>직책별 기본 권한과 리더별 추가 기능 권한을 확인하고 관리합니다.</small></a><a class="leader-home-action" href="site-manager.html"><span>10 · 공통 설정</span><strong>홈페이지 관리</strong><small>사이트 이름과 메뉴 그리고 공통 환영 팝업을 관리합니다.</small></a><a class="leader-home-action" href="page-editor.html?page=home"><span>11 · 페이지 운영</span><strong>페이지 편집기</strong><small>각 페이지의 문구·디자인·이미지·블록·팝업을 직접 추가하고 수정합니다.</small></a><a class="leader-home-action" href="operations-guide.html"><span>12 · 인계 안내</span><strong>홈페이지 운영 안내</strong><small>차기 정책국장이 알아야 할 사이트 운영 절차를 한눈에 확인합니다.</small></a>' : ''}
         </div>
       </div>
       <div class="member-layout">
@@ -77,6 +79,8 @@
           </div>
         </section>
       </div>`;
+
+    window.KNA_REFRESH_APPROVAL_BADGES?.();
 
     document.querySelector('#logoutButton')?.addEventListener('click', async () => { await client.auth.signOut({ scope:'local' }); location.replace('index.html'); });
   } catch (error) {

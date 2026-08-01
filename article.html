@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/page-builder.css?v=20260802-publishing"><link rel="stylesheet" href="assets/publishing-workspace.css?v=20260802-publishing">
+  <link rel="stylesheet" href="assets/page-builder.css?v=20260802-publishing"><link rel="stylesheet" href="assets/publishing-workspace.css?v=20260802-permissions">
 </head>
 <body data-page="article">
 
@@ -45,7 +45,8 @@
     <div class="container">
       <article class="article-panel">
         <div class="article-meta"><span id="articleCategory">게시물</span><time id="articleDate"></time></div>
-        <h1 id="articleTitle">게시물을 불러오는 중입니다</h1>
+        <div class="article-title-row"><h1 id="articleTitle">게시물을 불러오는 중입니다</h1><div class="article-management-actions" id="articleManagementActions" hidden><a class="btn btn-outline" id="articleEditButton" href="#">수정하기</a><button class="btn btn-danger" id="articleDeleteButton" type="button">삭제하기</button></div></div>
+        <div id="articleActionMessage" class="auth-message" aria-live="polite"></div>
         <div class="article-body" id="articleBody"></div>
         <a class="article-back" href="javascript:history.back()">← 이전 화면으로</a>
       </article>
@@ -87,9 +88,10 @@
 <script src="assets/supabase-client.js"></script>
 <script src="assets/site-settings.js?v=20260802-ui"></script>
 <script src="assets/access.js"></script>
-<script src="assets/session-ui.js?v=20260802-publishing"></script>
+<script src="assets/session-ui.js?v=20260802-permissions"></script>
 <script src="assets/content.js?v=20260802-ui"></script>
-<script src="assets/article-loader.js?v=20260802-publishing"></script>
+<script src="assets/article-loader.js?v=20260802-permissions"></script>
+<script src="assets/article-actions.js?v=20260802-permissions"></script>
 <script src="assets/page-blocks.js?v=20260802-ui"></script>
 <script src="assets/page-runtime.js?v=20260802-ui"></script>
 <script src="assets/page-admin-link.js?v=20260802-ui"></script>
