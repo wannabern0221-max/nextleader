@@ -15,7 +15,7 @@
       <article><div><h3>5. 일정 운영</h3><p>모든 승인 리더는 공식 일정을 등록할 수 있습니다. 정책국장·총괄부장·담당 수석부장만 수정·삭제합니다. 공개 일정은 홈페이지 달력에 자동 표시됩니다.</p><a href="internal-schedule.html">일정 확인 열기 →</a></div></article>
       <article><div><h3>6. 가입 승인과 직책 인계</h3><p>관리센터에서 가입 신청을 승인하고 실제 직책을 확정합니다. 새 국장을 정책국장으로 확정하면 페이지 관리 권한이 자동으로 이전됩니다.</p><a href="admin.html">관리센터 열기 →</a></div></article>
       <article><div><h3>7. 이전 버전 복원</h3><p>페이지 편집기와 홈페이지 관리에는 이전 버전 기록이 있습니다. 실수로 변경했을 때 복원 버튼으로 되돌립니다.</p></div></article>
-      <article><div><h3>8. 기술 지원이 필요한 영역</h3><p>로그인·비밀번호·RLS 권한·Supabase 키·메일·도메인·GitHub Actions·뉴스 수집 프로그램은 편집기에서 변경하지 않습니다. 이 영역만 기술 담당자에게 요청합니다.</p></div></article>
+      <article><div><h3>8. 페이지 개발자 문의</h3><p>이후 보안 설정이나 페이지 세부 수정이 필요한 경우 페이지 개발자에게 문의해 주세요.</p></div></article>
     </div><div class="managed-callout tone-blue" style="margin-top:22px"><strong>운영 원칙</strong><div><p>게시 전 PC·모바일 미리보기를 모두 확인하고 중요한 변경은 이전 버전 기록을 남긴 뒤 적용하세요. 공개 페이지에는 개인정보나 내부 일정 사유를 올리지 않습니다.</p></div></div>`;
   }catch(error){deny(error.message||'권한을 확인하지 못했습니다.');}
 })();

@@ -14,6 +14,7 @@
       description:'확정된 정책국·정책1부·정책2부 일정을 한눈에 확인하세요.',
       show_filters:true,upcoming_count:5,variant:'clean',accent:'#1976c9',padding:'normal'
     }] : [],
+    fixed_content: {},
     popups: []
   };
 
@@ -55,6 +56,15 @@
     if (/^#[0-9a-f]{6}$/i.test(design.accent||'')) document.documentElement.style.setProperty('--managed-accent',design.accent);
     if (/^#[0-9a-f]{6}$/i.test(design.background||'')) document.body.style.setProperty('--managed-page-background',design.background);
     document.body.classList.add('managed-page-enabled',`managed-width-${design.content_width||'wide'}`,`managed-section-${design.section_style||'soft'}`);
+  };
+
+  const applyFixedContent = layout => {
+    const content=layout.fixed_content||{};
+    document.querySelectorAll('[data-page-field]').forEach(element=>{
+      const key=element.dataset.pageField;
+      if(!key || !(key in content)) return;
+      element.textContent=String(content[key]??'');
+    });
   };
 
   const createRoot = layout => {
@@ -108,7 +118,7 @@
   window.KNA_PAGE_LAYOUT_READY=(async()=>{
     const layout=await getLayout();
     window.KNA_CURRENT_PAGE_LAYOUT=layout;
-    applyHero(layout); applyDesign(layout);
+    applyHero(layout); applyDesign(layout); applyFixedContent(layout);
     const root=createRoot(layout);
     await window.KNA_PAGE_BLOCKS.renderBlocks(layout,root);
     renderPopups(layout);

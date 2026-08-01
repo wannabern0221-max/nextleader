@@ -6,6 +6,8 @@
   const localButton=document.querySelector('#saveLocalDraft');
   const openTarget=document.querySelector('#openTargetPage');
   const titleEl=document.querySelector('#editorPageTitle');
+  const fullPreviewButton=document.querySelector('#openFullPreview');
+  const fullPreviewModal=document.querySelector('#fullPreviewModal');
   const qs=new URLSearchParams(location.search);
   const pageKey=qs.get('page')||'home';
   const targetMap={home:'index.html',about:'about.html',notice:'notice.html',cards:'cards.html',policy:'policy.html',glossary:'glossary.html',news:'news.html',schedule:'schedule.html',dashboard:'dashboard.html','internal-schedule':'internal-schedule.html',board:'board.html',quiz:'quiz.html',article:'article.html'};
@@ -24,7 +26,27 @@
     quiz:{label:'정책 퀴즈',eyebrow:'POLICY QUIZ',title:'정책 퀴즈',description:'쉬움부터 어려움까지 무작위 정책 문제를 풀어봅니다.'},
     article:{label:'게시글 상세',eyebrow:'ARTICLE',title:'게시글',description:'정책국에서 게시한 내용을 확인합니다.'}
   };
-  const state={activeTab:'basic',layout:null,history:[],pages:[],selectedBlock:0,selectedPopup:0,previewDevice:'desktop',dirty:false,uploadTarget:null};
+  const fixedDefaults={
+    about:{
+      role_eyebrow:'OUR ROLE',role_title:'정책을 쉽고 정확하게 전달합니다',
+      value1_number:'01',value1_title:'정책 이해',value1_body:'간호와 보건의료 정책을 학생의 시선에서 읽고 핵심 내용을 정리합니다.',
+      value2_number:'02',value2_title:'콘텐츠 제작',value2_body:'카드뉴스와 브리핑을 통해 어려운 정책을 쉽게 설명합니다.',
+      value3_number:'03',value3_title:'의견 연결',value3_body:'간호학생의 관심과 현장 의견을 모아 정책 참여의 기반을 만듭니다.',
+      div1_title:'정책1부',div1_body:'간호·보건의료 정책을 조사하고 카드뉴스를 기획·제작하여 핵심 내용을 쉽고 정확하게 전달합니다.',
+      div2_title:'정책2부',div2_body:'국회의원 및 정책 관계자와의 간담회를 기획하고 간호학생의 의견이 실제 정책 논의로 이어질 수 있도록 연결합니다.'
+    }
+  };
+  const fixedFieldDefinitions={
+    about:[
+      ['역할 영역 영문 표기','role_eyebrow','text'],['역할 영역 제목','role_title','text'],
+      ['첫 번째 번호','value1_number','text'],['첫 번째 제목','value1_title','text'],['첫 번째 설명','value1_body','textarea'],
+      ['두 번째 번호','value2_number','text'],['두 번째 제목','value2_title','text'],['두 번째 설명','value2_body','textarea'],
+      ['세 번째 번호','value3_number','text'],['세 번째 제목','value3_title','text'],['세 번째 설명','value3_body','textarea'],
+      ['정책1부 제목','div1_title','text'],['정책1부 소개','div1_body','textarea'],
+      ['정책2부 제목','div2_title','text'],['정책2부 소개','div2_body','textarea']
+    ]
+  };
+  const state={activeTab:'basic',layout:null,history:[],pages:[],selectedBlock:0,selectedPopup:0,previewDevice:'desktop',fullPreviewDevice:'desktop',dirty:false,uploadTarget:null};
   const esc=window.KNA_PAGE_BLOCKS?.escapeHtml||((v)=>String(v??''));
 
   if(!window.SUPABASE_CONFIG_READY||!client){root.innerHTML='<div class="editor-loading">Supabase 연결 설정을 확인해 주세요.</div>';return;}
@@ -48,6 +70,7 @@
       page_key:key,page_label:layout.page_label||label||d.label,access_level:layout.access_level||(['dashboard','internal-schedule','board','quiz'].includes(key)?'leaders':'public'),
       hero:{visible:layout.hero?.visible!==false,eyebrow:layout.hero?.eyebrow||d.eyebrow,title:layout.hero?.title||d.title,description:layout.hero?.description||d.description},
       design:{accent:layout.design?.accent||'#1976c9',background:layout.design?.background||'#ffffff',content_width:layout.design?.content_width||'wide',replace_base_content:Boolean(layout.design?.replace_base_content),section_style:layout.design?.section_style||'soft'},
+      fixed_content:{...(fixedDefaults[key]||{}),...(layout.fixed_content||{})},
       blocks:Array.isArray(layout.blocks)?layout.blocks:[],popups:Array.isArray(layout.popups)?layout.popups:[]
     };
   }
@@ -58,13 +81,14 @@
     openTarget.href=targetMap[pageKey]||'index.html';
     publishButton.addEventListener('click',publish);
     localButton.addEventListener('click',()=>{localStorage.setItem(`kna_page_draft_${pageKey}`,JSON.stringify(state.layout));message('현재 브라우저에 임시저장했습니다.','success');});
+    fullPreviewButton?.addEventListener('click',openFullPreview);
   }
   function renderShell(){
     root.innerHTML=`<div class="editor-layout"><aside class="editor-sidebar">
-      ${[['basic','페이지 기본'],['design','디자인'],['blocks','페이지 블록'],['popups','팝업'],['history','이전 버전']].map(([k,l])=>`<button class="editor-tab ${state.activeTab===k?'active':''}" data-tab="${k}">${l}</button>`).join('')}
+      ${([['basic','페이지 기본'],...(fixedFieldDefinitions[pageKey]?[['fixed','기존 본문']]:[]),['design','디자인'],['blocks','페이지 블록'],['popups','팝업'],['history','이전 버전']]).map(([k,l])=>`<button class="editor-tab ${state.activeTab===k?'active':''}" data-tab="${k}">${l}</button>`).join('')}
       <div class="editor-sidebar-note">현재 확정 직책이 정책국장인 계정만 게시할 수 있습니다. 로그인·권한·데이터베이스·메일 설정은 이 편집기에서 변경되지 않습니다.</div></aside>
       <section class="editor-panel"><div id="editorPanelBody"></div><div id="editorMessage" class="editor-message"></div></section>
-      <aside class="editor-preview-panel"><div class="editor-preview-head"><strong>실시간 미리보기</strong><div class="preview-device-switch"><button type="button" data-device="desktop" class="active">PC</button><button type="button" data-device="mobile">모바일</button></div></div><div class="editor-preview-frame"><div class="editor-preview-canvas" id="editorPreview"><div class="preview-hero" id="previewHero"></div><div class="editor-preview-blocks" id="previewBlocks"></div></div></div></aside></div>
+      <aside class="editor-preview-panel"><div class="editor-preview-head"><strong>실시간 미리보기</strong><div class="preview-device-switch"><button type="button" data-device="desktop" class="active">PC</button><button type="button" data-device="mobile">모바일</button></div></div><div class="editor-preview-frame"><div class="editor-preview-canvas" id="editorPreview"><div class="preview-hero" id="previewHero"></div><div id="previewFixed"></div><div class="editor-preview-blocks" id="previewBlocks"></div></div></div></aside></div>
       <input id="editorUploadInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif,application/pdf" hidden>`;
     root.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{state.activeTab=button.dataset.tab;root.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===button));renderPanel();}));
     root.querySelectorAll('[data-device]').forEach(button=>button.addEventListener('click',()=>{state.previewDevice=button.dataset.device;root.querySelectorAll('[data-device]').forEach(x=>x.classList.toggle('active',x===button));document.querySelector('#editorPreview').classList.toggle('mobile',state.previewDevice==='mobile');}));
@@ -72,7 +96,7 @@
   }
   function renderPanel(){
     const panel=document.querySelector('#editorPanelBody');
-    panel.innerHTML=state.activeTab==='basic'?basicPanel():state.activeTab==='design'?designPanel():state.activeTab==='blocks'?blocksPanel():state.activeTab==='popups'?popupsPanel():historyPanel();
+    panel.innerHTML=state.activeTab==='basic'?basicPanel():state.activeTab==='fixed'?fixedPanel():state.activeTab==='design'?designPanel():state.activeTab==='blocks'?blocksPanel():state.activeTab==='popups'?popupsPanel():historyPanel();
     bindPanel();
   }
   function basicPanel(){const h=state.layout.hero;return `<div class="editor-panel-head"><div><h2>페이지 기본 설정</h2><p>페이지 이름과 상단 안내 영역을 수정합니다.</p></div></div><div class="editor-form-grid">
@@ -82,6 +106,11 @@
     ${field('상단 영문 표기','hero.eyebrow',h.eyebrow)}${field('페이지 제목','hero.title',h.title)}
     ${textareaField('페이지 설명','hero.description',h.description,'full')}
   </div>`;}
+  function fixedPanel(){
+    const defs=fixedFieldDefinitions[pageKey]||[];
+    if(!defs.length)return `<div class="managed-empty">이 페이지에는 별도 고정 본문이 없습니다. 페이지 블록에서 내용을 추가해 주세요.</div>`;
+    return `<div class="editor-panel-head"><div><h2>기존 본문 수정</h2><p>코드에 고정되어 있던 소개 문구와 카드 내용을 직접 수정합니다.</p></div></div><div class="editor-form-grid">${defs.map(([label,key,type])=>type==='textarea'?`<label class="editor-field full"><span>${label}</span><textarea data-fixed-field="${key}">${esc(state.layout.fixed_content?.[key]||'')}</textarea></label>`:`<label class="editor-field"><span>${label}</span><input type="text" data-fixed-field="${key}" value="${esc(state.layout.fixed_content?.[key]||'')}"></label>`).join('')}</div>`;
+  }
   function designPanel(){const d=state.layout.design;return `<div class="editor-panel-head"><div><h2>페이지 디자인</h2><p>개발 코드 없이 색상과 콘텐츠 배치를 조정합니다.</p></div></div><div class="editor-form-grid">
     ${field('강조 색상','design.accent',d.accent,'color')}${field('페이지 배경','design.background',d.background,'color')}
     ${selectField('콘텐츠 폭','design.content_width',d.content_width,[['narrow','좁게'],['medium','보통'],['wide','넓게']])}
@@ -134,6 +163,7 @@
 
   function bindPanel(){
     document.querySelectorAll('[data-layout-path]').forEach(input=>input.addEventListener('input',()=>{setPath(state.layout,input.dataset.layoutPath,input.type==='checkbox'?input.checked:input.value);changed();}));
+    document.querySelectorAll('[data-fixed-field]').forEach(input=>input.addEventListener('input',()=>{state.layout.fixed_content=state.layout.fixed_content||{};state.layout.fixed_content[input.dataset.fixedField]=input.value;changed();}));
     document.querySelectorAll('[data-block-field]').forEach(input=>input.addEventListener('input',()=>{const b=state.layout.blocks[state.selectedBlock];if(!b)return;b[input.dataset.blockField]=input.type==='checkbox'?input.checked:(input.type==='number'?Number(input.value):input.value);changed();}));
     document.querySelectorAll('[data-popup-field]').forEach(input=>input.addEventListener('input',()=>{const p=state.layout.popups[state.selectedPopup];if(!p)return;p[input.dataset.popupField]=input.type==='checkbox'?input.checked:(input.type==='number'?Number(input.value):input.value);changed();}));
     document.querySelectorAll('[data-array-field]').forEach(input=>input.addEventListener('input',()=>{const b=state.layout.blocks[state.selectedBlock];const arr=b?.[input.dataset.arrayField];if(!arr)return;arr[Number(input.dataset.index)][input.dataset.itemKey]=input.value;changed();}));
@@ -153,12 +183,37 @@
   function moveBlock(index,direction){const target=index+direction;if(target<0||target>=state.layout.blocks.length)return;const [item]=state.layout.blocks.splice(index,1);state.layout.blocks.splice(target,0,item);state.selectedBlock=target;state.dirty=true;renderPanel();renderPreview();}
   function setPath(obj,path,value){const parts=path.split('.');let current=obj;parts.slice(0,-1).forEach(key=>{current[key]=current[key]||{};current=current[key];});current[parts.at(-1)]=value;}
   let previewTimer;function changed(){state.dirty=true;clearTimeout(previewTimer);previewTimer=setTimeout(renderPreview,180);}
+  function fixedPreviewHtml(){
+    if(pageKey!=='about')return '';
+    const f=state.layout.fixed_content||{};
+    return `<section class="preview-fixed-about"><div class="section-head"><div><span class="eyebrow">${esc(f.role_eyebrow||'')}</span><h2>${esc(f.role_title||'')}</h2></div></div><div class="values"><article><span>${esc(f.value1_number||'')}</span><h3>${esc(f.value1_title||'')}</h3><p>${esc(f.value1_body||'')}</p></article><article><span>${esc(f.value2_number||'')}</span><h3>${esc(f.value2_title||'')}</h3><p>${esc(f.value2_body||'')}</p></article><article><span>${esc(f.value3_number||'')}</span><h3>${esc(f.value3_title||'')}</h3><p>${esc(f.value3_body||'')}</p></article></div><div class="policy-layout"><div class="policy-card"><h3>${esc(f.div1_title||'')}</h3><p>${esc(f.div1_body||'')}</p></div><div class="policy-card"><h3>${esc(f.div2_title||'')}</h3><p>${esc(f.div2_body||'')}</p></div></div></section>`;
+  }
   async function renderPreview(){
-    const hero=document.querySelector('#previewHero'),blocks=document.querySelector('#previewBlocks');if(!hero||!blocks)return;
+    const hero=document.querySelector('#previewHero'),fixed=document.querySelector('#previewFixed'),blocks=document.querySelector('#previewBlocks');if(!hero||!blocks)return;
     hero.style.display=state.layout.hero.visible===false?'none':'block';hero.style.background=state.layout.design.background||'#fff';hero.innerHTML=`<span class="eyebrow">${esc(state.layout.hero.eyebrow||'')}</span><h1>${esc(state.layout.hero.title||'')}</h1><p>${esc(state.layout.hero.description||'')}</p>`;
+    if(fixed)fixed.innerHTML=fixedPreviewHtml();
     document.querySelector('#editorPreview').style.setProperty('--managed-accent',state.layout.design.accent||'#1976c9');
     await window.KNA_PAGE_BLOCKS.renderBlocks(state.layout,blocks,{preview:true,showEmpty:true});
+    if(!fullPreviewModal?.hidden)await renderFullPreview();
   }
+  async function renderFullPreview(){
+    const hero=document.querySelector('#fullPreviewHero'),fixed=document.querySelector('#fullPreviewFixed'),blocks=document.querySelector('#fullPreviewBlocks'),doc=document.querySelector('#fullPreviewDocument');
+    if(!hero||!blocks||!doc)return;
+    doc.classList.toggle('mobile',state.fullPreviewDevice==='mobile');
+    doc.style.setProperty('--managed-accent',state.layout.design.accent||'#1976c9');
+    doc.style.background=state.layout.design.background||'#fff';
+    hero.style.display=state.layout.hero.visible===false?'none':'block';hero.style.background=state.layout.design.background||'#fff';hero.innerHTML=`<span class="eyebrow">${esc(state.layout.hero.eyebrow||'')}</span><h1>${esc(state.layout.hero.title||'')}</h1><p>${esc(state.layout.hero.description||'')}</p>`;
+    if(fixed)fixed.innerHTML=fixedPreviewHtml();
+    await window.KNA_PAGE_BLOCKS.renderBlocks(state.layout,blocks,{preview:true,showEmpty:true});
+  }
+  async function openFullPreview(){
+    if(!fullPreviewModal)return;
+    fullPreviewModal.hidden=false;document.body.classList.add('preview-open');await renderFullPreview();
+  }
+  function closeFullPreview(){if(!fullPreviewModal)return;fullPreviewModal.hidden=true;document.body.classList.remove('preview-open');}
+  fullPreviewModal?.querySelectorAll('[data-close-full-preview]').forEach(button=>button.addEventListener('click',closeFullPreview));
+  fullPreviewModal?.querySelectorAll('[data-full-device]').forEach(button=>button.addEventListener('click',async()=>{state.fullPreviewDevice=button.dataset.fullDevice;fullPreviewModal.querySelectorAll('[data-full-device]').forEach(x=>x.classList.toggle('active',x===button));await renderFullPreview();}));
+  addEventListener('keydown',event=>{if(event.key==='Escape'&&!fullPreviewModal?.hidden)closeFullPreview();});
   async function uploadFile(event){
     const file=event.target.files?.[0];if(!file||!state.uploadTarget)return;
     if(file.size>5*1024*1024){message('파일은 5MB 이하만 업로드할 수 있습니다.','error');return;}

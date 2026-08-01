@@ -1443,12 +1443,30 @@ declare v_scope text:=public.normalize_department(p_scope); v_month date:=date_t
 begin
   if not public.can_view_unavailable_v2(v_scope) then raise exception '해당 부서 일정 현황을 확인할 권한이 없습니다.'; end if;
   return query
-  with dates as (select generate_series(v_month,(v_month+interval '1 month - 1 day')::date,interval '1 day')::date d),
-  subs as (select id from public.leader_unavailable_submissions_v2 where scope=v_scope and month_start=v_month),
-  total as (select count(*)::int n from subs),
-  blocked as (select u.unavailable_date,count(*)::int n from public.leader_unavailable_days_v2 u join subs s on s.id=u.submission_id group by u.unavailable_date)
-  select dates.d,greatest((select n from total)-coalesce(blocked.n,0),0),coalesce(blocked.n,0),(select n from total)
-  from dates left join blocked on blocked.unavailable_date=dates.d order by dates.d;
+  with dates as (
+    select generate_series(v_month,(v_month+interval '1 month - 1 day')::date,interval '1 day')::date as schedule_day
+  ),
+  submissions as (
+    select submission.id as submission_id
+    from public.leader_unavailable_submissions_v2 as submission
+    where submission.scope=v_scope and submission.month_start=v_month
+  ),
+  totals as (
+    select count(*)::int as submitted_count from submissions
+  ),
+  blocked as (
+    select unavailable.unavailable_date as blocked_date,count(*)::int as blocked_count
+    from public.leader_unavailable_days_v2 as unavailable
+    join submissions as submitted on submitted.submission_id=unavailable.submission_id
+    group by unavailable.unavailable_date
+  )
+  select dates.schedule_day,
+         greatest((select totals.submitted_count from totals)-coalesce(blocked.blocked_count,0),0)::int,
+         coalesce(blocked.blocked_count,0)::int,
+         (select totals.submitted_count from totals)::int
+  from dates
+  left join blocked on blocked.blocked_date=dates.schedule_day
+  order by dates.schedule_day;
 end; $$;
 
 drop function if exists public.list_unavailable_details_v2(text,date);
@@ -1536,7 +1554,10 @@ create function public.list_policy_schedules_v2(p_start_date date,p_end_date dat
 returns table(id uuid,scope text,event_date date,start_time time,end_time time,title text,location text,note text,visibility text,created_by_name text,can_manage boolean)
 language plpgsql stable security definer set search_path=public,pg_temp as $$
 begin
-  if not exists(select 1 from public.profiles where id=auth.uid() and approval_status='approved') then raise exception '승인된 리더만 일정을 확인할 수 있습니다.'; end if;
+  if not exists(
+    select 1 from public.profiles as profile
+    where profile.id=auth.uid() and profile.approval_status='approved'
+  ) then raise exception '승인된 리더만 일정을 확인할 수 있습니다.'; end if;
   return query
   select s.id,s.scope,s.event_date,s.start_time,s.end_time,s.title,s.location,s.note,s.visibility,
          case when public.can_manage_policy_schedule_v2(s.scope) then p.name else null end,
@@ -1731,6 +1752,46 @@ insert into public.policy_glossary_entries_v1(term,category,summary,detail,sourc
 ('의료의 연속성','의료의 질','여러 시점과 기관에서 환자정보와 서비스가 끊기지 않고 이어지는 특성입니다.','의뢰·회송과 기록공유, 담당자 간 의사소통이 중요합니다.','국가법령정보센터 · 보건의료기본법','https://www.law.go.kr/법령/보건의료기본법','published',now()),
 ('취약계층','보건의료','건강위험이나 서비스 접근 장벽이 상대적으로 큰 집단입니다.','정책 설계 시 필요와 장벽을 별도로 파악해 맞춤지원해야 합니다.','국가법령정보센터 · 보건의료기본법','https://www.law.go.kr/법령/보건의료기본법','published',now()),
 ('건강문해력','보건의료','건강정보를 찾고 이해하고 활용해 판단하는 능력입니다.','쉬운 언어와 명확한 안내, 이해확인 방식이 건강문해력을 지원합니다.','국가법령정보센터 · 보건의료기본법','https://www.law.go.kr/법령/보건의료기본법','published',now()),
+('제정','입법·법령','새로운 법령을 처음 만드는 것입니다.','기존에 없던 법률이나 규정을 새로 만들어 공포하고 시행하는 절차를 말합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('개정','입법·법령','이미 존재하는 법령의 내용을 고치는 것입니다.','사회 변화나 정책 필요에 맞게 법령의 일부 또는 전부를 수정하는 것을 말합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('일부개정','입법·법령','법령의 일부 조문만 고치는 개정 방식입니다.','기존 법령의 기본 체계는 유지하면서 필요한 조항만 추가·삭제·수정합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('전부개정','입법·법령','법령 전체를 새 체계로 다시 정비하는 개정 방식입니다.','법령의 내용과 구조를 폭넓게 바꿀 필요가 있을 때 전부개정 형식을 사용합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('폐지','입법·법령','기존 법령의 효력을 없애는 것입니다.','법령이 더 이상 필요하지 않거나 다른 법령으로 통합될 때 폐지할 수 있습니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('법률안','입법·법령','국회에서 심의·의결하기 위해 제출된 법률의 초안입니다.','국회의원이나 정부가 제출하며 위원회 심사와 본회의 의결 절차를 거칩니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('개정안','입법·법령','기존 법률을 고치기 위해 마련된 법률안입니다.','어떤 조문을 어떻게 바꾸려는지 신구조문 대비표 등을 통해 확인할 수 있습니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('발의','입법·법령','국회의원이 법률안을 국회에 제출하는 행위입니다.','일정 수 이상의 국회의원이 찬성해 법률안을 발의할 수 있습니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('정부제출 법률안','입법·법령','정부가 국무회의 심의 등을 거쳐 국회에 제출한 법률안입니다.','정부 부처가 정책을 법제화하기 위해 마련하며 국회 심사를 거칩니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('입법예고','입법·법령','법령을 만들거나 고치기 전에 주요 내용을 국민에게 미리 알리는 절차입니다.','의견을 수렴하고 예상되는 영향을 검토하기 위해 일정 기간 예고합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('소관위원회','입법·법령','법률안을 분야별로 전문 심사하는 국회 상임위원회입니다.','보건의료 관련 법률안은 주로 보건복지위원회에서 심사합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('법안심사소위원회','입법·법령','상임위원회 안에서 법률안을 세부적으로 심사하는 소위원회입니다.','조문별 쟁점과 수정 필요성을 검토한 뒤 상임위원회에 결과를 보고합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('의결','입법·법령','회의체가 토론을 마친 뒤 안건에 대한 결정을 확정하는 것입니다.','찬반 표결이나 합의 방식으로 안건의 채택 여부를 결정합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('가결','입법·법령','표결 결과 안건이 통과된 상태입니다.','의결에 필요한 찬성 요건을 충족하면 가결됩니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('부결','입법·법령','표결 결과 안건이 통과되지 못한 상태입니다.','필요한 찬성 요건을 충족하지 못하면 부결됩니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('수정가결','입법·법령','원안의 일부 내용을 고친 뒤 통과시키는 것입니다.','심사 과정에서 수정안을 반영한 법률안이 의결된 경우를 말합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('본회의','입법·법령','국회의원 전원이 참여해 법률안 등 주요 안건을 최종 의결하는 회의입니다.','위원회 심사를 마친 법률안은 원칙적으로 본회의에서 최종 표결됩니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('공포','입법·법령','확정된 법령을 국민에게 공식적으로 알리는 절차입니다.','법률은 대통령이 공포하며 공포 후 정해진 시행일에 효력이 발생합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('시행','입법·법령','법령이 실제로 효력을 갖고 적용되기 시작하는 것입니다.','공포일과 시행일은 다를 수 있으므로 부칙의 시행일을 확인해야 합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('시행일','입법·법령','법령의 효력이 시작되는 날짜입니다.','법령 본문이나 부칙에 정하며 공포 즉시 또는 일정 기간 뒤 시행할 수 있습니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('부칙','입법·법령','법령의 시행일과 경과조치 등 부수적인 사항을 정한 부분입니다.','본문의 적용을 원활하게 하기 위한 시행시기·특례·다른 법률 개정 등을 담습니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('경과조치','입법·법령','새 법령 시행 전후의 혼란을 줄이기 위한 연결 규정입니다.','기존 허가·자격·절차를 일정 기간 인정하는 등 전환 방법을 정합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('적용례','입법·법령','새 규정을 어떤 사건이나 시점부터 적용할지 정한 규정입니다.','시행일 이후 발생한 사항에만 적용하는지 등을 명확히 합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('소급적용','입법·법령','새 규정을 시행 이전의 사실이나 관계에도 적용하는 것입니다.','법적 안정성과 신뢰보호 문제가 있어 허용 범위를 신중하게 판단합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('법률','입법·법령','국회가 의결하고 대통령이 공포하는 국가의 법규범입니다.','헌법 아래에서 국민의 권리·의무와 국가 제도의 주요 사항을 정합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('대통령령','입법·법령','법률의 위임을 받아 대통령이 정하는 명령입니다.','보통 법률의 시행에 필요한 구체적인 기준과 절차를 규정하며 시행령이라고도 합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('시행령','입법·법령','법률 시행에 필요한 구체적인 사항을 정한 대통령령입니다.','법률이 위임한 범위 안에서 세부 기준과 절차를 규정합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('부령','입법·법령','국무총리나 각 부처 장관이 정하는 명령입니다.','법률이나 대통령령이 위임한 세부 사항을 규정합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('시행규칙','입법·법령','법률이나 시행령의 시행에 필요한 세부 절차를 정한 부령입니다.','신청 서식·제출서류·업무 절차 등 실무적인 내용을 담는 경우가 많습니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('조례','입법·법령','지방자치단체가 법령의 범위 안에서 정하는 자치법규입니다.','지역 특성에 맞는 정책과 행정 기준을 지방의회 의결로 정합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('상위법','입법·법령','다른 법규범보다 효력이 높은 법령입니다.','하위법령은 상위법의 내용과 위임 범위를 벗어날 수 없습니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('하위법령','입법·법령','법률의 위임에 따라 세부 사항을 정하는 시행령·시행규칙 등을 말합니다.','상위법에 어긋나거나 위임 범위를 넘으면 효력이 문제될 수 있습니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('위임','입법·법령','상위법이 구체적인 사항을 하위법령이나 행정기관에 맡기는 것입니다.','위임의 목적과 범위를 확인해야 하며 하위 규정은 이를 벗어날 수 없습니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('조','입법·법령','법령을 구성하는 기본 단위입니다.','각 조는 하나의 중심 내용을 담고 필요하면 항·호·목으로 세분됩니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('항','입법·법령','조문 안에서 내용을 나누는 단위입니다.','보통 ① ② ③과 같이 표시되며 하나의 조 안에서 세부 원칙을 구분합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('호','입법·법령','항이나 조 안의 사항을 열거하는 단위입니다.','1. 2. 3.과 같이 표시되며 요건이나 대상을 구분합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('단서','입법·법령','본문의 원칙에 대한 예외나 조건을 덧붙이는 문장입니다.','보통 “다만”으로 시작하며 적용 범위를 제한하거나 예외를 정합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('준용','입법·법령','다른 규정을 필요한 부분만 알맞게 바꾸어 적용하는 것입니다.','같은 내용을 반복하지 않고 유사한 규정을 끌어와 적용할 때 사용합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('재의요구','입법·법령','대통령이 국회에서 의결된 법률안의 재검토를 요구하는 것입니다.','국회가 다시 의결하려면 헌법이 정한 강화된 의결 요건을 충족해야 합니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
+('공포안','입법·법령','공포를 위해 마련된 확정 법률의 문서입니다.','국회 의결과 정부 이송 절차를 거친 뒤 공포 절차에 사용됩니다.','국가법령정보센터','https://www.law.go.kr','published',now()),
 ('공공보건의료','보건의료','국가와 지방자치단체 등이 국민의 필수 보건의료를 보장하기 위해 제공·지원하는 활동입니다.','지역·필수의료와 취약계층 보호 및 재난대응 등이 중요한 영역입니다.','보건복지부 · 보건의료 정책','https://www.mohw.go.kr','published',now())
 on conflict(term) do nothing;
 
@@ -2235,9 +2296,11 @@ declare
   v_reason_code text:=coalesce(nullif(p_reason_code,''),'personal');
 begin
   if not public.can_manage_unavailable_v2(v_scope) then raise exception '일정 응답 수정 권한이 없습니다.'; end if;
-  select id into v_submission
-  from public.leader_unavailable_submissions_v2
-  where leader_id=p_target_user_id and scope=v_scope and month_start=v_month;
+  select submission.id into v_submission
+  from public.leader_unavailable_submissions_v2 as submission
+  where submission.leader_id=p_target_user_id
+    and submission.scope=v_scope
+    and submission.month_start=v_month;
 
   if v_submission is null then raise exception '해당 리더가 이 달 일정을 제출하지 않았습니다.'; end if;
 
@@ -2256,9 +2319,9 @@ begin
     raise exception '일정 상태가 올바르지 않습니다.';
   end if;
 
-  update public.leader_unavailable_submissions_v2
+  update public.leader_unavailable_submissions_v2 as submission
   set updated_at=now()
-  where id=v_submission;
+  where submission.id=v_submission;
 end;
 $$;
 
@@ -2556,4 +2619,4 @@ grant execute on function public.save_page_layout_v1(text,jsonb) to authenticate
 grant execute on function public.restore_page_layout_v1(bigint) to authenticated;
 
 commit;
-select 'page_editor_home_calendar_unavailable_reason_ready' as check_name;
+select 'ui_preview_glossary_schedule_fix_ready' as check_name;

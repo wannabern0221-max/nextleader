@@ -25,7 +25,7 @@
   if (!document.querySelector('link[href*="leader-experience.css"]')) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'assets/leader-experience.css?v=20260801c';
+    link.href = 'assets/leader-experience.css?v=20260802-ui';
     document.head.appendChild(link);
   }
 
@@ -95,7 +95,8 @@
 
     const ribbon = document.createElement('div');
     ribbon.className = 'leader-ribbon';
-    ribbon.innerHTML = `<div class="container leader-ribbon-inner"><span class="leader-ribbon-label">리더 메뉴</span>${links.map(([href,key,label]) => `<a href="${href}" class="${activeFor(key) ? 'active' : ''}">${label}</a>`).join('')}${isManager(access) ? `<a href="admin.html" class="manage-link ${activeFor('admin') ? 'active' : ''}">관리센터</a>` : ''}${(['policy_director','director'].includes(access.system_role) || String(access.position||access.requested_position||'').replace(/\s+/g,'').includes('정책국장')) ? `<a href="site-manager.html" class="manage-link ${page==='site-manager'?'active':''}">홈페이지 관리</a>` : ''}</div>`;
+    const managementLinks = `${isManager(access) ? `<a href="admin.html" class="manage-link ${activeFor('admin') ? 'active' : ''}">관리센터</a>` : ''}${(['policy_director','director'].includes(access.system_role) || String(access.position||access.requested_position||'').replace(/\s+/g,'').includes('정책국장')) ? `<a href="site-manager.html" class="manage-link ${page==='site-manager'?'active':''}">홈페이지 관리</a>` : ''}`;
+    ribbon.innerHTML = `<div class="container leader-ribbon-inner"><div class="leader-ribbon-main"><span class="leader-ribbon-label">리더 메뉴</span>${links.map(([href,key,label]) => `<a href="${href}" class="${activeFor(key) ? 'active' : ''}">${label}</a>`).join('')}</div>${managementLinks?`<div class="leader-ribbon-manage">${managementLinks}</div>`:''}</div>`;
     document.querySelector('.site-header')?.after(ribbon);
 
     const dock = document.createElement('nav');

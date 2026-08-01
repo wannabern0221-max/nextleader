@@ -23,11 +23,12 @@ body.has-leader-dock { padding-bottom: 0; }
   min-height: 54px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  overflow-x: auto;
-  scrollbar-width: none;
+  justify-content: space-between;
+  gap: 16px;
+  overflow: hidden;
 }
 .leader-ribbon-inner::-webkit-scrollbar { display: none; }
+.leader-ribbon-main,.leader-ribbon-manage{display:flex;align-items:center;gap:7px;min-width:0}.leader-ribbon-main{overflow-x:auto;scrollbar-width:none}.leader-ribbon-main::-webkit-scrollbar{display:none}.leader-ribbon-manage{flex:0 0 auto}
 .leader-ribbon-label {
   display: inline-flex;
   align-items: center;
@@ -60,7 +61,6 @@ body.has-leader-dock { padding-bottom: 0; }
   color: var(--blue-dark);
 }
 .leader-ribbon a.manage-link {
-  margin-left: auto;
   border: 1px solid #bdd8ee;
   background: #f7fbff;
   color: var(--blue-dark);
@@ -575,3 +575,9 @@ body.has-leader-dock { padding-bottom: 0; }
 .availability-person.is-unavailable{background:#fff7f7;border-color:#ecc5c5}.availability-person>div:first-child{min-width:0}.availability-person small{display:block;margin-top:4px;line-height:1.45}.availability-person-actions{display:flex;justify-content:flex-end;gap:6px;flex-wrap:wrap}.availability-person-actions button{border:1px solid #c8d6e2;background:#fff;border-radius:8px;padding:7px 9px;color:#31536e;font-size:11px;font-weight:800;cursor:pointer}.status-chip{justify-self:end;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:900}.status-chip.available{background:#e5f6ee;color:#20684b}.status-chip.unavailable{background:#ffe4e4;color:#8b3030}
 body.reason-sheet-open{overflow:hidden}.reason-sheet[hidden]{display:none}.reason-sheet{position:fixed;inset:0;z-index:2100;display:grid;place-items:center;padding:18px}.reason-sheet-backdrop{position:absolute;inset:0;background:rgba(8,24,40,.62)}.reason-sheet-panel{position:relative;width:min(560px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:22px;padding:24px;box-shadow:0 25px 80px rgba(0,0,0,.32)}.reason-sheet-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:18px}.reason-sheet-head h2{margin:3px 0 5px;color:var(--navy);font-size:27px}.reason-sheet-head p{margin:0;color:var(--muted)}.reason-sheet-head>button{width:40px;height:40px;border:1px solid var(--line);border-radius:11px;background:#fff;font-size:26px;cursor:pointer}.reason-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:17px}.reason-options button{min-height:44px;border:1px solid #cbd8e4;border-radius:11px;background:#f8fafc;color:#4b6175;font-weight:800;cursor:pointer}.reason-options button.active{border-color:#2377b8;background:#e9f4fd;color:#155f99;box-shadow:inset 0 0 0 1px #2377b8}.reason-sheet-panel .field span{display:block;margin-bottom:7px;font-weight:800}.reason-sheet-panel textarea{width:100%;min-height:92px;border:1px solid #cbd8e4;border-radius:11px;padding:11px 12px;resize:vertical;font:inherit}.reason-privacy-note{margin:11px 0 17px;color:#728195;font-size:12px;line-height:1.6}
 @media(max-width:700px){.scope-switch{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.scope-switch button{font-size:12px}.availability-day .day-reason{display:none}.availability-person-actions{justify-content:flex-start}.status-chip{justify-self:start}.reason-sheet{align-items:end;padding:0}.reason-sheet-panel{width:100%;max-height:90vh;border-radius:22px 22px 0 0;padding:20px}.reason-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* 2026-08-02 리더 메뉴와 일정 화면 간격 개선 */
+.availability-layout{grid-template-columns:minmax(0,1fr) 340px;gap:16px}.availability-layout>aside{min-width:0;padding:16px;border:1px solid #e0e8f0;border-radius:15px;background:#f9fbfd}.availability-layout>div{min-width:0}.availability-card{overflow:hidden}.confirmed-form{padding:20px;border:1px solid #dce6ef;border-radius:15px;background:#f9fbfd}.confirmed-form .form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.confirmed-form .field{min-width:0}.confirmed-form .field.full{margin-top:14px}.confirmed-form .action-group{margin-top:16px}.schedule-form-guide{margin:0 0 18px}.leader-ribbon a.manage-link{margin-left:0}
+@media(max-width:980px){.leader-ribbon-inner{overflow-x:auto;justify-content:flex-start}.leader-ribbon-main{overflow:visible}.leader-ribbon-manage{margin-left:6px}.availability-layout{grid-template-columns:1fr}.availability-layout>aside{padding:14px}.confirmed-form .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.leader-ribbon{display:none}.confirmed-form{padding:15px}.confirmed-form .form-grid{grid-template-columns:1fr}.availability-card{padding:14px}.availability-layout{gap:12px}.availability-layout>aside{border-radius:13px}}
