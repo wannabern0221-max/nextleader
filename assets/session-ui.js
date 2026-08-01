@@ -102,7 +102,18 @@
       renderSignedIn(access || { name: state.session.user.email, approval_status: 'pending', system_role: 'leader', permissions: [] });
     } catch (error) {
       console.error(error);
-      renderSignedOut();
+      if (state.session) {
+        const emailName = String(state.session.user?.email || '로그인 사용자').split('@')[0];
+        renderSignedIn({
+          name: emailName,
+          approval_status: 'pending',
+          system_role: 'leader',
+          position: '로그인됨',
+          permissions: []
+        });
+      } else {
+        renderSignedOut();
+      }
     }
     dispatchReady();
   }

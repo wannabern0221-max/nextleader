@@ -18,6 +18,7 @@
     config.publishableKey,
     {
       auth: {
+        storageKey: 'kna-busan-policy-auth',
         persistSession: true,
         autoRefreshToken: true,
         detectSessionInUrl: true

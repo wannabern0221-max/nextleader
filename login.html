@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/account-patch.css">
 </head>
 <body data-page="login">
 
@@ -59,6 +60,7 @@
           <div class="auth-tabs" role="tablist">
             <button class="auth-tab active" type="button" data-auth-tab="login">로그인</button>
             <button class="auth-tab" type="button" data-auth-tab="signup">가입 신청</button>
+            <button class="auth-tab" type="button" data-auth-tab="account">계정 찾기</button>
           </div>
 
           <section class="auth-section" data-auth-section="login">
@@ -75,7 +77,7 @@
               </div>
               <div class="form-actions">
                 <button class="btn btn-primary" type="submit">로그인</button>
-                <a class="btn btn-outline" href="dashboard.html">내부포털</a>
+                <button class="btn btn-outline" type="button" data-auth-tab-jump="account">아이디·비밀번호 찾기</button>
               </div>
             </form>
           </section>
@@ -98,6 +100,28 @@
               <div class="form-actions">
                 <button class="btn btn-primary" type="submit">가입 신청</button>
                 <button class="btn btn-outline" id="resendButton" type="button">인증메일 재전송</button>
+              </div>
+            </form>
+          </section>
+
+
+          <section class="auth-section" data-auth-section="account" hidden>
+            <div class="form-note account-help-note">
+              <strong>로그인 아이디는 가입할 때 사용한 이메일 주소입니다.</strong><br>
+              가입 이메일이 기억나지 않으면 이름·학교·기수를 정책국 관리자에게 알려 확인을 요청해 주세요.
+              관리자는 로그인 이메일만 확인할 수 있으며 비밀번호는 확인할 수 없습니다.
+            </div>
+            <form id="passwordResetRequestForm" data-auth-form>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="recoveryEmail">비밀번호 재설정 이메일</label>
+                  <input id="recoveryEmail" name="email" type="email" autocomplete="email" required placeholder="가입한 이메일 주소">
+                  <span class="field-help">입력한 이메일로 비밀번호 재설정 링크를 전송합니다.</span>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">재설정 메일 보내기</button>
+                <button class="btn btn-outline" type="button" data-auth-tab-jump="login">로그인으로 돌아가기</button>
               </div>
             </form>
           </section>

@@ -23,8 +23,12 @@
     sections.forEach(section => section.hidden = section.dataset.authSection !== name);
   };
   tabs.forEach(tab => tab.addEventListener('click', () => activateTab(tab.dataset.authTab)));
+  document.querySelectorAll('[data-auth-tab-jump]').forEach(button => {
+    button.addEventListener('click', () => activateTab(button.dataset.authTabJump));
+  });
 
   const redirectUrl = new URL('login.html?verified=1', window.location.href).href;
+  const passwordRecoveryUrl = new URL('reset-password.html', window.location.href).href;
 
   const koreanError = error => {
     const msg = String(error?.message || error || '');
@@ -33,6 +37,7 @@
     if (/user already registered/i.test(msg)) return '이미 가입된 이메일입니다.';
     if (/password/i.test(msg) && /least/i.test(msg)) return '비밀번호 길이와 조건을 확인해 주세요.';
     if (/rate limit/i.test(msg)) return '요청이 너무 많습니다. 잠시 뒤 다시 시도해 주세요.';
+    if (/same password/i.test(msg)) return '기존 비밀번호와 다른 비밀번호를 입력해 주세요.';
     return msg || '요청 처리 중 오류가 발생했습니다.';
   };
 
@@ -128,6 +133,32 @@
     }
   });
 
+  const passwordResetRequestForm = document.querySelector('#passwordResetRequestForm');
+  passwordResetRequestForm?.addEventListener('submit', async e => {
+    e.preventDefault();
+    const form = new FormData(passwordResetRequestForm);
+    const submit = passwordResetRequestForm.querySelector('button[type="submit"]');
+    submit.disabled = true;
+    submit.textContent = '전송 중...';
+
+    try {
+      const email = String(form.get('email') || '').trim();
+      const { error } = await client.auth.resetPasswordForEmail(email, {
+        redirectTo: passwordRecoveryUrl
+      });
+      if (error) throw error;
+      showMessage(
+        '가입된 이메일이라면 비밀번호 재설정 메일이 발송됩니다. 메일함과 스팸함을 확인해 주세요.',
+        'success'
+      );
+    } catch (error) {
+      showMessage(koreanError(error), 'error');
+    } finally {
+      submit.disabled = false;
+      submit.textContent = '재설정 메일 보내기';
+    }
+  });
+
   const resendButton = document.querySelector('#resendButton');
   resendButton?.addEventListener('click', async () => {
     const email = document.querySelector('#signupEmail')?.value.trim();
@@ -156,6 +187,10 @@
     const params = new URLSearchParams(location.search);
     if (params.get('verified') === '1') {
       showMessage('이메일 인증이 처리되었습니다. 승인 상태를 확인합니다.', 'success');
+    }
+    if (params.get('password_reset') === '1') {
+      showMessage('비밀번호가 변경되었습니다. 새 비밀번호로 로그인해 주세요.', 'success');
+      activateTab('login');
     }
 
     const { data } = await client.auth.getSession();
