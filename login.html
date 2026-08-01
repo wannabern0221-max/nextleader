@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="대한간호학생회 부산 정책국 홈페이지">
+  <title>관계자 로그인 | 대한간호학생회 부산 정책국</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="login">
+
+<div class="utility">
+  <div class="container">
+    <span>대한간호학생회 부산 · 정책국</span>
+    <div class="utility-actions">
+      <button type="button" data-open-alert>알림</button>
+      <a href="login.html">관계자 로그인</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/brand-mark.png" alt="대한간호학생회 부산 로고">
+      <span>
+        <strong>대한간호학생회 부산</strong>
+        <span>정책국 공식 홈페이지</span>
+      </span>
+    </a>
+    <button class="menu-button" aria-label="메뉴 열기">☰</button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="about.html" class="">정책국 소개</a>
+      <a href="notice.html" class="">공지사항</a>
+      <a href="cards.html" class="">카드뉴스</a>
+      <a href="policy.html" class="">정책 콘텐츠</a>
+      <a href="schedule.html" class="">일정</a>
+      <a class="header-login active" href="login.html">로그인</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">MEMBER ACCESS</span>
+      <h1>관계자 로그인</h1>
+      <p>이메일 인증과 관리자 승인을 완료한 정책국 구성원을 위한 내부 서비스 입구입니다.</p>
+    </div>
+  </section>
+  <section class="page-content">
+    <div class="container">
+      <div class="auth-shell">
+        <section class="auth-panel">
+          <div id="configWarning" class="config-warning">
+            <strong>연결정보 입력 필요</strong><br>
+            assets/supabase-config.js 파일에 Project URL과 Publishable key를 입력해야 합니다.
+          </div>
+
+          <div class="auth-tabs" role="tablist">
+            <button class="auth-tab active" type="button" data-auth-tab="login">로그인</button>
+            <button class="auth-tab" type="button" data-auth-tab="signup">회원가입 신청</button>
+          </div>
+
+          <section class="auth-section" data-auth-section="login">
+            <form id="loginForm" data-auth-form>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="loginEmail">이메일</label>
+                  <input id="loginEmail" name="email" type="email" autocomplete="email" required placeholder="가입한 이메일">
+                </div>
+                <div class="field full">
+                  <label for="loginPassword">비밀번호</label>
+                  <input id="loginPassword" name="password" type="password" autocomplete="current-password" required placeholder="비밀번호">
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">로그인</button>
+                <a class="btn btn-outline" href="dashboard.html">내부 포털</a>
+              </div>
+            </form>
+          </section>
+
+          <section class="auth-section" data-auth-section="signup" hidden>
+            <form id="signupForm" data-auth-form>
+              <div class="form-grid">
+                <div class="field"><label for="name">이름</label><input id="name" name="name" required placeholder="이름 입력"></div>
+                <div class="field"><label for="school">학교</label><input id="school" name="school" required placeholder="학교명 입력"></div>
+                <div class="field"><label for="cohort">기수</label><input id="cohort" name="cohort" required placeholder="예: 10기"></div>
+                <div class="field"><label for="department">부서</label><select id="department" name="department" required><option value="">선택</option><option>정책1부</option><option>정책2부</option></select></div>
+                <div class="field full"><label for="signupEmail">이메일</label><input id="signupEmail" name="email" type="email" autocomplete="email" required placeholder="로그인에 사용할 이메일"></div>
+                <div class="field full">
+                  <label for="signupPassword">비밀번호</label>
+                  <input id="signupPassword" name="password" type="password" autocomplete="new-password" minlength="8" required placeholder="8자 이상 비밀번호">
+                  <span class="field-help">비밀번호는 Supabase Auth에서 안전하게 처리되며 홈페이지 DB에 평문으로 저장하지 않습니다.</span>
+                </div>
+              </div>
+              <div class="form-note">신청자가 직책이나 시스템 권한을 선택할 수 없습니다. 학교와 기수 그리고 이름과 부서를 확인한 뒤 국장 또는 수석부장이 승인합니다.</div>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">가입 신청</button>
+                <button class="btn btn-outline" id="resendButton" type="button">인증메일 재전송</button>
+              </div>
+            </form>
+          </section>
+
+          <div id="authMessage" class="auth-message" aria-live="polite"></div>
+        </section>
+
+        <aside class="auth-guide">
+          <span class="eyebrow" style="color:#fff;">SIGN-UP PROCESS</span>
+          <h2>관계자 가입 절차</h2>
+          <p>공개 페이지는 누구나 열람할 수 있으며 내부 기능만 승인을 요구합니다.</p>
+          <ol>
+            <li>학교와 기수 그리고 이름과 부서 입력</li>
+            <li>가입한 이메일에서 인증 버튼 클릭</li>
+            <li>국장 또는 수석부장이 신청 정보 확인</li>
+            <li>승인 완료 후 내부 포털 이용</li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/brand-mark.png" alt="대한간호학생회 부산 로고">
+      <div>
+        <strong>대한간호학생회 부산</strong>
+        <span>정책국 공식 홈페이지</span>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <div>공개 게시물은 로그인 없이 열람할 수 있습니다.</div>
+      <div>© 2026 Korean Nursing Students Association · Busan.</div>
+    </div>
+  </div>
+</footer>
+<div class="modal" id="siteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-panel">
+    <div class="modal-head">
+      <h2 id="modalTitle">안내</h2>
+      <button class="modal-close" type="button" data-close-modal aria-label="닫기">×</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <label class="checkbox"><input id="hideToday" type="checkbox"> 오늘 하루 이 팝업 보지 않기</label>
+      <button class="btn btn-primary" type="button" data-close-modal>확인</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="assets/supabase-client.js"></script>
+<script src="assets/auth.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

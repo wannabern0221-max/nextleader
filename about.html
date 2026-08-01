@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="대한간호학생회 부산 정책국 홈페이지">
+  <title>정책국 소개 | 대한간호학생회 부산 정책국</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="about">
+
+<div class="utility">
+  <div class="container">
+    <span>대한간호학생회 부산 · 정책국</span>
+    <div class="utility-actions">
+      <button type="button" data-open-alert>알림</button>
+      <a href="login.html">관계자 로그인</a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/brand-mark.png" alt="대한간호학생회 부산 로고">
+      <span>
+        <strong>대한간호학생회 부산</strong>
+        <span>정책국 공식 홈페이지</span>
+      </span>
+    </a>
+    <button class="menu-button" aria-label="메뉴 열기">☰</button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="about.html" class="active">정책국 소개</a>
+      <a href="notice.html" class="">공지사항</a>
+      <a href="cards.html" class="">카드뉴스</a>
+      <a href="policy.html" class="">정책 콘텐츠</a>
+      <a href="schedule.html" class="">일정</a>
+      <a class="header-login " href="login.html">로그인</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">ABOUT POLICY DIVISION</span>
+      <h1>정책국 소개</h1>
+      <p>간호학생이 정책을 이해하고 현장의 목소리를 연결할 수 있도록 활동합니다.</p>
+    </div>
+  </section>
+  <section class="page-content">
+    <div class="container">
+      <div class="section-head"><div><span class="eyebrow">OUR ROLE</span><h2>정책을 쉽고 정확하게 전달합니다</h2></div></div>
+      <div class="values">
+        <article><span>01</span><h3>정책 이해</h3><p>간호와 보건의료 정책을 학생의 시선에서 읽고 핵심 내용을 정리합니다.</p></article>
+        <article><span>02</span><h3>콘텐츠 제작</h3><p>카드뉴스와 브리핑을 통해 어려운 정책을 쉽게 설명합니다.</p></article>
+        <article><span>03</span><h3>의견 연결</h3><p>간호학생의 관심과 현장 의견을 모아 정책 참여의 기반을 만듭니다.</p></article>
+      </div>
+      <div class="policy-layout" style="margin-top:34px;">
+        <div class="policy-card">
+          <h3>정책1부</h3>
+          <p>정책 자료 조사와 주제 발굴 그리고 초안 작성을 담당합니다.</p>
+        </div>
+        <div class="policy-card">
+          <h3>정책2부</h3>
+          <p>콘텐츠 구성과 검토 그리고 게시와 활동 확산을 담당합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/brand-mark.png" alt="대한간호학생회 부산 로고">
+      <div>
+        <strong>대한간호학생회 부산</strong>
+        <span>정책국 공식 홈페이지</span>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <div>공개 게시물은 로그인 없이 열람할 수 있습니다.</div>
+      <div>© 2026 Korean Nursing Students Association · Busan.</div>
+    </div>
+  </div>
+</footer>
+<div class="modal" id="siteModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-panel">
+    <div class="modal-head">
+      <h2 id="modalTitle">안내</h2>
+      <button class="modal-close" type="button" data-close-modal aria-label="닫기">×</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <label class="checkbox"><input id="hideToday" type="checkbox"> 오늘 하루 이 팝업 보지 않기</label>
+      <button class="btn btn-primary" type="button" data-close-modal>확인</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>
