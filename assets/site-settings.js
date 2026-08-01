@@ -18,7 +18,7 @@
     },
     public_menu: {
       about: {label:'정책국 소개',visible:true}, notice:{label:'공지사항',visible:true}, cards:{label:'카드뉴스',visible:true},
-      policy:{label:'정책 콘텐츠',visible:true}, news:{label:'간호·정책 뉴스',visible:true}, schedule:{label:'일정',visible:true}
+      policy:{label:'정책 콘텐츠',visible:true}, glossary:{label:'정책단어',visible:true}, news:{label:'간호·정책 뉴스',visible:true}, schedule:{label:'정책국 일정',visible:true}
     },
     leader_menu: {home:'리더 홈',schedule:'일정 확인',board:'익명 소통',quiz:'정책 퀴즈'}
   };
@@ -37,7 +37,7 @@
     document.querySelectorAll('.brand > span > span,.footer-brand div > span').forEach(el=>el.textContent=config.site_subtitle);
     document.querySelectorAll('.utility .container > span').forEach(el=>el.textContent=config.utility_label);
     document.querySelectorAll('.footer-copy > div:first-child').forEach(el=>el.textContent=config.footer_notice);
-    const map={about:'about.html',notice:'notice.html',cards:'cards.html',policy:'policy.html',news:'news.html',schedule:'schedule.html'};
+    const map={about:'about.html',notice:'notice.html',cards:'cards.html',policy:'policy.html',glossary:'glossary.html',news:'news.html',schedule:'schedule.html'};
     Object.entries(map).forEach(([key,href])=>{
       const setting=config.public_menu?.[key]||{};
       document.querySelectorAll(`.nav a[href="${href}"],.quick-item[href="${href}"]`).forEach(el=>{

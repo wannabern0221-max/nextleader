@@ -1,4 +1,4 @@
-/* 대한간호학생회 부산 정책국 - 리더 홈/가능일/모바일 경험 개선 */
+/* 대한간호학생회 부산 정책국 - 리더 홈/일정 확인/모바일 경험 개선 */
 :root {
   --leader-green: #2f8a68;
   --leader-green-soft: #e9f6f0;
@@ -146,7 +146,7 @@ body.has-leader-dock { padding-bottom: 0; }
 .leader-home-action strong { display: block; color: var(--navy); font-size: 18px; }
 .leader-home-action small { display: block; margin-top: 7px; color: var(--muted); line-height: 1.6; }
 
-/* 가능일 조사 */
+/* 불가능 날짜 조사 */
 .availability-shell { display: grid; gap: 24px; }
 .availability-intro {
   padding: 21px 23px;
@@ -467,4 +467,104 @@ body.has-leader-dock { padding-bottom: 0; }
   .public-schedule-month { justify-content: space-between; }
   .public-schedule-item { grid-template-columns: 62px minmax(0,1fr); gap: 12px; padding: 16px; }
   .public-schedule-item time strong { font-size: 22px; }
+}
+
+/* 2026-08-01 통합 수정: 불가능 날짜 선택 및 정책국 일정 달력 */
+.availability-legend .unavailable { background: #ffe7e7; border: 1px solid #e79a9a; }
+.availability-day.unavailable { background: #fff0f0; box-shadow: inset 0 0 0 1px #efb0b0; }
+.availability-day.unavailable .day-status { background: #f7caca; color: #8a2f2f; }
+.schedule-form-guide {
+  margin: 0 0 16px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  background: #f4f8fb;
+  color: #526779;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.schedule-registrant { display: block; margin-top: 7px; color: var(--muted); }
+
+.policy-calendar-layout {
+  display: grid;
+  grid-template-columns: minmax(0,1.45fr) minmax(320px,.75fr);
+  gap: 20px;
+  align-items: start;
+}
+.policy-calendar-card,
+.upcoming-schedule-card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+.public-calendar {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+}
+.public-calendar-weekdays,
+.public-calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7,minmax(0,1fr));
+}
+.public-calendar-weekdays span {
+  padding: 10px 2px;
+  background: var(--sky);
+  color: var(--navy);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 900;
+}
+.public-calendar-day {
+  position: relative;
+  min-width: 0;
+  min-height: 82px;
+  padding: 8px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+.public-calendar-day:nth-child(7n) { border-right: 0; }
+.public-calendar-day.blank { background: #fafcfe; cursor: default; }
+.public-calendar-day span { font-size: 13px; font-weight: 900; }
+.public-calendar-day i {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  display: grid;
+  min-width: 22px;
+  height: 22px;
+  place-items: center;
+  border-radius: 999px;
+  background: #2375b7;
+  color: #fff;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 900;
+}
+.public-calendar-day.has-event { background: #f4f9fd; }
+.public-calendar-day.selected { box-shadow: inset 0 0 0 2px #2375b7; background: #eaf4fb; }
+.public-calendar-detail { display: grid; gap: 10px; margin-top: 14px; }
+.public-detail-head { padding: 12px 14px; border-radius: 11px; background: #f4f8fb; color: var(--navy); }
+.public-detail-item { padding: 15px; border: 1px solid var(--line); border-radius: 13px; background: #fff; }
+.public-detail-item h3 { margin: 8px 0 6px; color: var(--navy); }
+.public-detail-item p { margin: 0; color: var(--muted); line-height: 1.65; }
+.upcoming-schedule-card .section-head { margin-bottom: 14px; }
+
+@media (max-width: 980px) {
+  .policy-calendar-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .policy-calendar-card,
+  .upcoming-schedule-card { padding: 13px; border-radius: 14px; }
+  .public-calendar-day { min-height: 52px; aspect-ratio: 1 / 1; padding: 5px; }
+  .public-calendar-day span { font-size: 11px; }
+  .public-calendar-day i { right: 4px; bottom: 4px; min-width: 18px; height: 18px; font-size: 8px; }
+  .public-calendar-weekdays span { padding: 8px 1px; font-size: 10px; }
 }
