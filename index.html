@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/features-patch.css">
-  <link rel="stylesheet" href="assets/page-builder.css?v=20260802-ui">
+  <link rel="stylesheet" href="assets/page-builder.css?v=20260802-publishing">
 </head>
 <body data-page="home">
 
@@ -77,16 +77,10 @@
         <a class="more-link" href="notice.html">전체 공지 보기 →</a>
       </div>
       <div class="notice-layout">
-        <div class="notice-list">
-          <a class="notice-row-link" href="article.html?slug=notice-site-open">
-            <span class="badge">공지</span><strong>정책국 홈페이지 공개 안내</strong><time>2026.07.31</time>
-          </a>
-          <a class="notice-row-link" href="article.html?slug=notice-august-cardnews">
-            <span class="badge">일정</span><strong>8월 정책 카드뉴스 제작 일정</strong><time>2026.07.29</time>
-          </a>
-          <a class="notice-row-link" href="article.html?slug=notice-topic-proposal">
-            <span class="badge">안내</span><strong>정책 콘텐츠 주제 제안 안내</strong><time>2026.07.25</time>
-          </a>
+        <div class="notice-list" data-dynamic-content="notice">
+          <a class="notice-row-link" href="article.html?slug=notice-welcome-guide"><span class="badge">공지</span><strong>대한간호학생회 부산 정책국 홈페이지 이용 안내</strong><time>2026.08.01</time></a>
+          <a class="notice-row-link" href="article.html?slug=notice-schedule-guide"><span class="badge">일정</span><strong>일정 확인 및 정책국 일정 등록 안내</strong><time>2026.08.01</time></a>
+          <a class="notice-row-link" href="article.html?slug=notice-content-guide"><span class="badge">안내</span><strong>공지사항·카드뉴스·정책 콘텐츠 작성 안내</strong><time>2026.08.01</time></a>
         </div>
         <div class="schedule-card">
           <span class="schedule-date">UPCOMING SCHEDULE</span>
@@ -160,8 +154,9 @@
 <script src="assets/supabase-client.js"></script>
 <script src="assets/site-settings.js?v=20260802-ui"></script>
 <script src="assets/access.js"></script>
-<script src="assets/session-ui.js?v=20260802-ui"></script>
+<script src="assets/session-ui.js?v=20260802-publishing"></script>
 
+<script src="assets/public-content.js?v=20260802-publishing"></script>
 <script src="assets/page-blocks.js?v=20260802-ui"></script>
 <script src="assets/page-runtime.js?v=20260802-ui"></script>
 <script src="assets/page-admin-link.js?v=20260802-ui"></script>

@@ -47,13 +47,13 @@
         <h2>${escapeHtml(access.name)}${external ? '' : ' 리더'}님 반갑습니다</h2>
         <p>${escapeHtml(departmentLabel)} · ${escapeHtml(access.position || roleLabel)}로 로그인되어 있습니다. 자주 사용하는 기능은 아래에서 바로 들어갈 수 있습니다.</p>
         <div class="leader-home-actions">
-          <a class="leader-home-action" href="internal-schedule.html"><span>01 · 일정 조율</span><strong>일정 확인</strong><small>정책국·정책1부·정책2부 리더가 불가능한 날짜와 사유를 등록하고 일정을 조율합니다.</small></a>
+          <a class="leader-home-action" href="internal-schedule.html"><span>01 · 일정 조율</span><strong>일정 확인</strong><small>정책국·정책1부·정책2부 리더가 불가한 날짜와 사유를 등록하고 일정을 조율합니다.</small></a>
           <a class="leader-home-action" href="board.html"><span>02 · 자유로운 의견</span><strong>익명 리더 소통방</strong><small>이름과 직책 그리고 소속을 드러내지 않고 의견을 나눕니다.</small></a>
           <a class="leader-home-action" href="quiz.html"><span>03 · 정책 학습</span><strong>정책 퀴즈</strong><small>쉬움부터 어려움까지 무작위 문제로 정책 지식을 확인합니다.</small></a>
           <a class="leader-home-action" href="notice.html"><span>04 · 정책국 소식</span><strong>공지사항</strong><small>정책국 활동과 중요한 안내를 빠르게 확인합니다.</small></a>
-          ${canWrite ? '<a class="leader-home-action" href="content-manager.html"><span>05 · 콘텐츠 운영</span><strong>콘텐츠 작성</strong><small>공지사항과 카드뉴스 그리고 정책 콘텐츠를 작성합니다.</small></a><a class="leader-home-action" href="glossary-manager.html"><span>06 · 정책 학습</span><strong>정책단어 작성</strong><small>정책단어를 등록하고 관리 권한자의 검토를 요청합니다.</small></a>' : ''}
-          ${canManage ? '<a class="leader-home-action" href="admin.html"><span>07 · 운영 권한</span><strong>관리센터</strong><small>가입 승인과 직책 그리고 기능 권한을 관리합니다.</small></a>' : ''}
-          ${isDirector ? '<a class="leader-home-action" href="site-manager.html"><span>08 · 공통 설정</span><strong>홈페이지 관리</strong><small>사이트 이름과 메뉴 그리고 공통 환영 팝업을 관리합니다.</small></a><a class="leader-home-action" href="page-editor.html?page=home"><span>09 · 페이지 운영</span><strong>페이지 편집기</strong><small>각 페이지의 문구·디자인·이미지·블록·팝업을 직접 추가하고 수정합니다.</small></a><a class="leader-home-action" href="operations-guide.html"><span>10 · 인계 안내</span><strong>홈페이지 운영 안내</strong><small>차기 정책국장이 알아야 할 사이트 운영 절차를 한눈에 확인합니다.</small></a>' : ''}
+          ${canWrite ? '<a class="leader-home-action" href="content-manager.html"><span>05 · 콘텐츠 운영</span><strong>콘텐츠 관리</strong><small>작성한 글과 승인 요청 그리고 게시 상태를 확인합니다.</small></a><a class="leader-home-action" href="activity-documents.html"><span>06 · 부서 운영</span><strong>사업자료</strong><small>정책1부·정책2부의 활동보고서와 사업계획 자료를 확인합니다.</small></a><a class="leader-home-action" href="glossary-manager.html"><span>07 · 정책 학습</span><strong>정책단어 작성</strong><small>정책단어를 등록하고 관리 권한자의 검토를 요청합니다.</small></a>' : ''}
+          ${canManage ? '<a class="leader-home-action" href="admin.html"><span>08 · 운영 권한</span><strong>관리센터</strong><small>가입 승인과 직책 그리고 기능 권한을 관리합니다.</small></a>' : ''}
+          ${isDirector ? '<a class="leader-home-action" href="site-manager.html"><span>09 · 공통 설정</span><strong>홈페이지 관리</strong><small>사이트 이름과 메뉴 그리고 공통 환영 팝업을 관리합니다.</small></a><a class="leader-home-action" href="page-editor.html?page=home"><span>10 · 페이지 운영</span><strong>페이지 편집기</strong><small>각 페이지의 문구·디자인·이미지·블록·팝업을 직접 추가하고 수정합니다.</small></a><a class="leader-home-action" href="operations-guide.html"><span>11 · 인계 안내</span><strong>홈페이지 운영 안내</strong><small>차기 정책국장이 알아야 할 사이트 운영 절차를 한눈에 확인합니다.</small></a>' : ''}
         </div>
       </div>
       <div class="member-layout">
@@ -70,7 +70,7 @@
           <div class="section-head portal-head"><div><span class="eyebrow">QUICK GUIDE</span><h2>리더 이용 안내</h2></div></div>
           <div class="succession-note">휴대폰에서는 화면 아래의 빠른 메뉴로 리더 홈과 일정 확인 그리고 익명 소통방을 바로 이동할 수 있습니다. 별도의 리더 홈을 거치지 않아도 됩니다.</div>
           <div class="portal-grid portal-grid-links">
-            <a class="portal-card" href="internal-schedule.html"><span>01</span><strong>일정 응답 등록</strong><small>본인 소속의 참여 불가능한 날짜와 사유를 등록합니다.</small></a>
+            <a class="portal-card" href="internal-schedule.html"><span>01</span><strong>일정 응답 등록</strong><small>본인 소속의 참여 불가한 날짜와 사유를 등록합니다.</small></a>
             <a class="portal-card" href="schedule.html"><span>02</span><strong>확정 일정 보기</strong><small>수석부장 또는 정책국장이 확정한 공개 일정을 확인합니다.</small></a>
             <a class="portal-card" href="news.html"><span>03</span><strong>간호·정책 뉴스</strong><small>공식자료와 기자 작성 기사를 함께 확인합니다.</small></a>
             <a class="portal-card" href="glossary.html"><span>04</span><strong>정책단어</strong><small>간호·보건의료 정책 핵심 용어를 검색합니다.</small></a>

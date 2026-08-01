@@ -21,7 +21,7 @@
     news:{label:'간호·정책 뉴스',eyebrow:'NEWS',title:'간호·정책 뉴스',description:'공식기관 자료와 기자가 작성한 최신 기사를 함께 확인합니다.'},
     schedule:{label:'정책국 일정',eyebrow:'SCHEDULE',title:'정책국 일정',description:'정책국과 정책1부·2부의 공개 일정을 확인합니다.'},
     dashboard:{label:'리더 홈',eyebrow:'LEADER HOME',title:'리더 홈',description:'승인된 리더를 위한 내부 기능입니다.'},
-    'internal-schedule':{label:'일정 확인',eyebrow:'SCHEDULE CHECK',title:'일정 확인',description:'참여가 불가능한 날짜와 사유를 등록하고 부서 일정을 조율합니다.'},
+    'internal-schedule':{label:'일정 확인',eyebrow:'SCHEDULE CHECK',title:'일정 확인',description:'참여가 불가한 날짜와 사유를 등록하고 부서 일정을 조율합니다.'},
     board:{label:'익명 소통',eyebrow:'ANONYMOUS BOARD',title:'익명 리더 소통방',description:'리더들이 자유롭게 의견과 아이디어를 나누는 공간입니다.'},
     quiz:{label:'정책 퀴즈',eyebrow:'POLICY QUIZ',title:'정책 퀴즈',description:'쉬움부터 어려움까지 무작위 정책 문제를 풀어봅니다.'},
     article:{label:'게시글 상세',eyebrow:'ARTICLE',title:'게시글',description:'정책국에서 게시한 내용을 확인합니다.'}

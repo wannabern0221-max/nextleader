@@ -9,6 +9,8 @@
   const submissionState = document.querySelector('#availabilitySubmissionState');
   const unavailableCount = document.querySelector('#unavailableCount');
   const possibleDaysCount = document.querySelector('#possibleDaysCount');
+  const myUnavailableList = document.querySelector('#myUnavailableList');
+  const availabilitySelectionSummary = document.querySelector('#availabilitySelectionSummary');
   const help = document.querySelector('#availabilityHelp');
   const message = document.querySelector('#availabilityMessage');
   const managerSummary = document.querySelector('#managerSummary');
@@ -32,6 +34,7 @@
     scope: 'policy_office',
     submitted: false,
     selections: new Map(),
+    persisted: new Set(),
     summary: [],
     confirmed: [],
     editingScheduleId: null,
@@ -128,9 +131,10 @@
   async function loadMonth() {
     monthTitle.textContent = `${state.month.getFullYear()}년 ${state.month.getMonth()+1}월`;
     state.selections = new Map();
+    state.persisted = new Set();
     state.submitted = false;
     state.summary = [];
-    help.textContent = '참여가 불가능한 날짜를 누르고 사유를 선택해 주세요. 선택하지 않은 날짜는 가능한 날로 집계됩니다.';
+    help.textContent = '참여가 불가한 날짜를 누르고 사유를 선택해 주세요. 기존 불가일은 유지되며 새로운 날짜를 추가할 수 있습니다.';
     submitButton.disabled = true;
 
     const ownPromise = isOwnScope(state.scope)
@@ -148,9 +152,11 @@
 
     const ownData = ownResult.data || { submitted:false, selections:[] };
     state.submitted = Boolean(ownData.submitted);
-    (ownData.selections || []).forEach(item => state.selections.set(String(item.date), {
-      reason_code:item.reason_code || 'personal', reason_label:item.reason_label || reasonLabel(item.reason_code), reason_detail:item.reason_detail || ''
-    }));
+    (ownData.selections || []).forEach(item => {
+      const date=String(item.date);
+      state.selections.set(date,{reason_code:item.reason_code || 'personal',reason_label:item.reason_label || reasonLabel(item.reason_code),reason_detail:item.reason_detail || ''});
+      state.persisted.add(date);
+    });
     state.summary = summaryResult.data || [];
     state.confirmed = scheduleResult.data || [];
 
@@ -163,6 +169,8 @@
 
   function renderSubmissionState(ownData) {
     const own = isOwnScope(state.scope);
+    availabilitySelectionSummary.hidden=!own;
+    myUnavailableList.hidden=!own;
     if (!own) {
       submissionState.className = 'submission-state';
       submissionState.textContent = canView(state.scope) ? `${scopeLabel(state.scope)} 참여 현황 조회 화면입니다.` : (state.context?.scope_message || '소속 확인이 필요합니다.');
@@ -173,48 +181,41 @@
     if (state.submitted) {
       const submittedAt = ownData.submitted_at ? new Date(ownData.submitted_at).toLocaleString('ko-KR') : '';
       submissionState.className = 'submission-state locked';
-      submissionState.textContent = `제출 완료${submittedAt ? ` · ${submittedAt}` : ''}. 변경이 필요하면 소속 수석부장이나 정책총괄부장에게 요청해 주세요.`;
-      submitButton.disabled = true;
-      submitButton.textContent = '제출 완료';
-      help.textContent = '제출이 완료되어 달력이 잠겼습니다. 표시된 날짜가 참여 불가능한 날입니다.';
+      submissionState.textContent = `기존 제출 완료${submittedAt ? ` · ${submittedAt}` : ''}. 새로운 불가일은 추가할 수 있으며 기존 불가일 삭제는 소속 수석부장이나 정책총괄부장에게 요청해 주세요.`;
+      submitButton.textContent = '추가 불가일 제출';
+      help.textContent = '새롭게 불가해진 날짜를 눌러 추가할 수 있습니다. 이미 제출한 날짜는 본인이 삭제할 수 없습니다.';
     } else {
       submissionState.className = 'submission-state';
-      submissionState.textContent = '아직 이 달의 참여 불가능 날짜를 제출하지 않았습니다.';
-      submitButton.disabled = false;
-      submitButton.textContent = '불가능한 날짜 제출';
+      submissionState.textContent = '아직 이 달의 불가일을 제출하지 않았습니다.';
+      submitButton.textContent = '불가일 제출';
     }
+    submitButton.disabled = true;
   }
 
   function renderCalendar() {
-    const year = state.month.getFullYear();
-    const month = state.month.getMonth();
-    const firstDay = new Date(year, month, 1).getDay();
-    const daysInMonth = new Date(year, month+1, 0).getDate();
-    const summaryByDate = new Map(state.summary.map(row => [String(row.schedule_date), row]));
-    const maxAvailable = Math.max(0, ...state.summary.map(row => Number(row.available_count || 0)));
-    const cells = [];
-
-    for (let index=0; index<firstDay; index++) cells.push('<span class="availability-day blank" aria-hidden="true"></span>');
-    for (let day=1; day<=daysInMonth; day++) {
-      const date = `${year}-${pad(month+1)}-${pad(day)}`;
-      const selection = state.selections.get(date);
-      const summary = summaryByDate.get(date);
-      const recommended = canView(state.scope) && maxAvailable > 0 && Number(summary?.available_count || 0) === maxAvailable;
-      const counts = summary && canView(state.scope)
-        ? `<span class="manager-count">가능 ${summary.available_count} · 불가 ${summary.unavailable_count}<br>제출 ${summary.submission_count}명</span>`
-        : '';
-      cells.push(`<button type="button" class="availability-day ${selection ? 'unavailable' : ''} ${state.submitted ? 'locked' : ''} ${recommended ? 'recommended' : ''}" data-date="${date}" aria-label="${day}일 ${selection ? `참여 불가능 ${selection.reason_label}` : '선택 없음'}"><span class="day-number">${day}</span>${counts}${selection ? `<span class="day-status">안 됨</span><small class="day-reason">${escapeHtml(selection.reason_label)}</small>` : ''}</button>`);
+    const year=state.month.getFullYear(),month=state.month.getMonth();
+    const firstDay=new Date(year,month,1).getDay(),daysInMonth=new Date(year,month+1,0).getDate();
+    const summaryByDate=new Map(state.summary.map(row=>[String(row.schedule_date),row]));
+    const cells=[];
+    for(let i=0;i<firstDay;i++)cells.push('<span class="availability-day blank" aria-hidden="true"></span>');
+    for(let day=1;day<=daysInMonth;day++){
+      const date=`${year}-${pad(month+1)}-${pad(day)}`;
+      const selection=state.selections.get(date);
+      const summary=summaryByDate.get(date);
+      const managerCount=canManage(state.scope)&&Number(summary?.unavailable_count||0)>0?`<span class="manager-count">불가 ${summary.unavailable_count}명</span>`:'';
+      const persisted=state.persisted.has(date);
+      cells.push(`<button type="button" class="availability-day ${selection?'unavailable':''} ${persisted?'persisted':''}" data-date="${date}" aria-label="${day}일 ${selection?`불가 ${selection.reason_label}`:'선택 없음'}"><span class="day-number">${day}</span>${managerCount}${selection?`<span class="day-status">불가</span><small class="day-reason">${escapeHtml(selection.reason_label)}</small>`:''}</button>`);
     }
-
-    calendar.innerHTML = `<div class="availability-weekdays">${['일','월','화','수','목','금','토'].map(day => `<span>${day}</span>`).join('')}</div><div class="availability-days">${cells.join('')}</div>`;
-    calendar.querySelectorAll('[data-date]').forEach(button => button.addEventListener('click', () => onDateClick(button.dataset.date)));
+    calendar.innerHTML=`<div class="availability-weekdays">${['일','월','화','수','목','금','토'].map(d=>`<span>${d}</span>`).join('')}</div><div class="availability-days">${cells.join('')}</div>`;
+    calendar.querySelectorAll('[data-date]').forEach(button=>button.addEventListener('click',()=>onDateClick(button.dataset.date)));
   }
 
   async function onDateClick(date) {
-    if (isOwnScope(state.scope) && !state.submitted) {
-      openReasonSheet(date);
+    if(isOwnScope(state.scope)){
+      if(state.persisted.has(date)){show('이미 제출한 불가일입니다. 삭제가 필요하면 소속 수석부장이나 정책총괄부장에게 요청해 주세요.','warning');}
+      else openReasonSheet(date);
     }
-    if (canView(state.scope)) await loadDetails(date);
+    if(canManage(state.scope))await loadDetails(date);
   }
 
   function openReasonSheet(date,managerEdit=null) {
@@ -225,8 +226,9 @@
     reasonDetail.value=existing.reason_detail||'';
     reasonSheetDate.textContent=new Date(`${date}T00:00:00`).toLocaleDateString('ko-KR',{year:'numeric',month:'long',day:'numeric',weekday:'long'});
     reasonOptions.querySelectorAll('[data-reason]').forEach(item=>item.classList.toggle('active',item.dataset.reason===state.reasonCode));
-    removeReason.hidden=managerEdit ? managerEdit.status!=='unavailable' : !state.selections.has(date);
-    saveReason.textContent=managerEdit?'불가능 상태로 변경':'이날 안 됨으로 표시';
+    removeReason.hidden=managerEdit ? managerEdit.status!=='unavailable' : (!state.selections.has(date) || state.persisted.has(date));
+    removeReason.textContent=managerEdit?'불가일 삭제':'선택 해제';
+    saveReason.textContent=managerEdit?'불가 사유 저장':'불가로 표시';
     reasonSheet.hidden=false;
     document.body.classList.add('reason-sheet-open');
   }
@@ -257,58 +259,59 @@
       if(error)return show(error.message,'error');
       closeReasonSheet();show('리더의 상태를 가능한 날로 변경했습니다.','success');await loadMonth();await loadDetails(target.date);return;
     }
+    if(state.persisted.has(state.reasonTarget)){closeReasonSheet();return show('기존에 제출한 불가일은 직접 삭제할 수 없습니다. 소속 수석부장이나 정책총괄부장에게 요청해 주세요.','warning');}
     state.selections.delete(state.reasonTarget);closeReasonSheet();renderCalendar();renderCounts();
   }
 
   function renderCounts() {
-    const daysInMonth = new Date(state.month.getFullYear(), state.month.getMonth()+1, 0).getDate();
-    unavailableCount.textContent = state.selections.size;
-    possibleDaysCount.textContent = Math.max(daysInMonth - state.selections.size, 0);
+    const daysInMonth=new Date(state.month.getFullYear(),state.month.getMonth()+1,0).getDate();
+    unavailableCount.textContent=state.selections.size;
+    possibleDaysCount.textContent=Math.max(daysInMonth-state.selections.size,0);
+    const items=[...state.selections.entries()].sort((a,b)=>a[0].localeCompare(b[0]));
+    myUnavailableList.innerHTML=items.length?items.map(([date,value])=>{const d=new Date(`${date}T00:00:00`);return `<div class="my-unavailable-item"><strong>${d.getMonth()+1}월 ${d.getDate()}일</strong><span>${escapeHtml(value.reason_label)}${state.persisted.has(date)?' · 제출됨':' · 추가 예정'}</span></div>`;}).join(''):'<div class="empty-state">등록한 불가일이 없습니다.</div>';
+    const newCount=[...state.selections.keys()].filter(date=>!state.persisted.has(date)).length;
+    submitButton.disabled=!isOwnScope(state.scope)||newCount===0;
   }
 
   async function submitUnavailableDays() {
-    if (state.submitted || !isOwnScope(state.scope)) {
-      show(state.context?.scope_message || '본인 소속의 일정 응답만 제출할 수 있습니다.', 'warning');
-      return;
-    }
-    const count = state.selections.size;
-    if (!confirm(`${state.month.getFullYear()}년 ${state.month.getMonth()+1}월 참여 불가능 날짜 ${count}개를 제출하시겠습니까?\n\n선택하지 않은 날짜는 가능한 날로 집계됩니다. 제출 후 본인이 직접 수정하거나 삭제할 수 없습니다.`)) return;
-    submitButton.disabled = true;
-    const selections = [...state.selections.entries()].map(([date,value]) => ({ date, reason_code:value.reason_code, reason_detail:value.reason_detail || null }));
-    const { error } = await client.rpc('submit_unavailable_month_v2', { p_scope:state.scope, p_month_start:monthStart(), p_selections:selections });
-    if (error) { submitButton.disabled = false; return show(error.message, 'error'); }
-    show('불가능한 날짜와 사유를 제출했습니다. 수정 또는 삭제가 필요하면 소속 수석부장이나 정책총괄부장에게 요청해 주세요.', 'success');
+    if(!isOwnScope(state.scope)){show(state.context?.scope_message||'본인 소속의 불가일만 제출할 수 있습니다.','warning');return;}
+    const additions=[...state.selections.entries()].filter(([date])=>!state.persisted.has(date));
+    if(!additions.length)return show('새로 추가할 불가일을 선택해 주세요.','warning');
+    if(!confirm(`${state.month.getFullYear()}년 ${state.month.getMonth()+1}월 불가일 ${additions.length}개를 추가 제출하시겠습니까?
+
+기존에 제출한 불가일은 유지됩니다.`))return;
+    submitButton.disabled=true;
+    const selections=additions.map(([date,value])=>({date,reason_code:value.reason_code,reason_detail:value.reason_detail||null}));
+    const{error}=await client.rpc('submit_unavailable_month_v2',{p_scope:state.scope,p_month_start:monthStart(),p_selections:selections});
+    if(error){submitButton.disabled=false;return show(error.message,'error');}
+    show('불가일을 추가했습니다. 삭제가 필요하면 소속 수석부장이나 정책총괄부장에게 요청해 주세요.','success');
     await loadMonth();
   }
 
   function renderManagerSummary() {
-    managerSummary.hidden = !canView(state.scope);
-    if (!canView(state.scope)) return;
-    const ranked = [...state.summary].filter(row => Number(row.submission_count || 0) > 0).sort((a,b) => Number(b.available_count || 0) - Number(a.available_count || 0)).slice(0,7);
-    if (!ranked.length) { recommendList.innerHTML = '<div class="empty-state">아직 제출한 리더가 없습니다.</div>'; return; }
-    recommendList.innerHTML = ranked.map(row => {
-      const date = new Date(`${row.schedule_date}T00:00:00`);
-      return `<button type="button" class="recommend-item" data-detail-date="${row.schedule_date}"><strong>${date.getMonth()+1}/${date.getDate()}</strong><span>가능 ${row.available_count}명 · 불가 ${row.unavailable_count}명</span><b>${row.submission_count}명 제출</b></button>`;
-    }).join('');
-    recommendList.querySelectorAll('[data-detail-date]').forEach(button => button.addEventListener('click', () => loadDetails(button.dataset.detailDate)));
+    managerSummary.hidden=!canManage(state.scope);
+    if(!canManage(state.scope))return;
+    const rows=[...state.summary].filter(row=>Number(row.unavailable_count||0)>0).sort((a,b)=>String(a.schedule_date).localeCompare(String(b.schedule_date)));
+    if(!rows.length){recommendList.innerHTML='<div class="empty-state">이 달에 등록된 불가일이 없습니다.</div>';detail.innerHTML='';return;}
+    recommendList.innerHTML=rows.map(row=>{const d=new Date(`${row.schedule_date}T00:00:00`);return `<button type="button" class="recommend-item" data-detail-date="${row.schedule_date}"><strong>${d.getMonth()+1}/${d.getDate()}</strong><span>불가를 선택한 리더</span><b>${row.unavailable_count}명</b></button>`;}).join('');
+    recommendList.querySelectorAll('[data-detail-date]').forEach(button=>button.addEventListener('click',()=>loadDetails(button.dataset.detailDate)));
   }
 
   async function loadDetails(date) {
-    detail.innerHTML = '<div class="loading-state">리더별 일정 응답을 불러오고 있습니다.</div>';
+    detail.innerHTML = '<div class="loading-state">불가일 등록 리더를 불러오고 있습니다.</div>';
     const { data, error } = await client.rpc('list_unavailable_details_v2', { p_scope:state.scope, p_schedule_date:date });
     if (error) { detail.innerHTML = `<div class="auth-message show error">${escapeHtml(error.message)}</div>`; return; }
     const rows = data || [];
     const label = new Date(`${date}T00:00:00`).toLocaleDateString('ko-KR',{month:'long',day:'numeric',weekday:'short'});
     detail.innerHTML = `<h3>${label}</h3>${rows.length ? `<div class="availability-detail-list">${rows.map(row => {
       const position=row.leader_position_title||'리더';
-      const status=row.status==='unavailable';
-      return `<div class="availability-person ${status?'is-unavailable':''}"><div><strong>${escapeHtml(row.leader_name)} ${escapeHtml(position)}</strong><small>${status?escapeHtml(row.reason_label||'개인 일정'):'참여 가능'}${row.reason_detail?` · ${escapeHtml(row.reason_detail)}`:''}</small></div>${canManage(state.scope)?`<div class="availability-person-actions"><button type="button" data-manage-unavailable data-user-id="${row.leader_id}" data-date="${date}" data-status="${row.status}" data-reason="${escapeHtml(row.reason_code||'personal')}" data-reason-detail="${escapeHtml(encodeURIComponent(row.reason_detail||''))}">${status?'사유 수정':'안 됨으로 변경'}</button>${status?`<button type="button" data-manage-available data-user-id="${row.leader_id}" data-date="${date}">가능으로 변경</button>`:''}</div>`:`<span class="status-chip ${status?'unavailable':'available'}">${status?'안 됨':'가능'}</span>`}</div>`;
+      return `<div class="availability-person is-unavailable"><div><strong>${escapeHtml(row.leader_name)} ${escapeHtml(position)}</strong><small>${escapeHtml(row.reason_label||'개인 일정')}${row.reason_detail?` · ${escapeHtml(row.reason_detail)}`:''}</small></div><div class="availability-person-actions"><button type="button" data-manage-unavailable data-user-id="${row.leader_id}" data-date="${date}" data-status="unavailable" data-reason="${escapeHtml(row.reason_code||'personal')}" data-reason-detail="${escapeHtml(encodeURIComponent(row.reason_detail||''))}">사유 수정</button><button type="button" data-manage-available data-user-id="${row.leader_id}" data-date="${date}">불가일 삭제</button></div></div>`;
     }).join('')}</div>` : '<div class="empty-state">이 달에 제출한 리더가 없습니다.</div>'}`;
     detail.querySelectorAll('[data-manage-unavailable]').forEach(button=>button.addEventListener('click',()=>openReasonSheet(date,{userId:button.dataset.userId,date,status:button.dataset.status,selection:{reason_code:button.dataset.reason,reason_detail:decodeURIComponent(button.dataset.reasonDetail||'')}})));
     detail.querySelectorAll('[data-manage-available]').forEach(button=>button.addEventListener('click',async()=>{
-      if(!confirm('이 리더의 해당 날짜를 가능한 날로 변경할까요?'))return;
+      if(!confirm('이 리더의 해당 불가일을 삭제할까요?'))return;
       const {error:updateError}=await client.rpc('manager_set_unavailable_day_v3',{p_target_user_id:button.dataset.userId,p_scope:state.scope,p_schedule_date:date,p_status:'available',p_reason_code:'personal',p_reason_detail:null});
-      if(updateError)return show(updateError.message,'error');show('가능한 날로 변경했습니다.','success');await loadMonth();await loadDetails(date);
+      if(updateError)return show(updateError.message,'error');show('불가일을 삭제했습니다.','success');await loadMonth();await loadDetails(date);
     }));
   }
 

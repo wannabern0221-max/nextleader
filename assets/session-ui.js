@@ -78,9 +78,10 @@
       if (target === 'internal-schedule') return page === 'internal-schedule';
       if (target === 'board') return page === 'board';
       if (target === 'quiz') return page === 'quiz';
-      if (target === 'content-manager') return page === 'content-manager';
+      if (target === 'content-manager') return page === 'content-manager' || page === 'content-editor';
+      if (target === 'activity-documents') return page === 'activity-documents';
       if (target === 'glossary-manager') return page === 'glossary-manager';
-      if (target === 'admin') return page === 'admin' || page === 'content-manager' || page === 'site-manager';
+      if (target === 'admin') return page === 'admin';
       return false;
     };
 
@@ -89,7 +90,8 @@
       ['internal-schedule.html','internal-schedule',(window.KNA_SITE_SETTINGS?.leader_menu?.schedule||'일정 확인')],
       ['board.html','board',(window.KNA_SITE_SETTINGS?.leader_menu?.board||'익명 소통')],
       ['quiz.html','quiz',(window.KNA_SITE_SETTINGS?.leader_menu?.quiz||'정책 퀴즈')],
-      ['content-manager.html','content-manager','콘텐츠 작성'],
+      ['content-manager.html','content-manager','콘텐츠 관리'],
+      ['activity-documents.html','activity-documents','사업자료'],
       ['glossary-manager.html','glossary-manager','정책단어 관리']
     ];
 

@@ -1,26 +1,15 @@
 (async()=>{
-  const id=new URLSearchParams(location.search).get('id');
-  if(!id||!window.SUPABASE_CONFIG_READY||!window.knaSupabase)return;
-  const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
-  const formatBody=value=>{
-    const lines=String(value||'').replace(/\r/g,'').split('\n');
-    const html=[]; let list=[];
-    const flush=()=>{if(list.length){html.push(`<ul>${list.map(item=>`<li>${esc(item)}</li>`).join('')}</ul>`);list=[];}};
-    lines.forEach(raw=>{
-      const line=raw.trim();
-      if(!line){flush();return;}
-      if(line.startsWith('## ')){flush();html.push(`<h2>${esc(line.slice(3))}</h2>`);return;}
-      if(line.startsWith('- ')){list.push(line.slice(2));return;}
-      flush();html.push(`<p>${esc(line)}</p>`);
-    });
-    flush(); return html.join('');
-  };
-  const{data,error}=await window.knaSupabase.from('content_posts').select('title,category,body,published_at').eq('id',id).eq('status','published').maybeSingle();
-  if(error||!data)return;
-  const labels={notice:'공지사항',card:'카드뉴스',policy:'정책 콘텐츠'};
-  document.title=`${data.title} | 대한간호학생회 부산 정책국`;
-  document.querySelector('#articleTitle').textContent=data.title;
-  document.querySelector('#articleCategory').textContent=labels[data.category]||'게시물';
-  document.querySelector('#articleDate').textContent=data.published_at?new Date(data.published_at).toLocaleDateString('ko-KR'):'';
-  document.querySelector('#articleBody').innerHTML=formatBody(data.body);
+  const params=new URLSearchParams(location.search),id=params.get('id'),slug=params.get('slug');
+  const client=window.knaSupabase;
+  const esc=v=>String(v??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+  const normalize=v=>String(v||'').replace(/\\n/g,'\n').replace(/\r/g,'');
+  const sanitizeHtml=html=>{const doc=new DOMParser().parseFromString(`<div>${html}</div>`,'text/html');const allowed=new Set(['DIV','P','BR','H2','H3','STRONG','B','EM','I','U','S','UL','OL','LI','BLOCKQUOTE','A','IMG','HR','TABLE','THEAD','TBODY','TR','TH','TD','SPAN']);[...doc.body.querySelectorAll('*')].forEach(el=>{if(!allowed.has(el.tagName)){el.replaceWith(...el.childNodes);return;}[...el.attributes].forEach(a=>{const n=a.name.toLowerCase();if(el.tagName==='A'&&n==='href'){if(!/^(https?:|mailto:|#)/i.test(a.value))el.removeAttribute(a.name);else{el.setAttribute('target','_blank');el.setAttribute('rel','noopener');}return;}if(el.tagName==='IMG'&&['src','alt'].includes(n)){if(n==='src'&&!/^https?:/i.test(a.value))el.removeAttribute(a.name);return;}if(n==='style'){const align=(a.value.match(/text-align\s*:\s*(left|center|right)/i)||[])[1];if(align)el.setAttribute('style',`text-align:${align}`);else el.removeAttribute('style');return;}el.removeAttribute(a.name);});});return doc.body.firstElementChild.innerHTML;};
+  const formatPlain=value=>{const lines=normalize(value).split('\n');const html=[];let list=[];const flush=()=>{if(list.length){html.push(`<ul>${list.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`);list=[];}};for(const raw of lines){const line=raw.trim();if(!line){flush();continue;}if(line.startsWith('## ')){flush();html.push(`<h2>${esc(line.slice(3))}</h2>`);continue;}if(line.startsWith('### ')){flush();html.push(`<h3>${esc(line.slice(4))}</h3>`);continue;}if(line.startsWith('- ')){list.push(line.slice(2));continue;}flush();html.push(`<p>${esc(line)}</p>`);}flush();return html.join('');};
+  const labels={notice:'공지사항',card:'카드뉴스',policy:'정책 콘텐츠',activity_report:'활동보고서',business_plan:'사업계획서',project_plan:'사업계획'};
+  const render=data=>{document.title=`${data.title} | 대한간호학생회 부산 정책국`;document.querySelector('#articleTitle').textContent=data.title;document.querySelector('#articleCategory').textContent=labels[data.category]||data.category||'게시물';document.querySelector('#articleDate').textContent=data.published_at?new Date(data.published_at).toLocaleDateString('ko-KR'):data.date||'';const target=document.querySelector('#articleBody');target.classList.add('rich-content');target.innerHTML=data.body_format==='html'?sanitizeHtml(data.body||''):formatPlain(data.body||'');};
+  const showMissing=()=>{document.querySelector('#articleTitle').textContent='게시물을 찾을 수 없습니다';document.querySelector('#articleBody').innerHTML='<p>주소가 잘못되었거나 게시물이 이동되었습니다.</p>';};
+  if(id&&window.SUPABASE_CONFIG_READY&&client){const{data,error}=await client.from('content_posts').select('title,category,body,body_format,published_at,status').eq('id',id).maybeSingle();if(!error&&data&&data.status==='published'){render(data);return;}}
+  if(slug&&window.SUPABASE_CONFIG_READY&&client){const{data,error}=await client.from('content_posts').select('title,category,body,body_format,published_at,status').eq('seed_key',slug).maybeSingle();if(!error&&data&&data.status==='published'){render(data);return;}}
+  if(slug&&window.KNA_CONTENT?.[slug]){const item=window.KNA_CONTENT[slug];render({title:item.title,category:item.category,body:item.body,body_format:'html',date:item.date});return;}
+  showMissing();
 })();
