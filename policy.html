@@ -16,28 +16,26 @@
     <span>대한간호학생회 부산 · 정책국</span>
     <div class="utility-actions">
       <button type="button" data-open-alert>알림</button>
-      <a href="login.html">관계자 로그인</a>
+      <div class="session-shell" data-session-shell>
+        <a class="session-trigger" data-session-trigger href="login.html" aria-expanded="false">로그인</a>
+        <div class="session-popover" data-session-popover hidden>
+          <div class="session-summary" data-session-summary><strong>로그인 정보</strong><span>상태 확인 중</span></div>
+          <a href="dashboard.html">내부포털</a>
+          <button type="button" data-session-logout>로그아웃</button>
+        </div>
+      </div>
+      <a class="utility-portal" data-portal-link href="dashboard.html">내부포털</a>
     </div>
   </div>
 </div>
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html">
-      <img src="assets/brand-mark.png" alt="대한간호학생회 부산 로고">
-      <span>
-        <strong>대한간호학생회 부산</strong>
-        <span>정책국 공식 홈페이지</span>
-      </span>
+      <img src="assets/emblem.png" alt="대한간호학생회 부산 로고">
+      <span><strong>대한간호학생회 부산</strong><span>정책국 공식 홈페이지</span></span>
     </a>
     <button class="menu-button" aria-label="메뉴 열기">☰</button>
-    <nav class="nav" aria-label="주요 메뉴">
-      <a href="about.html" class="">정책국 소개</a>
-      <a href="notice.html" class="">공지사항</a>
-      <a href="cards.html" class="">카드뉴스</a>
-      <a href="policy.html" class="active">정책 콘텐츠</a>
-      <a href="schedule.html" class="">일정</a>
-      <a class="header-login " href="login.html">로그인</a>
-    </nav>
+    <nav class="nav" aria-label="주요 메뉴"><a href="about.html" class="">정책국 소개</a><a href="notice.html" class="">공지사항</a><a href="cards.html" class="">카드뉴스</a><a href="policy.html" class="active">정책 콘텐츠</a><a href="news.html" class="">간호·정책 뉴스</a><a href="schedule.html" class="">일정</a></nav>
   </div>
 </header>
 
@@ -54,8 +52,10 @@
       <div class="policy-layout">
         <div class="policy-card">
           <h3>정책 뉴스</h3>
-          <a class="policy-link-anchor" href="article.html?slug=policy-daily-news"><strong>매일 업데이트되는 정책 뉴스</strong><span>준비중</span></a>
-          <a class="policy-link-anchor" href="article.html?slug=policy-briefing"><strong>간호 관련 주요 정책 브리핑</strong><span>예시</span></a>
+          <div data-dynamic-content="policy">
+            <a class="policy-link-anchor" href="news.html"><strong>간호·정책 뉴스 바로가기</strong><span>자동 갱신</span></a>
+            <a class="policy-link-anchor" href="article.html?slug=policy-briefing"><strong>간호 관련 주요 정책 브리핑</strong><span>예시</span></a>
+          </div>
         </div>
         <div class="policy-card">
           <h3>오늘의 정책 학습</h3>
@@ -70,7 +70,7 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <img src="assets/brand-mark.png" alt="대한간호학생회 부산 로고">
+      <img src="assets/emblem.png" alt="대한간호학생회 부산 로고">
       <div>
         <strong>대한간호학생회 부산</strong>
         <span>정책국 공식 홈페이지</span>
@@ -96,6 +96,12 @@
   </div>
 </div>
 <div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="assets/supabase-client.js"></script>
+<script src="assets/access.js"></script>
+<script src="assets/session-ui.js"></script>
+<script src="assets/public-content.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

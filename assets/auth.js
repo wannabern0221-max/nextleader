@@ -11,7 +11,7 @@
 
   if (!window.SUPABASE_CONFIG_READY || !client) {
     configWarning?.classList.add('show');
-    showMessage('Supabase 연결정보를 먼저 입력해야 회원가입과 로그인을 사용할 수 있습니다.', 'warning');
+    showMessage('리더 서비스 연결 설정이 완료되지 않았습니다. 홈페이지 관리자에게 문의해 주세요.', 'warning');
     document.querySelectorAll('form[data-auth-form] button[type="submit"]').forEach(btn => btn.disabled = true);
     return;
   }
@@ -53,7 +53,7 @@
     const submit = signupForm.querySelector('button[type="submit"]');
     submit.disabled = true;
     submit.textContent = '신청 중...';
-    showMessage('회원가입 신청을 처리하고 있습니다.', 'info');
+    showMessage('가입 신청을 처리하고 있습니다.', 'info');
 
     try {
       const email = String(form.get('email') || '').trim();
@@ -132,7 +132,7 @@
   resendButton?.addEventListener('click', async () => {
     const email = document.querySelector('#signupEmail')?.value.trim();
     if (!email) {
-      showMessage('회원가입에 사용한 이메일을 입력해 주세요.', 'warning');
+      showMessage('가입 신청에 사용한 이메일을 입력해 주세요.', 'warning');
       activateTab('signup');
       return;
     }

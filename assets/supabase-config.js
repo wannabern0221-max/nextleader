@@ -9,6 +9,6 @@
   - Resend API Key
 */
 window.SUPABASE_CONFIG = Object.freeze({
-  url: "https://dsyufrexxrmqjfvonlfg.supabase.co",
-  publishableKey: "sb_publishable_36WOrx2ONEcb6rCaXM9EAw_TAgqtHmq"
+  url: "PASTE_YOUR_PROJECT_URL_HERE",
+  publishableKey: "PASTE_YOUR_PUBLISHABLE_KEY_HERE"
 });

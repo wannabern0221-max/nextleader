@@ -1,291 +1,39 @@
 (async () => {
-  const client = window.knaSupabase;
-  const pendingBody = document.querySelector('#pendingTableBody');
-  const memberBody = document.querySelector('#memberTableBody');
-  const memberSection = document.querySelector('#memberManagementSection');
-  const message = document.querySelector('#adminMessage');
-  const adminIdentity = document.querySelector('#adminIdentity');
-
-  const showMessage = (text, type = 'info') => {
-    if (!message) return;
-    message.className = `auth-message show ${type}`;
-    message.textContent = text;
+  const client=window.knaSupabase;
+  const root=document.querySelector('#adminRoot');
+  const pendingBody=document.querySelector('#pendingTableBody');
+  const memberBody=document.querySelector('#memberTableBody');
+  const message=document.querySelector('#adminMessage');
+  const identity=document.querySelector('#adminIdentity');
+  let access, rows=[];
+  const show=(text,type='info')=>{message.className=`auth-message show ${type}`;message.textContent=text;};
+  const escapeHtml=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+  const roleLabels=window.KNA_ACCESS.roleLabels;
+  const roles=['leader','section_manager','department_manager','policy_general_manager','senior_manager_div1','senior_manager_div2','policy_director','external_admin'];
+  const assignableRoles=()=>access?.system_role==='policy_director'?roles:['leader','section_manager','department_manager'];
+  const allPermissionCodes=['content_write_notice','content_write_card','content_write_policy','content_approve','news_manage','board_moderate','schedule_manage_common','schedule_manage_div1','schedule_manage_div2','system_manage'];
+  const grantablePermissions=()=>{
+    if(access.system_role==='policy_director')return allPermissionCodes;
+    if(access.system_role==='senior_manager_div1')return ['content_write_notice','content_write_card','content_write_policy','content_approve','news_manage','board_moderate','schedule_manage_div1'];
+    if(access.system_role==='senior_manager_div2')return ['content_write_notice','content_write_card','content_write_policy','content_approve','news_manage','board_moderate','schedule_manage_div2'];
+    if(access.system_role==='policy_general_manager')return ['content_write_notice','content_write_card','content_write_policy','content_approve','news_manage','board_moderate','schedule_manage_common'];
+    return ['content_write_notice','content_write_card','content_write_policy','content_approve','news_manage','board_moderate'];
   };
+  const has=code=>window.KNA_ACCESS.has(access,code);
 
-  if (!window.SUPABASE_CONFIG_READY || !client) {
-    showMessage('Supabase 연결정보가 입력되지 않았습니다.', 'error');
-    return;
-  }
+  if(!window.SUPABASE_CONFIG_READY||!client)return show('리더 서비스 연결 설정을 확인해 주세요.','error');
+  try{const{data:s}=await client.auth.getSession();if(!s.session)return location.replace('login.html');const{data,error}=await client.rpc('get_my_access');if(error)throw error;access=data;if(access?.approval_status!=='approved')return location.replace('dashboard.html');if(!['member_approve','role_manage','permission_grant','system_manage'].some(has)){root.innerHTML='<div class="admin-panel access-denied"><h2>접근 권한이 없습니다</h2><p>관리센터 권한이 있는 임원 또는 관리자만 이용할 수 있습니다.</p><a class="btn btn-primary" href="dashboard.html">내부포털로 돌아가기</a></div>';return;}identity.textContent=`${access.name}${access.system_role==='external_admin'?'':' 리더'} · ${access.position||window.KNA_ACCESS.labels.role(access.system_role)}`;await load();}catch(error){show(error.message||'관리센터를 불러오지 못했습니다.','error');}
+  document.querySelector('#refreshButton')?.addEventListener('click',load);
+  document.querySelector('#adminLogoutButton')?.addEventListener('click',async()=>{await client.auth.signOut();location.replace('index.html');});
 
-  const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, ch => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
-  })[ch]);
-
-  const roleLabels = Object.freeze({
-    member: '일반 부원',
-    staff: '담당자',
-    general_manager: '총괄부장',
-    senior_manager: '수석부장',
-    director: '국장'
-  });
-  const roleEntries = Object.entries(roleLabels);
-  let myProfile;
-
-  try {
-    const { data: sessionData, error: sessionError } = await client.auth.getSession();
-    if (sessionError) throw sessionError;
-    if (!sessionData.session) {
-      location.replace('login.html');
-      return;
-    }
-
-    const { data, error } = await client
-      .from('profiles')
-      .select('id,name,school,cohort,department,approval_status,position,system_role')
-      .eq('id', sessionData.session.user.id)
-      .single();
-    if (error) throw error;
-    myProfile = data;
-
-    if (myProfile.approval_status !== 'approved' || !['director', 'senior_manager'].includes(myProfile.system_role)) {
-      document.querySelector('#adminRoot').innerHTML = `
-        <div class="admin-panel access-denied">
-          <h2>접근 권한이 없습니다</h2>
-          <p>가입 승인 관리는 승인된 국장 또는 수석부장만 이용할 수 있습니다.</p>
-          <a class="btn btn-primary" href="dashboard.html">내부 포털로 돌아가기</a>
-        </div>`;
-      return;
-    }
-
-    adminIdentity.textContent = `${myProfile.name} · ${roleLabels[myProfile.system_role]}`;
-    if (myProfile.system_role === 'director') memberSection?.classList.remove('hidden');
-    await refreshAll();
-  } catch (error) {
-    console.error(error);
-    showMessage('관리자 정보를 불러오지 못했습니다.', 'error');
-  }
-
-  async function refreshAll() {
-    await loadPending();
-    if (myProfile?.system_role === 'director') await loadMembers();
-  }
-
-  async function loadPending() {
-    pendingBody.innerHTML = '<tr><td colspan="8" class="loading-state">승인 대기 목록을 불러오는 중입니다.</td></tr>';
-    const { data, error } = await client
-      .from('profiles')
-      .select('id,name,school,cohort,department,approval_status,position,system_role,created_at')
-      .eq('approval_status', 'pending')
-      .order('created_at', { ascending: true });
-    if (error) {
-      console.error(error);
-      showMessage('승인 대기 목록을 불러오지 못했습니다. SQL 보안 설정을 확인해 주세요.', 'error');
-      return;
-    }
-    renderPending(data || []);
-  }
-
-  function renderPending(rows) {
-    if (!rows.length) {
-      pendingBody.innerHTML = '<tr><td colspan="8" class="empty-state">현재 승인 대기 중인 신청자가 없습니다.</td></tr>';
-      return;
-    }
-
-    const allowedRoles = roleEntries.filter(([value]) =>
-      myProfile.system_role === 'director' || !['senior_manager', 'director'].includes(value)
-    );
-
-    pendingBody.innerHTML = rows.map(row => `
-      <tr data-user-id="${row.id}">
-        <td><strong>${escapeHtml(row.name)}</strong></td>
-        <td>${escapeHtml(row.school)}</td>
-        <td>${escapeHtml(row.cohort)}</td>
-        <td>${escapeHtml(row.department)}</td>
-        <td><input data-position maxlength="80" placeholder="예: 정책1부 부원"></td>
-        <td>
-          <select data-role>
-            ${allowedRoles.map(([value, label]) => `<option value="${value}">${label}</option>`).join('')}
-          </select>
-        </td>
-        <td>${formatDate(row.created_at)}</td>
-        <td>
-          <div class="action-group">
-            <button class="action-btn approve" data-approve type="button">승인</button>
-            <button class="action-btn reject" data-reject type="button">반려</button>
-          </div>
-        </td>
-      </tr>
-    `).join('');
-
-    pendingBody.querySelectorAll('[data-approve]').forEach(btn =>
-      btn.addEventListener('click', () => approveRow(btn.closest('tr')))
-    );
-    pendingBody.querySelectorAll('[data-reject]').forEach(btn =>
-      btn.addEventListener('click', () => rejectRow(btn.closest('tr')))
-    );
-  }
-
-  async function loadMembers() {
-    memberBody.innerHTML = '<tr><td colspan="7" class="loading-state">회원 목록을 불러오는 중입니다.</td></tr>';
-    const { data, error } = await client
-      .from('profiles')
-      .select('id,name,school,cohort,department,approval_status,position,system_role,approved_at')
-      .in('approval_status', ['approved', 'suspended'])
-      .order('name', { ascending: true });
-    if (error) {
-      console.error(error);
-      showMessage('승인 회원 목록을 불러오지 못했습니다. 최신 SQL을 다시 실행해 주세요.', 'error');
-      return;
-    }
-    renderMembers(data || []);
-  }
-
-  function renderMembers(rows) {
-    if (!rows.length) {
-      memberBody.innerHTML = '<tr><td colspan="7" class="empty-state">승인된 회원이 없습니다.</td></tr>';
-      return;
-    }
-
-    memberBody.innerHTML = rows.map(row => {
-      const isSelf = row.id === myProfile.id;
-      const suspended = row.approval_status === 'suspended';
-      return `
-        <tr data-user-id="${row.id}">
-          <td><strong>${escapeHtml(row.name)}</strong>${isSelf ? '<span class="self-badge">현재 계정</span>' : ''}</td>
-          <td>${escapeHtml(row.school)}<br><span class="table-subtext">${escapeHtml(row.cohort)} · ${escapeHtml(row.department)}</span></td>
-          <td><span class="status-pill ${row.approval_status}">${suspended ? '이용 중지' : '승인 완료'}</span></td>
-          <td><input data-member-position maxlength="80" value="${escapeHtml(row.position || '')}" ${isSelf || suspended ? 'disabled' : ''}></td>
-          <td>
-            <select data-member-role ${isSelf || suspended ? 'disabled' : ''}>
-              ${roleEntries.map(([value, label]) => `<option value="${value}" ${value === row.system_role ? 'selected' : ''}>${label}</option>`).join('')}
-            </select>
-          </td>
-          <td>${formatDate(row.approved_at)}</td>
-          <td>
-            ${isSelf
-              ? '<span class="table-subtext">본인 변경 불가</span>'
-              : suspended
-                ? '<button class="action-btn approve" data-reactivate type="button">이용 재개</button>'
-                : `<div class="action-group">
-                    <button class="action-btn save" data-save-role type="button">권한 저장</button>
-                    <button class="action-btn reject" data-suspend type="button">이용 중지</button>
-                  </div>`}
-          </td>
-        </tr>`;
-    }).join('');
-
-    memberBody.querySelectorAll('[data-save-role]').forEach(btn =>
-      btn.addEventListener('click', () => saveMemberRole(btn.closest('tr')))
-    );
-    memberBody.querySelectorAll('[data-suspend]').forEach(btn =>
-      btn.addEventListener('click', () => suspendMember(btn.closest('tr')))
-    );
-    memberBody.querySelectorAll('[data-reactivate]').forEach(btn =>
-      btn.addEventListener('click', () => reactivateMember(btn.closest('tr')))
-    );
-  }
-
-  async function approveRow(row) {
-    const userId = row.dataset.userId;
-    const role = row.querySelector('[data-role]').value;
-    const position = row.querySelector('[data-position]').value.trim() || null;
-    if (!confirm('이 가입 신청을 승인하시겠습니까?')) return;
-    toggleRowButtons(row, true);
-
-    const { error } = await client.rpc('approve_member', {
-      target_user_id: userId,
-      new_system_role: role,
-      new_position: position
-    });
-    if (error) {
-      console.error(error);
-      showMessage(error.message || '승인 처리에 실패했습니다.', 'error');
-      toggleRowButtons(row, false);
-      return;
-    }
-    showMessage('가입 신청을 승인했습니다.', 'success');
-    await refreshAll();
-  }
-
-  async function rejectRow(row) {
-    const userId = row.dataset.userId;
-    if (!confirm('이 가입 신청을 반려하시겠습니까?')) return;
-    toggleRowButtons(row, true);
-
-    const { error } = await client.rpc('reject_member', { target_user_id: userId });
-    if (error) {
-      console.error(error);
-      showMessage(error.message || '반려 처리에 실패했습니다.', 'error');
-      toggleRowButtons(row, false);
-      return;
-    }
-    showMessage('가입 신청을 반려했습니다.', 'success');
-    await loadPending();
-  }
-
-  async function saveMemberRole(row) {
-    const selectedRole = row.querySelector('[data-member-role]').value;
-    const position = row.querySelector('[data-member-position]').value.trim() || null;
-    const roleName = roleLabels[selectedRole];
-    if (!confirm(`이 회원의 시스템 권한을 '${roleName}'(으)로 저장하시겠습니까?`)) return;
-    toggleRowButtons(row, true);
-
-    const { error } = await client.rpc('change_member_role', {
-      target_user_id: row.dataset.userId,
-      new_system_role: selectedRole,
-      new_position: position
-    });
-    if (error) {
-      console.error(error);
-      showMessage(error.message || '회원 권한 변경에 실패했습니다.', 'error');
-      toggleRowButtons(row, false);
-      return;
-    }
-    showMessage('회원의 직책과 시스템 권한을 변경했습니다.', 'success');
-    await loadMembers();
-  }
-
-  async function suspendMember(row) {
-    if (!confirm('이 회원의 내부 포털 이용을 중지하시겠습니까?')) return;
-    toggleRowButtons(row, true);
-    const { error } = await client.rpc('suspend_member', { target_user_id: row.dataset.userId });
-    if (error) {
-      console.error(error);
-      showMessage(error.message || '회원 이용 중지에 실패했습니다.', 'error');
-      toggleRowButtons(row, false);
-      return;
-    }
-    showMessage('회원의 내부 포털 이용을 중지했습니다.', 'success');
-    await loadMembers();
-  }
-
-  async function reactivateMember(row) {
-    if (!confirm('이 회원의 내부 포털 이용을 다시 허용하시겠습니까?')) return;
-    toggleRowButtons(row, true);
-    const { error } = await client.rpc('reactivate_member', { target_user_id: row.dataset.userId });
-    if (error) {
-      console.error(error);
-      showMessage(error.message || '회원 이용 재개에 실패했습니다.', 'error');
-      toggleRowButtons(row, false);
-      return;
-    }
-    showMessage('회원의 내부 포털 이용을 다시 허용했습니다.', 'success');
-    await loadMembers();
-  }
-
-  function toggleRowButtons(row, disabled) {
-    row.querySelectorAll('button').forEach(btn => { btn.disabled = disabled; });
-  }
-
-  function formatDate(value) {
-    if (!value) return '-';
-    const date = new Date(value);
-    return Number.isNaN(date.getTime()) ? '-' : date.toLocaleDateString('ko-KR');
-  }
-
-  document.querySelector('#refreshButton')?.addEventListener('click', refreshAll);
-  document.querySelector('#adminLogoutButton')?.addEventListener('click', async () => {
-    await client.auth.signOut();
-    location.replace('login.html');
-  });
+  async function load(){const{data,error}=await client.rpc('list_manageable_leaders');if(error)return show(error.message,'error');rows=data||[];renderPending(rows.filter(r=>r.approval_status==='pending'));renderMembers(rows.filter(r=>r.approval_status!=='pending'));}
+  function roleOptions(selected,editable=true){const source=editable?assignableRoles():roles;return source.map(value=>`<option value="${value}" ${value===selected?'selected':''}>${roleLabels[value]}</option>`).join('');}
+  function deptOptions(selected){return ['정책국','정책1부','정책2부'].map(v=>`<option ${v===selected?'selected':''}>${v}</option>`).join('');}
+  function renderPending(data){if(!data.length){pendingBody.innerHTML='<tr><td colspan="8" class="empty-state">승인 대기 중인 신청자가 없습니다.</td></tr>';return;}pendingBody.innerHTML=data.map(r=>`<tr data-id="${r.id}"><td><strong>${escapeHtml(r.name)}</strong></td><td>${escapeHtml(r.school)}</td><td>${escapeHtml(r.cohort)}</td><td><select data-department>${deptOptions(r.department)}</select></td><td><input data-position placeholder="정확한 직책명"></td><td><select data-role>${roleOptions('leader')}</select></td><td>${new Date(r.created_at).toLocaleDateString('ko-KR')}</td><td><div class="action-group">${r.can_approve?'<button class="action-btn approve" data-approve>승인</button><button class="action-btn reject" data-reject>반려</button>':'<span class="table-subtext">처리 권한 없음</span>'}</div></td></tr>`).join('');pendingBody.querySelectorAll('[data-approve]').forEach(b=>b.addEventListener('click',()=>approve(b.closest('tr'))));pendingBody.querySelectorAll('[data-reject]').forEach(b=>b.addEventListener('click',()=>reject(b.closest('tr'))));}
+  function renderMembers(data){if(!data.length){memberBody.innerHTML='<tr><td colspan="7" class="empty-state">관리할 리더가 없습니다.</td></tr>';return;}memberBody.innerHTML=data.map(r=>{const explicit=new Set((r.permissions||[]).map(x=>x.code));return `<tr data-id="${r.id}"><td><strong>${escapeHtml(r.name)}</strong>${r.id===access.id?'<span class="self-badge">현재 계정</span>':''}<br><span class="table-subtext">${escapeHtml(r.school)} · ${escapeHtml(r.cohort)}</span></td><td><select data-member-department ${!r.can_edit_role?'disabled':''}>${deptOptions(r.department)}</select></td><td><input data-member-position value="${escapeHtml(r.position||'')}" ${!r.can_edit_role?'disabled':''}></td><td><select data-member-role ${!r.can_edit_role?'disabled':''}>${roleOptions(r.system_role,r.can_edit_role)}</select></td><td><span class="status-pill ${r.approval_status}">${r.approval_status==='approved'?'승인 완료':'이용 중지'}</span></td><td><details class="permission-details" ${!r.can_edit_permissions?'data-readonly':''}><summary>기능 권한</summary><div class="permission-grid">${grantablePermissions().map(code=>`<label><input type="checkbox" data-permission="${code}" ${explicit.has(code)?'checked':''} ${!r.can_edit_permissions?'disabled':''}>${window.KNA_ACCESS.labels.permission(code)}</label>`).join('')}</div>${r.can_edit_permissions?'<button class="action-btn save" data-save-permissions>권한 저장</button>':''}</details></td><td>${r.can_edit_role?`<div class="action-group"><button class="action-btn save" data-save-role>직책 저장</button>${r.approval_status==='approved'?'<button class="action-btn reject" data-suspend>이용 중지</button>':'<button class="action-btn approve" data-reactivate>이용 재개</button>'}</div>`:'<span class="table-subtext">변경 권한 없음</span>'}</td></tr>`;}).join('');memberBody.querySelectorAll('[data-save-role]').forEach(b=>b.addEventListener('click',()=>saveRole(b.closest('tr'))));memberBody.querySelectorAll('[data-save-permissions]').forEach(b=>b.addEventListener('click',()=>savePermissions(b.closest('tr'))));memberBody.querySelectorAll('[data-suspend]').forEach(b=>b.addEventListener('click',()=>statusCall('suspend_member',b.closest('tr'),'이용을 중지했습니다.')));memberBody.querySelectorAll('[data-reactivate]').forEach(b=>b.addEventListener('click',()=>statusCall('reactivate_member',b.closest('tr'),'이용을 재개했습니다.')));}
+  async function approve(tr){if(!confirm('가입 신청을 승인하시겠습니까?'))return;const args={p_target_user_id:tr.dataset.id,p_new_system_role:tr.querySelector('[data-role]').value,p_new_position:tr.querySelector('[data-position]').value,p_new_department:tr.querySelector('[data-department]').value};const{error}=await client.rpc('approve_leader',args);if(error)return show(error.message,'error');show('가입 신청을 승인했습니다.','success');await load();}
+  async function reject(tr){if(!confirm('가입 신청을 반려하시겠습니까?'))return;const{error}=await client.rpc('reject_member',{p_target_user_id:tr.dataset.id});if(error)return show(error.message,'error');show('가입 신청을 반려했습니다.','success');await load();}
+  async function saveRole(tr){const{error}=await client.rpc('update_leader_assignment',{p_target_user_id:tr.dataset.id,p_new_system_role:tr.querySelector('[data-member-role]').value,p_new_position:tr.querySelector('[data-member-position]').value,p_new_department:tr.querySelector('[data-member-department]').value});if(error)return show(error.message,'error');show('직책과 소속을 저장했습니다.','success');await load();}
+  async function savePermissions(tr){const items=[...tr.querySelectorAll('[data-permission]:checked')].map(input=>({code:input.dataset.permission,scope:'*'}));const{error}=await client.rpc('set_member_permissions',{p_target_user_id:tr.dataset.id,p_permission_items:items});if(error)return show(error.message,'error');show('기능 권한을 저장했습니다.','success');await load();}
+  async function statusCall(fn,tr,success){if(!confirm('계정 상태를 변경하시겠습니까?'))return;const{error}=await client.rpc(fn,{p_target_user_id:tr.dataset.id});if(error)return show(error.message,'error');show(success,'success');await load();}
 })();
