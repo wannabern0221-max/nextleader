@@ -10,11 +10,11 @@
   const show = (text, type = 'info') => { message.className = `auth-message show ${type}`; message.textContent = text; };
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
   const roleLabels = window.KNA_ACCESS.roleLabels;
-  const roles = ['president','political_vice_president','leader','section_manager','department_manager','policy_general_manager','senior_manager_div1','senior_manager_div2','policy_director','external_admin'];
+  const roles = ['president','political_vice_president','leader','team_leader','deputy_manager','section_manager','department_manager','policy_general_manager','senior_manager_div1','senior_manager_div2','policy_director','external_admin'];
   const allPermissionCodes = [...window.KNA_ACCESS.allPermissionCodes];
   const coreSecurity = new Set(window.KNA_ACCESS.coreSecurityPermissions);
   const operationalPermissions = allPermissionCodes.filter(code => !coreSecurity.has(code));
-  const assignableRoles = () => access?.system_role === 'policy_director' ? roles : ['leader','section_manager','department_manager'];
+  const assignableRoles = () => access?.system_role === 'policy_director' ? roles : ['leader','team_leader','deputy_manager','section_manager','department_manager'];
   const has = code => window.KNA_ACCESS.has(access, code);
   const defaultSet = role => window.KNA_ACCESS.defaultPermissions[role] || new Set();
 
@@ -80,6 +80,8 @@
     if (value.includes('정책2부') && value.includes('수석부장')) return 'senior_manager_div2';
     if (value.includes('총괄부장')) return 'policy_general_manager';
     if (value.includes('외부') && value.includes('관리자')) return 'external_admin';
+    if (value.includes('팀장')) return 'team_leader';
+    if (value.includes('차장')) return 'deputy_manager';
     if (value.includes('부장')) return 'department_manager';
     if (value.includes('과장')) return 'section_manager';
     return 'leader';

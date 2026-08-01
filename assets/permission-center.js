@@ -14,7 +14,7 @@
   const coreSecurity=new Set(window.KNA_ACCESS.coreSecurityPermissions);
   const base=window.KNA_ACCESS.defaultPermissions;
   const common=['리더 홈과 내부 콘텐츠 열람','정책국 공식 일정 열람·신규 등록','본인의 참여 불가일·사유 등록과 추가','공지·카드뉴스·정책 콘텐츠 초안 작성','익명 소통방과 정책 퀴즈·정책단어 이용'];
-  const roleOrder=['president','political_vice_president','policy_director','senior_manager_div1','senior_manager_div2','policy_general_manager','department_manager','section_manager','leader','external_admin'];
+  const roleOrder=['president','political_vice_president','policy_director','senior_manager_div1','senior_manager_div2','policy_general_manager','department_manager','deputy_manager','section_manager','team_leader','leader','external_admin'];
   const roleDescriptions={
     president:'회장 업무에 필요한 공지·콘텐츠·일정 운영 권한을 사용합니다.',
     political_vice_president:'정무부회장 업무에 필요한 공지·콘텐츠·일정 운영 권한을 사용합니다.',
@@ -23,7 +23,9 @@
     senior_manager_div2:'정책2부 회원·콘텐츠·일정과 불가일을 관리합니다.',
     policy_general_manager:'정책국 공통 콘텐츠·뉴스·일정과 부서 자료를 종합 관리합니다.',
     department_manager:'실무 콘텐츠를 작성하고 승인 요청하며 일정과 불가일을 등록합니다.',
+    deputy_manager:'리더 기본 권한으로 내부 자료를 열람하고 초안·일정·불가일을 등록합니다.',
     section_manager:'실무 콘텐츠를 작성하고 승인 요청하며 일정과 불가일을 등록합니다.',
+    team_leader:'리더 기본 권한으로 내부 자료를 열람하고 초안·일정·불가일을 등록합니다.',
     leader:'내부 자료를 열람하고 콘텐츠 초안·일정·불가일을 등록합니다.',
     external_admin:'기술·시스템 유지보수를 담당하며 조직 운영 권한은 기본으로 갖지 않습니다.'
   };
@@ -36,6 +38,8 @@
     policy_general_manager:['정책국 공통 공지·카드뉴스·정책 콘텐츠 승인·관리','정책단어와 외부 뉴스 등록·수정·숨김','정책국 공통 공식 일정 수정·삭제','정책국 소속 리더의 불가일·사유 확인과 삭제','정책1부·정책2부 사업자료 종합 수정·게시'],
     department_manager:['공지·카드뉴스·정책 콘텐츠 초안 작성과 승인 요청','공식 일정 신규 등록','본인의 참여 불가일 등록과 추가','게시된 사업자료와 내부 콘텐츠 열람'],
     section_manager:['공지·카드뉴스·정책 콘텐츠 초안 작성과 승인 요청','공식 일정 신규 등록','본인의 참여 불가일 등록과 추가','게시된 사업자료와 내부 콘텐츠 열람'],
+    deputy_manager:['내부 공지·사업자료·정책단어·정책 퀴즈 열람','공지·카드뉴스·정책 콘텐츠 초안 작성과 승인 요청','공식 일정 신규 등록','본인의 참여 불가일 등록과 추가','익명 글과 댓글 작성'],
+    team_leader:['내부 공지·사업자료·정책단어·정책 퀴즈 열람','공지·카드뉴스·정책 콘텐츠 초안 작성과 승인 요청','공식 일정 신규 등록','본인의 참여 불가일 등록과 추가','익명 글과 댓글 작성'],
     leader:['내부 공지·사업자료·정책단어·정책 퀴즈 열람','공지·카드뉴스·정책 콘텐츠 초안 작성과 승인 요청','공식 일정 신규 등록','본인의 참여 불가일 등록과 추가','익명 글과 댓글 작성'],
     external_admin:['시스템 오류·배포·뉴스 자동 수집·보안 설정 유지보수','조직 운영 권한과 파일 관리는 정책국장이 별도로 추가한 경우에만 사용']
   };
@@ -48,6 +52,8 @@
     policy_general_manager:['홈페이지 전체 페이지 편집 불가','정책국장 직책·전체 권한 변경 불가'],
     department_manager:['가입 승인·게시 최종 승인·삭제 불가','다른 리더의 불가 사유 열람 불가'],
     section_manager:['가입 승인·게시 최종 승인·삭제 불가','다른 리더의 불가 사유 열람 불가'],
+    deputy_manager:['가입 승인·게시 최종 승인·삭제 불가','다른 리더의 불가 사유 열람 불가'],
+    team_leader:['가입 승인·게시 최종 승인·삭제 불가','다른 리더의 불가 사유 열람 불가'],
     leader:['가입 승인·게시 최종 승인·삭제 불가','다른 리더의 불가 사유 열람 불가'],
     external_admin:['가입·콘텐츠 승인과 조직 일정 운영 불가','리더 불가 사유 열람 불가']
   };

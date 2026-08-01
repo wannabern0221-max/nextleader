@@ -3,6 +3,8 @@
     president: '회장',
     political_vice_president: '정무부회장',
     leader: '리더',
+    team_leader: '팀장',
+    deputy_manager: '차장',
     section_manager: '과장',
     department_manager: '부장',
     policy_general_manager: '정책총괄부장',
@@ -82,7 +84,9 @@
       'content_approve','news_manage','board_moderate','schedule_manage_common'
     ]),
     department_manager: makeSet([]),
+    deputy_manager: makeSet([]),
     section_manager: makeSet([]),
+    team_leader: makeSet([]),
     leader: makeSet([]),
     external_admin: makeSet(['system_manage'])
   });
