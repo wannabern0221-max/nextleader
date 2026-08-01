@@ -39,10 +39,8 @@
 
   const escapeText = value => String(value ?? '').trim();
   const isManager = access => {
-    const role = access?.system_role;
-    const managerRoles = ['policy_director','director','senior_manager_div1','senior_manager_div2','senior_manager','policy_general_manager','general_manager'];
     const managerPermissions = ['member_approve','role_manage','permission_grant','system_manage'];
-    return managerRoles.includes(role) || managerPermissions.some(code => access?.permissions?.includes(code));
+    return managerPermissions.some(code => access?.permissions?.includes(code));
   };
 
   async function loadAccess(userId) {

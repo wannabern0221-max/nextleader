@@ -18,7 +18,6 @@
   const id = params.get('id');
   const requestedCategory = params.get('category');
   const returnUrl = params.get('return') || 'content-manager.html';
-  const managerRoles = ['policy_director','director','policy_general_manager','general_manager','senior_manager_div1','senior_manager_div2','senior_manager'];
   const activityCategories = ['activity_report','business_plan','project_plan'];
 
   let access = null;
@@ -30,8 +29,8 @@
     message.className = `auth-message show ${type}`;
     message.textContent = text;
   };
-  const canApprove = () => managerRoles.includes(access?.system_role) || access?.permissions?.includes('content_approve');
-  const canWriteActivity = () => managerRoles.includes(access?.system_role);
+  const canApprove = () => access?.permissions?.includes('content_approve');
+  const canWriteActivity = () => access?.permissions?.includes('content_approve');
   const isActivity = () => activityCategories.includes(form.elements.category.value);
   const audience = () => files.audienceFromVisibility(form.elements.visibility.value);
 
@@ -165,7 +164,7 @@
     if (!preserveVisibility) form.elements.visibility.value = activity ? 'leaders' : 'public';
     form.elements.visibility.querySelector('option[value="public"]').disabled = activity;
     if (activity && !canWriteActivity()) {
-      show('활동보고서와 사업계획 자료는 수석부장·정책총괄부장·정책국장만 작성할 수 있습니다.', 'warning');
+      show('활동보고서와 사업계획 자료는 게시 관리 권한이 있는 리더만 작성할 수 있습니다.', 'warning');
       saveButton.disabled = true;
       submitButton.disabled = true;
     } else {

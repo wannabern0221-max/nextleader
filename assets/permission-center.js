@@ -10,17 +10,14 @@
 
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
   const show=(text,type='info')=>{message.className=`auth-message show ${type}`;message.textContent=text;};
-  const codes=['member_approve','role_manage','permission_grant','content_write_notice','content_write_card','content_write_policy','content_approve','news_manage','board_moderate','anonymous_identity_reveal','schedule_manage_common','schedule_manage_div1','schedule_manage_div2','file_manage','system_manage'];
+  const codes=[...window.KNA_ACCESS.allPermissionCodes];
+  const coreSecurity=new Set(window.KNA_ACCESS.coreSecurityPermissions);
+  const base=window.KNA_ACCESS.defaultPermissions;
   const common=['리더 홈과 내부 콘텐츠 열람','정책국 공식 일정 열람·신규 등록','본인의 참여 불가일·사유 등록과 추가','공지·카드뉴스·정책 콘텐츠 초안 작성','익명 소통방과 정책 퀴즈·정책단어 이용'];
-  const base={
-    policy_director:new Set(codes),
-    senior_manager_div1:new Set(['member_approve','role_manage','permission_grant','content_write_notice','content_write_card','content_write_policy','content_approve','board_moderate','schedule_manage_div1']),
-    senior_manager_div2:new Set(['member_approve','role_manage','permission_grant','content_write_notice','content_write_card','content_write_policy','content_approve','board_moderate','schedule_manage_div2']),
-    policy_general_manager:new Set(['permission_grant','content_write_notice','content_write_card','content_write_policy','content_approve','news_manage','board_moderate','schedule_manage_common']),
-    department_manager:new Set(),section_manager:new Set(),leader:new Set(),external_admin:new Set(['system_manage'])
-  };
-  const roleOrder=['policy_director','senior_manager_div1','senior_manager_div2','policy_general_manager','department_manager','section_manager','leader','external_admin'];
+  const roleOrder=['president','political_vice_president','policy_director','senior_manager_div1','senior_manager_div2','policy_general_manager','department_manager','section_manager','leader','external_admin'];
   const roleDescriptions={
+    president:'회장 업무에 필요한 공지·콘텐츠·일정 운영 권한을 사용합니다.',
+    political_vice_president:'정무부회장 업무에 필요한 공지·콘텐츠·일정 운영 권한을 사용합니다.',
     policy_director:'전체 회원·콘텐츠·일정·홈페이지 운영 권한을 관리합니다.',
     senior_manager_div1:'정책1부 회원·콘텐츠·일정과 불가일을 관리합니다.',
     senior_manager_div2:'정책2부 회원·콘텐츠·일정과 불가일을 관리합니다.',
@@ -31,6 +28,8 @@
     external_admin:'기술·시스템 유지보수를 담당하며 조직 운영 권한은 기본으로 갖지 않습니다.'
   };
   const capabilities={
+    president:['공지사항·카드뉴스·정책 콘텐츠 작성과 게시','정책국·정책1부·정책2부 공식 일정 수정·삭제','외부 뉴스와 익명 소통방 운영','사업자료 작성·수정·게시'],
+    political_vice_president:['공지사항·카드뉴스·정책 콘텐츠 작성과 게시','정책국·정책1부·정책2부 공식 일정 수정·삭제','외부 뉴스와 익명 소통방 운영','사업자료 작성·수정·게시'],
     policy_director:['모든 가입 신청 승인·반려와 직책·소속 변경','모든 페이지 문구·디자인·메뉴·팝업·블록 관리','전체 공지·카드뉴스·정책 콘텐츠 승인·수정·삭제','정책국·정책1부·정책2부 공식 일정 수정·삭제','모든 리더의 불가일·직책·사유 확인과 잘못된 기록 삭제','전체 활동보고서·사업계획서·사업계획 작성·수정·게시','파일 저장공간 사용량·다운로드 설정·삭제·자동 정리 관리','익명 소통방 신고 처리와 운영 기록 확인'],
     senior_manager_div1:['정책1부 가입 신청 승인·반려와 부서 직책 관리','정책1부 콘텐츠 승인·반려·수정·삭제','정책1부 공식 일정 수정·삭제','정책1부 리더의 불가일·사유 확인과 삭제','정책1부 활동보고서·사업계획 자료 작성·수정·게시'],
     senior_manager_div2:['정책2부 가입 신청 승인·반려와 부서 직책 관리','정책2부 콘텐츠 승인·반려·수정·삭제','정책2부 공식 일정 수정·삭제','정책2부 리더의 불가일·사유 확인과 삭제','정책2부 활동보고서·사업계획 자료 작성·수정·게시'],
@@ -41,6 +40,8 @@
     external_admin:['시스템 오류·배포·뉴스 자동 수집·보안 설정 유지보수','조직 운영 권한과 파일 관리는 정책국장이 별도로 추가한 경우에만 사용']
   };
   const limitations={
+    president:['가입 승인·직책 관리·권한 부여·익명 작성자 확인·파일 관리·시스템 관리 권한은 기본 제공하지 않음','홈페이지 전체 설정 변경 불가'],
+    political_vice_president:['가입 승인·직책 관리·권한 부여·익명 작성자 확인·파일 관리·시스템 관리 권한은 기본 제공하지 않음','홈페이지 전체 설정 변경 불가'],
     policy_director:['보안키·RLS·SMTP·도메인 등 기술 보안 영역은 페이지 편집기에서 제외'],
     senior_manager_div1:['정책2부 회원·일정 관리 불가','홈페이지 전체 페이지 편집 불가'],
     senior_manager_div2:['정책1부 회원·일정 관리 불가','홈페이지 전체 페이지 편집 불가'],
@@ -67,11 +68,11 @@
   document.querySelector('#permissionRefreshButton')?.addEventListener('click',loadMembers);
   search?.addEventListener('input',renderMembers);
 
-  function permissionLabel(code){return window.KNA_ACCESS?.labels.permission(code)||code;}
+  function permissionLabel(code){return window.KNA_ACCESS.labels.permission(code)||code;}
   function renderRoleCards(){
     roleCards.innerHTML=roleOrder.map(role=>{
-      const defaults=[...base[role]];
-      return `<details class="role-permission-card" ${role==='policy_director'?'open':''}><summary><span><strong>${esc(window.KNA_ACCESS.labels.role(role))}</strong><small>${esc(roleDescriptions[role])}</small></span><span class="role-count">기본 ${defaults.length}개</span></summary><div class="role-card-body"><h3>모든 승인 리더 공통</h3><div class="permission-chip-list">${common.map(x=>`<span class="permission-chip common">${esc(x)}</span>`).join('')}</div><h3>직책 업무 범위</h3><ul class="permission-capability-list">${(capabilities[role]||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul><h3>직책 기본 기능 권한</h3><div class="permission-chip-list">${defaults.length?defaults.map(code=>`<span class="permission-chip base">${esc(permissionLabel(code))}</span>`).join(''):'<span class="permission-empty">별도 관리 기능 없음</span>'}</div><h3>제한되는 기능</h3><ul class="permission-limit-list">${(limitations[role]||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></details>`;
+      const defaults=[...(base[role]||new Set())];
+      return `<details class="role-permission-card" ${role==='policy_director'?'open':''}><summary><span><strong>${esc(window.KNA_ACCESS.labels.role(role))}</strong><small>${esc(roleDescriptions[role])}</small></span><span class="role-count">기본 ${defaults.length}개</span></summary><div class="role-card-body"><h3>모든 승인 리더 공통</h3><div class="permission-chip-list">${common.map(x=>`<span class="permission-chip common">${esc(x)}</span>`).join('')}</div><h3>직책 업무 범위</h3><ul class="permission-capability-list">${(capabilities[role]||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul><h3>직책 기본 기능 권한</h3><div class="permission-chip-list">${defaults.length?defaults.map(code=>`<span class="permission-chip base">${esc(permissionLabel(code))}${coreSecurity.has(code)?' · 핵심 보안':''}</span>`).join(''):'<span class="permission-empty">별도 관리 기능 없음</span>'}</div><h3>제한되는 기능</h3><ul class="permission-limit-list">${(limitations[role]||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></details>`;
     }).join('');
   }
 
@@ -90,23 +91,23 @@
     memberList.innerHTML=view.map(r=>{
       const role=r.system_role||'leader';
       const defaults=base[role]||new Set();
-      const explicit=new Set((r.permissions||[]).map(x=>x.code));
-      const effective=new Set([...defaults,...explicit]);
+      const overrides=new Map((r.permissions||[]).map(x=>[x.code,x.allowed!==false]));
+      const effective=new Set(codes.filter(code=>overrides.has(code)?overrides.get(code):defaults.has(code)));
       const self=r.id===access.id;
-      return `<article class="member-permission-card" data-id="${r.id}"><header><div><strong>${esc(r.name)}${role==='external_admin'?'':' 리더'}</strong><span>${esc(r.department||'정책국')} · ${esc(r.position_title||window.KNA_ACCESS.labels.role(role))}</span><small>${esc(r.school||'')} ${r.cohort?`· ${esc(r.cohort)}`:''}</small></div><span class="status-pill ${r.approval_status}">${r.approval_status==='approved'?'승인 완료':'이용 중지'}</span></header><div class="member-permission-columns"><section><h3>직책 기본 권한 <small>자동 적용</small></h3><div class="permission-option-grid">${codes.map(code=>`<label class="permission-option ${defaults.has(code)?'is-base':'is-off'}"><input type="checkbox" ${defaults.has(code)?'checked':''} disabled><span>${esc(permissionLabel(code))}</span>${defaults.has(code)?'<em>기본</em>':''}</label>`).join('')}</div></section><section><h3>추가 기능 권한 <small>정책국장 설정</small></h3><div class="permission-option-grid">${codes.map(code=>`<label class="permission-option ${defaults.has(code)?'is-base':''}"><input type="checkbox" data-extra="${code}" ${explicit.has(code)?'checked':''} ${defaults.has(code)||self?'disabled':''}><span>${esc(permissionLabel(code))}</span>${defaults.has(code)?'<em>기본 포함</em>':''}</label>`).join('')}</div>${self?'<p class="permission-self-note">현재 정책국장 계정의 권한은 직책으로 자동 적용됩니다.</p>':'<button type="button" class="btn btn-primary permission-save" data-save>추가 권한 저장</button>'}</section></div><footer><strong>현재 최종 적용 권한</strong><div class="permission-chip-list">${effective.size?[...effective].map(code=>`<span class="permission-chip effective">${esc(permissionLabel(code))}</span>`).join(''):'<span class="permission-empty">공통 리더 기능만 적용</span>'}</div></footer></article>`;
+      return `<article class="member-permission-card" data-id="${r.id}"><header><div><strong>${esc(r.name)}${role==='external_admin'?'':' 리더'}</strong><span>${esc(r.department||'정책국')} · ${esc(r.position_title||window.KNA_ACCESS.labels.role(role))}</span><small>${esc(r.school||'')} ${r.cohort?`· ${esc(r.cohort)}`:''}</small></div><span class="status-pill ${r.approval_status}">${r.approval_status==='approved'?'승인 완료':'이용 중지'}</span></header><div class="member-permission-columns"><section><h3>직책 기본 권한 <small>기본값 안내</small></h3><div class="permission-option-grid">${codes.map(code=>`<label class="permission-option ${defaults.has(code)?'is-base':'is-off'}"><input type="checkbox" ${defaults.has(code)?'checked':''} disabled><span>${esc(permissionLabel(code))}</span>${defaults.has(code)?'<em>기본</em>':''}${coreSecurity.has(code)?'<em class="security">보안</em>':''}</label>`).join('')}</div></section><section><h3>개인별 실제 적용 권한 <small>기본 권한도 해제 가능</small></h3><div class="permission-option-grid">${codes.map(code=>{const hasOverride=overrides.has(code);const enabled=effective.has(code);const badge=hasOverride?(enabled?'개별 허용':'개별 해제'):(defaults.has(code)?'직책 기본':'기본 없음');return `<label class="permission-option ${defaults.has(code)?'is-base':''} ${enabled?'is-effective':'is-disabled'}"><input type="checkbox" data-effective="${code}" ${enabled?'checked':''} ${self?'disabled':''}><span>${esc(permissionLabel(code))}</span><em>${badge}</em>${coreSecurity.has(code)?'<em class="security">보안</em>':''}</label>`;}).join('')}</div>${self?'<p class="permission-self-note">현재 정책국장 본인 계정은 핵심 운영 보호를 위해 이 화면에서 변경하지 않습니다.</p>':'<p class="permission-self-note">체크를 해제하면 직책에 포함된 기본 권한도 이 사용자에게만 중지됩니다.</p><button type="button" class="btn btn-primary permission-save" data-save>실제 권한 저장</button>'}</section></div><footer><strong>현재 최종 적용 권한</strong><div class="permission-chip-list">${effective.size?[...effective].map(code=>`<span class="permission-chip effective">${esc(permissionLabel(code))}</span>`).join(''):'<span class="permission-empty">공통 리더 기능만 적용</span>'}</div></footer></article>`;
     }).join('');
-    memberList.querySelectorAll('[data-save]').forEach(btn=>btn.addEventListener('click',()=>saveExtras(btn.closest('article'))));
+    memberList.querySelectorAll('[data-save]').forEach(btn=>btn.addEventListener('click',()=>savePermissions(btn.closest('article'))));
   }
 
-  async function saveExtras(card){
+  async function savePermissions(card){
     const button=card.querySelector('[data-save]');
-    const items=[...card.querySelectorAll('[data-extra]:checked:not(:disabled)')].map(input=>({code:input.dataset.extra,scope:'*'}));
-    if(!confirm('선택한 추가 기능 권한을 저장하시겠습니까?'))return;
+    const items=[...card.querySelectorAll('[data-effective]:checked')].map(input=>({code:input.dataset.effective,scope:'*'}));
+    if(!confirm('선택한 실제 적용 권한을 저장하시겠습니까?\n직책 기본 권한도 체크 해제한 항목은 이 사용자에게 적용되지 않습니다.'))return;
     button.disabled=true;
     const{error}=await client.rpc('set_member_permissions',{p_target_user_id:card.dataset.id,p_permission_items:items});
     button.disabled=false;
     if(error){show(error.message,'error');return;}
-    show('추가 기능 권한을 저장했습니다.','success');
+    show('개인별 실제 적용 권한을 저장했습니다.','success');
     await loadMembers();
   }
 })();

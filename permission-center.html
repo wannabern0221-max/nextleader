@@ -9,13 +9,13 @@
   <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/leader-experience.css?v=20260802-permissions">
-  <link rel="stylesheet" href="assets/permission-center.css?v=20260802-permissions">
+  <link rel="stylesheet" href="assets/permission-center.css?v=20260802-role-permission">
 </head>
 <body data-page="permission-center">
 <div class="utility"><div class="container"><span>대한간호학생회 부산 · 정책국</span><div class="utility-actions"><button type="button" data-open-alert>알림</button><div class="session-shell" data-session-shell><a class="session-trigger" data-session-trigger href="login.html" aria-expanded="false">로그인</a><div class="session-popover" data-session-popover hidden><div class="session-summary" data-session-summary><strong>로그인 정보</strong><span>상태 확인 중</span></div><a href="dashboard.html">리더 홈</a><button type="button" data-session-logout>로그아웃</button></div></div><a class="utility-portal" data-portal-link href="dashboard.html">리더 홈</a></div></div></div>
 <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/emblem.png" alt="대한간호학생회 부산 로고"><span><strong>대한간호학생회 부산</strong><span>정책국 공식 홈페이지</span></span></a><button class="menu-button" aria-label="메뉴 열기">☰</button><nav class="nav" aria-label="주요 메뉴"><a href="about.html">정책국 소개</a><a href="notice.html">공지사항</a><a href="cards.html">카드뉴스</a><a href="policy.html">정책 콘텐츠</a><a href="glossary.html">정책단어</a><a href="news.html">간호·정책 뉴스</a><a href="schedule.html">일정</a></nav></div></header>
 <main>
-  <section class="page-hero"><div class="container"><span class="eyebrow">ROLE & PERMISSION CENTER</span><h1>권한 안내·관리</h1><p>직책에 자동으로 적용되는 기본 권한과 개인별 추가 기능 권한을 분리하여 확인하고 관리합니다.</p></div></section>
+  <section class="page-hero"><div class="container"><span class="eyebrow">ROLE & PERMISSION CENTER</span><h1>권한 안내·관리</h1><p>직책 기본 권한을 확인하고 사용자별로 허용하거나 해제할 수 있습니다.</p></div></section>
   <section class="page-content"><div class="container" id="permissionCenterRoot">
     <div class="permission-toolbar">
       <div><strong id="permissionIdentity">정책국장 권한 확인 중</strong><p>이 메뉴는 정책국장 계정에만 표시됩니다.</p></div>
@@ -23,11 +23,11 @@
     </div>
     <div id="permissionCenterMessage" class="auth-message" aria-live="polite"></div>
     <section class="permission-section">
-      <div class="permission-section-head"><div><span class="eyebrow">DEFAULT ROLE ACCESS</span><h2>직책별 기본 권한</h2><p>기본 권한은 직책에 따라 자동으로 적용되며 개인별 화면에서 해제할 수 없습니다.</p></div></div>
+      <div class="permission-section-head"><div><span class="eyebrow">DEFAULT ROLE ACCESS</span><h2>직책별 기본 권한</h2><p>기본 권한은 직책에 따라 자동으로 적용되지만 아래 사용자별 설정에서 개별 해제할 수 있습니다.</p></div></div>
       <div id="rolePermissionCards" class="role-permission-grid"><div class="loading-state">직책별 권한을 불러오는 중입니다.</div></div>
     </section>
     <section class="permission-section">
-      <div class="permission-section-head permission-member-head"><div><span class="eyebrow">INDIVIDUAL ACCESS</span><h2>리더별 실제 권한</h2><p>직책 기본 권한은 잠금 상태로 표시되고 추가 기능 권한만 정책국장이 부여하거나 회수할 수 있습니다.</p></div><label class="permission-search">리더 검색<input id="permissionSearch" type="search" placeholder="이름·학교·직책 검색"></label></div>
+      <div class="permission-section-head permission-member-head"><div><span class="eyebrow">INDIVIDUAL ACCESS</span><h2>리더별 실제 권한</h2><p>직책 기본 권한을 포함한 최종 적용 권한을 정책국장이 사용자별로 허용하거나 해제할 수 있습니다.</p></div><label class="permission-search">리더 검색<input id="permissionSearch" type="search" placeholder="이름·학교·직책 검색"></label></div>
       <div id="memberPermissionList" class="member-permission-list"><div class="loading-state">리더 권한을 불러오는 중입니다.</div></div>
     </section>
   </div></section>
@@ -38,9 +38,9 @@
 <script src="assets/supabase-config.js"></script>
 <script src="assets/supabase-client.js"></script>
 <script src="assets/site-settings.js?v=20260802-permissions"></script>
-<script src="assets/access.js?v=20260802-files"></script>
+<script src="assets/access.js?v=20260802-role-permission"></script>
 <script src="assets/session-ui.js?v=20260802-permissions"></script>
-<script src="assets/permission-center.js?v=20260802-files"></script>
+<script src="assets/permission-center.js?v=20260802-role-permission"></script>
 <script src="assets/app.js?v=20260802-permissions"></script>
 </body>
 </html>

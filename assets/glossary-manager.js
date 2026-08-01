@@ -3,7 +3,7 @@
   let access=null,rows=[];
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
   const show=(text,type='info')=>{message.className=`auth-message show ${type}`;message.textContent=text;};
-  const canApprove=()=>Array.isArray(access?.permissions)&&access.permissions.includes('content_approve')||['policy_director','policy_general_manager','senior_manager_div1','senior_manager_div2'].includes(access?.system_role);
+  const canApprove=()=>Array.isArray(access?.permissions)&&access.permissions.includes('content_approve');
   if(!window.SUPABASE_CONFIG_READY||!client)return show('리더 서비스 연결 설정을 확인해 주세요.','error');
   try{const{data:s}=await client.auth.getSession();if(!s.session)return location.replace('login.html');const{data,error}=await client.rpc('get_my_access');if(error)throw error;access=data;if(access?.approval_status!=='approved'||access?.system_role==='external_admin')return location.replace('dashboard.html');await load();}catch(error){show(error.message||'정책단어 관리 화면을 불러오지 못했습니다.','error');}
   form.addEventListener('submit',async e=>{e.preventDefault();const fd=new FormData(form);const payload={id:String(fd.get('id')||''),term:String(fd.get('term')||''),category:String(fd.get('category')||''),summary:String(fd.get('summary')||''),detail:String(fd.get('detail')||''),source_title:String(fd.get('source_title')||''),source_url:String(fd.get('source_url')||'')};const button=form.querySelector('button[type="submit"]');button.disabled=true;const{data,error}=await client.rpc('save_glossary_entry_v1',{p_payload:payload});button.disabled=false;if(error)return show(error.message,'error');form.id.value=data;show('정책단어 초안을 저장했습니다.','success');await load();});

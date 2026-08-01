@@ -39,11 +39,11 @@
     const external = access.system_role === 'external_admin';
     const permissions = Array.isArray(access.permissions) ? access.permissions : [];
     const hasAny = codes => codes.some(code => permissions.includes(code));
-    const canManage = ['policy_director','director','senior_manager_div1','senior_manager_div2','senior_manager','policy_general_manager','general_manager'].includes(access.system_role) || hasAny(['member_approve','role_manage','permission_grant','system_manage']);
+    const canManage = hasAny(['member_approve','role_manage','permission_grant','system_manage']);
     const canWrite = access.approval_status === 'approved' && access.system_role !== 'external_admin';
     const normalizedPosition = String(access.position || access.requested_position || '').replace(/\s+/g,'');
     const isDirector = ['policy_director','director'].includes(access.system_role) || normalizedPosition.includes('정책국장');
-    const canManageFiles = isDirector || permissions.includes('file_manage');
+    const canManageFiles = permissions.includes('file_manage');
 
     root.innerHTML = `
       <div class="leader-home-welcome">
@@ -57,7 +57,7 @@
           ${canWrite ? '<a class="leader-home-action" href="content-manager.html"><span>05 · 콘텐츠 운영</span><strong>콘텐츠 관리 <span class="approval-menu-badge" data-approval-badge="content" hidden></span></strong><small>작성한 글과 승인 요청 그리고 게시 상태를 확인합니다.</small></a><a class="leader-home-action" href="activity-documents.html"><span>06 · 부서 운영</span><strong>사업자료 <span class="approval-menu-badge" data-approval-badge="activity" hidden></span></strong><small>정책1부·정책2부의 활동보고서와 사업계획 자료를 확인합니다.</small></a><a class="leader-home-action" href="glossary-manager.html"><span>07 · 정책 학습</span><strong>정책단어 작성</strong><small>정책단어를 등록하고 관리 권한자의 검토를 요청합니다.</small></a>' : ''}
           ${canManage ? '<a class="leader-home-action" href="admin.html"><span>08 · 운영 권한</span><strong>관리센터 <span class="approval-menu-badge" data-approval-badge="total" hidden></span></strong><small>가입 승인과 직책 그리고 기능 권한을 관리합니다.</small></a>' : ''}
           ${canManageFiles ? '<a class="leader-home-action" href="file-manager.html"><span>09 · 파일 운영</span><strong>파일 관리</strong><small>저장공간 사용량과 파일별 다운로드 허용 여부 그리고 자동 정리를 관리합니다.</small></a>' : ''}
-          ${isDirector ? '<a class="leader-home-action" href="permission-center.html"><span>10 · 권한 운영</span><strong>권한 안내·관리</strong><small>직책별 기본 권한과 리더별 추가 기능 권한을 확인하고 관리합니다.</small></a><a class="leader-home-action" href="site-manager.html"><span>11 · 공통 설정</span><strong>홈페이지 관리</strong><small>사이트 이름과 메뉴 그리고 공통 환영 팝업을 관리합니다.</small></a><a class="leader-home-action" href="page-editor.html?page=home"><span>12 · 페이지 운영</span><strong>페이지 편집기</strong><small>각 페이지의 문구·디자인·이미지·블록·팝업을 직접 추가하고 수정합니다.</small></a><a class="leader-home-action" href="operations-guide.html"><span>13 · 인계 안내</span><strong>홈페이지 운영 안내</strong><small>차기 정책국장이 알아야 할 사이트 운영 절차를 한눈에 확인합니다.</small></a>' : ''}
+          ${isDirector ? '<a class="leader-home-action" href="permission-center.html"><span>10 · 권한 운영</span><strong>권한 안내·관리</strong><small>직책별 기본 권한과 리더별 실제 적용 권한을 확인하고 관리합니다.</small></a><a class="leader-home-action" href="site-manager.html"><span>11 · 공통 설정</span><strong>홈페이지 관리</strong><small>사이트 이름과 메뉴 그리고 공통 환영 팝업을 관리합니다.</small></a><a class="leader-home-action" href="page-editor.html?page=home"><span>12 · 페이지 운영</span><strong>페이지 편집기</strong><small>각 페이지의 문구·디자인·이미지·블록·팝업을 직접 추가하고 수정합니다.</small></a><a class="leader-home-action" href="operations-guide.html"><span>13 · 인계 안내</span><strong>홈페이지 운영 안내</strong><small>차기 정책국장이 알아야 할 사이트 운영 절차를 한눈에 확인합니다.</small></a>' : ''}
         </div>
       </div>
       <div class="member-layout">

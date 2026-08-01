@@ -1,5 +1,7 @@
 (() => {
   const roleLabels = Object.freeze({
+    president: '회장',
+    political_vice_president: '정무부회장',
     leader: '리더',
     section_manager: '과장',
     department_manager: '부장',
@@ -42,6 +44,49 @@
     system_manage: '시스템 관리'
   });
 
+  const allPermissionCodes = Object.freeze(Object.keys(permissionLabels));
+  const coreSecurityPermissions = Object.freeze([
+    'member_approve',
+    'role_manage',
+    'permission_grant',
+    'anonymous_identity_reveal',
+    'file_manage',
+    'system_manage'
+  ]);
+
+  const makeSet = values => new Set(values);
+  const defaultPermissions = Object.freeze({
+    president: makeSet([
+      'content_write_notice','content_write_card','content_write_policy','content_approve',
+      'news_manage','board_moderate',
+      'schedule_manage_common','schedule_manage_div1','schedule_manage_div2'
+    ]),
+    political_vice_president: makeSet([
+      'content_write_notice','content_write_card','content_write_policy','content_approve',
+      'news_manage','board_moderate',
+      'schedule_manage_common','schedule_manage_div1','schedule_manage_div2'
+    ]),
+    policy_director: makeSet(allPermissionCodes),
+    senior_manager_div1: makeSet([
+      'member_approve','role_manage','permission_grant',
+      'content_write_notice','content_write_card','content_write_policy','content_approve',
+      'board_moderate','schedule_manage_div1'
+    ]),
+    senior_manager_div2: makeSet([
+      'member_approve','role_manage','permission_grant',
+      'content_write_notice','content_write_card','content_write_policy','content_approve',
+      'board_moderate','schedule_manage_div2'
+    ]),
+    policy_general_manager: makeSet([
+      'permission_grant','content_write_notice','content_write_card','content_write_policy',
+      'content_approve','news_manage','board_moderate','schedule_manage_common'
+    ]),
+    department_manager: makeSet([]),
+    section_manager: makeSet([]),
+    leader: makeSet([]),
+    external_admin: makeSet(['system_manage'])
+  });
+
   const labels = {
     role: value => roleLabels[value] || value || '리더',
     department: value => departmentLabels[value] || value || '정책국',
@@ -50,9 +95,22 @@
 
   const has = (access, code) => Array.isArray(access?.permissions) && access.permissions.includes(code);
   const isExecutive = role => [
-    'policy_director', 'senior_manager_div1', 'senior_manager_div2', 'policy_general_manager',
-    'director', 'senior_manager', 'general_manager'
+    'president','political_vice_president',
+    'policy_director','senior_manager_div1','senior_manager_div2','policy_general_manager',
+    'director','senior_manager','general_manager'
   ].includes(role);
+  const canManageCenter = access => ['member_approve','role_manage','permission_grant','system_manage'].some(code => has(access, code));
 
-  window.KNA_ACCESS = Object.freeze({ roleLabels, departmentLabels, permissionLabels, labels, has, isExecutive });
+  window.KNA_ACCESS = Object.freeze({
+    roleLabels,
+    departmentLabels,
+    permissionLabels,
+    allPermissionCodes,
+    coreSecurityPermissions,
+    defaultPermissions,
+    labels,
+    has,
+    isExecutive,
+    canManageCenter
+  });
 })();
