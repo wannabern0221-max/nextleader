@@ -8,7 +8,8 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/leader-experience.css?v=20260801-final">
+  <link rel="stylesheet" href="assets/leader-experience.css?v=20260801-editor">
+  <link rel="stylesheet" href="assets/page-builder.css?v=20260801-editor">
 </head>
 <body data-page="internal-schedule">
 <div class="utility">
@@ -44,15 +45,15 @@
     <div class="container">
       <span class="eyebrow">SCHEDULE CHECK</span>
       <h1>일정 확인</h1>
-      <p>정책1부와 정책2부 리더가 참여하기 어려운 날짜를 표시하고 수석부장이 가능한 날짜를 빠르게 확인할 수 있도록 돕습니다.</p>
+      <p>정책국·정책1부·정책2부의 모든 승인 리더가 참여하기 어려운 날짜와 사유를 등록하고 일정을 조율합니다.</p>
     </div>
   </section>
 
   <section class="page-content">
     <div class="container availability-shell">
       <section class="availability-intro">
-        <h2>이번 달 참여가 불가능한 날짜를 등록해 주세요</h2>
-        <p>참여하기 어려운 날짜만 눌러 선택해 주세요. 선택하지 않은 날짜는 가능한 날로 집계됩니다. 제출 후에는 직접 수정하거나 삭제할 수 없으며 변경이 필요하면 소속 수석부장이나 정책총괄부장에게 요청해 주세요.</p>
+        <h2>이번 달 참여가 불가능한 날짜와 사유를 등록해 주세요</h2>
+        <p>참여하기 어려운 날짜를 누른 뒤 사유를 선택해 주세요. 선택하지 않은 날짜는 가능한 날로 집계됩니다. 제출 후에는 직접 수정하거나 삭제할 수 없으며 변경이 필요하면 소속 수석부장이나 정책총괄부장에게 요청해 주세요.</p>
       </section>
 
       <section class="availability-card">
@@ -63,6 +64,7 @@
         </div>
 
         <div class="scope-switch" id="availabilityScopeSwitch" aria-label="부서 선택">
+          <button type="button" data-scope="policy_office">정책국</button>
           <button type="button" data-scope="div1">정책1부</button>
           <button type="button" data-scope="div2">정책2부</button>
         </div>
@@ -74,7 +76,7 @@
               <span><i class="empty"></i>선택하지 않음 = 가능</span>
             </div>
             <div class="availability-calendar" id="availabilityCalendar"></div>
-            <div class="availability-help" id="availabilityHelp">달력에서 참여가 불가능한 날짜만 선택하세요.</div>
+            <div class="availability-help" id="availabilityHelp">달력에서 참여가 불가능한 날짜를 누르고 사유를 선택하세요.</div>
           </div>
 
           <aside>
@@ -88,8 +90,8 @@
 
             <section class="manager-summary" id="managerSummary" hidden>
               <hr>
-              <h3>수석부장용 요약</h3>
-              <p class="readonly-note">참여 가능한 인원이 많은 날짜가 위에 표시됩니다. 날짜를 누르면 제출한 리더별 가능·불가능 상태를 확인하고 관리 권한으로 변경할 수 있습니다.</p>
+              <h3>날짜별 참여 현황</h3>
+              <p class="readonly-note">참여 가능한 인원이 많은 날짜가 위에 표시됩니다. 날짜를 누르면 리더의 이름·직책·불가능 사유를 확인할 수 있습니다. 관리 권한이 있으면 내용을 변경할 수 있습니다.</p>
               <div class="recommend-list" id="recommendList"></div>
               <div id="availabilityDetail"></div>
             </section>
@@ -133,6 +135,19 @@
     <div class="footer-copy"><div>리더 기능은 승인된 계정으로 이용할 수 있습니다.</div><div>© 2026 Korean Nursing Students Association · Busan.</div></div>
   </div>
 </footer>
+
+<div class="reason-sheet" id="reasonSheet" hidden>
+  <div class="reason-sheet-backdrop" data-close-reason></div>
+  <section class="reason-sheet-panel" role="dialog" aria-modal="true" aria-labelledby="reasonSheetTitle">
+    <div class="reason-sheet-head"><div><span class="eyebrow">UNAVAILABLE</span><h2 id="reasonSheetTitle">참여 불가 사유</h2><p id="reasonSheetDate"></p></div><button type="button" data-close-reason aria-label="닫기">×</button></div>
+    <div class="reason-options" id="reasonOptions">
+      <button type="button" data-reason="personal">개인 일정</button><button type="button" data-reason="class">수업</button><button type="button" data-reason="clinical">실습</button><button type="button" data-reason="work">근무</button><button type="button" data-reason="exam">시험</button><button type="button" data-reason="family">가족 일정</button><button type="button" data-reason="health">건강 사유</button><button type="button" data-reason="other">기타</button>
+    </div>
+    <label class="field full"><span>추가 내용 <small>(선택 입력)</small></span><textarea id="reasonDetail" maxlength="120" placeholder="필요한 경우 간단히 적어 주세요."></textarea></label>
+    <p class="reason-privacy-note">달력에는 사유 분류가 간단히 표시됩니다. 추가 내용은 일정 관리 권한이 있는 사람만 확인할 수 있습니다.</p>
+    <div class="action-group"><button class="btn btn-primary" type="button" id="saveReason">이날 안 됨으로 표시</button><button class="btn btn-outline" type="button" id="removeReason">선택 해제</button></div>
+  </section>
+</div>
 <div class="toast" id="toast"></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="assets/supabase-config.js"></script>
@@ -140,7 +155,10 @@
 <script src="assets/site-settings.js?v=20260801-final"></script>
 <script src="assets/access.js"></script>
 <script src="assets/session-ui.js?v=20260801-final"></script>
-<script src="assets/internal-schedule.js?v=20260801-final"></script>
+<script src="assets/internal-schedule.js?v=20260801-editor"></script>
+<script src="assets/page-blocks.js?v=20260801-editor"></script>
+<script src="assets/page-runtime.js?v=20260801-editor"></script>
+<script src="assets/page-admin-link.js?v=20260801-editor"></script>
 <script src="assets/app.js?v=20260801-final"></script>
 </body>
 </html>
