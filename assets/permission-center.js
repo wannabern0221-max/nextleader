@@ -10,7 +10,7 @@
 
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
   const show=(text,type='info')=>{message.className=`auth-message show ${type}`;message.textContent=text;};
-  const codes=['member_approve','role_manage','permission_grant','content_write_notice','content_write_card','content_write_policy','content_approve','news_manage','board_moderate','anonymous_identity_reveal','schedule_manage_common','schedule_manage_div1','schedule_manage_div2','system_manage'];
+  const codes=['member_approve','role_manage','permission_grant','content_write_notice','content_write_card','content_write_policy','content_approve','news_manage','board_moderate','anonymous_identity_reveal','schedule_manage_common','schedule_manage_div1','schedule_manage_div2','file_manage','system_manage'];
   const common=['리더 홈과 내부 콘텐츠 열람','정책국 공식 일정 열람·신규 등록','본인의 참여 불가일·사유 등록과 추가','공지·카드뉴스·정책 콘텐츠 초안 작성','익명 소통방과 정책 퀴즈·정책단어 이용'];
   const base={
     policy_director:new Set(codes),
@@ -31,14 +31,14 @@
     external_admin:'기술·시스템 유지보수를 담당하며 조직 운영 권한은 기본으로 갖지 않습니다.'
   };
   const capabilities={
-    policy_director:['모든 가입 신청 승인·반려와 직책·소속 변경','모든 페이지 문구·디자인·메뉴·팝업·블록 관리','전체 공지·카드뉴스·정책 콘텐츠 승인·수정·삭제','정책국·정책1부·정책2부 공식 일정 수정·삭제','모든 리더의 불가일·직책·사유 확인과 잘못된 기록 삭제','전체 활동보고서·사업계획서·사업계획 작성·수정·게시','익명 소통방 신고 처리와 운영 기록 확인'],
+    policy_director:['모든 가입 신청 승인·반려와 직책·소속 변경','모든 페이지 문구·디자인·메뉴·팝업·블록 관리','전체 공지·카드뉴스·정책 콘텐츠 승인·수정·삭제','정책국·정책1부·정책2부 공식 일정 수정·삭제','모든 리더의 불가일·직책·사유 확인과 잘못된 기록 삭제','전체 활동보고서·사업계획서·사업계획 작성·수정·게시','파일 저장공간 사용량·다운로드 설정·삭제·자동 정리 관리','익명 소통방 신고 처리와 운영 기록 확인'],
     senior_manager_div1:['정책1부 가입 신청 승인·반려와 부서 직책 관리','정책1부 콘텐츠 승인·반려·수정·삭제','정책1부 공식 일정 수정·삭제','정책1부 리더의 불가일·사유 확인과 삭제','정책1부 활동보고서·사업계획 자료 작성·수정·게시'],
     senior_manager_div2:['정책2부 가입 신청 승인·반려와 부서 직책 관리','정책2부 콘텐츠 승인·반려·수정·삭제','정책2부 공식 일정 수정·삭제','정책2부 리더의 불가일·사유 확인과 삭제','정책2부 활동보고서·사업계획 자료 작성·수정·게시'],
     policy_general_manager:['정책국 공통 공지·카드뉴스·정책 콘텐츠 승인·관리','정책단어와 외부 뉴스 등록·수정·숨김','정책국 공통 공식 일정 수정·삭제','정책국 소속 리더의 불가일·사유 확인과 삭제','정책1부·정책2부 사업자료 종합 수정·게시'],
     department_manager:['공지·카드뉴스·정책 콘텐츠 초안 작성과 승인 요청','공식 일정 신규 등록','본인의 참여 불가일 등록과 추가','게시된 사업자료와 내부 콘텐츠 열람'],
     section_manager:['공지·카드뉴스·정책 콘텐츠 초안 작성과 승인 요청','공식 일정 신규 등록','본인의 참여 불가일 등록과 추가','게시된 사업자료와 내부 콘텐츠 열람'],
     leader:['내부 공지·사업자료·정책단어·정책 퀴즈 열람','공지·카드뉴스·정책 콘텐츠 초안 작성과 승인 요청','공식 일정 신규 등록','본인의 참여 불가일 등록과 추가','익명 글과 댓글 작성'],
-    external_admin:['시스템 오류·배포·뉴스 자동 수집·보안 설정 유지보수','조직 운영 권한은 정책국장이 별도로 추가한 경우에만 사용']
+    external_admin:['시스템 오류·배포·뉴스 자동 수집·보안 설정 유지보수','조직 운영 권한과 파일 관리는 정책국장이 별도로 추가한 경우에만 사용']
   };
   const limitations={
     policy_director:['보안키·RLS·SMTP·도메인 등 기술 보안 영역은 페이지 편집기에서 제외'],

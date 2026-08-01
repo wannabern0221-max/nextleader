@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bnleader-file-service",
+  "main": "worker.js",
+  "compatibility_date": "2026-08-01",
+  "r2_buckets": [
+    {
+      "binding": "FILES",
+      "bucket_name": "bnleader-files"
+    }
+  ],
+  "vars": {
+    "SUPABASE_URL": "https://dsyufrexxrmqjfvonlfg.supabase.co",
+    "SUPABASE_ANON_KEY": "sb_publishable_36WOrx2ONEcb6rCaXM9EAw_TAgqtHmq",
+    "ALLOWED_ORIGINS": "https://bnleader.kro.kr,https://www.bnleader.kro.kr"
+  },
+  "triggers": {
+    "crons": ["15 * * * *"]
+  }
+}

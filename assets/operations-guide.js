@@ -2,7 +2,7 @@
   const root=document.querySelector('#guideRoot');
   const client=window.knaSupabase;
   const deny=text=>root.innerHTML=`<div class="member-panel access-denied"><h2>운영 안내를 볼 수 없습니다</h2><p>${text}</p><a class="btn btn-primary" href="dashboard.html">리더 홈으로</a></div>`;
-  if(!window.SUPABASE_CONFIG_READY||!client)return deny('Supabase 연결 설정을 확인해 주세요.');
+  if(!window.SUPABASE_CONFIG_READY||!client)return deny('리더 서비스 연결 설정을 확인해 주세요.');
   try{
     const{data:{session}}=await client.auth.getSession();if(!session)return location.replace('login.html');
     const{data,error}=await client.rpc('get_my_access');if(error)throw error;

@@ -38,6 +38,7 @@
     schedule_manage_common: '정책국 공통 일정 관리',
     schedule_manage_div1: '정책1부 일정 관리',
     schedule_manage_div2: '정책2부 일정 관리',
+    file_manage: '파일 관리',
     system_manage: '시스템 관리'
   });
 

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="대한간호학생회 부산 정책국 파일 관리">
+  <title>파일 관리 | 대한간호학생회 부산 정책국</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/leader-experience.css?v=20260802-files">
+  <link rel="stylesheet" href="assets/file-upload.css?v=20260802-files">
+</head>
+<body data-page="file-manager">
+<div class="utility"><div class="container"><span>대한간호학생회 부산 · 정책국</span><div class="utility-actions"><a class="utility-portal" href="dashboard.html">리더 홈</a></div></div></div>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/emblem.png" alt="대한간호학생회 부산 로고"><span><strong>대한간호학생회 부산</strong><span>정책국 공식 홈페이지</span></span></a><button class="menu-button" aria-label="메뉴 열기">☰</button><nav class="nav" aria-label="주요 메뉴"><a href="about.html">정책국 소개</a><a href="notice.html">공지사항</a><a href="cards.html">카드뉴스</a><a href="policy.html">정책 콘텐츠</a><a href="glossary.html">정책단어</a><a href="news.html">간호·정책 뉴스</a><a href="schedule.html">일정</a></nav></div></header>
+<main>
+  <section class="page-hero"><div class="container"><span class="eyebrow">FILE MANAGEMENT</span><h1>파일 관리</h1><p>저장공간 사용량과 업로드 파일의 다운로드 설정을 관리합니다.</p></div></section>
+  <section class="page-content"><div class="container file-manager-shell" id="fileManagerRoot">
+    <section class="storage-overview">
+      <div class="storage-copy">
+        <h2>저장공간 현황</h2>
+        <p>9GB에 도달하면 오래된 파일부터 자동으로 정리하여 7.5GB까지 줄입니다.</p>
+        <div class="storage-meter" aria-label="저장공간 사용률"><span id="storageMeter"></span></div>
+        <div class="storage-stats"><strong id="storageUsed">확인 중</strong><span id="storageRemaining"></span><span id="storageCount"></span></div>
+      </div>
+      <div class="file-manager-actions"><button class="btn btn-outline" id="refreshFiles" type="button">새로고침</button><button class="btn btn-primary" id="cleanupFiles" type="button">지금 정리</button></div>
+    </section>
+    <div id="fileManagerMessage" class="auth-message" aria-live="polite"></div>
+    <section><div class="section-head"><div><span class="eyebrow">UPLOADED FILES</span><h2>업로드 파일</h2><p>정책국장 또는 파일 관리 권한을 받은 리더만 볼 수 있습니다.</p></div></div><div class="manager-file-list" id="managerFileList"><div class="loading-state">파일을 불러오는 중입니다.</div></div></section>
+  </div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/emblem.png" alt="대한간호학생회 부산 로고"><div><strong>대한간호학생회 부산</strong><span>정책국 공식 홈페이지</span></div></div><div class="footer-copy"><div>파일 정리는 복구할 수 없으므로 삭제 전에 연결된 게시물을 확인해 주세요.</div><div>© 2026 Korean Nursing Students Association · Busan.</div></div></div></footer>
+<div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="assets/supabase-client.js"></script>
+<script src="assets/access.js?v=20260802-files"></script>
+<script src="assets/file-service-config.js?v=20260802-files"></script>
+<script src="assets/file-service.js?v=20260802-files"></script>
+<script src="assets/file-manager.js?v=20260802-files"></script>
+<script src="assets/app.js?v=20260802-files"></script>
+</body>
+</html>

@@ -49,7 +49,7 @@
   const state={activeTab:'basic',layout:null,history:[],pages:[],selectedBlock:0,selectedPopup:0,previewDevice:'desktop',fullPreviewDevice:'desktop',dirty:false,uploadTarget:null};
   const esc=window.KNA_PAGE_BLOCKS?.escapeHtml||((v)=>String(v??''));
 
-  if(!window.SUPABASE_CONFIG_READY||!client){root.innerHTML='<div class="editor-loading">Supabase 연결 설정을 확인해 주세요.</div>';return;}
+  if(!window.SUPABASE_CONFIG_READY||!client){root.innerHTML='<div class="editor-loading">리더 서비스 연결 설정을 확인해 주세요.</div>';return;}
   try{
     const {data:{session}}=await client.auth.getSession();
     if(!session)return location.replace('login.html');
@@ -130,10 +130,10 @@
     if(b.type==='heading')body=`<div class="editor-form-grid">${blockField('제목','title',b.title)}${blockField('보조 문구','subtitle',b.subtitle)}${selectBlock('제목 크기','level',String(b.level||2),[['2','크게'],['3','보통'],['4','작게']])}${selectBlock('정렬','align',b.align||'left',[['left','왼쪽'],['center','가운데'],['right','오른쪽']])}</div>`;
     else if(b.type==='text')body=`<div class="editor-form-grid">${blockTextarea('본문','body',b.body,'full')}${selectBlock('정렬','align',b.align||'left',[['left','왼쪽'],['center','가운데'],['right','오른쪽']])}</div><div class="editor-help"># 제목 · ## 소제목 · - 목록 · **굵게** 형식을 사용할 수 있습니다.</div>`;
     else if(b.type==='callout')body=`<div class="editor-form-grid">${blockField('안내 제목','title',b.title)}${selectBlock('색상','tone',b.tone||'blue',[['blue','파랑'],['navy','남색'],['green','초록'],['yellow','노랑'],['red','빨강']])}${blockTextarea('안내 내용','body',b.body,'full')}</div>`;
-    else if(b.type==='image')body=`<div class="editor-form-grid">${uploadField('이미지 주소','url',b.url||'')}${blockField('대체 문구','alt',b.alt||'')}${blockField('설명','caption',b.caption||'')}${blockField('클릭 연결 주소','link',b.link||'')}${selectBlock('맞춤','fit',b.fit||'cover',[['cover','영역 채우기'],['contain','전체 보이기']])}${selectBlock('모서리','radius',b.radius||'large',[['none','각지게'],['small','조금 둥글게'],['large','많이 둥글게']])}</div>`;
+    else if(b.type==='image')body=`<div class="editor-form-grid">${uploadField('이미지 업로드','url',b.url||'')}${blockField('대체 문구','alt',b.alt||'')}${blockField('설명','caption',b.caption||'')}${blockField('클릭 연결 주소','link',b.link||'')}${selectBlock('맞춤','fit',b.fit||'cover',[['cover','영역 채우기'],['contain','전체 보이기']])}${selectBlock('모서리','radius',b.radius||'large',[['none','각지게'],['small','조금 둥글게'],['large','많이 둥글게']])}</div>`;
     else if(b.type==='button')body=`<div class="editor-form-grid">${blockField('버튼 문구','label',b.label)}${blockField('연결 주소','url',b.url)}${selectBlock('모양','style',b.style||'primary',[['primary','강조'],['outline','테두리'],['soft','부드럽게']])}${selectBlock('정렬','align',b.align||'left',[['left','왼쪽'],['center','가운데'],['right','오른쪽']])}</div>`;
     else if(b.type==='link_list')body=`<div class="editor-form-grid">${blockField('영역 제목','title',b.title,'text','full')}</div>${arrayEditor('items',b.items||[],[['label','링크 이름','text'],['url','주소','text'],['description','설명','textarea']])}`;
-    else if(b.type==='cards')body=`<div class="editor-form-grid">${blockField('영역 제목','title',b.title)}${selectBlock('한 줄 카드 수','columns',String(b.columns||3),[['2','2개'],['3','3개'],['4','4개']])}</div>${arrayEditor('items',b.items||[],[['title','카드 제목','text'],['body','내용','textarea'],['url','연결 주소','text'],['image','이미지 주소','text']])}`;
+    else if(b.type==='cards')body=`<div class="editor-form-grid">${blockField('영역 제목','title',b.title)}${selectBlock('한 줄 카드 수','columns',String(b.columns||3),[['2','2개'],['3','3개'],['4','4개']])}</div>${arrayEditor('items',b.items||[],[['title','카드 제목','text'],['body','내용','textarea'],['url','연결 주소','text'],['image','카드 이미지','image']])}`;
     else if(b.type==='faq')body=`<div class="editor-form-grid">${blockField('영역 제목','title',b.title,'text','full')}</div>${arrayEditor('items',b.items||[],[['question','질문','text'],['answer','답변','textarea']])}`;
     else if(b.type==='notice_feed')body=`<div class="editor-form-grid">${blockField('영역 제목','title',b.title)}${selectBlock('게시글 종류','category',b.category||'notice',[['notice','공지사항'],['card','카드뉴스'],['policy','정책 콘텐츠']])}${blockField('표시 개수','limit',b.limit||5,'number')}<label class="editor-check"><input type="checkbox" data-block-field="show_more" ${b.show_more!==false?'checked':''}>전체 보기 링크 표시</label></div>`;
     else if(b.type==='schedule_calendar')body=`<div class="editor-form-grid">${blockField('영역 제목','title',b.title)}${blockField('소개 문구','description',b.description)}${blockField('다가오는 일정 개수','upcoming_count',b.upcoming_count||5,'number')}<label class="editor-check"><input type="checkbox" data-block-field="show_filters" ${b.show_filters!==false?'checked':''}>부서 필터 표시</label></div>`;
@@ -144,7 +144,7 @@
   function popupsPanel(){
     const list=state.layout.popups.map((p,i)=>`<div class="popup-list-item"><button type="button" data-select-popup="${i}" style="border:0;background:transparent;text-align:left;flex:1"><strong>${esc(p.title||'새 팝업')}</strong><small>${p.enabled===false?'숨김':'표시'}</small></button><button type="button" data-delete-popup="${i}">삭제</button></div>`).join('');
     const p=state.layout.popups[state.selectedPopup];
-    return `<div class="editor-panel-head"><div><h2>페이지 팝업</h2><p>현재 페이지에서만 표시되는 안내 팝업을 관리합니다.</p></div><button class="btn btn-primary" id="addPopup" type="button">팝업 추가</button></div><div class="popup-list">${list||'<div class="managed-empty">등록된 팝업이 없습니다.</div>'}</div>${p?`<div class="block-editor"><div class="block-editor-head"><strong>팝업 설정</strong><label><input type="checkbox" data-popup-field="enabled" ${p.enabled!==false?'checked':''}> 표시</label></div><div class="editor-form-grid">${popupField('제목','title',p.title)}${uploadPopupField('이미지 주소','image',p.image||'')}${popupTextarea('본문','body',p.body,'full')}${popupField('버튼 문구','button_label',p.button_label||'')}${popupField('버튼 주소','button_url',p.button_url||'')}${popupField('시작 일시','start_at',p.start_at||'','datetime-local')}${popupField('종료 일시','end_at',p.end_at||'','datetime-local')}${popupField('다시 보지 않을 기간(일)','dismiss_days',p.dismiss_days||1,'number')}</div></div>`:''}`;
+    return `<div class="editor-panel-head"><div><h2>페이지 팝업</h2><p>현재 페이지에서만 표시되는 안내 팝업을 관리합니다.</p></div><button class="btn btn-primary" id="addPopup" type="button">팝업 추가</button></div><div class="popup-list">${list||'<div class="managed-empty">등록된 팝업이 없습니다.</div>'}</div>${p?`<div class="block-editor"><div class="block-editor-head"><strong>팝업 설정</strong><label><input type="checkbox" data-popup-field="enabled" ${p.enabled!==false?'checked':''}> 표시</label></div><div class="editor-form-grid">${popupField('제목','title',p.title)}${uploadPopupField('이미지 업로드','image',p.image||'')}${popupTextarea('본문','body',p.body,'full')}${popupField('버튼 문구','button_label',p.button_label||'')}${popupField('버튼 주소','button_url',p.button_url||'')}${popupField('시작 일시','start_at',p.start_at||'','datetime-local')}${popupField('종료 일시','end_at',p.end_at||'','datetime-local')}${popupField('다시 보지 않을 기간(일)','dismiss_days',p.dismiss_days||1,'number')}</div></div>`:''}`;
   }
   function historyPanel(){return `<div class="editor-panel-head"><div><h2>이전 버전</h2><p>게시 전 상태로 되돌릴 수 있습니다.</p></div></div><div class="history-list">${state.history.length?state.history.map(h=>`<div class="history-item"><div><strong>${new Date(h.created_at).toLocaleString('ko-KR')}</strong><small>${esc(h.changed_by_name||'정책국장')}</small></div><button type="button" data-restore="${h.id}">복원</button></div>`).join(''):'<div class="managed-empty">저장된 이전 버전이 없습니다.</div>'}</div>`;}
 
@@ -154,11 +154,11 @@
   function blockField(label,key,value,type='text',cls=''){return `<label class="editor-field ${cls}"><span>${label}</span><input type="${type}" data-block-field="${key}" value="${esc(value??'')}"></label>`;}
   function blockTextarea(label,key,value,cls=''){return `<label class="editor-field ${cls}"><span>${label}</span><textarea data-block-field="${key}">${esc(value||'')}</textarea></label>`;}
   function selectBlock(label,key,value,options){return `<label class="editor-field"><span>${label}</span><select data-block-field="${key}">${options.map(([v,l])=>`<option value="${v}" ${String(v)===String(value)?'selected':''}>${l}</option>`).join('')}</select></label>`;}
-  function uploadField(label,key,value){return `<label class="editor-field full"><span>${label}</span><div class="upload-row"><input type="text" data-block-field="${key}" value="${esc(value)}"><button class="upload-button" type="button" data-upload="block" data-upload-field="${key}">파일 업로드</button></div><small class="editor-help">이미지 최대 5MB. 업로드한 파일은 공개 페이지에서 볼 수 있습니다.</small></label>`;}
+  function uploadField(label,key,value){return `<label class="editor-field full"><span>${label}</span><input type="hidden" data-block-field="${key}" value="${esc(value)}"><div class="managed-upload-preview">${value?`<img src="${esc(value)}" alt="업로드 이미지 미리보기">`:'<span>등록된 이미지가 없습니다.</span>'}<button class="upload-button" type="button" data-upload="block" data-upload-field="${key}">이미지 선택</button></div><small class="editor-help">주소를 입력하지 않고 이미지 파일을 직접 선택합니다.</small></label>`;}
   function popupField(label,key,value,type='text'){return `<label class="editor-field"><span>${label}</span><input type="${type}" data-popup-field="${key}" value="${esc(value??'')}"></label>`;}
   function popupTextarea(label,key,value,cls=''){return `<label class="editor-field ${cls}"><span>${label}</span><textarea data-popup-field="${key}">${esc(value||'')}</textarea></label>`;}
-  function uploadPopupField(label,key,value){return `<label class="editor-field full"><span>${label}</span><div class="upload-row"><input type="text" data-popup-field="${key}" value="${esc(value)}"><button class="upload-button" type="button" data-upload="popup" data-upload-field="${key}">파일 업로드</button></div></label>`;}
-  function arrayEditor(fieldName,items,defs){return `<div class="array-list">${items.map((item,i)=>`<div class="array-item"><div class="array-item-head"><strong>항목 ${i+1}</strong><button type="button" data-remove-array="${fieldName}" data-index="${i}">항목 삭제</button></div><div class="array-item-grid">${defs.map(([key,label,type])=>type==='textarea'?`<label class="editor-field"><span>${label}</span><textarea data-array-field="${fieldName}" data-index="${i}" data-item-key="${key}">${esc(item[key]||'')}</textarea></label>`:`<label class="editor-field"><span>${label}</span><input type="text" data-array-field="${fieldName}" data-index="${i}" data-item-key="${key}" value="${esc(item[key]||'')}"></label>`).join('')}</div></div>`).join('')}</div><button class="add-array-item" type="button" data-add-array="${fieldName}">항목 추가</button>`;}
+  function uploadPopupField(label,key,value){return `<label class="editor-field full"><span>${label}</span><input type="hidden" data-popup-field="${key}" value="${esc(value)}"><div class="managed-upload-preview">${value?`<img src="${esc(value)}" alt="업로드 이미지 미리보기">`:'<span>등록된 이미지가 없습니다.</span>'}<button class="upload-button" type="button" data-upload="popup" data-upload-field="${key}">이미지 선택</button></div></label>`;}
+  function arrayEditor(fieldName,items,defs){return `<div class="array-list">${items.map((item,i)=>`<div class="array-item"><div class="array-item-head"><strong>항목 ${i+1}</strong><button type="button" data-remove-array="${fieldName}" data-index="${i}">항목 삭제</button></div><div class="array-item-grid">${defs.map(([key,label,type])=>type==='textarea'?`<label class="editor-field"><span>${label}</span><textarea data-array-field="${fieldName}" data-index="${i}" data-item-key="${key}">${esc(item[key]||'')}</textarea></label>`:type==='image'?`<label class="editor-field full"><span>${label}</span><input type="hidden" data-array-field="${fieldName}" data-index="${i}" data-item-key="${key}" value="${esc(item[key]||'')}"><div class="managed-upload-preview">${item[key]?`<img src="${esc(item[key])}" alt="카드 이미지 미리보기">`:'<span>등록된 이미지가 없습니다.</span>'}<button class="upload-button" type="button" data-upload-array="${fieldName}" data-upload-index="${i}" data-upload-item-key="${key}">이미지 선택</button></div></label>`:`<label class="editor-field"><span>${label}</span><input type="text" data-array-field="${fieldName}" data-index="${i}" data-item-key="${key}" value="${esc(item[key]||'')}"></label>`).join('')}</div></div>`).join('')}</div><button class="add-array-item" type="button" data-add-array="${fieldName}">항목 추가</button>`;}
   function blockTitle(block){return block.title||block.label||block.type||'블록';}
 
   function bindPanel(){
@@ -179,6 +179,7 @@
     document.querySelectorAll('[data-delete-popup]').forEach(btn=>btn.addEventListener('click',()=>{if(!confirm('팝업을 삭제할까요?'))return;state.layout.popups.splice(Number(btn.dataset.deletePopup),1);state.selectedPopup=0;state.dirty=true;renderPanel();}));
     document.querySelectorAll('[data-restore]').forEach(btn=>btn.addEventListener('click',()=>restore(Number(btn.dataset.restore))));
     document.querySelectorAll('[data-upload]').forEach(btn=>btn.addEventListener('click',()=>{state.uploadTarget={type:btn.dataset.upload,field:btn.dataset.uploadField};document.querySelector('#editorUploadInput').value='';document.querySelector('#editorUploadInput').click();}));
+    document.querySelectorAll('[data-upload-array]').forEach(btn=>btn.addEventListener('click',()=>{state.uploadTarget={type:'array',field:btn.dataset.uploadArray,index:Number(btn.dataset.uploadIndex),itemKey:btn.dataset.uploadItemKey};document.querySelector('#editorUploadInput').value='';document.querySelector('#editorUploadInput').click();}));
   }
   function moveBlock(index,direction){const target=index+direction;if(target<0||target>=state.layout.blocks.length)return;const [item]=state.layout.blocks.splice(index,1);state.layout.blocks.splice(target,0,item);state.selectedBlock=target;state.dirty=true;renderPanel();renderPreview();}
   function setPath(obj,path,value){const parts=path.split('.');let current=obj;parts.slice(0,-1).forEach(key=>{current[key]=current[key]||{};current=current[key];});current[parts.at(-1)]=value;}
@@ -216,14 +217,24 @@
   addEventListener('keydown',event=>{if(event.key==='Escape'&&!fullPreviewModal?.hidden)closeFullPreview();});
   async function uploadFile(event){
     const file=event.target.files?.[0];if(!file||!state.uploadTarget)return;
-    if(file.size>5*1024*1024){message('파일은 5MB 이하만 업로드할 수 있습니다.','error');return;}
-    message('파일을 업로드하고 있습니다.','info');
-    const safe=file.name.normalize('NFKD').replace(/[^0-9a-zA-Z._-]+/g,'-');const path=`${pageKey}/${Date.now()}-${safe}`;
-    const {error}=await client.storage.from('site-media').upload(path,file,{cacheControl:'3600',upsert:false});
-    if(error){message(error.message||'업로드하지 못했습니다.','error');return;}
-    const {data}=client.storage.from('site-media').getPublicUrl(path);const url=data.publicUrl;
-    if(state.uploadTarget.type==='block')state.layout.blocks[state.selectedBlock][state.uploadTarget.field]=url;else state.layout.popups[state.selectedPopup][state.uploadTarget.field]=url;
-    state.dirty=true;renderPanel();renderPreview();message('파일을 업로드했습니다.','success');
+    if(!file.type.startsWith('image/')){message('이미지 파일만 업로드할 수 있습니다.','error');return;}
+    message('이미지를 업로드하고 있습니다.','info');
+    try{
+      const uploaded=await window.KNA_FILE_SERVICE.upload(file,{
+        purpose:state.uploadTarget.type==='popup'?'popup-image':'page-image',
+        audience:'public',
+        downloadEnabled:false
+      });
+      const url=uploaded.viewUrl;
+      if(state.uploadTarget.type==='block')state.layout.blocks[state.selectedBlock][state.uploadTarget.field]=url;
+      else if(state.uploadTarget.type==='array'){
+        const block=state.layout.blocks[state.selectedBlock];
+        const item=block?.[state.uploadTarget.field]?.[state.uploadTarget.index];
+        if(!item)throw new Error('카드 항목을 찾을 수 없습니다.');
+        item[state.uploadTarget.itemKey]=url;
+      } else state.layout.popups[state.selectedPopup][state.uploadTarget.field]=url;
+      state.dirty=true;renderPanel();renderPreview();message('이미지를 업로드했습니다.','success');
+    }catch(error){message(error.message||'업로드하지 못했습니다.','error');}
   }
   async function publish(){
     publishButton.disabled=true;message('페이지를 게시하고 있습니다.','info');
