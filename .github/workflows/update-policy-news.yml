@@ -2,11 +2,15 @@ name: Update nursing policy news
 
 on:
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: nursing-policy-news
+  cancel-in-progress: false
 
 jobs:
   update-news:

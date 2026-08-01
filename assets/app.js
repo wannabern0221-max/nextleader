@@ -1,77 +1,16 @@
-const qs = (s, root = document) => root.querySelector(s);
-const qsa = (s, root = document) => [...root.querySelectorAll(s)];
-
-const menuBtn = qs('.menu-button');
-const nav = qs('.nav');
-if (menuBtn && nav) menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
-
-const modal = qs('#siteModal');
-const modalTitle = qs('#modalTitle');
-const modalBody = qs('#modalBody');
-const closeBtns = qsa('[data-close-modal]');
-const hideToday = qs('#hideToday');
-
-function openModal(title, body) {
-  if (!modal) return;
-  modalTitle.textContent = title;
-  modalBody.innerHTML = body;
-  modal.classList.add('open');
-  document.body.style.overflow = 'hidden';
+const qs=(s,root=document)=>root.querySelector(s);const qsa=(s,root=document)=>[...root.querySelectorAll(s)];
+const menuBtn=qs('.menu-button');const nav=qs('.nav');if(menuBtn&&nav)menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+const modal=qs('#siteModal');const modalTitle=qs('#modalTitle');const modalBody=qs('#modalBody');const closeBtns=qsa('[data-close-modal]');const hideToday=qs('#hideToday');
+function openModal(title,body){if(!modal)return;modalTitle.textContent=title;modalBody.innerHTML=body;modal.classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){if(!modal)return;modal.classList.remove('open');document.body.style.overflow=''}
+closeBtns.forEach(btn=>btn.addEventListener('click',closeModal));if(modal)modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+const alertBtn=qs('[data-open-alert]');if(alertBtn)alertBtn.addEventListener('click',()=>openModal('홈페이지 이용 안내','<p><strong>대한간호학생회 부산 정책국 홈페이지</strong>입니다.</p><p>공개 메뉴는 로그인 없이 열람할 수 있습니다. 리더 기능은 이메일 인증과 가입 승인을 완료한 뒤 이용할 수 있습니다.</p>'));
+function todayKey(){const d=new Date();return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`}
+let welcomeOpened=false;
+function openWelcome(){if(welcomeOpened||document.body.dataset.page!=='home'||localStorage.getItem('noticeHiddenDate')===todayKey())return;welcomeOpened=true;openModal('대한간호학생회 부산 정책국 홈페이지에 오신 것을 환영합니다',`<div class="welcome-panel"><p class="welcome-lead">본 홈페이지는 부산 정책국 리더들의 원활한 소통과 정책 정보 공유를 위해 운영됩니다. 내부 기능을 이용하려면 로그인 또는 가입 신청을 진행해 주세요.</p><div class="welcome-info"><div><strong>로그인 아이디</strong><span>가입 시 입력한 이메일 주소를 사용합니다.</span></div><div><strong>비밀번호</strong><span>안전한 방식으로 변환하여 처리되며 운영자도 기존 비밀번호를 확인할 수 없습니다.</span></div><div><strong>가입 절차</strong><span>이메일 인증과 임원의 승인을 완료하면 내부포털을 이용할 수 있습니다.</span></div></div><div class="welcome-actions"><a class="btn btn-primary" href="login.html">로그인</a><a class="btn btn-outline" href="login.html?tab=signup">가입 신청</a></div></div>`)}
+if(document.body.dataset.page==='home'){
+  document.addEventListener('kna:session-ready',e=>{if(!e.detail?.session)setTimeout(openWelcome,200)},{once:true});
+  setTimeout(()=>{if(!window.KNA_SESSION_STATE?.session)openWelcome()},1200);
 }
-function closeModal() {
-  if (!modal) return;
-  modal.classList.remove('open');
-  document.body.style.overflow = '';
-}
-closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
-if (modal) modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-const alertBtn = qs('[data-open-alert]');
-if (alertBtn) {
-  alertBtn.addEventListener('click', () => openModal(
-    '홈페이지 이용 안내',
-    `<p><strong>대한간호학생회 부산 정책국 홈페이지</strong>입니다.</p>
-     <p>공개 메뉴는 로그인 없이 열람할 수 있습니다. 리더 기능은 이메일 인증과 가입 승인을 완료한 뒤 이용할 수 있습니다.</p>`
-  ));
-}
-function todayKey() {
-  const d = new Date();
-  return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
-}
-if (document.body.dataset.page === 'home') {
-  const hidden = localStorage.getItem('noticeHiddenDate');
-  if (hidden !== todayKey()) {
-    setTimeout(() => openModal(
-      '대한간호학생회 부산 정책국 안내',
-      `<p>정책국 공식 홈페이지입니다.</p>
-       <p>공개 게시물은 누구나 열람할 수 있으며 리더는 이메일 인증과 가입 승인을 거쳐 내부 기능을 이용합니다.</p>`
-    ), 450);
-  }
-}
-if (hideToday) {
-  hideToday.addEventListener('change', () => {
-    if (hideToday.checked) localStorage.setItem('noticeHiddenDate', todayKey());
-    else localStorage.removeItem('noticeHiddenDate');
-  });
-}
-if (document.body.dataset.page === 'article' && new URLSearchParams(location.search).has('slug')) {
-  const params = new URLSearchParams(location.search);
-  const item = window.KNA_CONTENT?.[params.get('slug')];
-  const title = qs('#articleTitle');
-  const category = qs('#articleCategory');
-  const date = qs('#articleDate');
-  const body = qs('#articleBody');
-  if (item) {
-    document.title = `${item.title} | 대한간호학생회 부산 정책국`;
-    title.textContent = item.title;
-    category.textContent = item.category;
-    date.textContent = item.date;
-    body.innerHTML = item.body;
-  } else {
-    title.textContent = '게시물을 찾을 수 없습니다';
-    category.textContent = '안내';
-    date.textContent = '';
-    body.innerHTML = '<p>주소가 잘못되었거나 게시물이 이동되었습니다.</p>';
-  }
-}
+if(hideToday)hideToday.addEventListener('change',()=>{if(hideToday.checked)localStorage.setItem('noticeHiddenDate',todayKey());else localStorage.removeItem('noticeHiddenDate')});
+if(document.body.dataset.page==='article'&&new URLSearchParams(location.search).has('slug')){const params=new URLSearchParams(location.search);const item=window.KNA_CONTENT?.[params.get('slug')];const title=qs('#articleTitle');const category=qs('#articleCategory');const date=qs('#articleDate');const body=qs('#articleBody');if(item){document.title=`${item.title} | 대한간호학생회 부산 정책국`;title.textContent=item.title;category.textContent=item.category;date.textContent=item.date;body.innerHTML=item.body}else{title.textContent='게시물을 찾을 수 없습니다';category.textContent='안내';date.textContent='';body.innerHTML='<p>주소가 잘못되었거나 게시물이 이동되었습니다.</p>'}}

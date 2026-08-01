@@ -23,6 +23,8 @@
     sections.forEach(section => section.hidden = section.dataset.authSection !== name);
   };
   tabs.forEach(tab => tab.addEventListener('click', () => activateTab(tab.dataset.authTab)));
+  const initialTab = new URLSearchParams(location.search).get('tab');
+  if (initialTab === 'signup') activateTab('signup');
   document.querySelectorAll('[data-auth-tab-jump]').forEach(button => {
     button.addEventListener('click', () => activateTab(button.dataset.authTabJump));
   });
