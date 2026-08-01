@@ -7,8 +7,20 @@
   const portalLinks = [...document.querySelectorAll('[data-portal-link]')];
   const client = window.knaSupabase;
 
+  const IDLE_TIMEOUT_MS = 30 * 60 * 1000;
+  const WARNING_BEFORE_MS = 60 * 1000;
+  const LAST_ACTIVITY_KEY = 'kna-busan-last-activity-at';
+  const SESSION_USER_KEY = 'kna-busan-session-user-id';
+  const ACTIVITY_WRITE_GAP_MS = 15000;
+
   const state = { session: null, profile: null, access: null };
   window.KNA_SESSION_STATE = state;
+
+  let activityListenersReady = false;
+  let lastActivityWrite = 0;
+  let timeoutInProgress = false;
+  let warningShown = false;
+  let timeoutTimer = null;
 
   const dispatchReady = () => document.dispatchEvent(new CustomEvent('kna:session-ready', { detail: state }));
 
@@ -46,6 +58,7 @@
     trigger.classList.remove('signed-in');
     trigger.setAttribute('aria-expanded', 'false');
     if (popover) popover.hidden = true;
+    portalLinks.forEach(link => link.classList.remove('is-approved'));
   }
 
   function renderSignedIn(access) {
@@ -67,6 +80,141 @@
     portalLinks.forEach(link => link.classList.toggle('is-approved', approved));
   }
 
+  function clearSessionMarkers() {
+    localStorage.removeItem(LAST_ACTIVITY_KEY);
+    localStorage.removeItem(SESSION_USER_KEY);
+    warningShown = false;
+  }
+
+  function getLastActivity() {
+    const value = Number(localStorage.getItem(LAST_ACTIVITY_KEY));
+    return Number.isFinite(value) && value > 0 ? value : 0;
+  }
+
+  function setLastActivity(force = false) {
+    if (!state.session || timeoutInProgress) return;
+    const now = Date.now();
+    if (!force && now - lastActivityWrite < ACTIVITY_WRITE_GAP_MS) return;
+    lastActivityWrite = now;
+    localStorage.setItem(LAST_ACTIVITY_KEY, String(now));
+    localStorage.setItem(SESSION_USER_KEY, state.session.user.id);
+    warningShown = false;
+    hideTimeoutNotice();
+  }
+
+  function getTimeoutNotice() {
+    let notice = document.querySelector('#sessionTimeoutNotice');
+    if (!notice) {
+      notice = document.createElement('div');
+      notice.id = 'sessionTimeoutNotice';
+      notice.className = 'session-timeout-notice';
+      notice.setAttribute('role', 'status');
+      notice.setAttribute('aria-live', 'polite');
+      document.body.appendChild(notice);
+    }
+    return notice;
+  }
+
+  function showTimeoutNotice() {
+    const notice = getTimeoutNotice();
+    notice.textContent = '1분 동안 활동이 없으면 보안을 위해 자동으로 로그아웃됩니다.';
+    requestAnimationFrame(() => notice.classList.add('show'));
+  }
+
+  function hideTimeoutNotice() {
+    document.querySelector('#sessionTimeoutNotice')?.classList.remove('show');
+  }
+
+  async function signOutForTimeout() {
+    if (timeoutInProgress || !state.session) return;
+    timeoutInProgress = true;
+    clearSessionMarkers();
+    try {
+      await client.auth.signOut({ scope: 'local' });
+    } catch (error) {
+      console.error('자동 로그아웃 처리 중 오류:', error);
+    }
+    const loginUrl = new URL('login.html', window.location.href);
+    loginUrl.searchParams.set('timeout', '1');
+    window.location.replace(loginUrl.href);
+  }
+
+  async function checkIdleTimeout() {
+    if (!state.session || timeoutInProgress) return false;
+    const lastActivity = getLastActivity();
+    if (!lastActivity) {
+      setLastActivity(true);
+      return false;
+    }
+
+    const idleFor = Date.now() - lastActivity;
+    if (idleFor >= IDLE_TIMEOUT_MS) {
+      await signOutForTimeout();
+      return true;
+    }
+
+    if (IDLE_TIMEOUT_MS - idleFor <= WARNING_BEFORE_MS) {
+      if (!warningShown) {
+        warningShown = true;
+        showTimeoutNotice();
+      }
+    } else if (warningShown) {
+      warningShown = false;
+      hideTimeoutNotice();
+    }
+    return false;
+  }
+
+  function prepareActivityTracking() {
+    if (activityListenersReady) return;
+    activityListenersReady = true;
+
+    const record = () => setLastActivity(false);
+    ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(eventName => {
+      window.addEventListener(eventName, record, { passive: true });
+    });
+
+    window.addEventListener('focus', async () => {
+      const timedOut = await checkIdleTimeout();
+      if (!timedOut) setLastActivity(true);
+    });
+
+    document.addEventListener('visibilitychange', async () => {
+      if (document.visibilityState !== 'visible') return;
+      const timedOut = await checkIdleTimeout();
+      if (!timedOut) setLastActivity(true);
+    });
+
+    window.addEventListener('storage', event => {
+      if (event.key === LAST_ACTIVITY_KEY) {
+        warningShown = false;
+        hideTimeoutNotice();
+      }
+    });
+
+    timeoutTimer = window.setInterval(checkIdleTimeout, 15000);
+  }
+
+  async function initializeTimeoutForSession(session) {
+    if (!session) {
+      clearSessionMarkers();
+      return false;
+    }
+
+    const storedUserId = localStorage.getItem(SESSION_USER_KEY);
+    if (storedUserId !== session.user.id || !getLastActivity()) {
+      state.session = session;
+      setLastActivity(true);
+    } else {
+      state.session = session;
+      const timedOut = await checkIdleTimeout();
+      if (timedOut) return true;
+    }
+
+    prepareActivityTracking();
+    return false;
+  }
+
   trigger.addEventListener('click', event => {
     if (!state.session || !popover) return;
     event.preventDefault();
@@ -80,7 +228,8 @@
 
   logoutButton?.addEventListener('click', async () => {
     logoutButton.disabled = true;
-    await client.auth.signOut();
+    clearSessionMarkers();
+    await client.auth.signOut({ scope: 'local' });
     location.href = 'index.html';
   });
 
@@ -92,10 +241,15 @@
       if (!state.session) {
         state.profile = null;
         state.access = null;
+        clearSessionMarkers();
         renderSignedOut();
         dispatchReady();
         return;
       }
+
+      const timedOut = await initializeTimeoutForSession(state.session);
+      if (timedOut) return;
+
       const access = await loadAccess(state.session.user.id);
       state.profile = access;
       state.access = access;
@@ -118,6 +272,15 @@
     dispatchReady();
   }
 
-  client.auth.onAuthStateChange(() => setTimeout(refresh, 0));
+  client.auth.onAuthStateChange((event) => {
+    if (event === 'SIGNED_OUT') {
+      clearSessionMarkers();
+      if (timeoutTimer) {
+        clearInterval(timeoutTimer);
+        timeoutTimer = null;
+      }
+    }
+    setTimeout(refresh, 0);
+  });
   await refresh();
 })();

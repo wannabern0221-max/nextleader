@@ -27,6 +27,27 @@
     button.addEventListener('click', () => activateTab(button.dataset.authTabJump));
   });
 
+  const accountModeButtons = [...document.querySelectorAll('[data-account-mode]')];
+  const accountPanes = [...document.querySelectorAll('[data-account-pane]')];
+  const setAccountMode = mode => {
+    accountModeButtons.forEach(button => {
+      const active = button.dataset.accountMode === mode;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-selected', String(active));
+    });
+    accountPanes.forEach(pane => pane.hidden = pane.dataset.accountPane !== mode);
+  };
+
+  document.querySelectorAll('[data-account-view]').forEach(button => {
+    button.addEventListener('click', () => {
+      activateTab('account');
+      setAccountMode(button.dataset.accountView || 'id');
+    });
+  });
+  accountModeButtons.forEach(button => {
+    button.addEventListener('click', () => setAccountMode(button.dataset.accountMode));
+  });
+
   const redirectUrl = new URL('login.html?verified=1', window.location.href).href;
   const passwordRecoveryUrl = new URL('reset-password.html', window.location.href).href;
 
@@ -190,6 +211,10 @@
     }
     if (params.get('password_reset') === '1') {
       showMessage('비밀번호가 변경되었습니다. 새 비밀번호로 로그인해 주세요.', 'success');
+      activateTab('login');
+    }
+    if (params.get('timeout') === '1') {
+      showMessage('30분 동안 활동이 없어 보안을 위해 자동으로 로그아웃되었습니다.', 'warning');
       activateTab('login');
     }
 

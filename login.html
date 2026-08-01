@@ -57,10 +57,9 @@
             현재 리더 서비스 연결 설정이 완료되지 않았습니다. 홈페이지 관리자에게 문의해 주세요.
           </div>
 
-          <div class="auth-tabs" role="tablist">
-            <button class="auth-tab active" type="button" data-auth-tab="login">로그인</button>
-            <button class="auth-tab" type="button" data-auth-tab="signup">가입 신청</button>
-            <button class="auth-tab" type="button" data-auth-tab="account">계정 찾기</button>
+          <div class="auth-tabs" role="tablist" aria-label="로그인 메뉴">
+            <button class="auth-tab active" type="button" data-auth-tab="login" role="tab" aria-selected="true">로그인</button>
+            <button class="auth-tab" type="button" data-auth-tab="signup" role="tab" aria-selected="false">가입 신청</button>
           </div>
 
           <section class="auth-section" data-auth-section="login">
@@ -75,10 +74,15 @@
                   <input id="loginPassword" name="password" type="password" autocomplete="current-password" required placeholder="비밀번호">
                 </div>
               </div>
-              <div class="form-actions">
+              <div class="form-actions login-primary-action">
                 <button class="btn btn-primary" type="submit">로그인</button>
-                <button class="btn btn-outline" type="button" data-auth-tab-jump="account">아이디·비밀번호 찾기</button>
               </div>
+              <div class="login-help-links" aria-label="계정 도움말">
+                <button type="button" data-account-view="id">아이디 찾기</button>
+                <span aria-hidden="true">|</span>
+                <button type="button" data-account-view="password">비밀번호 찾기</button>
+              </div>
+              <p class="session-policy-note">보안을 위해 30분 동안 활동이 없으면 자동으로 로그아웃됩니다.</p>
             </form>
           </section>
 
@@ -105,25 +109,47 @@
           </section>
 
 
-          <section class="auth-section" data-auth-section="account" hidden>
-            <div class="form-note account-help-note">
-              <strong>로그인 아이디는 가입할 때 사용한 이메일 주소입니다.</strong><br>
-              가입 이메일이 기억나지 않으면 이름·학교·기수를 정책국 관리자에게 알려 확인을 요청해 주세요.
-              관리자는 로그인 이메일만 확인할 수 있으며 비밀번호는 확인할 수 없습니다.
+          <section class="auth-section account-recovery-section" data-auth-section="account" hidden>
+            <div class="account-recovery-header">
+              <button class="account-back-button" type="button" data-auth-tab-jump="login" aria-label="로그인 화면으로 돌아가기">←</button>
+              <div>
+                <span class="account-recovery-kicker">ACCOUNT HELP</span>
+                <h2>계정 찾기</h2>
+              </div>
             </div>
-            <form id="passwordResetRequestForm" data-auth-form>
-              <div class="form-grid">
-                <div class="field full">
-                  <label for="recoveryEmail">비밀번호 재설정 이메일</label>
-                  <input id="recoveryEmail" name="email" type="email" autocomplete="email" required placeholder="가입한 이메일 주소">
-                  <span class="field-help">입력한 이메일로 비밀번호 재설정 링크를 전송합니다.</span>
+
+            <div class="account-subtabs" role="tablist" aria-label="계정 찾기 메뉴">
+              <button class="account-subtab active" type="button" data-account-mode="id" role="tab" aria-selected="true">아이디 찾기</button>
+              <button class="account-subtab" type="button" data-account-mode="password" role="tab" aria-selected="false">비밀번호 찾기</button>
+            </div>
+
+            <div class="account-pane" data-account-pane="id">
+              <div class="account-id-card">
+                <div class="account-id-icon" aria-hidden="true">@</div>
+                <div>
+                  <strong>로그인 아이디는 가입한 이메일 주소입니다.</strong>
+                  <p>이메일이 기억나지 않으면 정책국 관리자에게 이름과 학교 그리고 기수를 알려 확인을 요청해 주세요.</p>
                 </div>
               </div>
-              <div class="form-actions">
-                <button class="btn btn-primary" type="submit">재설정 메일 보내기</button>
-                <button class="btn btn-outline" type="button" data-auth-tab-jump="login">로그인으로 돌아가기</button>
+              <div class="account-security-note">
+                관리자는 로그인 이메일만 확인할 수 있으며 비밀번호는 확인할 수 없습니다.
               </div>
-            </form>
+            </div>
+
+            <div class="account-pane" data-account-pane="password" hidden>
+              <form id="passwordResetRequestForm" data-auth-form>
+                <div class="form-grid">
+                  <div class="field full">
+                    <label for="recoveryEmail">가입한 이메일</label>
+                    <input id="recoveryEmail" name="email" type="email" autocomplete="email" required placeholder="example@email.com">
+                    <span class="field-help">입력한 이메일로 새 비밀번호 설정 링크를 전송합니다.</span>
+                  </div>
+                </div>
+                <div class="form-actions login-primary-action">
+                  <button class="btn btn-primary" type="submit">비밀번호 재설정 메일 보내기</button>
+                </div>
+              </form>
+            </div>
           </section>
 
           <div id="authMessage" class="auth-message" aria-live="polite"></div>
