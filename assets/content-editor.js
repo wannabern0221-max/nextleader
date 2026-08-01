@@ -60,7 +60,7 @@
     if (requestedCategory) form.elements.category.value = requestedCategory;
     configureCategory(false);
     if (id) await loadPost(id);
-    publishButton.hidden = !canApprove();
+    configureActionButtons();
   } catch (error) {
     console.error(error);
     show(error.message || '글쓰기 화면을 불러오지 못했습니다.', 'error');
@@ -438,6 +438,12 @@
   }
   function escapeAttribute(value) { return escapeHtml(value); }
   function labelStatus(value) { return ({draft:'작성 중',review:'승인 요청',published:'게시 완료',rejected:'반려',hidden:'숨김'}[value] || value); }
+  function configureActionButtons() {
+    const hasPublishPermission = canApprove();
+    saveButton.hidden = !hasPublishPermission;
+    publishButton.hidden = !hasPublishPermission;
+    submitButton.hidden = hasPublishPermission;
+  }
   function toggleBusy(busy) {
     saveButton.disabled = busy;
     submitButton.disabled = busy;

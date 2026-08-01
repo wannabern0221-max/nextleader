@@ -104,7 +104,9 @@
     }
     const today = new Date();
     today.setHours(0,0,0,0);
-    const upcoming=[...rows].sort((a,b)=>String(a.event_date).localeCompare(String(b.event_date)) || String(a.start_time||'').localeCompare(String(b.start_time||'')));
+    const upcoming=[...rows]
+      .filter(item => new Date(`${item.event_date}T00:00:00`) >= today)
+      .sort((a,b)=>String(a.event_date).localeCompare(String(b.event_date)) || String(a.start_time||'').localeCompare(String(b.start_time||'')));
     list.innerHTML = upcoming.map(item => {
       const date = new Date(`${item.event_date}T00:00:00`);
       const time = [item.start_time ? String(item.start_time).slice(0,5) : '', item.end_time ? `~ ${String(item.end_time).slice(0,5)}` : ''].filter(Boolean).join(' ');
