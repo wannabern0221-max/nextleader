@@ -14,6 +14,8 @@
   const sections = [...document.querySelectorAll('[data-auth-section]')];
   const activateTab = name => { tabs.forEach(tab => tab.classList.toggle('active', tab.dataset.authTab === name)); sections.forEach(section => section.hidden = section.dataset.authSection !== name); };
   tabs.forEach(tab => tab.addEventListener('click', () => activateTab(tab.dataset.authTab)));
+  const requestedTab = new URLSearchParams(location.search).get('tab');
+  if (requestedTab === 'signup') activateTab('signup');
   document.querySelectorAll('[data-auth-tab-jump]').forEach(button => button.addEventListener('click', () => activateTab(button.dataset.authTabJump)));
 
   const accountModeButtons = [...document.querySelectorAll('[data-account-mode]')];
@@ -24,6 +26,20 @@
   };
   document.querySelectorAll('[data-account-view]').forEach(button => button.addEventListener('click', () => { activateTab('account'); setAccountMode(button.dataset.accountView || 'id'); }));
   accountModeButtons.forEach(button => button.addEventListener('click', () => setAccountMode(button.dataset.accountMode)));
+
+  const requestedPosition = document.querySelector('#requestedPosition');
+  const requestedPositionOtherField = document.querySelector('#requestedPositionOtherField');
+  const requestedPositionOther = document.querySelector('#requestedPositionOther');
+  const syncRequestedPositionField = () => {
+    const isOther = requestedPosition?.value === '기타';
+    if (requestedPositionOtherField) requestedPositionOtherField.hidden = !isOther;
+    if (requestedPositionOther) {
+      requestedPositionOther.required = Boolean(isOther);
+      if (!isOther) requestedPositionOther.value = '';
+    }
+  };
+  requestedPosition?.addEventListener('change', syncRequestedPositionField);
+  syncRequestedPositionField();
 
   const redirectUrl = new URL('login.html?verified=1', window.location.href).href;
   const passwordRecoveryUrl = new URL('reset-password.html', window.location.href).href;
@@ -50,10 +66,13 @@
     submit.disabled = true; submit.textContent = '신청 중...';
     try {
       const email = String(form.get('email') || '').trim();
+      const requestedPositionValue = String(form.get('requested_position')||'').trim();
+      const requestedPositionText = requestedPositionValue === '기타' ? String(form.get('requested_position_other')||'').trim() : requestedPositionValue;
+      if (!requestedPositionText) throw new Error('현재 직책을 입력해 주세요.');
       const { data, error } = await client.auth.signUp({
         email,
         password: String(form.get('password') || ''),
-        options: { emailRedirectTo: redirectUrl, data: { name:String(form.get('name')||'').trim(), school:String(form.get('school')||'').trim(), cohort:String(form.get('cohort')||'').trim(), department:String(form.get('department')||'').trim() } }
+        options: { emailRedirectTo: redirectUrl, data: { name:String(form.get('name')||'').trim(), school:String(form.get('school')||'').trim(), cohort:String(form.get('cohort')||'').trim(), department:String(form.get('department')||'').trim(), requested_position:requestedPositionText } }
       });
       if (error) throw error;
       formElement.reset();

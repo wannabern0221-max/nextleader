@@ -41,7 +41,7 @@
   const show = (text, type='info') => { message.className = `auth-message show ${type}`; message.textContent = text; };
   const canView = scope => Boolean(state.context?.[`can_view_${scope}`]);
   const canManage = scope => scope === 'policy_office' ? Boolean(state.context?.can_manage_common) : Boolean(state.context?.[`can_manage_${scope}`]);
-  const isOwnScope = scope => state.context?.own_scope === scope;
+  const isOwnScope = scope => Boolean(state.context?.can_submit) && state.context?.own_scope === scope;
 
   if (!window.SUPABASE_CONFIG_READY || !client) {
     show('리더 서비스 연결 설정을 확인해 주세요.', 'error');
@@ -64,15 +64,16 @@
     const own = context?.own_scope;
     if (own === 'div1' || own === 'div2') state.scope = own;
     else if (context?.can_view_div1) state.scope = 'div1';
-    else state.scope = 'div2';
+    else state.scope = 'div1';
 
     setupScopeButtons();
     setupConfirmedFormPermissions();
+    if (!context?.can_submit && !context?.can_view_div1 && !context?.can_view_div2) show(context?.scope_message || '정책1부 또는 정책2부 소속이 확인되지 않아 일정 응답을 등록할 수 없습니다. 관리센터에서 소속을 확인해 주세요.', 'warning');
     bindEvents();
     await loadMonth();
   } catch (error) {
     console.error(error);
-    show(error.message || '가능일 화면을 불러오지 못했습니다.', 'error');
+    show(error.message || '일정 확인 화면을 불러오지 못했습니다.', 'error');
   }
 
   function setupScopeButtons() {
@@ -147,7 +148,7 @@
     const own = isOwnScope(state.scope);
     if (!own) {
       submissionState.className = 'submission-state';
-      submissionState.textContent = `${scopeLabel(state.scope)} 수석부장용 조회 화면입니다.`;
+      submissionState.textContent = canView(state.scope) ? `${scopeLabel(state.scope)} 일정 현황 조회 화면입니다.` : (state.context?.scope_message || '소속 확인이 필요합니다.');
       submitButton.hidden = true;
       return;
     }
@@ -161,9 +162,9 @@
       help.textContent = '제출이 완료되어 달력이 잠겼습니다.';
     } else {
       submissionState.className = 'submission-state';
-      submissionState.textContent = '아직 이 달 가능일을 제출하지 않았습니다.';
+      submissionState.textContent = '아직 이 달 일정 응답을 제출하지 않았습니다.';
       submitButton.disabled = false;
-      submitButton.textContent = '이 달 가능일 제출';
+      submitButton.textContent = '이 달 일정 응답 제출';
     }
   }
 
@@ -214,9 +215,9 @@
   }
 
   async function submitAvailability() {
-    if (state.submitted || !isOwnScope(state.scope)) return;
+    if (state.submitted || !isOwnScope(state.scope)) { show(state.context?.scope_message || '본인 소속 부서의 일정 응답만 제출할 수 있습니다.', 'warning'); return; }
     const count = state.selections.size;
-    if (!confirm(`${state.month.getFullYear()}년 ${state.month.getMonth()+1}월 가능일을 제출하시겠습니까?\n\n선택한 날짜 ${count}개가 제출되며 이후 본인이 수정하거나 삭제할 수 없습니다.`)) return;
+    if (!confirm(`${state.month.getFullYear()}년 ${state.month.getMonth()+1}월 일정 응답을 제출하시겠습니까?\n\n선택한 날짜 ${count}개가 제출되며 이후 본인이 수정하거나 삭제할 수 없습니다.`)) return;
     submitButton.disabled = true;
     const selections = [...state.selections.entries()].map(([date,status]) => ({ date, status }));
     const { error } = await client.rpc('submit_availability_month_v1', { p_scope:state.scope, p_month_start:monthStart(), p_selections:selections });
@@ -224,7 +225,7 @@
       submitButton.disabled = false;
       return show(error.message, 'error');
     }
-    show('가능일을 제출했습니다.', 'success');
+    show('일정 응답을 제출했습니다.', 'success');
     await loadMonth();
   }
 
@@ -247,7 +248,7 @@
   }
 
   async function loadDetails(date) {
-    detail.innerHTML = '<div class="loading-state">리더별 가능일을 불러오고 있습니다.</div>';
+    detail.innerHTML = '<div class="loading-state">리더별 일정 응답을 불러오고 있습니다.</div>';
     const { data, error } = await client.rpc('list_availability_details_v1', { p_scope:state.scope, p_available_date:date });
     if (error) { detail.innerHTML = `<div class="auth-message show error">${escapeHtml(error.message)}</div>`; return; }
     const rows = data || [];
@@ -258,7 +259,7 @@
       const { error: updateError } = await client.rpc('manager_set_availability_day_v1', { p_target_user_id:select.dataset.userId, p_scope:state.scope, p_available_date:select.dataset.date, p_status:select.value });
       select.disabled = false;
       if (updateError) return show(updateError.message,'error');
-      show('리더 가능일을 수정했습니다.','success');
+      show('일정 확인을 수정했습니다.','success');
       await loadMonth();
       await loadDetails(date);
     }));

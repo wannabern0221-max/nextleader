@@ -78,20 +78,20 @@
       if (target === 'internal-schedule') return page === 'internal-schedule';
       if (target === 'board') return page === 'board';
       if (target === 'quiz') return page === 'quiz';
-      if (target === 'admin') return page === 'admin' || page === 'content-manager';
+      if (target === 'admin') return page === 'admin' || page === 'content-manager' || page === 'site-manager';
       return false;
     };
 
     const links = [
-      ['dashboard.html','dashboard','리더 홈'],
-      ['internal-schedule.html','internal-schedule','가능일 조사'],
-      ['board.html','board','익명 소통'],
-      ['quiz.html','quiz','정책 퀴즈']
+      ['dashboard.html','dashboard',(window.KNA_SITE_SETTINGS?.leader_menu?.home||'리더 홈')],
+      ['internal-schedule.html','internal-schedule',(window.KNA_SITE_SETTINGS?.leader_menu?.schedule||'일정 확인')],
+      ['board.html','board',(window.KNA_SITE_SETTINGS?.leader_menu?.board||'익명 소통')],
+      ['quiz.html','quiz',(window.KNA_SITE_SETTINGS?.leader_menu?.quiz||'정책 퀴즈')]
     ];
 
     const ribbon = document.createElement('div');
     ribbon.className = 'leader-ribbon';
-    ribbon.innerHTML = `<div class="container leader-ribbon-inner"><span class="leader-ribbon-label">리더 메뉴</span>${links.map(([href,key,label]) => `<a href="${href}" class="${activeFor(key) ? 'active' : ''}">${label}</a>`).join('')}${isManager(access) ? `<a href="admin.html" class="manage-link ${activeFor('admin') ? 'active' : ''}">관리센터</a>` : ''}</div>`;
+    ribbon.innerHTML = `<div class="container leader-ribbon-inner"><span class="leader-ribbon-label">리더 메뉴</span>${links.map(([href,key,label]) => `<a href="${href}" class="${activeFor(key) ? 'active' : ''}">${label}</a>`).join('')}${isManager(access) ? `<a href="admin.html" class="manage-link ${activeFor('admin') ? 'active' : ''}">관리센터</a>` : ''}${['policy_director','director'].includes(access.system_role) ? `<a href="site-manager.html" class="manage-link ${page==='site-manager'?'active':''}">홈페이지 관리</a>` : ''}</div>`;
     document.querySelector('.site-header')?.after(ribbon);
 
     const dock = document.createElement('nav');
@@ -99,7 +99,7 @@
     dock.setAttribute('aria-label','리더 빠른 메뉴');
     dock.innerHTML = `
       <a data-dock="home" href="dashboard.html" class="${activeFor('dashboard') ? 'active' : ''}">홈</a>
-      <a data-dock="availability" href="internal-schedule.html" class="${activeFor('internal-schedule') ? 'active' : ''}">가능일</a>
+      <a data-dock="availability" href="internal-schedule.html" class="${activeFor('internal-schedule') ? 'active' : ''}">일정</a>
       <a data-dock="board" href="board.html" class="${activeFor('board') ? 'active' : ''}">소통</a>
       <a data-dock="account" href="dashboard.html#profile">내 정보</a>`;
     document.body.appendChild(dock);

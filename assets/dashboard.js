@@ -39,18 +39,20 @@
     const hasAny = codes => codes.some(code => permissions.includes(code));
     const canManage = ['policy_director','director','senior_manager_div1','senior_manager_div2','senior_manager','policy_general_manager','general_manager'].includes(access.system_role) || hasAny(['member_approve','role_manage','permission_grant','system_manage']);
     const canWrite = hasAny(['content_write_notice','content_write_card','content_write_policy','content_approve']);
+    const isDirector = ['policy_director','director'].includes(access.system_role);
 
     root.innerHTML = `
       <div class="leader-home-welcome">
         <h2>${escapeHtml(access.name)}${external ? '' : ' 리더'}님 반갑습니다</h2>
         <p>${escapeHtml(departmentLabel)} · ${escapeHtml(access.position || roleLabel)}로 로그인되어 있습니다. 자주 사용하는 기능은 아래에서 바로 들어갈 수 있습니다.</p>
         <div class="leader-home-actions">
-          <a class="leader-home-action" href="internal-schedule.html"><span>01 · 일정 조율</span><strong>리더 가능일</strong><small>가능한 날짜를 표시하고 수석부장이 사업 날짜를 정할 수 있도록 돕습니다.</small></a>
+          <a class="leader-home-action" href="internal-schedule.html"><span>01 · 일정 조율</span><strong>일정 확인</strong><small>정책1부·2부 리더가 가능한 날짜를 등록하고 수석부장이 부서 일정을 조율합니다.</small></a>
           <a class="leader-home-action" href="board.html"><span>02 · 자유로운 의견</span><strong>익명 리더 소통방</strong><small>이름과 직책 그리고 소속을 드러내지 않고 의견을 나눕니다.</small></a>
           <a class="leader-home-action" href="quiz.html"><span>03 · 정책 학습</span><strong>정책 퀴즈</strong><small>쉬움부터 어려움까지 무작위 문제로 정책 지식을 확인합니다.</small></a>
           <a class="leader-home-action" href="notice.html"><span>04 · 정책국 소식</span><strong>공지사항</strong><small>정책국 활동과 중요한 안내를 빠르게 확인합니다.</small></a>
           ${canWrite ? '<a class="leader-home-action" href="content-manager.html"><span>05 · 콘텐츠 운영</span><strong>콘텐츠 작성</strong><small>공지사항과 카드뉴스 그리고 정책 콘텐츠를 작성합니다.</small></a>' : ''}
           ${canManage ? '<a class="leader-home-action" href="admin.html"><span>06 · 운영 권한</span><strong>관리센터</strong><small>가입 승인과 직책 그리고 기능 권한을 관리합니다.</small></a>' : ''}
+          ${isDirector ? '<a class="leader-home-action" href="site-manager.html"><span>07 · 홈페이지 운영</span><strong>홈페이지 관리</strong><small>메인 문구와 환영 팝업 그리고 공개 메뉴 이름을 직접 변경합니다.</small></a>' : ''}
         </div>
       </div>
       <div class="member-layout">
@@ -65,9 +67,9 @@
         </aside>
         <section class="member-panel">
           <div class="section-head portal-head"><div><span class="eyebrow">QUICK GUIDE</span><h2>리더 이용 안내</h2></div></div>
-          <div class="succession-note">휴대폰에서는 화면 아래의 빠른 메뉴로 리더 홈과 가능일 그리고 익명 소통방을 바로 이동할 수 있습니다. 별도의 내부포털을 거치지 않아도 됩니다.</div>
+          <div class="succession-note">휴대폰에서는 화면 아래의 빠른 메뉴로 리더 홈과 일정 확인 그리고 익명 소통방을 바로 이동할 수 있습니다. 별도의 리더 홈을 거치지 않아도 됩니다.</div>
           <div class="portal-grid portal-grid-links">
-            <a class="portal-card" href="internal-schedule.html"><span>01</span><strong>가능일 제출</strong><small>본인 부서의 가능한 날짜를 선택해 한 번에 제출합니다.</small></a>
+            <a class="portal-card" href="internal-schedule.html"><span>01</span><strong>일정 응답 등록</strong><small>본인 부서의 가능한 날짜를 선택해 한 번에 제출합니다.</small></a>
             <a class="portal-card" href="schedule.html"><span>02</span><strong>확정 일정 보기</strong><small>수석부장 또는 정책국장이 확정한 공개 일정을 확인합니다.</small></a>
             <a class="portal-card" href="news.html"><span>03</span><strong>간호·정책 뉴스</strong><small>간호와 보건의료 정책 뉴스를 확인합니다.</small></a>
           </div>
