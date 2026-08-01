@@ -77,7 +77,37 @@
     renderAttachments(Array.isArray(data.attachments) ? data.attachments : []);
   };
 
+  const imageViewUrl = item => {
+    const mime = String(item.mimeType || item.mime_type || '');
+    if (!mime.startsWith('image/')) return '';
+    const direct = String(item.viewUrl || item.view_url || '');
+    const download = String(item.downloadUrl || item.download_url || '');
+    const candidate = direct || download.replace('/download/', '/view/');
+    return /^https:\/\//i.test(candidate) ? candidate : '';
+  };
+
+  const renderAttachmentImages = items => {
+    document.querySelector('#articleImageGallery')?.remove();
+    const images = items
+      .map(item => ({ item, src: imageViewUrl(item) }))
+      .filter(entry => entry.src);
+    if (!images.length || !attachmentSection) return;
+
+    const section = document.createElement('section');
+    section.id = 'articleImageGallery';
+    section.setAttribute('aria-label', '게시물 이미지');
+    section.style.cssText = 'display:grid;gap:14px;margin:26px 0 10px;';
+    section.innerHTML = images.map(({ item, src }) => {
+      const name = item.originalName || item.original_name || item.name || '게시물 이미지';
+      return `<figure style="margin:0;">
+        <img src="${esc(src)}" alt="${esc(name)}" loading="lazy" style="display:block;width:100%;max-height:900px;object-fit:contain;border:1px solid #dce5ee;border-radius:14px;background:#f7f9fb;">
+      </figure>`;
+    }).join('');
+    attachmentSection.parentNode.insertBefore(section, attachmentSection);
+  };
+
   const renderAttachments = items => {
+    renderAttachmentImages(items);
     if (!items.length || !attachmentSection || !attachmentList) return;
     attachmentSection.hidden = false;
     attachmentList.innerHTML = items.map(item => {
