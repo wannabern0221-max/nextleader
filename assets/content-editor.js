@@ -440,9 +440,14 @@
   function labelStatus(value) { return ({draft:'작성 중',review:'승인 요청',published:'게시 완료',rejected:'반려',hidden:'숨김'}[value] || value); }
   function configureActionButtons() {
     const hasPublishPermission = canApprove();
-    saveButton.hidden = !hasPublishPermission;
-    publishButton.hidden = !hasPublishPermission;
-    submitButton.hidden = hasPublishPermission;
+    setButtonVisible(saveButton, hasPublishPermission);
+    setButtonVisible(publishButton, hasPublishPermission);
+    setButtonVisible(submitButton, !hasPublishPermission);
+  }
+  function setButtonVisible(button, visible) {
+    button.hidden = !visible;
+    button.style.display = visible ? '' : 'none';
+    button.setAttribute('aria-hidden', visible ? 'false' : 'true');
   }
   function toggleBusy(busy) {
     saveButton.disabled = busy;
