@@ -10,14 +10,6 @@
   const submitButton = document.querySelector('#submitReviewButton');
   const publishButton = document.querySelector('#publishButton');
   const back = document.querySelector('#editorBack');
-  const coverDropzone = document.querySelector('#coverDropzone');
-  const coverInput = document.querySelector('#coverFileInput');
-  const coverEmpty = document.querySelector('#coverEmpty');
-  const coverPreview = document.querySelector('#coverPreview');
-  const coverImage = document.querySelector('#coverPreviewImage');
-  const coverName = document.querySelector('#coverPreviewName');
-  const coverSize = document.querySelector('#coverPreviewSize');
-  const removeCoverButton = document.querySelector('#removeCoverButton');
   const bodyImageInput = document.querySelector('#bodyImageInput');
   const attachmentDropzone = document.querySelector('#attachmentDropzone');
   const attachmentInput = document.querySelector('#attachmentFileInput');
@@ -31,7 +23,6 @@
 
   let access = null;
   let currentStatus = 'draft';
-  let coverFile = null;
   let attachments = [];
   const uploadedIds = new Set();
 
@@ -102,22 +93,6 @@
     body.focus();
     document.execCommand('formatBlock', false, event.target.value);
     event.target.value = 'p';
-  });
-
-  bindDropzone(coverDropzone, coverInput, async selected => {
-    const file = selected[0];
-    if (!file) return;
-    if (!file.type.startsWith('image/')) return show('대표 이미지는 이미지 파일만 선택할 수 있습니다.', 'error');
-    await uploadCover(file);
-  });
-
-  removeCoverButton.addEventListener('click', event => {
-    event.stopPropagation();
-    coverFile = null;
-    form.elements.cover_url.value = '';
-    coverImage.removeAttribute('src');
-    coverPreview.hidden = true;
-    coverEmpty.hidden = false;
   });
 
   bodyImageInput.addEventListener('change', async () => {
@@ -219,25 +194,7 @@
     currentStatus = data.status || 'draft';
     status.textContent = `${data.title || '콘텐츠'} · ${labelStatus(currentStatus)}`;
     configureCategory(true);
-    if (data.cover_url) showCoverPreview({ viewUrl: data.cover_url, originalName: '등록된 대표 이미지', sizeBytes: 0 });
     renderAttachments();
-  }
-
-  async function uploadCover(file) {
-    toggleBusy(true);
-    show('대표 이미지를 업로드하고 있습니다.', 'info');
-    try {
-      const uploaded = await files.upload(file, { purpose: 'cover', audience: audience(), downloadEnabled: false });
-      coverFile = uploaded;
-      uploadedIds.add(uploaded.id);
-      form.elements.cover_url.value = uploaded.viewUrl;
-      showCoverPreview(uploaded);
-      show('대표 이미지를 업로드했습니다.', 'success');
-    } catch (error) {
-      show(error.message, 'error');
-    } finally {
-      toggleBusy(false);
-    }
   }
 
   async function uploadBodyImage(file) {
@@ -247,6 +204,7 @@
     try {
       const uploaded = await files.upload(file, { purpose: 'body-image', audience: audience(), downloadEnabled: false });
       uploadedIds.add(uploaded.id);
+      setAutomaticCardCover(uploaded);
       body.focus();
       document.execCommand('insertHTML', false,
         `<img src="${escapeAttribute(uploaded.viewUrl)}" alt="${escapeAttribute(uploaded.originalName)}" data-file-id="${uploaded.id}"><p><br></p>`
@@ -270,6 +228,7 @@
         const uploaded = await files.upload(file, { purpose: 'attachment', audience: audience(), downloadEnabled: true });
         attachments.push(normalizeAttachment(uploaded));
         uploadedIds.add(uploaded.id);
+        setAutomaticCardCover(uploaded);
         success += 1;
         renderAttachments();
       } catch (error) {
@@ -297,7 +256,7 @@
         summary: form.elements.summary.value.trim(),
         body: html,
         body_format: 'html',
-        cover_url: form.elements.cover_url.value.trim(),
+        cover_url: resolveCoverUrl(html),
         scope: isActivity() ? form.elements.scope.value : 'policy_office',
         visibility: form.elements.visibility.value,
         attachments: attachments.map(item => ({
@@ -329,7 +288,6 @@
     const targetAudience = audience();
     const ids = new Set(uploadedIds);
     body.querySelectorAll('img[data-file-id]').forEach(image => ids.add(image.dataset.fileId));
-    if (coverFile?.id) ids.add(coverFile.id);
     attachments.forEach(item => ids.add(item.id));
     await Promise.all([...ids].map(async fileId => {
       const attachment = attachments.find(item => item.id === fileId);
@@ -347,17 +305,38 @@
   async function linkUploadedFiles(postId) {
     const ids = new Set(uploadedIds);
     body.querySelectorAll('img[data-file-id]').forEach(image => ids.add(image.dataset.fileId));
-    if (coverFile?.id) ids.add(coverFile.id);
     attachments.forEach(item => ids.add(item.id));
     await Promise.all([...ids].map(fileId => files.update(fileId, { linkedContentId: postId }).catch(() => null)));
   }
 
-  function showCoverPreview(file) {
-    coverEmpty.hidden = true;
-    coverPreview.hidden = false;
-    coverImage.src = file.viewUrl;
-    coverName.textContent = file.originalName || '대표 이미지';
-    coverSize.textContent = file.sizeBytes ? files.formatBytes(file.sizeBytes) : '';
+  function setAutomaticCardCover(uploaded) {
+    if (form.elements.category.value !== 'card') return;
+    const mimeType = uploaded.mimeType || uploaded.mime_type || '';
+    if (!mimeType.startsWith('image/')) return;
+    if (!form.elements.cover_url.value.trim() && uploaded.viewUrl) {
+      form.elements.cover_url.value = uploaded.viewUrl;
+      show('첫 번째 이미지가 카드뉴스 목록 이미지로 자동 지정됐습니다.', 'success');
+    }
+  }
+
+  function resolveCoverUrl(html) {
+    const existing = form.elements.cover_url.value.trim();
+    if (form.elements.category.value !== 'card') return existing;
+    if (existing) return existing;
+
+    const doc = new DOMParser().parseFromString(`<div>${html}</div>`, 'text/html');
+    const bodyImage = doc.querySelector('img[src]')?.getAttribute('src')?.trim();
+    if (bodyImage) {
+      form.elements.cover_url.value = bodyImage;
+      return bodyImage;
+    }
+
+    const attachmentImage = attachments.find(item => String(item.mimeType || '').startsWith('image/') && item.viewUrl);
+    if (attachmentImage?.viewUrl) {
+      form.elements.cover_url.value = attachmentImage.viewUrl;
+      return attachmentImage.viewUrl;
+    }
+    return '';
   }
 
   function renderAttachments() {

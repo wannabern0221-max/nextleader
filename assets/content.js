@@ -47,24 +47,6 @@ window.KNA_CONTENT = {
       <p>서로를 존중하는 표현을 사용하고 개인을 특정할 수 있는 개인정보는 작성하지 말아 주세요.</p>
     `
   },
-  "card-workforce-policy": {
-    category: "카드뉴스",
-    date: "2026.08.01",
-    title: "간호인력 지원정책 한눈에 보기",
-    body: `<p>간호인력 정책의 배경과 대상 그리고 주요 지원 내용과 현장 적용 지점을 쉽게 정리합니다.</p>`
-  },
-  "card-policy-participation": {
-    category: "카드뉴스",
-    date: "2026.08.01",
-    title: "간호학생의 정책 참여 방법",
-    body: `<p>공식 의견수렴 창구와 정책 제안 절차 그리고 관련 기관 정보를 안내합니다.</p>`
-  },
-  "card-terms-five": {
-    category: "카드뉴스",
-    date: "2026.08.01",
-    title: "이번 달 정책단어 5가지",
-    body: `<p>간호와 보건의료 정책에서 자주 사용되는 핵심 단어를 한 줄 정의와 함께 살펴봅니다.</p>`
-  },
   "policy-daily-news": {
     category: "정책 콘텐츠",
     date: "상시 갱신",
