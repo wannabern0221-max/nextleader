@@ -30,7 +30,7 @@
     message.textContent = text;
   };
   const canApprove = () => access?.permissions?.includes('content_approve');
-  const canWriteActivity = () => access?.permissions?.includes('content_approve');
+  const canWriteActivity = () => access?.approval_status === 'approved' && access?.system_role !== 'external_admin';
   const isActivity = () => activityCategories.includes(form.elements.category.value);
   const audience = () => files.audienceFromVisibility(form.elements.visibility.value);
 
@@ -164,7 +164,7 @@
     if (!preserveVisibility) form.elements.visibility.value = activity ? 'leaders' : 'public';
     form.elements.visibility.querySelector('option[value="public"]').disabled = activity;
     if (activity && !canWriteActivity()) {
-      show('활동보고서와 사업계획 자료는 게시 관리 권한이 있는 리더만 작성할 수 있습니다.', 'warning');
+      show('가입 승인이 완료된 리더만 사업자료를 작성할 수 있습니다.', 'warning');
       saveButton.disabled = true;
       submitButton.disabled = true;
     } else {
@@ -243,7 +243,7 @@
     const html = sanitize(body.innerHTML);
     if (!title) return show('제목을 입력해 주세요.', 'error'), false;
     if (!html.replace(/<[^>]+>/g, '').trim() && !html.includes('<img')) return show('본문을 입력해 주세요.', 'error'), false;
-    if (isActivity() && !canWriteActivity()) return show('사업자료 작성 권한이 없습니다.', 'error'), false;
+    if (isActivity() && !canWriteActivity()) return show('가입 승인이 완료된 리더만 사업자료를 작성할 수 있습니다.', 'error'), false;
 
     toggleBusy(true);
     try {
