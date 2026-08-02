@@ -22,12 +22,15 @@
   let warningShown = false;
   let timeoutTimer = null;
   let approvalPollTimer = null;
+  let notificationPollTimer = null;
+  let unreadNotificationCount = 0;
+  let notificationModal = null;
   let approvalCounts = { total: 0, members: 0, content: 0, activity: 0 };
 
   if (!document.querySelector('link[href*="leader-experience.css"]')) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'assets/leader-experience.css?v=20260802-permissions';
+    link.href = 'assets/leader-experience.css?v=20260802-notifications1';
     document.head.appendChild(link);
   }
 
@@ -39,8 +42,10 @@
 
   const escapeText = value => String(value ?? '').trim();
   const isManager = access => {
+    const role = access?.system_role;
+    const managerRoles = ['policy_director','director','senior_manager_div1','senior_manager_div2','senior_manager','policy_general_manager','general_manager'];
     const managerPermissions = ['member_approve','role_manage','permission_grant','system_manage'];
-    return managerPermissions.some(code => access?.permissions?.includes(code));
+    return managerRoles.includes(role) || managerPermissions.some(code => access?.permissions?.includes(code));
   };
 
   async function loadAccess(userId) {
@@ -132,9 +137,10 @@
     if (alertButton) {
       let badge = alertButton.querySelector('.approval-utility-badge');
       if (!badge) { badge = document.createElement('span'); badge.className = 'approval-utility-badge'; alertButton.appendChild(badge); }
-      const total = Number(approvalCounts.total || 0);
+      const total = Number(approvalCounts.total || 0) + Number(unreadNotificationCount || 0);
       badge.textContent = total > 99 ? '99+' : String(total);
       badge.hidden = total <= 0;
+      alertButton.setAttribute('aria-label', total > 0 ? `알림 ${total}건` : '알림');
     }
   }
 
@@ -151,6 +157,128 @@
     }
     return approvalCounts;
   }
+
+  async function refreshNotificationCount() {
+    if (!state.session) {
+      unreadNotificationCount = 0;
+      applyApprovalBadges();
+      return 0;
+    }
+    try {
+      const { data, error } = await client.rpc('get_my_unread_notification_count_v1');
+      if (error) throw error;
+      unreadNotificationCount = Number(data || 0);
+    } catch (error) {
+      unreadNotificationCount = 0;
+      console.warn('개인 알림 건수를 불러오지 못했습니다.', error);
+    }
+    applyApprovalBadges();
+    return unreadNotificationCount;
+  }
+  window.KNA_REFRESH_NOTIFICATIONS = refreshNotificationCount;
+
+  const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
+  const notificationDate = value => {
+    try { return new Date(value).toLocaleString('ko-KR', { month:'numeric', day:'numeric', hour:'numeric', minute:'2-digit' }); }
+    catch (_) { return ''; }
+  };
+
+  function ensureNotificationModal() {
+    if (notificationModal) return notificationModal;
+    const wrap = document.createElement('div');
+    wrap.className = 'member-notification-modal';
+    wrap.hidden = true;
+    wrap.innerHTML = `
+      <div class="member-notification-backdrop" data-notification-close></div>
+      <section class="member-notification-panel" role="dialog" aria-modal="true" aria-labelledby="memberNotificationTitle">
+        <header class="member-notification-head">
+          <div><span class="eyebrow">MY NOTIFICATIONS</span><h2 id="memberNotificationTitle">내 알림</h2></div>
+          <button type="button" class="member-notification-close" data-notification-close aria-label="알림 닫기">×</button>
+        </header>
+        <div class="member-notification-actions" data-notification-actions hidden></div>
+        <div class="member-notification-toolbar"><span data-notification-summary>알림을 불러오는 중입니다.</span><button type="button" data-notification-read-all>모두 읽음</button></div>
+        <div class="member-notification-list" data-notification-list><div class="member-notification-empty">알림을 불러오는 중입니다.</div></div>
+      </section>`;
+    document.body.appendChild(wrap);
+    wrap.querySelectorAll('[data-notification-close]').forEach(node => node.addEventListener('click', () => {
+      wrap.hidden = true;
+      document.body.classList.remove('notification-open');
+    }));
+    wrap.querySelector('[data-notification-read-all]')?.addEventListener('click', async () => {
+      const { error } = await client.rpc('mark_all_my_notifications_read_v1');
+      if (!error) {
+        await refreshNotificationCount();
+        await loadNotificationsIntoModal();
+      }
+    });
+    wrap.querySelector('[data-notification-list]')?.addEventListener('click', async event => {
+      const item = event.target.closest('[data-notification-id]');
+      if (!item) return;
+      const id = Number(item.dataset.notificationId);
+      const link = item.dataset.notificationLink || '';
+      await client.rpc('mark_my_notification_read_v1', { p_notification_id: id });
+      await refreshNotificationCount();
+      item.classList.remove('unread');
+      if (link) location.href = link;
+    });
+    notificationModal = wrap;
+    return wrap;
+  }
+
+  function renderPendingActions(modal) {
+    const actions = modal.querySelector('[data-notification-actions]');
+    if (!actions) return;
+    const links = [];
+    if (Number(approvalCounts.members || 0) > 0) links.push(`<a href="admin.html">가입 승인 <strong>${approvalCounts.members}</strong></a>`);
+    if (Number(approvalCounts.content || 0) > 0) links.push(`<a href="content-manager.html">콘텐츠 승인 <strong>${approvalCounts.content}</strong></a>`);
+    if (Number(approvalCounts.activity || 0) > 0) links.push(`<a href="activity-documents.html">사업자료 확인 <strong>${approvalCounts.activity}</strong></a>`);
+    actions.innerHTML = links.join('');
+    actions.hidden = links.length === 0;
+  }
+
+  async function loadNotificationsIntoModal() {
+    const modal = ensureNotificationModal();
+    const list = modal.querySelector('[data-notification-list]');
+    const summary = modal.querySelector('[data-notification-summary]');
+    renderPendingActions(modal);
+    if (list) list.innerHTML = '<div class="member-notification-empty">알림을 불러오는 중입니다.</div>';
+    try {
+      const { data, error } = await client.rpc('get_my_notifications_v1', { p_limit: 40 });
+      if (error) throw error;
+      const items = Array.isArray(data) ? data : [];
+      const unread = items.filter(item => !item.is_read).length;
+      if (summary) summary.textContent = unread > 0 ? `읽지 않은 알림 ${unread}건` : '새로 확인할 알림이 없습니다.';
+      if (!items.length) {
+        if (list) list.innerHTML = '<div class="member-notification-empty"><strong>아직 받은 알림이 없습니다.</strong><span>가입 승인이나 직책 변경 결과가 여기에 표시됩니다.</span></div>';
+        return;
+      }
+      if (list) list.innerHTML = items.map(item => `
+        <button type="button" class="member-notification-item ${item.is_read ? '' : 'unread'}" data-notification-id="${Number(item.id)}" data-notification-link="${escapeHtml(item.link_url || '')}">
+          <span class="member-notification-type ${escapeHtml(item.notification_type || 'info')}"></span>
+          <span class="member-notification-copy"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.message)}</span><small>${escapeHtml(notificationDate(item.created_at))}</small></span>
+          ${item.is_read ? '' : '<span class="member-notification-new">새 알림</span>'}
+        </button>`).join('');
+    } catch (error) {
+      console.error(error);
+      if (summary) summary.textContent = '알림을 불러오지 못했습니다.';
+      if (list) list.innerHTML = '<div class="member-notification-empty"><strong>알림 연결을 확인해 주세요.</strong><span>잠시 후 새로고침하면 다시 확인할 수 있습니다.</span></div>';
+    }
+  }
+
+  async function openNotificationCenter() {
+    const modal = ensureNotificationModal();
+    modal.hidden = false;
+    document.body.classList.add('notification-open');
+    await Promise.all([refreshApprovalCounts(), refreshNotificationCount()]);
+    await loadNotificationsIntoModal();
+  }
+
+  function startNotificationPolling() {
+    if (notificationPollTimer) clearInterval(notificationPollTimer);
+    refreshNotificationCount();
+    notificationPollTimer = window.setInterval(refreshNotificationCount, 30000);
+  }
+
   window.KNA_REFRESH_APPROVAL_BADGES = refreshApprovalCounts;
   function startApprovalPolling() {
     if (approvalPollTimer) clearInterval(approvalPollTimer);
@@ -168,6 +296,8 @@
     removeLeaderNavigation();
     approvalCounts = { total:0,members:0,content:0,activity:0 };
     if (approvalPollTimer) { clearInterval(approvalPollTimer); approvalPollTimer = null; }
+    if (notificationPollTimer) { clearInterval(notificationPollTimer); notificationPollTimer = null; }
+    unreadNotificationCount = 0;
     applyApprovalBadges();
   }
 
@@ -190,6 +320,7 @@
     portalLinks.forEach(link => { link.classList.toggle('is-approved', approved); link.textContent = '리더 홈'; });
     buildLeaderNavigation(access);
     startApprovalPolling();
+    startNotificationPolling();
   }
 
   function clearSessionMarkers() {
@@ -254,8 +385,8 @@
     activityListenersReady = true;
     const record = () => setLastActivity(false);
     ['pointerdown','keydown','touchstart','scroll'].forEach(name => window.addEventListener(name, record, { passive: true }));
-    window.addEventListener('focus', async () => { const timedOut = await checkIdleTimeout(); if (!timedOut) { setLastActivity(true); refreshApprovalCounts(); } });
-    document.addEventListener('visibilitychange', async () => { if (document.visibilityState !== 'visible') return; const timedOut = await checkIdleTimeout(); if (!timedOut) { setLastActivity(true); refreshApprovalCounts(); } });
+    window.addEventListener('focus', async () => { const timedOut = await checkIdleTimeout(); if (!timedOut) { setLastActivity(true); refreshApprovalCounts(); refreshNotificationCount(); } });
+    document.addEventListener('visibilitychange', async () => { if (document.visibilityState !== 'visible') return; const timedOut = await checkIdleTimeout(); if (!timedOut) { setLastActivity(true); refreshApprovalCounts(); refreshNotificationCount(); } });
     window.addEventListener('storage', event => { if (event.key === LAST_ACTIVITY_KEY) { warningShown = false; hideTimeoutNotice(); } });
     timeoutTimer = window.setInterval(checkIdleTimeout, 15000);
   }
@@ -268,6 +399,14 @@
     prepareActivityTracking();
     return false;
   }
+
+  const memberAlertButton = document.querySelector('[data-open-alert]');
+  memberAlertButton?.addEventListener('click', async event => {
+    if (!state.session) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    await openNotificationCenter();
+  }, true);
 
   trigger.addEventListener('click', event => {
     if (!state.session || !popover) return;
@@ -308,6 +447,7 @@
       clearSessionMarkers();
       if (timeoutTimer) { clearInterval(timeoutTimer); timeoutTimer = null; }
       if (approvalPollTimer) { clearInterval(approvalPollTimer); approvalPollTimer = null; }
+      if (notificationPollTimer) { clearInterval(notificationPollTimer); notificationPollTimer = null; }
     }
     setTimeout(refresh, 0);
   });

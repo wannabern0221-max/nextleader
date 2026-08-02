@@ -26,11 +26,28 @@
     stateDot.classList.add('ok');
 
     if (access.approval_status !== 'approved') {
-      const label = {pending:'승인 대기',rejected:'신청 반려',suspended:'이용 중지'}[access.approval_status] || access.approval_status;
-      root.innerHTML = `<div class="member-panel access-denied"><span class="status-pill ${access.approval_status}">${label}</span><h2>가입 승인이 필요합니다</h2><p>이메일 인증 후 정책국장 또는 해당 부서 수석부장의 승인이 완료되어야 리더 기능을 이용할 수 있습니다.</p><button class="btn btn-outline" id="logoutButton">로그아웃</button></div>`;
+      const statusCopy = {
+        pending: {
+          label: '승인 대기',
+          title: '가입 승인 대기 중입니다',
+          body: '정책국장 또는 해당 부서 수석부장이 신청 내용을 확인하고 있습니다. 처리 결과는 상단 알림에서 확인할 수 있습니다.'
+        },
+        rejected: {
+          label: '신청 반려',
+          title: '가입 신청이 반려되었습니다',
+          body: '상단 알림에서 반려 사유를 확인한 뒤 관리자에게 문의해 주세요.'
+        },
+        suspended: {
+          label: '이용 중지',
+          title: '현재 계정 이용이 중지되었습니다',
+          body: '상단 알림에서 안내 내용을 확인하거나 관리자에게 문의해 주세요.'
+        }
+      }[access.approval_status] || { label: access.approval_status, title: '계정 상태를 확인해 주세요', body: '상단 알림에서 처리 결과를 확인할 수 있습니다.' };
+      root.innerHTML = `<div class="member-panel access-denied"><span class="status-pill ${access.approval_status}">${statusCopy.label}</span><h2>${statusCopy.title}</h2><p>${statusCopy.body}</p><div class="form-actions"><button class="btn btn-primary" id="checkNotificationButton">알림 확인</button><button class="btn btn-outline" id="logoutButton">로그아웃</button></div></div>`;
       window.KNA_REFRESH_APPROVAL_BADGES?.();
-
-    document.querySelector('#logoutButton')?.addEventListener('click', async () => { await client.auth.signOut(); location.replace('login.html'); });
+      window.KNA_REFRESH_NOTIFICATIONS?.();
+      document.querySelector('#checkNotificationButton')?.addEventListener('click', () => document.querySelector('[data-open-alert]')?.click());
+      document.querySelector('#logoutButton')?.addEventListener('click', async () => { await client.auth.signOut(); location.replace('login.html'); });
       return;
     }
 
@@ -39,11 +56,10 @@
     const external = access.system_role === 'external_admin';
     const permissions = Array.isArray(access.permissions) ? access.permissions : [];
     const hasAny = codes => codes.some(code => permissions.includes(code));
-    const canManage = hasAny(['member_approve','role_manage','permission_grant','system_manage']);
+    const canManage = ['policy_director','director','senior_manager_div1','senior_manager_div2','senior_manager','policy_general_manager','general_manager'].includes(access.system_role) || hasAny(['member_approve','role_manage','permission_grant','system_manage']);
     const canWrite = access.approval_status === 'approved' && access.system_role !== 'external_admin';
     const normalizedPosition = String(access.position || access.requested_position || '').replace(/\s+/g,'');
     const isDirector = ['policy_director','director'].includes(access.system_role) || normalizedPosition.includes('정책국장');
-    const canManageFiles = permissions.includes('file_manage');
 
     root.innerHTML = `
       <div class="leader-home-welcome">
@@ -56,8 +72,7 @@
           <a class="leader-home-action" href="notice.html"><span>04 · 정책국 소식</span><strong>공지사항</strong><small>정책국 활동과 중요한 안내를 빠르게 확인합니다.</small></a>
           ${canWrite ? '<a class="leader-home-action" href="content-manager.html"><span>05 · 콘텐츠 운영</span><strong>콘텐츠 관리 <span class="approval-menu-badge" data-approval-badge="content" hidden></span></strong><small>작성한 글과 승인 요청 그리고 게시 상태를 확인합니다.</small></a><a class="leader-home-action" href="activity-documents.html"><span>06 · 부서 운영</span><strong>사업자료 <span class="approval-menu-badge" data-approval-badge="activity" hidden></span></strong><small>정책1부·정책2부의 활동보고서와 사업계획 자료를 확인합니다.</small></a><a class="leader-home-action" href="glossary-manager.html"><span>07 · 정책 학습</span><strong>정책단어 작성</strong><small>정책단어를 등록하고 관리 권한자의 검토를 요청합니다.</small></a>' : ''}
           ${canManage ? '<a class="leader-home-action" href="admin.html"><span>08 · 운영 권한</span><strong>관리센터 <span class="approval-menu-badge" data-approval-badge="total" hidden></span></strong><small>가입 승인과 직책 그리고 기능 권한을 관리합니다.</small></a>' : ''}
-          ${canManageFiles ? '<a class="leader-home-action" href="file-manager.html"><span>09 · 파일 운영</span><strong>파일 관리</strong><small>저장공간 사용량과 파일별 다운로드 허용 여부 그리고 자동 정리를 관리합니다.</small></a>' : ''}
-          ${isDirector ? '<a class="leader-home-action" href="permission-center.html"><span>10 · 권한 운영</span><strong>권한 안내·관리</strong><small>직책별 기본 권한과 리더별 실제 적용 권한을 확인하고 관리합니다.</small></a><a class="leader-home-action" href="site-manager.html"><span>11 · 공통 설정</span><strong>홈페이지 관리</strong><small>사이트 이름과 메뉴 그리고 공통 환영 팝업을 관리합니다.</small></a><a class="leader-home-action" href="page-editor.html?page=home"><span>12 · 페이지 운영</span><strong>페이지 편집기</strong><small>각 페이지의 문구·디자인·이미지·블록·팝업을 직접 추가하고 수정합니다.</small></a><a class="leader-home-action" href="operations-guide.html"><span>13 · 인계 안내</span><strong>홈페이지 운영 안내</strong><small>차기 정책국장이 알아야 할 사이트 운영 절차를 한눈에 확인합니다.</small></a>' : ''}
+          ${isDirector ? '<a class="leader-home-action" href="permission-center.html"><span>09 · 권한 운영</span><strong>권한 안내·관리</strong><small>직책별 기본 권한과 리더별 추가 기능 권한을 확인하고 관리합니다.</small></a><a class="leader-home-action" href="site-manager.html"><span>10 · 공통 설정</span><strong>홈페이지 관리</strong><small>사이트 이름과 메뉴 그리고 공통 환영 팝업을 관리합니다.</small></a><a class="leader-home-action" href="page-editor.html?page=home"><span>11 · 페이지 운영</span><strong>페이지 편집기</strong><small>각 페이지의 문구·디자인·이미지·블록·팝업을 직접 추가하고 수정합니다.</small></a><a class="leader-home-action" href="operations-guide.html"><span>12 · 인계 안내</span><strong>홈페이지 운영 안내</strong><small>차기 정책국장이 알아야 할 사이트 운영 절차를 한눈에 확인합니다.</small></a>' : ''}
         </div>
       </div>
       <div class="member-layout">
