@@ -76,6 +76,16 @@
     return custom ? `custom:${custom.id}` : systemRole;
   }
 
+  function deptOptions(selectedDepartment = '') {
+    const selected = String(selectedDepartment || '').trim();
+    const departments = ['정책국', '정책1부', '정책2부'];
+    if (selected && !departments.includes(selected)) departments.unshift(selected);
+    return [
+      `<option value="" ${selected ? '' : 'selected'}>선택</option>`,
+      ...departments.map(value => `<option value="${escapeHtml(value)}" ${value === selected ? 'selected' : ''}>${escapeHtml(value)}</option>`)
+    ].join('');
+  }
+
   function roleOptions(selectedRole, selectedPosition = '', editable = true) {
     const allowed = new Set(editable ? assignableRoles() : roles);
     const selectedValue = roleSelectionValue(selectedRole, selectedPosition);
