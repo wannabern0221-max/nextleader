@@ -17,6 +17,7 @@
   const recommendList = document.querySelector('#recommendList');
   const detail = document.querySelector('#availabilityDetail');
   const confirmedList = document.querySelector('#confirmedScheduleList');
+  const confirmedScheduleTitle = document.querySelector('#confirmedScheduleTitle');
   const toggleConfirmedForm = document.querySelector('#toggleConfirmedForm');
   const confirmedForm = document.querySelector('#confirmedScheduleForm');
   const cancelConfirmedForm = document.querySelector('#cancelConfirmedForm');
@@ -54,6 +55,7 @@
   const canView = scope => Boolean(state.context?.[`can_view_${scope}`]);
   const canManage = scope => Boolean(state.context?.[`can_manage_${scope}`]);
   const isOwnScope = scope => Boolean(state.context?.can_submit) && state.context?.own_scope === scope;
+  const canUseScheduleScope = scope => isOwnScope(scope) || canView(scope);
 
   if (!window.SUPABASE_CONFIG_READY || !client) {
     show('리더 서비스 연결 설정을 확인해 주세요.', 'error');
@@ -100,6 +102,18 @@
   function setupScheduleForm() {
     const canCreate = Boolean(state.context?.can_create_schedule);
     toggleConfirmedForm.hidden = !canCreate;
+
+    const scopeSelect = confirmedForm?.elements?.scope;
+    if (!scopeSelect) return;
+    [...scopeSelect.options].forEach(option => {
+      option.hidden = !canUseScheduleScope(option.value);
+      option.disabled = !canUseScheduleScope(option.value);
+    });
+
+    const preferred = canUseScheduleScope(state.scope)
+      ? state.scope
+      : (canUseScheduleScope(state.context?.own_scope) ? state.context.own_scope : 'policy_office');
+    scopeSelect.value = preferred;
   }
 
   function bindEvents() {
@@ -130,6 +144,7 @@
 
   async function loadMonth() {
     monthTitle.textContent = `${state.month.getFullYear()}년 ${state.month.getMonth()+1}월`;
+    if (confirmedScheduleTitle) confirmedScheduleTitle.textContent = `${scopeLabel(state.scope)} 일정`;
     state.selections = new Map();
     state.persisted = new Set();
     state.submitted = false;
@@ -316,8 +331,12 @@
   }
 
   function renderSchedules() {
-    if (!state.confirmed.length) { confirmedList.innerHTML = '<div class="empty-state">선택한 달에 등록된 정책국 일정이 없습니다.</div>'; return; }
-    confirmedList.innerHTML = state.confirmed.map(item => {
+    const visibleSchedules = state.confirmed.filter(item => item.scope === state.scope);
+    if (!visibleSchedules.length) {
+      confirmedList.innerHTML = `<div class="empty-state">선택한 달의 ${scopeLabel(state.scope)} 일정이 없습니다.</div>`;
+      return;
+    }
+    confirmedList.innerHTML = visibleSchedules.map(item => {
       const date = new Date(`${item.event_date}T00:00:00`);
       const time = [item.start_time ? String(item.start_time).slice(0,5) : '', item.end_time ? `~ ${String(item.end_time).slice(0,5)}` : ''].filter(Boolean).join(' ');
       const registrant = item.created_by_name && item.can_manage ? `<small class="schedule-registrant">등록: ${escapeHtml(item.created_by_name)}</small>` : '';
@@ -343,7 +362,9 @@
       confirmedForm.querySelector('[data-form-guide]').textContent = '관리 권한으로 등록된 일정을 수정하고 있습니다.';
     } else {
       confirmedForm.reset();
-      if (['policy_office','div1','div2'].includes(state.context?.own_scope)) confirmedForm.elements.scope.value = state.context.own_scope;
+      if (canUseScheduleScope(state.scope)) confirmedForm.elements.scope.value = state.scope;
+      else if (canUseScheduleScope(state.context?.own_scope)) confirmedForm.elements.scope.value = state.context.own_scope;
+      else confirmedForm.elements.scope.value = 'policy_office';
       confirmedForm.querySelector('[data-form-guide]').textContent = '모든 승인된 리더가 일정을 등록할 수 있습니다. 등록 후 직접 수정하거나 삭제할 수 없으며 변경이 필요하면 소속 수석부장이나 정책총괄부장에게 요청해 주세요.';
     }
     confirmedForm.scrollIntoView({ behavior:'smooth', block:'center' });
