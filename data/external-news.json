@@ -1,37 +1,53 @@
 {
-  "updatedAt": "2026-08-05T10:14:49.337560+00:00",
+  "updatedAt": "2026-08-05T17:14:37.229378+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
     {
+      "title": "계명문화대 간호학과, 'BLIS를 활용한 지역사회 간호사 대상 환자안전 시뮬레이션 워크숍' 성료",
+      "source": "시사뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA3eUtjZXZDX25Kb2hYVy1Ycm9RcUVvZkRQS1FyVDNGbG00WkJHaWNRRG5EM2d3TWlWVzN3WlB5UkhrbXVaQ0dzUVFKS0RSZjNfR05XTk1lcV9nRkkxdHZYWWQzdw?oc=5",
+      "publishedAt": "2026-08-05T15:32:55+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "몸을 맡기고, 말을 잃다 — '환자'가 사라진 의료개혁",
+      "source": "ilemonde.com",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE16d2k4QzQxUzdNYUhVZGxRalVxcnhVRUtVaVNwRk95LWdyV3h0SW5nLW1ITktQQi1sVWtqdmpCd3lyNU9wZUtjU2JtZVNHZFVZclprTTZva2lqcDJPZEQxYWVYYzNIX3hFblA0c2dB0gFuQVVfeXFMTXp3aThDNDFTN01hSFVkbFFqVXFyeFVFS1VpU3BGT3ktZ3JXeHRJbmctbUhOS1BCLWxVa2p2akJ3eXI1T3BlS2NTYm1lU0dkVVlyWmtNNm9raWpwMk9kRDFhZVhjM0hfeEVuUDRzZ0E?oc=5",
+      "publishedAt": "2026-08-05T13:16:30+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "카데바 활용한 대구과학대 간호학과 해부학 현장교육 눈길",
-      "source": "news.nate.com",
+      "source": "네이트",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA3WF9oLVd1OEFpNlFLcDYxMEFIeTFndlpnQmxRZTB1bFU0N3NSTVRhdGp4My1KalRNUGRIUHUxbk5XTktvRTZwNktFUi1ZRGZRU2RlTTZucVNoWnZ0Z1JsQQ?oc=5",
       "publishedAt": "2026-08-05T09:57:00+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
     },
     {
-      "title": "서울시간호사회, ‘2026 간호쇼츠 공모전’ 수상자 발표",
+      "title": "[2026 통일걷기④] “내일도 걷습니다”…DMZ 통일걷기 밝히는 간호사들의 손길",
       "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrYjBJcE9UNXpYajloSEZrcHZKNlUtUDVGbk1EYU52TlNsamF6bFNRQnpDWThYbHVRN0pIcXh6OGgyMU1ic0dObFNuWGNkNlJ5LWdhZG05M05OQlBNMThoejNVblpwcExqZERFVHdR?oc=5",
-      "publishedAt": "2026-08-05T07:36:56+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5JWTczdVNTM2FfU2hibGo5bkFpd3dWdTkyUWw3Z214U1U4TGNIN1UwT0R6cHdxcktyRmg4ZnRVcEtJclk5a09IbjNTNzNfbnEwQVA4NDJCbS1rckk2RVJ1dDh4TmZHRWg0WHk0Tlhn?oc=5",
+      "publishedAt": "2026-08-05T09:20:14+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
     },
     {
-      "title": "계명문화대 간호학과, 'BLIS 활용한 지역사회 간호사 대상 환자안전 시뮬레이션 워크숍' 성료",
-      "source": "서울경제TV",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5razZtVlR0ZndjWWFMbFpySzBzcjA2T01FNGxKbjc5VE1VQTVkSzFfajFmQzNvUjFFWHQxQzhtT1RDVExxajZtSE16TXJ5cHVfNFVqNV9OUFJ1TzZsSEF5dm1WQXU?oc=5",
-      "publishedAt": "2026-08-05T07:25:33+00:00",
-      "category": "환자안전",
+      "title": "국회 간호인력 법제화 추진에 지방병원 총력 반발",
+      "source": "SR타임스",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBhbWQyMmZPakFqNTMzZlRIb0lFQ3hLMnBzWTF2R0l3eG1sUkxBbzI0U1dneWtsOTZ2R2U3ZWt1dDNLTTBvT1ZnbzJXMTRUeDdjc3dGeWhOVGJYTUU1OVVoVEhjVHlFRkFM0gFrQVVfeXFMTnNvTzNTcE5VYWFndlY1TERHLXNETld2YmlXc3ZLeG9HMVpNM0ExLTJoa3c3a20waWhBUU5HckU4a0pjNDZUMVVqdmg4WjhBclEwMHNCZXFZbUZmdDBhRUwxdlE3WVhOVm9LREE?oc=5",
+      "publishedAt": "2026-08-05T07:43:19+00:00",
+      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
       "title": "계명문화대, 지역 임상간호사 대상 환자안전 시뮬레이션 교육",
       "source": "경북신문",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9MZjZRLU4tc1d2TmFmMTFUSkdHV0pJcm5uRVBPTHoxZS1vUHZjMG9oRkN1Vmp5T1dqRUlrS0FnRUF1ZGt1TmRvdjFNRkFPQldEUTRuN3BWX04?oc=5",
-      "publishedAt": "2026-08-05T06:33:11+00:00",
+      "publishedAt": "2026-08-05T06:34:52+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
     },
@@ -68,12 +84,12 @@
       "contentType": "공식자료"
     },
     {
-      "title": "계명문화대 간호학과, 임상간호사 대상 환자안전 시뮬레이션 워크숍 개최",
-      "source": "gukjenews.com",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1WenFfVkJvOU80TDhFd1RXVzF6cWdPMkl4UWtFOV8zUXp3aTgxNndsVVpYdnN1UnoyMmw5M2VEbFN1YkJ1SW9nMmM4OHA4TVJZREhLWGJfeHltZlozODJoMXZaOUJTdTlWQ2haV2t3?oc=5",
-      "publishedAt": "2026-08-05T04:46:04+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
+      "title": "리더경제【정책 브리핑｜폭염 대응 강화 1부】 의사소통 어려운 장애인도 쉽게…질병관리청, 온열질환 예방 정보 접근성 높인다",
+      "source": "eanews.kr",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5PUzJWR3FoNGZ0ZDQxNWwwYUJFN1hTMDEtNk9WOW5XbEtnLVRfVDJ1bXlnVlEzU01Sa1BkcXJiODk2ZnFBblV0NA?oc=5",
+      "publishedAt": "2026-08-05T04:39:41+00:00",
+      "category": "질병관리청",
+      "contentType": "공식자료"
     },
     {
       "title": "국립중앙의료원, 역대 간호부장 7인 초청... 공공의료 간호 미래 모색",
@@ -85,7 +101,7 @@
     },
     {
       "title": "계명문화대 간호학과, 임상간호사 시뮬레이션 워크숍 개최",
-      "source": "한국대학신문",
+      "source": "news.unn.net",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE56LUFKNVZxRHVOeWJPNzdFM0lscUIyYnNlc3JSeFVXNDEtRzJXWFRlcGdkUTY1ZW9ZR0FjWUNYZGtSd3gwako2ZG43UnV0SzZuRUt4YmhDTndteFF3V25hQ0otSW1Pdw?oc=5",
       "publishedAt": "2026-08-05T04:30:00+00:00",
       "category": "간호정책",
@@ -140,18 +156,18 @@
       "contentType": "언론기사"
     },
     {
-      "title": "“경북 북부 의료 공백 더는 못 참는다”...안동시, 국립의대 유치 총력전",
-      "source": "BBS불교방송",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5NSzU0bEVIRDJmNllXQXJidU14anNteThuUkVTXzRTa2ZJT0MzbW9lZDFycEplNV9RSmZyM0lDQ1hxN21oSTFjMHR0YS1TeXBMZTBhX2otS0VQaEJld0VTWVNjSXVlOVNqNVB3?oc=5",
-      "publishedAt": "2026-08-05T01:47:24+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "지·필·공 살린다면서…수도권 6500병상 경쟁에 속 타는 지역의료",
       "source": "메디팜스투데이",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9vZTBHVzhkRVZXa1ZnS2VyUk9fVmc2bldqY0draHZCN0p3b2NObkVDTFhMVDBZQkJ3N19ScE5Pd1VnR3R6OXRhb1pkNjZYSnZaS2I0cW1YSUJFdy1ROVlqT0FUalM2aS14?oc=5",
       "publishedAt": "2026-08-04T21:00:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "영국 MHRA 2030 전략 예고…한국 제약·바이오도 규제 연계 서둘러야",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE44ZFNmSXB0LTRrdjgtYWpsRHR1b2NDZzF1NG1nb3ZDM1RSTWVrdlZrYlRlV25OSG9wRVhEOEdjSTBid1RPR3BqWi1zWVBhOC1rc2ZvNjFmdkQ3WHdKSjN2dVYxTzRSRnc1U1Fr?oc=5",
+      "publishedAt": "2026-08-04T20:55:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     },
@@ -165,7 +181,7 @@
     },
     {
       "title": "AI 의료기기 상용화 속도전",
-      "source": "헬스포커스뉴스",
+      "source": "healthfocus.co.kr",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVc0FrTkRNa2RaME5EUW1hNExXZl91NVlSLWNGYXU1M2lTNXh1cFZ5bUZ1RUVCQlhEeUQyQU1kdjNlNjFlU1NDWDFjUTJVRWMzQkt3TFZKQkJtMWJra3Zua0M0ZHdmZTFkNlhkS0d0Y1VOZw?oc=5",
       "publishedAt": "2026-08-04T15:15:00+00:00",
       "category": "보건복지부",
@@ -181,7 +197,7 @@
     },
     {
       "title": "경치-경기간무협, 치과 전문인력 양성 협력 강화",
-      "source": "dtissue.com",
+      "source": "덴탈이슈",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE00dEpDdlRUdmpfaktRZFRfZWVFSjRkTUVRM0lGTVJ6TkpBMmRiNkZvWG5UODBsWk5weHY1MmFSX3N5emRnZmc5enJ2Z3lEUmFLQ3BEMEtQLUVjSURCT3gtekNqdTc0WTRJ?oc=5",
       "publishedAt": "2026-08-04T08:41:29+00:00",
       "category": "간호인력",
@@ -197,7 +213,7 @@
     },
     {
       "title": "공중보건의가 사라지는 농촌…순천시 쌍지보건진료소장이 이재명 대통령 앞에서 울먹인 이유",
-      "source": "폴리뉴스 Polinews",
+      "source": "polinews.co.kr",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xcXdZa01uLXNLY2xzSHl4V1RmV0tSOFFvY0NoMHZVNmE3SUNwa1RyNVFTSDdPMEZjSkZJVGs5MGwxejgwRHhQM2xDM3d3UkFXcDBzZ2hieFFuYWFENU5CVWt5TGs2X0VtdVViaE9vd1FZZ9IBckFVX3lxTE1xcXdZa01uLXNLY2xzSHl4V1RmV0tSOFFvY0NoMHZVNmE3SUNwa1RyNVFTSDdPMEZjSkZJVGs5MGwxejgwRHhQM2xDM3d3UkFXcDBzZ2hieFFuYWFENU5CVWt5TGs2X0VtdVViaE9vd1FZZw?oc=5",
       "publishedAt": "2026-08-04T07:25:32+00:00",
       "category": "보건의료정책",
@@ -284,16 +300,8 @@
       "contentType": "공식자료"
     },
     {
-      "title": "국가재정법 개정안, 공공보건의료사업 예비타당성조사 제외 추진",
-      "source": "kmsnews.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIRkRnRjBFQXB3Y0swVEtDU042SnlHTjg0TGRBeWc3TXBXZzJZTExDSlNUVkFJV2hWdmNZbHRmdWpZX2hyMU4teHY0Mm9xM2JGWFhDSEcwSGllY0FCdUFXMzN4cnZ0N1ktY3c?oc=5",
-      "publishedAt": "2026-08-04T00:50:53+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "김성기 도의원, '경기도 환자 권리 보장 조례' 추진 방향 논의",
-      "source": "일간경기",
+      "source": "1gan.co.kr",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBIUC1udjFYSFA0WHNGbU9YbTV0ZmRDTXdvSmh6aGp5UXA5eHJwODE1RjZ1a1c5bkJaVnhNZmRpOGVtWTNTOFpDc0dFX2p1UFJWUXBOSDQzQXJQLXFyV1IzVjJ4dGdTNkpD?oc=5",
       "publishedAt": "2026-08-04T00:40:58+00:00",
       "category": "보건의료정책",
@@ -317,7 +325,7 @@
     },
     {
       "title": "의료기관 간호사 배치현황 공개 의무 ‘9부 능선’",
-      "source": "dailymedi.com",
+      "source": "데일리메디",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBGRWVoZGRITVVjcnlYMUtfY3dHSGdCTG82UzVDVk1OQ0FMcnpQTmRGOFhsTFo1NUVjLUh3QVZxZExzODQxcnJtVGo5em1xUnFuSEFmMXNKMk81bFJLTU5vbXZYaUxfeDVi?oc=5",
       "publishedAt": "2026-08-03T21:12:00+00:00",
       "category": "보건복지부",
@@ -412,6 +420,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "8년째 시범사업 중인 요양시설 ‘전문요양실 제도’… 앞으로의 향방은? [간병리포트]",
+      "source": "헬스조선",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lNHdoaHFBdmMwc0RfbHU2UGowUnNhTTBqc21ueXdxVHRicjc5NkFEQW0xU3J4bDJ4Z2paQUxYTHpOSk55Uno5ZzJHekY1YnlIMHVQQzBIaGhHcE13cjZfaHpGdDVOak5jNk1yNFRuU3JrMnowcGFOSjQ4QXg1dG8?oc=5",
+      "publishedAt": "2026-08-02T22:03:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[가리사니] ‘조용한 개혁’과 ‘무관심한 개혁’",
       "source": "국민일보",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBYYzhQQnVSWUlzLTdrc2lsQnJTa1c5LXpGNTJRbkNUUjNWN1l1bU9vVkQ2RF9feHUyS3F5cWFTQzBqRnRVVy1IV0hVVFlZdmUzaXhfUldUS3BtSDB0LWx5d1VKakhtWTBTd3pDQtIBbEFVX3lxTFBYYzhQQnVSWUlzLTdrc2lsQnJTa1c5LXpGNTJRbkNUUjNWN1l1bU9vVkQ2RF9feHUyS3F5cWFTQzBqRnRVVy1IV0hVVFlZdmUzaXhfUldUS3BtSDB0LWx5d1VKakhtWTBTd3pDQg?oc=5",
@@ -421,7 +437,7 @@
     },
     {
       "title": "중증 승모판 폐쇄부전 재건술 건보 적용",
-      "source": "헬스포커스뉴스",
+      "source": "healthfocus.co.kr",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE55Z1kyX3lzSFhyRzY0Yi1mZlFiY0JFUFZ2bG1PNWJ5QXpwWW5Yd0ZKWEowSmVtc1J6OS0tMHhpYzdrQ1FpTjNMc0Y2OXczZ0tBY242ZGdaUzZOeHhKNF9idXkwS016dzd6dnhOeWFYZEhLQQ?oc=5",
       "publishedAt": "2026-08-02T15:14:00+00:00",
       "category": "보건복지부",
@@ -437,7 +453,7 @@
     },
     {
       "title": "[스타트업] '논슬립 신발·기능성 간호복으로 간호사 환경 개선' 오성훈 널핏 대표",
-      "source": "news.nate.com",
+      "source": "네이트",
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBNNjVIejg4MzlLMVlLOGFScVVNX2NQUWI3czhUaEJ1QWN0b3lsNmJldWpBUGx1T01ucW94eFVqeXU1THdzd1dzN2dyZExGMlIzcmFB?oc=5",
       "publishedAt": "2026-08-02T08:05:00+00:00",
       "category": "간호정책",
@@ -464,22 +480,6 @@
       "source": "MEDI:GATE NEWS",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBjckJjWXFvcjlUNDNKNmlLUjByWFdVZlRlVlZFNDJrUEE0RHhjMFg3d2tMVUtGWGg5WlNnaHdES2YtQzFJejlYYnNMMUgtOUNtMUtBTE5ISQ?oc=5",
       "publishedAt": "2026-08-02T07:19:00+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "증시·부동산 불안 속 내년도 건강보험료 논의 ‘난항’…재정 안정과 국민 부담 사이 갈등",
-      "source": "ainews1.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1FdDV1MWhra0pKZ1ZSUGE4NHM0Nkl4akh3QzU4R3dqbGI4eXZfRlBIM0hDNWwtSmJLd1VUbmVnT2JzNW05aUVEUmkxOVRGc2FKQUQ5YjRHbWxZSVpqV29UQ2hUQVA1bE5zb2Q0?oc=5",
-      "publishedAt": "2026-08-02T06:59:48+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "정부, 비수도권 응급의료기관에 정책자금 1000억원 지원...94곳 대상 저리 융자",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6bUVES1ByZkdpeG5PM2ZGT0o5OUM4Ui1ZclY1QUg4VEUxMXU5VlFNUUlTd0FoaEJVWm5YSm5jbWM2T1dCUS1PSXl6WjdXeTk0REczNlBCanJTeGJRenlnV1lJVl96UE02LVE?oc=5",
-      "publishedAt": "2026-08-02T03:00:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
     }
