@@ -1,8 +1,16 @@
 {
-  "updatedAt": "2026-08-10T10:44:56.416933+00:00",
+  "updatedAt": "2026-08-10T15:33:54.231084+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "\"요양보호사가 석션까지\"…노인 90명당 방문간호사 1명뿐",
+      "source": "조선일보",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQ3VaVFZpV24zNmdoMVI2cGg5UkxWN05xeEsyT25FUDMxcXN3T3NHTlR1NHJSZXdIWGZnZ0oyZzk0Smc0MjhSOVRHNnJNS2RHenJpeHVyR3FBQzJrbk9fWkx3TVN4d1FhbEpTaHZaYnlsZE5BbVIxV3BxeGNhTGRzRy05eEc5TURWRE12WHVsOTU?oc=5",
+      "publishedAt": "2026-08-10T12:09:49+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
     {
       "title": "심평원, ‘적정의료이용심의위원회’ 발족… CT·MRI 과다 이용 막는다",
       "source": "간호사신문",
@@ -20,10 +28,26 @@
       "contentType": "언론기사"
     },
     {
+      "title": "국민권익위, 의료기관 내 ‘태움’ 집중신고기간 운영… 예방 교육 병행",
+      "source": "중소벤처기업신문",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1nNEZHTzlTd0VENEoxdXVENGpabVpOZE5KeGp0ZHlMOFhPQ3BpWmd3Z29TWGRKbUt0QXhvb1FEWXYwd3NDS21vbFk3Q09hck53T1dneU1UOWNVX2NNc1hlVmlPOUVxeWs?oc=5",
+      "publishedAt": "2026-08-10T08:05:17+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[2027전문대수시특집] ‘보건의료 직업교육 혁신대학’ 춘해보건대 589명(95.9%).. 간호학과 264명 ‘10명 증원’",
       "source": "베리타스알파",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MSUk0MDFJQnljMmV0SGhxLWVhdG5LYngydFR2TG9tb3BmbUw3VFVFblpLLXROc01WeU1nUmFYdmcyV1ktYTBwUGZPRUVaeF9pQ2xRMUF0Zm5ZT2dGX0pTTk54S0pIa1dWeExxNw?oc=5",
       "publishedAt": "2026-08-10T07:40:00+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "영남이공대, 대구지역 보건교사 대상 학교보건 전문성 강화 연수 운영",
+      "source": "usline.kr",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBKX3NiMVc1SENsMnpfY2VDUmVwMWw0ckp3TkZqdGxrVTQ4X0ZINHlXc1pCNXVNWVh4cDEtcVJjRWNncVBWVHhBcmJ6NnI2RGFOci1fZHNBb1pwNWZTNDVOY21EZnRRZ9IBaEFVX3lxTE85MndKVlk0VUh3dDQxbzN3ajd2RjdqV204eTRzYzdVZXlTMXhlNVRLMTVLOVZKOHRfbHFSa1QxZW1ZUlVKVVZ4eEFiTTRfX3BvaGJvLTdRb1dweXdrSlUzell1aHNjZ3I5?oc=5",
+      "publishedAt": "2026-08-10T06:38:01+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
     },
@@ -42,14 +66,6 @@
       "publishedAt": "2026-08-10T06:26:25+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
-    },
-    {
-      "title": "복지부-간협, 전담간호사 특례·교육과정 지원 사업 착수",
-      "source": "데일리팜",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03blNDMDB5SjlFTjNwRWRVWGxoMUNURWNKeExzVkpUWURMV3JUOTM3SjdQR2t4aDdQZXlwaUt2X3J6ZTFQN1J3Y2pPbjc1em8xSHhJSHlB?oc=5",
-      "publishedAt": "2026-08-10T05:30:09+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     },
     {
       "title": "복지위 법안소위 윤곽…서영석·남인순·김윤·이수진 물망",
@@ -93,9 +109,9 @@
     },
     {
       "title": "안성시 공도읍, '의료·요양 통합돌봄' 본사업 선도… 관내 최다 실적",
-      "source": "경기탑뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAtOVJBNGRvbUxHdUdNbFlPekVmaDlRREU1b0tiRnpQRXpOa0ItRWx6SFFXS011Nkk1ZFpSdXJiR1dJdy0tVVBmQUxKaG5Nc2NVa0dYN1dfaFNXeFk3N2FrbkxB?oc=5",
-      "publishedAt": "2026-08-10T03:10:24+00:00",
+      "source": "누리일보",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNVV9TSk1QWktwMTQtdFR4U28ybEoxUzRPS3BiSG5oN200dThqRXhqSHpiclFGWUZZMldRN0h6azJvalU1bjJzaGhXQ1ZvdVhocFFlcFd3TXNmcVlN?oc=5",
+      "publishedAt": "2026-08-10T03:11:14+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
     },
@@ -149,7 +165,7 @@
     },
     {
       "title": "픽시프트, 간호사 시간제 매칭 플랫폼 정식 오픈",
-      "source": "bokuennews.com",
+      "source": "보건신문",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB2aU04dW1IWjZRcFF2d01kNXlUNDZKUEtadXd2LWw0YS1FajJCZ3k5WUpPcThXSGlmNk5JSVpoSFFtaTliVXBRM0o1aGJpUzRTSjJ0NEQ5RjVRTHpra1NyUDlB?oc=5",
       "publishedAt": "2026-08-10T01:10:09+00:00",
       "category": "간호인력",
@@ -269,7 +285,7 @@
     },
     {
       "title": "K-의료 '붕괴' 위기 어떻게 막을 것인가",
-      "source": "doctorsnews.co.kr",
+      "source": "의협신문",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rcnZ5Z1lSUVA5UmRGaTQtRU80aTNpZEotdnk2WlFtaUxTbG5kX1ppLUotR0hOLXVwcnRMWmpIaGN6VWdsZHhqQ1g2dTI0Mm00bUF2OEJFTDZEeFZILWdreGwtZEd3c0RiNERSamVYMVM?oc=5",
       "publishedAt": "2026-08-09T10:24:00+00:00",
       "category": "보건의료정책",
@@ -389,7 +405,7 @@
     },
     {
       "title": "경찰청 · 한국피해자학회 · 성균관대 '피해자 중심 사법개혁' 학술대회 개최",
-      "source": "시민행정신문",
+      "source": "citizenadmnews.co.kr",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1OY3AxT1loV1V2RFBoTGNqVEJ3MzlMMEpIZW1FZ2VUelRHNTFRX3k1T1o3enJHTGd6aWRsZWtMSzhXVHNSb1BWY3ZPdWxGcFM5bFJnUU12d0s5UFgyX2hmMmNBc2lFMVdxMW00LWlB?oc=5",
       "publishedAt": "2026-08-07T11:50:30+00:00",
       "category": "보건의료정책",
@@ -413,7 +429,7 @@
     },
     {
       "title": "복지부-간협, 전담간호사 특례 본격 시행…3개월간 신청 접수",
-      "source": "bokuennews.com",
+      "source": "보건신문",
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBsU3lkbHNGMEx3OWpXbldZX2tDLTRiR2tTTUU2LWIwRFozWk16MjF0R0JPWjdMcnBGclhzMVhHTWxyS3o2UzVGMUJ4ZE9ubk9oaEJLWHdiaXNEdS0zUVJB?oc=5",
       "publishedAt": "2026-08-07T09:20:16+00:00",
       "category": "보건복지부",
@@ -437,7 +453,7 @@
     },
     {
       "title": "[앵커 선도대학을 가다/진주보건대학교] 보건의료‧복지부터 미래 헬스케어까지… 지역성장 인재양성 선순환 모델 구축",
-      "source": "news.unn.net",
+      "source": "411개 대학을 연결하는 '힘'",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBXaUVfMkprZzZ3dWxTZmVlMmtnQjNsSjF4UzFnalBvXy1rU2ZUZmxjNjJ3N3lKbjFqTk5CNkhwVHBrUGpNQ1JZLTlRM3prQ1NMbFFpbEgybXR6LU9TRVlQSmd6X0Fpdw?oc=5",
       "publishedAt": "2026-08-07T07:00:00+00:00",
       "category": "간호인력",
@@ -465,22 +481,6 @@
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1TYW53ZFhTam9ZQnJ4dnFmYURlN1dGTUxlT2hUb2pYWWsxbG1mTnpRODBaMFJDRjlTcmVXZDBsbTk2eUV5ajlJNFVhZ1JmY0RIRmYyMXV4UFZ5Mmx3VU5YWGdydjdrZUk?oc=5",
       "publishedAt": "2026-08-07T05:22:49+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "PA 자격 기준 '사각지대'…경력 6개월 미만 간호사 '업무 공백' 우려",
-      "source": "청년의사",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4tRERZQzhRcG9MSGNpTDg1UjBKWndrUVZoNUMxYllfdmFTRDJ5c0ZVZVpZQnpRLXI1eFdxZWYtd2RiODczZzBoUE1Ra0NDZHV0NkRPc3ZBeWZ1SDQtbDlEdjFJY0FqS1MwYnN3OHF5MNIBc0FVX3lxTE1aSEktYVpIV3loSkxZaG9rQ19ZS2R6VS1iLVZUUXQzMklqRlNKOUVoSHBTN2x2cWhXOTlSYXk2UmplNkgtV0Q5cmFXY3BxRmxlcEtKMjZ3MHdQVUxhSDJoZTVqbVFNSW56MUl1dEZiV1FlSEk?oc=5",
-      "publishedAt": "2026-08-07T05:17:01+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "군산 '전북시민대학' 모집...대학 연계 평생교육·명예학위 기회",
-      "source": "뉴스핌",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51azljMjNrYlBZdWlNdTFOeWE5TnRYaUhmQktkS2ZNTUg3NGxFVzh2cFlYc3NVUkZXUE0xNUhSaS1QS2FRZlUtVEhIRmU0bndrODFoQTZMQjlaOVFW?oc=5",
-      "publishedAt": "2026-08-07T00:54:00+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     }
   ]
