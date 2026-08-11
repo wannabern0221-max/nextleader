@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T15:33:37.709498+00:00",
+  "updatedAt": "2026-08-11T20:27:23.486674+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -12,11 +12,11 @@
       "contentType": "언론기사"
     },
     {
-      "title": "부산대병원·부산시교육청, 보건의료 인재 양성 ‘맞손’",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BVEdKM3VGSU1wRmhtZXZVT0VZTUJ5WXVoZ1luWWZHRjhxSDFOWWhueGhGLURQWnd2eXppdzY1MDYxS0RQQ2pNem1Rdks2LU1HT2dFQWdRWkV0XzVEemZXaWJpbjFKTC1uT3c?oc=5",
-      "publishedAt": "2026-08-11T13:08:07+00:00",
-      "category": "부산·지역보건",
+      "title": "제물포구시설관리공단, 가천대 간호대학과 산학협력 업무협약 체결 > 뉴스",
+      "source": "더코리아",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NM0VfckNCaGhvS2JDcUFMRkx3T0pIY0gyU1BFdy1qN0xqWVZ6a3ZXRkk5azRCbGVBQ25Ud19BcElrWnZFd3lFZFNHbGV6cGVqZjNONk4tcXZFcWVoU2Vyb3lFTGNPYjA2ZkItSjk5YWQ?oc=5",
+      "publishedAt": "2026-08-11T12:44:00+00:00",
+      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -29,7 +29,7 @@
     },
     {
       "title": "예수병원, 캄보디아에 선진 간호술기 전수",
-      "source": "전라매일",
+      "source": "jlmaeil.com",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxcHI4eEFDbmprRVZUWVJoRFFLR3dRcmY1X3c3VUJ2LTZSZm44dUZDcjdSdWYtWTU1VVotSHljY1hrbWF6aG1OU2dJbnB2MkdweWc?oc=5",
       "publishedAt": "2026-08-11T08:22:00+00:00",
       "category": "간호인력",
@@ -41,6 +41,14 @@
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1LRm9NR0tKRERObnk4X0EtaDVGNHZOMHBkZ1RUcnBvM3RIeW5xZkdZSDJ4alYxbVpweF9vYlRXUTROVEFsN3BOUXpFWno0aHZEdFBUOHNxekREcFdJaTd3M3pqX2pFWXhHSVhLYg?oc=5",
       "publishedAt": "2026-08-11T07:49:47+00:00",
       "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "부산대병원·부산시교육청, 보건의료 인재 양성 ‘맞손’",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BVEdKM3VGSU1wRmhtZXZVT0VZTUJ5WXVoZ1luWWZHRjhxSDFOWWhueGhGLURQWnd2eXppdzY1MDYxS0RQQ2pNem1Rdks2LU1HT2dFQWdRWkV0XzVEemZXaWJpbjFKTC1uT3c?oc=5",
+      "publishedAt": "2026-08-11T07:27:07+00:00",
+      "category": "부산·지역보건",
       "contentType": "언론기사"
     },
     {
@@ -117,7 +125,7 @@
     },
     {
       "title": "간호사 ‘태움’ 또 비극···정부는 후속 대책 마련",
-      "source": "themedical.kr",
+      "source": "더메디컬",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0yMzZieWtpeGJNZ0FVYnduZFhnZkVNcXF2N2JMUWIwVmR5YVhoeGhDQ2hYNWxRNjZld29sYmEwYVdRSjZJcmt0NUtqUlJkMlNWXzNPdUZpSVlpOHZNTlJyS1VSQ2c2RFZ4YlHSAW5BVV95cUxOQUhYMTV6dUNqLXFTUFUwU25xdmgwaDVENGxMdGthazJFV1hMNnZMZWZPaDYwQ29vMzV4WVZxRlllWXRnQlhFLVR0S2NKVVJ2b3RaT1dwcEJiQjJfajhxNngwTzhsOWRNNVBQU2FoZw?oc=5",
       "publishedAt": "2026-08-10T23:00:00+00:00",
       "category": "보건복지부",
@@ -133,7 +141,7 @@
     },
     {
       "title": "'상급종병 기준'과 다른 국립암센터…'희귀암·다학제' 맞춤형 평가로 전환",
-      "source": "메디팜스투데이",
+      "source": "apsk.co.kr",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYR2stdGNNaHJ6cFdNLV95dlNlSGZMZF9sNElXUUp2bUpYYTY4U1ZkblhYUFlpaXJUX0dVclp5OG1saTVvZHNXZTN6ZGl0VFJUTUhMSzN2SVRGUDA5X1hBTGVzZkJRTExU?oc=5",
       "publishedAt": "2026-08-10T21:00:00+00:00",
       "category": "보건의료정책",
@@ -253,7 +261,7 @@
     },
     {
       "title": "안성시 공도읍, '의료·요양 통합돌봄' 본사업 선도… 관내 최다 실적",
-      "source": "nuriilbo.com",
+      "source": "누리일보",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNVV9TSk1QWktwMTQtdFR4U28ybEoxUzRPS3BiSG5oN200dThqRXhqSHpiclFGWUZZMldRN0h6azJvalU1bjJzaGhXQ1ZvdVhocFFlcFd3TXNmcVlN?oc=5",
       "publishedAt": "2026-08-10T03:11:14+00:00",
       "category": "간호인력",
@@ -312,7 +320,7 @@
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vTG5GNWZncWFZblpSQzJDN0U0eURSRVk2cENJVXd0S1VoSGpaeUJhd1RKc3czblZzUC01Y0JYQ2FlSEJ1ZDJtUjFMNTdhZDVfdVpCX3oxVkNGdXhzU0duR2tpRkNPajNTWWZxRFJn?oc=5",
       "publishedAt": "2026-08-10T01:41:00+00:00",
-      "category": "간호정책",
+      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -373,7 +381,7 @@
     },
     {
       "title": "국립중앙의료원, 미래 공공의료인력 양성 위한 대학생 캠프 성료",
-      "source": "monews.co.kr",
+      "source": "메디칼업저버",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qS0lrZXR1dERnZi1zbUJmWG1scGJTS2FhWWFPcHRiTXJ6d3JoQ3FEUy1uSnZmQjRSNDBKUnZocUxLUkhxWXNfcVVWYUt1dXlxaHFWMXBueUxvQVV6cjdYS2phWXFGQlNPOHkw?oc=5",
       "publishedAt": "2026-08-10T00:14:01+00:00",
       "category": "간호인력",
@@ -389,7 +397,7 @@
     },
     {
       "title": "국립중앙의료원, 의·간호대생 공공의료 진로캠프 개최",
-      "source": "헬스이슈앤뉴스",
+      "source": "hin.company",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBBc29abVJfR3JfMHBkakpCSXhYSGVIYklBOEV3WmpIcHVOTGl4ZTVsckNvTng2ejk0d2ZSVnRPbTAwc29vOE5NbEtFMkQ4eDJxakVEQklLVE1VNUNESW4tVzBCS3Jnb1dD?oc=5",
       "publishedAt": "2026-08-10T00:05:00+00:00",
       "category": "간호인력",
@@ -472,14 +480,6 @@
       "source": "Traders Union",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNzBpbFlnVmRDZzhmWG1hc3hiTmNnc0dtcnJER2tobGkxMENzRjQtZlA5ZDBQSGVmQlVuU2tZYXJhSDh5ZmRSZm1WakJsdGllX19kdzU1aXNVRWlWSnVKLW1vMVhtRnVEZ1lmenIyUGw1Q3pxNjU1OENEWDByaDhldFBzamtjMnd6bVNTaEQ2SjRqUElUQ3FjNE1iaHExMTRHcGdtTDRzVkpJbjA?oc=5",
       "publishedAt": "2026-08-09T05:35:18+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "건보료 인상안 손질 늦어지는데…1분기 적자 4조원 육박",
-      "source": "네이트",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIVTZzOTFrUk5xek1kb1dRd0d4VG5wUHhXdmhvV01Jek80clo4Xzh0VGdtdDVIcXUweldheGNZTm44N3FkRFNrT2pvdkhjaXRJWksw?oc=5",
-      "publishedAt": "2026-08-09T05:33:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     }
