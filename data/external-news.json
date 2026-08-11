@@ -1,8 +1,32 @@
 {
-  "updatedAt": "2026-08-11T09:43:44.394096+00:00",
+  "updatedAt": "2026-08-11T15:33:37.709498+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "보호자의 빈자리를 채우는 세심한 간호 | 아산인 이야기 | 피플",
+      "source": "서울아산병원 뉴스룸",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HSE9tWjJkdGNHdTVqci1yWUxzUzd5bEdwb1doQzd0eEtzZHVuSWFxZFdDb3psMmNLVjhhTDdQRmhMZnd6aEJWQkt5Ukl2bFlWTkpHLUxfOWhxQnFxWWNSWVBIOTdxTXM?oc=5",
+      "publishedAt": "2026-08-11T14:32:30+00:00",
+      "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "부산대병원·부산시교육청, 보건의료 인재 양성 ‘맞손’",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BVEdKM3VGSU1wRmhtZXZVT0VZTUJ5WXVoZ1luWWZHRjhxSDFOWWhueGhGLURQWnd2eXppdzY1MDYxS0RQQ2pNem1Rdks2LU1HT2dFQWdRWkV0XzVEemZXaWJpbjFKTC1uT3c?oc=5",
+      "publishedAt": "2026-08-11T13:08:07+00:00",
+      "category": "부산·지역보건",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "대한치과병원협회, 간호법 하위법령 관련 보건복지부에 긴급 질의ㆍ유권해석 요청",
+      "source": "의약뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Cd0hSWUlPY1hUelpIdzdvMEZrRXE3ZDJqdU1fT1IxOHNkOG5NbFBhNkNtdFM2NmNsZWVRbHBFbkkwQVpsR24zVGpJTzl5TFFFOENWOHlQS2tPa3NKUy1JZXFDZV95Nm5x?oc=5",
+      "publishedAt": "2026-08-11T12:05:03+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
     {
       "title": "예수병원, 캄보디아에 선진 간호술기 전수",
       "source": "전라매일",
@@ -14,17 +38,9 @@
     {
       "title": "법원, 전임교원 미달 대학 '교육 불인증' 처분 \"정당\"",
       "source": "의협신문",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9BcmJZQzFmVFN1VXJfQlZjZ2dTQVJQMVpQWTVzSTZqTzRKUVhqZGw0OXFQQUxqcTlJNlV5MjlNdGJVT0xxT0RLVHBRVm5vaHpncWJoM1VJanNUb3ctWnluOUFoZUE2eTRQYThnZzNMNjVVZw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1LRm9NR0tKRERObnk4X0EtaDVGNHZOMHBkZ1RUcnBvM3RIeW5xZkdZSDJ4alYxbVpweF9vYlRXUTROVEFsN3BOUXpFWno0aHZEdFBUOHNxekREcFdJaTd3M3pqX2pFWXhHSVhLYg?oc=5",
       "publishedAt": "2026-08-11T07:49:47+00:00",
       "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "부산대병원·부산시교육청, 보건의료 인재 양성 ‘맞손’",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5BVEdKM3VGSU1wRmhtZXZVT0VZTUJ5WXVoZ1luWWZHRjhxSDFOWWhueGhGLURQWnd2eXppdzY1MDYxS0RQQ2pNem1Rdks2LU1HT2dFQWdRWkV0XzVEemZXaWJpbjFKTC1uT3c?oc=5",
-      "publishedAt": "2026-08-11T07:27:07+00:00",
-      "category": "부산·지역보건",
       "contentType": "언론기사"
     },
     {
@@ -49,6 +65,14 @@
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4zRWFUdXY2VkdZbU81cTJBV1dvZWtpM0cwQTFXUUltYVN1WGs3US1OOWNNMFFfOFhkWDMtNkRuaWNzOGtybFFXZVFpdHN6OGVKcUNSR01fSWZKQVl5dVFMVlNfdmhkdEFvcFpaMko0b1TSAXRBVV95cUxQeFVsUkpWeDhfX0NKa2FyTVdfb25lWnVVdTR5MjZrc1RPTk1oVDZfZzUxcmc0ZUhEWVMtLTg5TUdZSERkdVg0ZUg2YURCcGdzRi1PU1pac29ZRUZCVXhpTGliSW8yLVdsSTRCLXRabjdhdHM5VQ?oc=5",
       "publishedAt": "2026-08-11T06:40:00+00:00",
       "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "[기획보도] 2026 보건복지부 업무보고⑤ 수동적 선별적 복지에서 '제도가 찾아가는 복지'로 대전환 한다",
+      "source": "더브리프뉴스",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE13V3VRVUxUZ0N3NmtkZlZYbFFES1lYRHN4VFcyMWtJOHc0OU1fMlplaGhxLTk1aGk1d2E3SXQtaDVCbGtkMDFSd3BXV1o2emVKM1J2Ym0wUW1WVk5zcXh0LVNacWVHM3NoVXJZ0gFvQVVfeXFMTnhYWExCVVE3S04zWnZzUjRuXzh6Z3pLVktzSGpLXzZaLXJYcFFjNHJidi1oODhxR0ZheXBCMk1GY1hTT1lFQWR1NHQ4UDE0SnpzSmYwTHpNeW85ZjExUF9Jb1VSMUhodHc0SlpodnNn?oc=5",
+      "publishedAt": "2026-08-11T05:00:43+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -93,17 +117,9 @@
     },
     {
       "title": "간호사 ‘태움’ 또 비극···정부는 후속 대책 마련",
-      "source": "더메디컬",
+      "source": "themedical.kr",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0yMzZieWtpeGJNZ0FVYnduZFhnZkVNcXF2N2JMUWIwVmR5YVhoeGhDQ2hYNWxRNjZld29sYmEwYVdRSjZJcmt0NUtqUlJkMlNWXzNPdUZpSVlpOHZNTlJyS1VSQ2c2RFZ4YlHSAW5BVV95cUxOQUhYMTV6dUNqLXFTUFUwU25xdmgwaDVENGxMdGthazJFV1hMNnZMZWZPaDYwQ29vMzV4WVZxRlllWXRnQlhFLVR0S2NKVVJ2b3RaT1dwcEJiQjJfajhxNngwTzhsOWRNNVBQU2FoZw?oc=5",
       "publishedAt": "2026-08-10T23:00:00+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "치병협, 복지부에 ‘간호법 하위법령 유권해석’ 요청",
-      "source": "덴탈투데이",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8zQ3lVMFlySkhrRjNNaFR5Z09aNGVhSUloaWtGbGFPQkF2UE9pUko0QXZRNzR2bkxqQ3pfekdSQ292VFNNOWNJWHQxMEt3LTN4U2VOdE5oYkpsMTNGVmJvaHh3dnlLajZk?oc=5",
-      "publishedAt": "2026-08-10T22:37:53+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
     },
@@ -124,19 +140,19 @@
       "contentType": "언론기사"
     },
     {
+      "title": "\"요양보호사가 석션까지\"…노인 90명당 방문간호사 1명뿐",
+      "source": "조선일보",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQ3VaVFZpV24zNmdoMVI2cGg5UkxWN05xeEsyT25FUDMxcXN3T3NHTlR1NHJSZXdIWGZnZ0oyZzk0Smc0MjhSOVRHNnJNS2RHenJpeHVyR3FBQzJrbk9fWkx3TVN4d1FhbEpTaHZaYnlsZE5BbVIxV3BxeGNhTGRzRy05eEc5TURWRE12WHVsOTU?oc=5",
+      "publishedAt": "2026-08-10T20:50:14+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[인사발령] 보건복지부,조달청,해양수산부:장애인인식개선신문",
       "source": "장애인인식개선신문",
       "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE90MjVMUUtFbEh4VmFITFIxS004eHlaWlNSb2lzT0VpV2Z0UHE2Si1Jb2lJcEd2NUdrai1JRDNpeW9lUTjSAV9BVV95cUxOTUYyQ3FtZk96SDFFNFM2VDZrX1FVdWtvOE1pa01CZmhYeEFZREIxemctRTJVQlRoSVBBZGl6MENFaUtMZWVCcjROR25pZTZCTENLRHluUEF0UGt2WFU0WQ?oc=5",
       "publishedAt": "2026-08-10T14:16:00+00:00",
       "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "\"요양보호사가 석션까지\"…노인 90명당 방문간호사 1명뿐",
-      "source": "조선일보",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQ3VaVFZpV24zNmdoMVI2cGg5UkxWN05xeEsyT25FUDMxcXN3T3NHTlR1NHJSZXdIWGZnZ0oyZzk0Smc0MjhSOVRHNnJNS2RHenJpeHVyR3FBQzJrbk9fWkx3TVN4d1FhbEpTaHZaYnlsZE5BbVIxV3BxeGNhTGRzRy05eEc5TURWRE12WHVsOTU?oc=5",
-      "publishedAt": "2026-08-10T12:00:00+00:00",
-      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -204,19 +220,19 @@
       "contentType": "언론기사"
     },
     {
-      "title": "청암대 간호학과, 잼버리 현장 의료지원 역량 입증 > 뉴스",
-      "source": "더코리아",
-      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9qX0xRYWNKaUlyUHRhdnctNm9hdHpyWlVvN3NucjVYV2dFOWEza0hmcmxudnZPTzEwRDNmb0xIdWYyeGs?oc=5",
-      "publishedAt": "2026-08-10T04:47:00+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
       "title": "국민권익위, 의료기관 내 ‘태움’ 근절 위해 집중 신고 및 예방 교육 나선다",
       "source": "팍스뉴스",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1JbXhLM0dFZXhRRHJNMWpFd0tudjNoZ1ZRS1Y1SGh5RXRoeUlLeU9GcndEQVVOckdLdkhUSHFGTzBiZTFiXzYtZWhmVTJyRnVMUmNrWmNBTQ?oc=5",
       "publishedAt": "2026-08-10T04:39:10+00:00",
       "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "탈모약보다 먼저 내놨어야 할 '건보 계산서'[기자수첩]",
+      "source": "v.daum.net",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0xRzd6UTJndG11X2JITVdBWUV3eGlUZUVnQkZCbGhTcGxYWVgzY2hfRlNrMWVSZWtmX3RSdmQyZmlGd0YwSnplbk5rNA?oc=5",
+      "publishedAt": "2026-08-10T04:31:03+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -237,7 +253,7 @@
     },
     {
       "title": "안성시 공도읍, '의료·요양 통합돌봄' 본사업 선도… 관내 최다 실적",
-      "source": "누리일보",
+      "source": "nuriilbo.com",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNVV9TSk1QWktwMTQtdFR4U28ybEoxUzRPS3BiSG5oN200dThqRXhqSHpiclFGWUZZMldRN0h6azJvalU1bjJzaGhXQ1ZvdVhocFFlcFd3TXNmcVlN?oc=5",
       "publishedAt": "2026-08-10T03:11:14+00:00",
       "category": "간호인력",
@@ -285,7 +301,7 @@
     },
     {
       "title": "건강보험 1분기 3조9000억원 적자…연간 적자 전환 우려",
-      "source": "kukinews.com",
+      "source": "쿠키뉴스",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE90VFgzWk4wRnFhS3FZbDY5OWxRT1ByXy1lSEljYWREbFlvZmJQQ0d4eUlwMFpSQXlCYlRlaU1Ec0hqelhicUJTdW5sb1pNbF9aTXpEVFllN2hYa25ldmxGRmZkbXg?oc=5",
       "publishedAt": "2026-08-10T02:03:02+00:00",
       "category": "보건의료정책",
@@ -309,11 +325,11 @@
     },
     {
       "title": "“진료지원간호사 제도, 의사 책임 흐리고 고위험 업무 떠넘겨”",
-      "source": "rapportian.com",
+      "source": "라포르시안",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OSDdUQlpaOVBQYld6Q18tQV9JS29lemlrV0xYWVJtQ0ZKQmM4aFV4d1gyczNIRTBmWDA2ajBJQW1Gc0pGRkV3SER6aUlWczhPaWhlamEzcDYwM3Zvb2hOOHRja2NQMkhuZmtmQTB3?oc=5",
       "publishedAt": "2026-08-10T01:28:19+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
+      "category": "간호정책",
+      "contentType": "언론기사"
     },
     {
       "title": "픽시프트, 간호사 시간제 매칭 플랫폼 정식 오픈",
@@ -329,6 +345,14 @@
       "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE80cDNnU0NFM01YbG1sZzdkYnBqS2tfenJCU25KNU82WlZQM0U3eUROZjlheC1jNUl6YnNUVzE0NDN1RHowajZJZ1lVSXlsZDdvc3dBdmVHZjdlSDlTUGFoUklLS0tNcjFJZWx2aExzang3dlY4NEozTng0QkU?oc=5",
       "publishedAt": "2026-08-10T01:04:02+00:00",
       "category": "부산·지역보건",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "권익위, 의료기관 '태움' 집중신고 운영…신고자 보호 철저",
+      "source": "노컷뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03NTFwNjRxYVJ6UEt5Qzh3NjNFLWJiQ19xNkVkdGhxeFpRZU5jYzJ6Ym9XSnBMSHlKZTBBNzVUN01EOUR6Ny1YRVRaandUeUlCc0E?oc=5",
+      "publishedAt": "2026-08-10T01:00:00+00:00",
+      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -349,7 +373,7 @@
     },
     {
       "title": "국립중앙의료원, 미래 공공의료인력 양성 위한 대학생 캠프 성료",
-      "source": "메디칼업저버",
+      "source": "monews.co.kr",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qS0lrZXR1dERnZi1zbUJmWG1scGJTS2FhWWFPcHRiTXJ6d3JoQ3FEUy1uSnZmQjRSNDBKUnZocUxLUkhxWXNfcVVWYUt1dXlxaHFWMXBueUxvQVV6cjdYS2phWXFGQlNPOHkw?oc=5",
       "publishedAt": "2026-08-10T00:14:01+00:00",
       "category": "간호인력",
@@ -358,7 +382,7 @@
     {
       "title": "복지부-간협, 전담간호사 특례·교육과정 지원 사업 착수",
       "source": "데일리팜",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBuNDZQSmVaYU9lc19McExxS2FxSFdpd0JiUXRmbzFFMnlzb1BQYUhJSldyb2FNd0U5RUwtRWhuR2lvWERJUGh3Y0Q1SW5NNnN4dG1xRi1mdlhiYldycV9HVTUtLXU?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03blNDMDB5SjlFTjNwRWRVWGxoMUNURWNKeExzVkpUWURMV3JUOTM3SjdQR2t4aDdQZXlwaUt2X3J6ZTFQN1J3Y2pPbjc1em8xSHhJSHlB?oc=5",
       "publishedAt": "2026-08-10T00:05:29+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
@@ -406,26 +430,18 @@
     {
       "title": "“일차 의료의 중심 간호조무사, 환자 안전 위해 교육·역할 정비해야” [Health&]",
       "source": "v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9ZZU5Ud0R3YWNQMm1SWHlMNWNnREtFekVDRVpCOVRacWR0QnRNLWNjci0tLURvX1JWS3lvbXZGOXg0OVF5bHc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBPV3dBNXQ3aEV4cWVBY25DNHo1T0ktNlpvVkk3OEFNT241LWU2SDJrQ0FDX1NYREdyRjVlZWJ4anFQMDlUSmw5aVJtdw?oc=5",
       "publishedAt": "2026-08-09T20:32:31+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
     },
     {
       "title": "복지부ᆞ간협, 전담간호사 특례ᆞ표준 교육체계 구축 착수",
-      "source": "healthfocus.co.kr",
+      "source": "헬스포커스뉴스",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1jVkxtNUhPaUcyTnN3eDB3YlBSRVllRndfY0NCdk55ZXJLVnliRjd4VV8zazhMbWhkYUtreHN4SGhhdUZVMDNpZEhsSWM1eHVjdExTa0VQM21IX1lDc2xyR01GX1EtWGk3SGhaakVCeWg3Zw?oc=5",
       "publishedAt": "2026-08-09T15:06:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "보호자의 빈자리를 채우는 세심한 간호 | 아산인 이야기 | 피플",
-      "source": "서울아산병원 뉴스룸",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HSE9tWjJkdGNHdTVqci1yWUxzUzd5bEdwb1doQzd0eEtzZHVuSWFxZFdDb3psMmNLVjhhTDdQRmhMZnd6aEJWQkt5Ukl2bFlWTkpHLUxfOWhxQnFxWWNSWVBIOTdxTXM?oc=5",
-      "publishedAt": "2026-08-09T15:04:42+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
     },
     {
       "title": "K-의료 '붕괴' 위기 어떻게 막을 것인가",
@@ -437,7 +453,7 @@
     },
     {
       "title": "국민건강보험 올 1분기 3조 8989억 적자 전환",
-      "source": "jayupress.com",
+      "source": "자유일보",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WRXIwWDlwVF9qZEtnLXlQY1U5MmpsTXV3SzFRQTVDQ1l3UWsyOFhOLXJMcmRyMWdIWUtmaHBhb1ItclA3U2dEOEcwY2g5eThNb211eGpwck1uWWlpUnRoUURXR282YVQ3ZUV0QVR3d9IBb0FVX3lxTE1WRXIwWDlwVF9qZEtnLXlQY1U5MmpsTXV3SzFRQTVDQ1l3UWsyOFhOLXJMcmRyMWdIWUtmaHBhb1ItclA3U2dEOEcwY2g5eThNb211eGpwck1uWWlpUnRoUURXR282YVQ3ZUV0QVR3dw?oc=5",
       "publishedAt": "2026-08-09T08:13:33+00:00",
       "category": "보건의료정책",
@@ -464,22 +480,6 @@
       "source": "네이트",
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIVTZzOTFrUk5xek1kb1dRd0d4VG5wUHhXdmhvV01Jek80clo4Xzh0VGdtdDVIcXUweldheGNZTm44N3FkRFNrT2pvdkhjaXRJWksw?oc=5",
       "publishedAt": "2026-08-09T05:33:00+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[청년발언대] 법 테두리 안으로 들어온 'PA 간호사'…무엇이 달라질까?",
-      "source": "청년일보",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5YbGxtSnhhMWNLRmNQTVUyT2lRanktMkhlb2ZWdHZHLXFMekwwYzdYQUhkU25wclpWelkzelEtWGwzbmRqNjVQSi1mOXRhUlFCcmZIVzFiX0tqYk55S081aWN2ODlSSmc?oc=5",
-      "publishedAt": "2026-08-09T02:00:00+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[김명희 칼럼] 인천시 재정개혁, 진단을 넘어 ‘시민의 삶’을 담는 재정 비전을 제시할 때",
-      "source": "인천투데이",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBXQmRmUkhxWWx6Nks2M3E3UXdfMVNoT0NIblJlMl85dHJDWlBLZXlScnRrQXdXbXBUYWhkV0pqNXJSRlV3UENoOHJ5N2U3QVhPZEwya04wdnNQN2lSVHZYOXlQZWZCM1h3VXdTOTVTdWE?oc=5",
-      "publishedAt": "2026-08-09T00:00:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     }
