@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-08-14T15:10:46.845883+00:00",
+  "updatedAt": "2026-08-14T20:04:06.575650+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
     {
+      "title": "간호協 ‘독립운동 간호사 74인’ 재조명 캠페인",
+      "source": "동아일보",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE92bmhHcGw0NEF0SWZtTV8zeDJwc243dEwwZF91ekl0YzVITkdudjY5aWx1NE9kMFJLc2REeXJ3anRESGNQc1QtM09OYnFqQ1luMzNaX2J2ZzlBR2x5aW4tdkVDcVdqQjRlT3BZMFppa2dIZW400gFmQVVfeXFMTnJnWXNMYnJZY1JZbXhZaExtRHJEbWhVSzRibW12aExnOUloUEUxMElPTFRDV2hMbGJ4bUZxSmJuTjhOazczVFZTR2lOTC0wa3lrN0s4NXBrdWNTYUU3NG9WRHdrLWFB?oc=5",
+      "publishedAt": "2026-08-14T16:40:00+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "보호자의 빈자리를 채우는 세심한 간호 | 아산인 이야기 | 피플",
-      "source": "서울아산병원 뉴스룸",
+      "source": "news.amc.seoul.kr",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HSE9tWjJkdGNHdTVqci1yWUxzUzd5bEdwb1doQzd0eEtzZHVuSWFxZFdDb3psMmNLVjhhTDdQRmhMZnd6aEJWQkt5Ukl2bFlWTkpHLUxfOWhxQnFxWWNSWVBIOTdxTXM?oc=5",
       "publishedAt": "2026-08-14T12:50:14+00:00",
       "category": "환자안전",
@@ -41,6 +49,14 @@
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE93SHgxczdzd3FrbndyVnhDczRmeWp6YWtHVzBSZEZyZTdmM2dwQ3daSHRPUWdHSGRVYzRJWXRxT0hwOEEzWkNBUFhFdG9fZXZm?oc=5",
       "publishedAt": "2026-08-14T05:21:00+00:00",
       "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "송기민 교수 “개정 의료분쟁조정법, 의료인 면책에 지나치게 치우쳐”",
+      "source": "로리더",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLSG5fRWZuM1JBS1NzS21jMjFGOEl3RHBLQjZMVjdMVC1QaHBpOEpmV25yYVFjVm5xWGMtckMtSGR6N0NicGtzank1X0ZKMWlvTERuV2dXSUlJb0NQckkxdDBtLU5jVUlLVmlaRmNMZzPSAXBBVV95cUxQS0huX0VmbjNSQUtTc0ttYzIxRjhJd0RwS0I2TFY3TFQtUGhwaThKZlducmFRY1ZucVhjLXJDLUhkejdDYnBrc2p5NV9GSjFpb0xEbldnV0lJSW9DUHJJMXQwbS1OY1VJS1ZpWkZjTGcz?oc=5",
+      "publishedAt": "2026-08-14T04:43:11+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -109,7 +125,7 @@
     },
     {
       "title": "[칼럼] “아픈데 집 근처 병원만 가야 하나”…‘소생활권 의료’ 국민 선택권은?",
-      "source": "fntoday.co.kr",
+      "source": "파이낸스투데이",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBZektpSks1REFVcGRtWXpHTUdiN3o1SElpaWc2ZmE5LWZqV2lmMkphMzlLSDk4VmcwZEVGRkh2YXlPLWtXcHQ5QkJJa0tHMFRZOTdxc0hJd2lyNXRzdjlxUEZXczFOVDg?oc=5",
       "publishedAt": "2026-08-14T02:04:56+00:00",
       "category": "보건의료정책",
@@ -133,19 +149,11 @@
     },
     {
       "title": "“병원이 안전해야 환자도 안전합니다” 정부·병원계·간호계, 의료종사자 보호 위해 손잡는다",
-      "source": "jejubokjinews.com",
+      "source": "제주사회복지신문",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SaE9JeVZTd1VBRGUyd1d1LTVqR1owYk1hOC1qUEV0azVlQVREcWwwdWVieDl3Mmw3RzNwZGo4SWh6cmhTVzFFdHBTMDZlYjNNRE01SGpBR1IyanZLWWNUX1U5RGNTUnB6UVM0UFVoQzI?oc=5",
       "publishedAt": "2026-08-14T01:35:46+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "대한간호협회, 광복 81주년 ‘독립운동가 간호사 74인’ 재조명",
-      "source": "여성종합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE83U0tTOXRJWVJMaDJqMVJHYWp3WERvY1FyaURpMXc3cWg4YTRaMDFfTl9tZzRxdlpGTUl6R1lDTl92QWlNTmpTd0hTRnM2UElIem9PUVptZXdXZw?oc=5",
-      "publishedAt": "2026-08-14T01:19:52+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
     },
     {
       "title": "하남시 폭염 대응, 살수차 5대·방문간호 4504회로 중증환자 없이 넘겼다",
@@ -173,7 +181,7 @@
     },
     {
       "title": "간호협회, 광복 81주년 맞아 ‘독립운동가 간호사 74인’ 재조명",
-      "source": "헬스이슈앤뉴스",
+      "source": "hin.company",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TdFJLa2dKQTYyeWczallmRFZ0OGtVQ1VYeFVaV2VOTEJlT1RSM1psQnRoa1BoZjNqWEJ2OUQ1Q0ZsTnlKWHNVZ2ZyZ2lEN09RS2pMVGtBTTgxLVhQM3p1MU9JOWZha0la?oc=5",
       "publishedAt": "2026-08-14T00:45:00+00:00",
       "category": "간호정책",
@@ -282,6 +290,14 @@
       "publishedAt": "2026-08-13T08:01:00+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
+    },
+    {
+      "title": "보건·복지 근로자 4명 중 1명 ‘직장 내 괴롭힘’ 경험",
+      "source": "브릿지경제",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5WVNOaFEwUFAwTVVQTWZPX0N1M292cnZ5SkVsZWlSX2Rfd1Q3clVmZ01naHZFOWRNQ1lKelVrVTBwS1R3STZBeFZObjRQYUhTTGJFczZEcW10dw?oc=5",
+      "publishedAt": "2026-08-13T07:59:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "질병청·주한미군사령부, 미 군용기 검역 협력 MOU 체결",
@@ -445,7 +461,7 @@
     },
     {
       "title": "구리시, 서일대학교 간호학과 학생 대상 보건소 현장 임상실습 안내 교육 개최",
-      "source": "gipress.com",
+      "source": "경기in",
       "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE92QXdxTGJqaUNtYngwUmVzeDVXbE95dmxEVjdRcERoXzlyaXZkemg5M3piWV9POXdPbjU3NHVUVnp0cUk?oc=5",
       "publishedAt": "2026-08-13T02:51:00+00:00",
       "category": "간호교육",
@@ -466,22 +482,6 @@
       "publishedAt": "2026-08-13T02:32:16+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
-    },
-    {
-      "title": "병원이 안전해야 환자도 안전… ‘직장 내 괴롭힘’ 뿌리 뽑는다",
-      "source": "안전신문",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1qc2R3SnhlUC1FdkVNcFRPOElBbXB2cjhTU2JrVGMzTTdOR2t5WmN0MGZNejFBSDhxYXplcGNNcWh4d182SWNJblZKM000bjBqQm95aUNVVE9pWTdhUkRuMG5LcUtlZm84bEpwQ3J4aWo?oc=5",
-      "publishedAt": "2026-08-13T02:31:07+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "툭하면 ‘괴롭힘’에 과도한 업무… 정부, 보건의료계 악습 끊기 나섰다",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLb1pmd2RtbXB3NVFXX0NRR1JrRlByRWFTWHJVQjVjNmZmQlRmSDlRTWZfZm9Ca2lvYk8yMndoRGtaU3dFdHZ3OVZDNnh2WnU4MkRuN1NlZnl5QUpCbTlxSHE4RGgwb1pRZ29Fc0FR?oc=5",
-      "publishedAt": "2026-08-13T02:17:09+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     }
   ]
 }
