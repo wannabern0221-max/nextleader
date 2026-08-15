@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T13:45:11.874339+00:00",
+  "updatedAt": "2026-08-15T19:04:40.426915+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -44,16 +44,24 @@
       "contentType": "언론기사"
     },
     {
-      "title": "어린이병원 토론회서 ‘SK하이닉스 있는 이천, 정주여건 개선 필요’",
-      "source": "현대건강신문",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9FS1dHbnZCM2VwNGRZMzJIQUdXZWladzR0Z09aWGZxMW04ZVA2ZWIwM1oxMjVrVFFnWWcyMlNZeDJoTTFBcXNKSW1UbzZaelB3bXVkczVB?oc=5",
-      "publishedAt": "2026-08-14T07:20:00+00:00",
-      "category": "보건의료정책",
+      "title": "계명대 동산병원 간호부-간호대학 공동 임상연구, SCI급 국제학술지 게재",
+      "source": "서울경제TV",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FeU4zcDlGc3dMYVRFbDVZX3RXVFdZel82Q0VnVmxRZWJZMGpJcmUxbWpRUG51QkhzNkhNaUVzd2oteklqZFhRbHl2M3NrcVJYWTVCd0dDaEJrcHJOZkxySUJPSXQ?oc=5",
+      "publishedAt": "2026-08-14T09:59:47+00:00",
+      "category": "환자안전",
       "contentType": "언론기사"
     },
     {
+      "title": "정부, ‘소생활권 일차의료 권고안’ 의료 제한 우려에 “사실무근”",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4zdlZyMWlmUGtjSVhXdk1TdFR4SGEybjNYSkEwZ2dwNnhCbEEydmlLTUxhTF9rSkNVNmdXU3AyUlRNSGdBQl9nS2ctcFlPekpkSlhCYkRzXzlCeFpKZGRLZlRXN3RXU1ZpajNmdUJR?oc=5",
+      "publishedAt": "2026-08-14T05:30:44+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
       "title": "2027 한양대 전공가이드북으로 살펴본 수험생의 전공 탐색법",
-      "source": "교육을 비추다",
+      "source": "kyobit.com",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9PTTYtSWtjek9UM295UHZwWlRkb2RoQTgyUHFsUk1oSDVoZDYzRGUtM3ZwUnpDYmxlVFNQTVhpdDBaMUFzQTY4OTgwdVNTWHFRM2RUZ3hCSWEzZ0dxaUVWeTVLNUhZQQ?oc=5",
       "publishedAt": "2026-08-14T05:25:31+00:00",
       "category": "간호교육",
@@ -141,7 +149,7 @@
     },
     {
       "title": "[칼럼] “아픈데 집 근처 병원만 가야 하나”…‘소생활권 의료’ 국민 선택권은?",
-      "source": "fntoday.co.kr",
+      "source": "파이낸스투데이",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02TUIzNVVGaXNDOTV3cjZMY18tM3I2aEoyQ3IxNm9EcS1yUVQwMWg2b2k4QmVsV1FtR2R2cy01akpSLU00bXctRTV2NlFadFpBaHZZbFR6aE9tMmlmT3FnZnF5RXc3U2FxUk9PRg?oc=5",
       "publishedAt": "2026-08-14T02:04:56+00:00",
       "category": "보건의료정책",
@@ -173,7 +181,7 @@
     },
     {
       "title": "대한간호협회, 광복 81주년 ‘독립운동가 간호사 74인’ 재조명",
-      "source": "여성종합뉴스",
+      "source": "womannews.net",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE83U0tTOXRJWVJMaDJqMVJHYWp3WERvY1FyaURpMXc3cWg4YTRaMDFfTl9tZzRxdlpGTUl6R1lDTl92QWlNTmpTd0hTRnM2UElIem9PUVptZXdXZw?oc=5",
       "publishedAt": "2026-08-14T01:19:52+00:00",
       "category": "간호정책",
@@ -196,16 +204,8 @@
       "contentType": "언론기사"
     },
     {
-      "title": "[오지은 칼럼] 태움, 간호사만의 문제가 아니다",
-      "source": "safetimes.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5aG1lbEJ2eXg5ZlhGQXJ5MkpMbThSWkNRRnRzSGhxcVA3XzBRQkhQaTFSY0h3WnowaDNxek5LYXNLMGtqM3hxZk9lbTJxRVNXY2dEdGVZY3g0Yk9KbG5jRkgwcDh5MS00QWx3QkMydllNOWPSAXNBVV95cUxQeWhtZWxCdnl4OWZYRkFyeTJKTG04UlpDUUZ0c0hocXFQN18wUUJIUGkxUmNId1p6MGgzcXpOS2FzSzBrajN4cWZPZW0ycUVTV2NnRHRlWWN4NGJPSmxuY0ZIMHA4eTEtNEFsd0JDMnZZTTlj?oc=5",
-      "publishedAt": "2026-08-14T00:51:57+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
       "title": "간호협회, 광복 81주년 맞아 ‘독립운동가 간호사 74인’ 재조명",
-      "source": "헬스이슈앤뉴스",
+      "source": "hin.company",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TdFJLa2dKQTYyeWczallmRFZ0OGtVQ1VYeFVaV2VOTEJlT1RSM1psQnRoa1BoZjNqWEJ2OUQ1Q0ZsTnlKWHNVZ2ZyZ2lEN09RS2pMVGtBTTgxLVhQM3p1MU9JOWZha0la?oc=5",
       "publishedAt": "2026-08-14T00:45:00+00:00",
       "category": "간호정책",
@@ -224,6 +224,14 @@
       "source": "라포르시안",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00VnZ0elh0NHVicTZLcHc1WlR5MWV6VTZhbjFkcDYtSWsxUktZSFVnNDRaaEdERk9HWWhmbU1KYV9rU1lyQjZGNHVxd0RJSmpJeGZVeEh2SkJJRnUzVVpNQ3BMa1FRTGZFaG1Tdw?oc=5",
       "publishedAt": "2026-08-14T00:20:33+00:00",
+      "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "[오지은 칼럼] 태움, 간호사만의 문제가 아니다",
+      "source": "safetimes.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HX2RXOEhESjBFR1JtR0RCT1kzeTgxUG9zUWVlSldRdXBrbjdwdWozXzlZQXk0d3BfWlBsbVFZeVJCem9ueFFBNlVITWlBeFo0TnBESl9ZNVd2MlBXRzJkaTJkcXlRTlk4ejhqVnU2c9IBc0FVX3lxTFB5aG1lbEJ2eXg5ZlhGQXJ5MkpMbThSWkNRRnRzSGhxcVA3XzBRQkhQaTFSY0h3WnowaDNxek5LYXNLMGtqM3hxZk9lbTJxRVNXY2dEdGVZY3g0Yk9KbG5jRkgwcDh5MS00QWx3QkMydllNOWM?oc=5",
+      "publishedAt": "2026-08-13T23:37:39+00:00",
       "category": "환자안전",
       "contentType": "언론기사"
     },
@@ -261,7 +269,7 @@
     },
     {
       "title": "정부ᆞ병원계ᆞ간호계, ‘안전한 병원’ 위해 공동 대응",
-      "source": "healthfocus.co.kr",
+      "source": "헬스포커스뉴스",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5FNm16LUpnUFg5QVNnQ1hzT3RKTXg5OGtMQ1ZVTGR1dTI5MDlOXy1VQ3Z1LWlXQm93WEdYZjlyWFVWcTMwemRIRnJBY2toZ0lUVHlVd1JKSDdZamZNZ2NHcUhtWUtrWndtZWZwdGFGdVlOUQ?oc=5",
       "publishedAt": "2026-08-13T15:12:00+00:00",
       "category": "보건복지부",
@@ -306,6 +314,14 @@
       "publishedAt": "2026-08-13T08:01:00+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
+    },
+    {
+      "title": "보건·복지 근로자 4명 중 1명 ‘직장 내 괴롭힘’ 경험",
+      "source": "브릿지경제",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5WVNOaFEwUFAwTVVQTWZPX0N1M292cnZ5SkVsZWlSX2Rfd1Q3clVmZ01naHZFOWRNQ1lKelVrVTBwS1R3STZBeFZObjRQYUhTTGJFczZEcW10dw?oc=5",
+      "publishedAt": "2026-08-13T07:59:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "질병청·주한미군사령부, 미 군용기 검역 협력 MOU 체결",
@@ -388,17 +404,9 @@
       "contentType": "공식자료"
     },
     {
-      "title": "낙상예방 프로그램, SCI급 국제학술지 게재",
-      "source": "병원신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1hU3lnV2luUDM5UTN4SkJ2WG11R0Y5Q0hTQnhwTUVJVWJScW82dXpsWC1idGgzdmVZRXhoQ1NCcEVjZFk2RnR0YXltWUNDSjA5anpMTm5kVVhmbkxBbmlxNlM2d0hHR0IxZmc?oc=5",
-      "publishedAt": "2026-08-13T05:57:48+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
       "title": "정부 ‘안전한 병원’ 조직문화 개선 나선다",
       "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE84Zml3ZUItVU5xUW1TYVlmQjY4NGYwVDBGQUlNZGhkQWZqZ1RvUDc1WnJpbkRodjdvamhKTXRFWTBNdzZHVjdXbW9tcThTSG5hZEgwTXdRUXAwZElwQXhnMkdMZUliTE03c3Zj?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WREowbHZVNUoyV3B4SWVUYy1mSnVUOWdBWFo0eU90N3V4YzNzTW54VXZSVjVUYmcwUVRSSDI3eFFjcnAxVm9mSXdBU0VLRmVLcG83bk1ac2ZHbUpUcVlrMFUyX1R0c3FXNGc?oc=5",
       "publishedAt": "2026-08-13T05:27:51+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
@@ -429,7 +437,7 @@
     },
     {
       "title": "의료현장 '태움' 뿌리 뽑는다…정부·의료계, 실태조사 착수",
-      "source": "shinailbo.co.kr",
+      "source": "신아일보",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Fa0lQalVZT1J5Sl84SHNnNEsxUDAwSTdBYkFiM3ZySjBYbTVsRk1qYU16aWJ6OC05ZzlZTTlPaTVSOTZnTFFUMzRrZDFkRjVEWUxtTUgtRldiNkNZQXM0Q1l5OXZJX0ZEMnVMdEhIcFE?oc=5",
       "publishedAt": "2026-08-13T04:13:40+00:00",
       "category": "간호인력",
@@ -474,14 +482,6 @@
       "publishedAt": "2026-08-13T02:31:07+00:00",
       "category": "환자안전",
       "contentType": "언론기사"
-    },
-    {
-      "title": "툭하면 ‘괴롭힘’에 과도한 업무… 정부, 보건의료계 악습 끊기 나섰다",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLb1pmd2RtbXB3NVFXX0NRR1JrRlByRWFTWHJVQjVjNmZmQlRmSDlRTWZfZm9Ca2lvYk8yMndoRGtaU3dFdHZ3OVZDNnh2WnU4MkRuN1NlZnl5QUpCbTlxSHE4RGgwb1pRZ29Fc0FR?oc=5",
-      "publishedAt": "2026-08-13T02:17:09+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     }
   ]
 }
