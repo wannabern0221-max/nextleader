@@ -1,8 +1,32 @@
 {
-  "updatedAt": "2026-08-14T20:04:06.575650+00:00",
+  "updatedAt": "2026-08-15T03:07:58.856692+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "경남정보대, 한국전문심장소생술 공식 교육기관 지정",
+      "source": "서울파이낸스",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9SdFhTZXhoQThTY3lhN2FNNDZfQ0RTcnlZZUo1akF3NjROZ2dyT2VZVHV0UFlZaEM5UzFFOXJFWGpyOG1vYjNpZ253bzRMdWxfMXFDOEZoVGhNOHlCRGQ5ZjFHUlNDVS1HYnc?oc=5",
+      "publishedAt": "2026-08-14T23:29:58+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "건보 재정 2029년 소진 경고등…'청년 탈모' 급여화 딜레마",
+      "source": "청년의사",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1jTlE3SmtDSnA0ZlJ5QXZiZHhaUG44V3BPNEtBQkNkTnJEcG1WX3RfS0J2N0dHYWxwamxBY3ZLQjJrQnF2MWcwYkMtTVN2Wm5ZT3djV0pjU0ViMTFuRmRTQWdJelJuYjduVmswNUhIc0xGQnfSAXNBVV95cUxNY05RN0prQ0pwNGZSeUF2YmR4WlBuOFdwTzRLQUJDZE5yRHBtVl90X0tCdjdHR2FscGpsQWN2S0Iya0JxdjFnMGJDLU1TdlpuWU93Y1dKY1NFYjExbkZkU0FnSXpSbmI3blZrMDVISHNMRkJ3?oc=5",
+      "publishedAt": "2026-08-14T22:25:50+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "[이기자의 메디컬나우] 복지부서 다시 만난 행시 동기 ‘박지혜·박재우’",
+      "source": "시사저널e",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBWelJFd1dJVlpuYXJBUThOdU9NTE42QklodUFxblpVUHdZWUFTZThWSnUxSlZqWHNzbmR1UzhXMnVWRVNpbFZ2WGt6d21qYnhrdmIwVVlUTnBJUld2ejFkVGU2dUVSSG9IZmd1ZDZQUHZlTU1xOUHSAXZBVV95cUxQVnpSRXdXSVZabmFyQVE4TnVPTUxONkJJaHVBcW5aVVB3WVlBU2U4Vkp1MUpWalhzc25kdVM4VzJ1VkVTaWxWdlhrendtamJ4a3ZiMFVZVE5wSVJXdnoxZFRlNnVFUkhvSGZndWQ2UFB2ZU1NcTlB?oc=5",
+      "publishedAt": "2026-08-14T21:31:43+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
     {
       "title": "간호協 ‘독립운동 간호사 74인’ 재조명 캠페인",
       "source": "동아일보",
@@ -13,18 +37,10 @@
     },
     {
       "title": "보호자의 빈자리를 채우는 세심한 간호 | 아산인 이야기 | 피플",
-      "source": "news.amc.seoul.kr",
+      "source": "서울아산병원 뉴스룸",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HSE9tWjJkdGNHdTVqci1yWUxzUzd5bEdwb1doQzd0eEtzZHVuSWFxZFdDb3psMmNLVjhhTDdQRmhMZnd6aEJWQkt5Ukl2bFlWTkpHLUxfOWhxQnFxWWNSWVBIOTdxTXM?oc=5",
       "publishedAt": "2026-08-14T12:50:14+00:00",
       "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "대한간호협회, 광복 81주년 맞아 ‘독립운동가 간호사 74인’ 재조명 캠페인 전개 外",
-      "source": "의약뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE01cEI5OThDdU5KTzRRTDQwaFA0WEoyQmFhUlhrUENCVDRvM0k0dm9tM3MzNzNSRFpNdTd2cUQyS0VzWl9sWXlVMW1zal9iTVRGa1NITTMwbUhvTGJIbDNzQjlJV1BPY2s?oc=5",
-      "publishedAt": "2026-08-14T10:11:00+00:00",
-      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -87,7 +103,7 @@
       "title": "\"걸을 수 있는 능력은 존엄한 노후 지키는 필수의료\"",
       "source": "의협신문",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQa1hKUW1Tdm5hWUhqRkU2c0VWeFY2bXNXUndLZG9KZjdpdFpFX2lCdXgyQjZqN1E5ZU0wU1NqSFBvMkNGNERPekwwQjRLV3BvYzZqR0NWMlVWTHZ3dG9xRWdKbmtHQkp6VkxhY3JNazlySTBCaVcxdHhJQWdIejJ6dHJpampjSHZqSGdr?oc=5",
-      "publishedAt": "2026-08-14T03:22:16+00:00",
+      "publishedAt": "2026-08-14T03:22:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     },
@@ -117,16 +133,24 @@
     },
     {
       "title": "대한간호협회, 광복 81주년 맞아 ‘독립운동가 간호사 74인’ 대국민 캠페인 전개",
-      "source": "시사타임즈",
+      "source": "timesisa.com",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONlBLTGE0OFJWbWpBVUUzZ3hMbV82VS1UWEphdUNCTkg4N090T2xla2hTOUdwcjU0ZWVHMG42YW1vT3dhZWFKeHVyUzM2VDgyaTVCZThaN1pMNFAyRGFURmQzTHBaUmNlM2ExbHBxQnczX21tN24zQjE4RUF2ZTlHQVVB?oc=5",
       "publishedAt": "2026-08-14T02:24:58+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
     },
     {
+      "title": "혜전대 간호학과, 국민건강보험 일산병원서 현장 견학 진행",
+      "source": "411개 대학을 연결하는 '힘'",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9SV2hlOGpac1cyamRfVjBLS05XY1ItRHpQRWNiVTZ5MFBFemR6QVV1T0NRRUJSUG5FRm9RR3ZXOFEzeVNRWDV4ZUk0RkFla0lXUTAydWFfVEdFTTZRVWtmRlFiQV9MUQ?oc=5",
+      "publishedAt": "2026-08-14T02:08:14+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[칼럼] “아픈데 집 근처 병원만 가야 하나”…‘소생활권 의료’ 국민 선택권은?",
       "source": "파이낸스투데이",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBZektpSks1REFVcGRtWXpHTUdiN3o1SElpaWc2ZmE5LWZqV2lmMkphMzlLSDk4VmcwZEVGRkh2YXlPLWtXcHQ5QkJJa0tHMFRZOTdxc0hJd2lyNXRzdjlxUEZXczFOVDg?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdkQ1VDg4cTJwTnNTQmFOY2ViOXRIcE5yLVg5VTdLeEJDMHo4SWJvY295b0tkbGVyUml4aFlfMXhCdWxHR0JIb0xMY1NsYzRHc0NSbUdLTEszdm9qRDVVUTcyc0F0TzRHRW9mSVpLUGlMSVlOT2VUOVVWS2hUcjI1amhkZm1EZUVGXy1Va214Y1JNTW9F?oc=5",
       "publishedAt": "2026-08-14T02:04:56+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
@@ -156,6 +180,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "대한간호협회, 광복 81주년 ‘독립운동가 간호사 74인’ 재조명",
+      "source": "여성종합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE83U0tTOXRJWVJMaDJqMVJHYWp3WERvY1FyaURpMXc3cWg4YTRaMDFfTl9tZzRxdlpGTUl6R1lDTl92QWlNTmpTd0hTRnM2UElIem9PUVptZXdXZw?oc=5",
+      "publishedAt": "2026-08-14T01:19:52+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "하남시 폭염 대응, 살수차 5대·방문간호 4504회로 중증환자 없이 넘겼다",
       "source": "한국사회복지저널",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFRXRURWJiRV9iSGNsR1NhdldjQVRzbU5JNVRESmVZOGYwcklhejFseVhzdjBxbG52WDM3TnBZN1F2cWl5cVlpZktFVW9welRueUpmTjY2RUY5dlpRQUFWbktKNTFTV0x6bzdn?oc=5",
@@ -173,7 +205,7 @@
     },
     {
       "title": "[오지은 칼럼] 태움, 간호사만의 문제가 아니다",
-      "source": "세이프타임즈",
+      "source": "safetimes.co.kr",
       "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5aG1lbEJ2eXg5ZlhGQXJ5MkpMbThSWkNRRnRzSGhxcVA3XzBRQkhQaTFSY0h3WnowaDNxek5LYXNLMGtqM3hxZk9lbTJxRVNXY2dEdGVZY3g0Yk9KbG5jRkgwcDh5MS00QWx3QkMydllNOWPSAXNBVV95cUxQeWhtZWxCdnl4OWZYRkFyeTJKTG04UlpDUUZ0c0hocXFQN18wUUJIUGkxUmNId1p6MGgzcXpOS2FzSzBrajN4cWZPZW0ycUVTV2NnRHRlWWN4NGJPSmxuY0ZIMHA4eTEtNEFsd0JDMnZZTTlj?oc=5",
       "publishedAt": "2026-08-14T00:51:57+00:00",
       "category": "환자안전",
@@ -181,7 +213,7 @@
     },
     {
       "title": "간호협회, 광복 81주년 맞아 ‘독립운동가 간호사 74인’ 재조명",
-      "source": "hin.company",
+      "source": "헬스이슈앤뉴스",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TdFJLa2dKQTYyeWczallmRFZ0OGtVQ1VYeFVaV2VOTEJlT1RSM1psQnRoa1BoZjNqWEJ2OUQ1Q0ZsTnlKWHNVZ2ZyZ2lEN09RS2pMVGtBTTgxLVhQM3p1MU9JOWZha0la?oc=5",
       "publishedAt": "2026-08-14T00:45:00+00:00",
       "category": "간호정책",
@@ -245,7 +277,7 @@
     },
     {
       "title": "[패트롤]영천시-칠곡군-신용보증기금-대구교육청-계명대동산병원-대구경북병무청",
-      "source": "에너지경제신문",
+      "source": "ekn.kr",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8xZzRZZjFFcDNxSzF4aEJIbUFpMzVQLXhZY0dxbzE0V041ZUVSZmdKV3hIX3AyQzhLX1FFbjBtM2FmRmxORE9vTnc1LUx5WWo1YmlLNHNxUFduX0k?oc=5",
       "publishedAt": "2026-08-13T10:03:07+00:00",
       "category": "간호교육",
@@ -390,7 +422,7 @@
     {
       "title": "정부 ‘안전한 병원’ 조직문화 개선 나선다",
       "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WREowbHZVNUoyV3B4SWVUYy1mSnVUOWdBWFo0eU90N3V4YzNzTW54VXZSVjVUYmcwUVRSSDI3eFFjcnAxVm9mSXdBU0VLRmVLcG83bk1ac2ZHbUpUcVlrMFUyX1R0c3FXNGc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE84Zml3ZUItVU5xUW1TYVlmQjY4NGYwVDBGQUlNZGhkQWZqZ1RvUDc1WnJpbkRodjdvamhKTXRFWTBNdzZHVjdXbW9tcThTSG5hZEgwTXdRUXAwZElwQXhnMkdMZUliTE03c3Zj?oc=5",
       "publishedAt": "2026-08-13T05:27:51+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
@@ -449,38 +481,6 @@
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OV1BESHFlSlluY2QzMGFQYTBUNkt5WFJWQnVqTFlNdDNvOWFCU1ZfLUk2ckVlVXY5WlQ2c2JQY3psbU1Qa3BSTU52SjVpS2xFSXZv?oc=5",
       "publishedAt": "2026-08-13T03:25:00+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "코로나19 mRNA 백신 2028년까지 국산화 추진",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jSGw1azI1c1UtUE1jMkpHYUEtSmlWY2RiS0FZQU1JdnlUMi1kN1F5ZVd5Z1RLWVhMdEdCQmdxeGNsZ01CbWI4NHg3NFhVSlVPUHZrZVVnQzJfOWtTQmE4LXZQaDRjOE5lRGc?oc=5",
-      "publishedAt": "2026-08-13T03:00:00+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "구리시, 서일대학교 간호학과 학생 대상 보건소 현장 임상실습 안내 교육 개최",
-      "source": "경기in",
-      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE92QXdxTGJqaUNtYngwUmVzeDVXbE95dmxEVjdRcERoXzlyaXZkemg5M3piWV9POXdPbjU3NHVUVnp0cUk?oc=5",
-      "publishedAt": "2026-08-13T02:51:00+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "병원 내 괴롭힘 끊는다…“신고부터 근로감독까지 연계”",
-      "source": "청년의사",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE91QjBhUVU2eUNFNk50OUpQNXVUMlhIWUdwS2JqZ1FFbzZuZGhEN0hhd0czWjRWVmRnenZkZEhjNU4yLWh2RnNQb0xiWnlTMUM4VnJBSDl3cG5oOEY4OXBtbTRmTkpHUDBMNjRPU2tDZzM?oc=5",
-      "publishedAt": "2026-08-13T02:35:19+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "수완고 교실에 간호·응급구조 수업…광주보건대와 ‘맞손’",
-      "source": "호남교육신문",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBjODVvZW56SlhWdEpYeUFXRlJYN010d0l2eHJZTU1Md25QRzVKdHJVU0pIbEhkZlEwVjhSM3hOX212ODRtSVJmQ0J1dXpGbmVfNXUyOFI3X0ZUWDZGT2R1V3VLMUxWLU05Undmbw?oc=5",
-      "publishedAt": "2026-08-13T02:32:16+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     }
   ]
