@@ -1,8 +1,24 @@
 {
-  "updatedAt": "2026-08-16T13:47:07.034989+00:00",
+  "updatedAt": "2026-08-16T19:04:25.124677+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "“한의사, ‘코어팀(Core Team)’ 편입이 일차의료 미래 좌우” > 뉴스",
+      "source": "한의신문",
+      "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPc0tZN25aQkRaWjh2RzkyN2lOc2hWTC1TeWZJcEtld2dOQzQ4akRfZkNDMWRhU2hETGNVOFR5ZHZjcDFOREkzcXVFNFhzNDBUaVV6cEFBeEFFQTVZcUh0M0Z1RTFHTEtiQnp5LVZtR1o2Tm5veDZ6bExYVVNuQzk2Q2lBaGZJRjJRVldEZmRQOXEzRTFIZi1iUWIzcWpwT0c2VlRuZTR3S0duN0JkZEpzaThBOGFSM1lxRUk2dUp2MlpxNm15M0NxbWJrSkhPUXhsLXlBREo4WVl0UUpLSmxIM0RMaWVhb3dsOTBnQV9LUVhjcHNuZVltTzlDUFMzaW9WNlJ1V0FfNWdHY3dTdDRhMG02czhNRXF0NkFYZDl6MkF1NEFha2p6LUF2MlJfNFJNUDRzUzEzVl9QYW91bFEtVlRNMkQ3RGhW?oc=5",
+      "publishedAt": "2026-08-16T06:50:44+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "디지털헬스 기반 비감염성질환 및 정신건강 관리 경험 공유 > 뉴스",
+      "source": "한의신문",
+      "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxORHZYV285Y1FRamx1NFAzdFlIZkhaTUs2Q0gtR0t4WUNEX0Radkx3dWxudC1ZZ2ZKd3BHZ25acWdkdklSSUFSc2tmWnNHbEVjQzF6VnNVUmdXLXVXNW9oMWwzdFNaM2ltQl9lUWlPcEt2TTZVYU5JQllLV29PNTlQTWZiOVQ3aHJobE5Cb2V1WTdXZGpad0dHUnVTZFhzV2ZVUFZMV19ZblRhN0hSdUoxa1pMWUxvYmZMU3pIckhzQzJRVHdsVDE4YmstSnlyd3UwcHVyTm55bGtiMkJWMUZ1ZnVwSEMycU96Q09Pb0FoenpvUXczZF93c2VnYzgwZTlTTUZUelFkTHlrUlN4Z1Zkdl9hRS1Jc0RqY0xaaU9PQ0hlOUs3R1h6MkNEbEhvcEN0bXVVZHl1WU1tMHN1ZjZpUl91Nzk2R0Zh?oc=5",
+      "publishedAt": "2026-08-16T06:30:46+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "경남정보대, 한국전문심장소생술 공식 교육기관 지정",
       "source": "서울파이낸스",
@@ -13,7 +29,7 @@
     },
     {
       "title": "건보 재정 2029년 소진 경고등…'청년 탈모' 급여화 딜레마",
-      "source": "청년의사",
+      "source": "docdocdoc.co.kr",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1PSjI2THJuRFFnVVM1ZmtGcFFtMFVsZnNMdTZvbjlya0x2MERBb19DY0pRRndRV0c1QkRPTHZnVkRlM0NPd1czckhQRFF6VUtXVDBqal9qZ2d2dlU4VnpGa3hjc1lJcEJ3S3lQWVRHNNIBc0FVX3lxTE1jTlE3SmtDSnA0ZlJ5QXZiZHhaUG44V3BPNEtBQkNkTnJEcG1WX3RfS0J2N0dHYWxwamxBY3ZLQjJrQnF2MWcwYkMtTVN2Wm5ZT3djV0pjU0ViMTFuRmRTQWdJelJuYjduVmswNUhIc0xGQnc?oc=5",
       "publishedAt": "2026-08-14T22:20:39+00:00",
       "category": "보건의료정책",
@@ -45,7 +61,7 @@
     },
     {
       "title": "“태움, 조직문화로만 다뤄선 안돼”…행간, 병원 책임 강화 요구",
-      "source": "청년의사",
+      "source": "docdocdoc.co.kr",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5KZGZCM1dVN2dicnJDWkRuTE1wU21QclJHMEhjXzR4VFNxY0ZWRnFRT2FNMUNHRWV1U2pwY0t0MkJ3V3FxbC1lSmRLRURhQjYyMElkVWZFSjFOTEJrVTVVdmoxSDZIa18zbkQzWXZqbkHSAXNBVV95cUxNM0I2LVhhdHRCa1M2dHV6MjRFQkJiWl9tcGF1SnpTb0JlWHNoM3YzaTFCQUNwdUZ4VEU4ZnpIcU5LSEFtR2lRa3VXbzU0SU5MQXJXWWtfVzFpWEVsZjMwd25TWTdmbXhtUEFzdjR4eVh6Z2Ew?oc=5",
       "publishedAt": "2026-08-14T09:13:43+00:00",
       "category": "간호인력",
@@ -109,7 +125,7 @@
     },
     {
       "title": "간협, 광복 81주년 ‘독립운동가 간호사 74인’ 캠페인 전개",
-      "source": "의학신문",
+      "source": "bosa.co.kr",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBpNG9CZ1hRcXdlNVlCdDgtV1JIcGhSZzJyZXBZY0M4aWluUUdWU0lmZDFQVXpSM2o0Zjd1ZGhydFBLbUNIMmh6TGNhWXNZSFpNUTVHODNndHlZY3VRZ2xpTFFlVVBFSWhXbVE?oc=5",
       "publishedAt": "2026-08-14T02:48:34+00:00",
       "category": "간호정책",
@@ -125,7 +141,7 @@
     },
     {
       "title": "의료기관평가인증원, 만성질환 환자안전 실천자료 배포",
-      "source": "의학신문",
+      "source": "bosa.co.kr",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5JTEJ0Skp0OFJaTV9pNXpsWFp2WGN6cXpKWEE2V3NmR2Z4dnZqeUp1WVFkc1BQX3RsYUxINnhKc2l3T3YxU2VCTlZ1aU82NFpETmNrMkNYVDRIMW1ZdTRKT0RlN2JuVVd2NEE?oc=5",
       "publishedAt": "2026-08-14T02:44:28+00:00",
       "category": "환자안전",
@@ -236,14 +252,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "보건부 장관은 공공 병원의 \"서비스 중심\" 접근 방식을 개혁하자는 제안에 대해 답변했습니다.",
-      "source": "Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMmxTT0JmcFMxV09jazRVZElJeHZadzlvM1ZTTy1ySGgwUS1NNlFkSGUzREZSajFsdlRZeXpPVnlFLXJQUzE1UG5FVXEzSUV0ZmxMd3ZvUmVjejRlZDNkazRobzJsWHBFbEN3U2h6SzlaRVhEXzlGWEVPdjlMZzdZVTRqUVJ6dnRldVVDZ1IyRXUyc0JwMXBxcU1RZjRhNlo3ME5N?oc=5",
-      "publishedAt": "2026-08-13T23:26:22+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "류향진 일산백병원 간호차장, ‘한국국제보건의료재단 이사장 표창’",
       "source": "메드월드뉴스",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1HNEkxZWpsWnVZd1A5ZUJ3WjcxYUpsVFJnYXhBVUcwUjJWZWJUTFg4YnhEaHZxXzhUNEFReVhtcnd3V3RLalhGTHRrcXNQNDhDTWlTX3RBWFZTTWFIU2lrMllNTWdyeDlEMzg4NQ?oc=5",
@@ -261,7 +269,7 @@
     },
     {
       "title": "정부ᆞ병원계ᆞ간호계, ‘안전한 병원’ 위해 공동 대응",
-      "source": "healthfocus.co.kr",
+      "source": "헬스포커스뉴스",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5FNm16LUpnUFg5QVNnQ1hzT3RKTXg5OGtMQ1ZVTGR1dTI5MDlOXy1VQ3Z1LWlXQm93WEdYZjlyWFVWcTMwemRIRnJBY2toZ0lUVHlVd1JKSDdZamZNZ2NHcUhtWUtrWndtZWZwdGFGdVlOUQ?oc=5",
       "publishedAt": "2026-08-13T15:12:00+00:00",
       "category": "보건복지부",
@@ -381,7 +389,7 @@
     },
     {
       "title": "일산백병원 류향진 간호차장, '한국국제보건의료재단 이사장 표창' 수상",
-      "source": "보건신문",
+      "source": "bokuennews.com",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5UTGhURnhuVm5rWEJoMi1hNGhRSDBoNU1Uc0xzWHN3WFVnWWY5QTluTWg2Ukc2MDd0Q0EyYzZSN1RnVHhWS0dLa2RKZUdDNk9iOEl2VWk0Qk5WVk4yaUk5RWx3?oc=5",
       "publishedAt": "2026-08-13T06:22:02+00:00",
       "category": "간호인력",
@@ -389,7 +397,7 @@
     },
     {
       "title": "계명대 동산병원·간호대학 공동 임상연구 국제학술지 게재",
-      "source": "의학신문",
+      "source": "bosa.co.kr",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE04RHBQOGdYcmxQbFpGbjZfQ05JVHphYS1hYkNodDlfQ3JCeUVHSExsamVOYWNYd2k0d2NiQ2cxczJwMVQtNk5BNHdoUU1kOUpVSDgtVUpNaGZxeGItZ2tFWW8wLXA0YjZlbEE?oc=5",
       "publishedAt": "2026-08-13T06:05:56+00:00",
       "category": "간호정책",
@@ -405,7 +413,7 @@
     },
     {
       "title": "정부 ‘안전한 병원’ 조직문화 개선 나선다",
-      "source": "의학신문",
+      "source": "bosa.co.kr",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WREowbHZVNUoyV3B4SWVUYy1mSnVUOWdBWFo0eU90N3V4YzNzTW54VXZSVjVUYmcwUVRSSDI3eFFjcnAxVm9mSXdBU0VLRmVLcG83bk1ac2ZHbUpUcVlrMFUyX1R0c3FXNGc?oc=5",
       "publishedAt": "2026-08-13T05:27:51+00:00",
       "category": "보건복지부",
@@ -426,14 +434,6 @@
       "publishedAt": "2026-08-13T04:57:52+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "정부·병원·간호계, 병원 내 괴롭힘 공동 대응…실태조사부터 근로감독까지 연계",
-      "source": "매일안전신문",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9jY3BZSWFlWU1seWF5SW14SjhPYlg0SXRFM0pOSmJ3Z3J0NFJzTTAxRHJBdFhUbUQzblEwUVVvZ2VHbDUybXlQOE9LTHBya3otczV2TXVjTWrSAWhBVV95cUxOR3dMX3BJRFRCSS0yY3l1MHVkMWF4eWt6SnRIaGMwS2tnS0ZVMVdtTG90Vjl3N1REM1o1N0YtU3N0U0VZVGkwaVZpMUliaXktQVhuMmVvQzlNWmxMWGE0eUtqQk96bUlvNg?oc=5",
-      "publishedAt": "2026-08-13T04:54:00+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
     },
     {
       "title": "복지부, ‘청년내일저축계좌’ 패널조사 결과 공개",
@@ -461,7 +461,7 @@
     },
     {
       "title": "코로나19 mRNA 백신 2028년까지 국산화 추진",
-      "source": "의학신문",
+      "source": "bosa.co.kr",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jSGw1azI1c1UtUE1jMkpHYUEtSmlWY2RiS0FZQU1JdnlUMi1kN1F5ZVd5Z1RLWVhMdEdCQmdxeGNsZ01CbWI4NHg3NFhVSlVPUHZrZVVnQzJfOWtTQmE4LXZQaDRjOE5lRGc?oc=5",
       "publishedAt": "2026-08-13T03:00:00+00:00",
       "category": "질병관리청",
@@ -469,7 +469,7 @@
     },
     {
       "title": "병원 내 괴롭힘 끊는다…“신고부터 근로감독까지 연계”",
-      "source": "청년의사",
+      "source": "docdocdoc.co.kr",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBfLTkxYVBBbnRsWk9rTWswRW5XWnVzS0RqRHlSSm05OWdNTHozSnF3Nkh1WFlDQzQ0cVlHQ1FScHpzLVlkdGdERW1sZ2plRHpCZVBQYURWTzlOMDNsNk9EX1FXOFJvU0ljRXpjMlhJQdIBc0FVX3lxTFB6cDByVG1XVlhQS2pmS2hUREh2blhyNW81STk5VXpqT3NJUEpzOUFRQ2dMMUtZNUszdW5KZ2tzbzZwWnk5SzZiWGcwQzh0N3h1MnRYejl3aDZKanloS080Z3BsUmdTam9sZ0dKNVdud0tBazQ?oc=5",
       "publishedAt": "2026-08-13T02:35:19+00:00",
       "category": "간호정책",
