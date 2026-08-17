@@ -1,8 +1,24 @@
 {
-  "updatedAt": "2026-08-17T14:01:20.227050+00:00",
+  "updatedAt": "2026-08-17T19:43:42.458393+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "결의안 72: 의료 서비스의 병목 현상 해소.",
+      "source": "Vietnam.vn",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBsSWN1NEVnSlB6V2kxNEJhM1k5d0l5OVU5cWVhWDVhNWZoMi1ET3RqcnFUNmRnRnJqeDB6SFJ5UzN4anlFekphN1l3ODN1UFMzeHdHS1FndWlBRWg4N3hpbVVySWhQaVRmNmdPcGR4b0ZmbElWTzJMWF95NnpEdw?oc=5",
+      "publishedAt": "2026-08-17T16:18:08+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "의전원·간호·약학·AI 바이오헬스까지… 글로벌 실무형 인재 양성",
+      "source": "조선일보",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNTZ6ZVozVm90cW1UWjE3bE1yQnR2dnYtdldqYmVVUkNIUWV6cHgxbm85dlBSQmZBMHoyZ0FNRVlxWWpVYTY2MkhTZHdoY3o5Q0tMejNRZ1JySWQ2bW93Qk1mdmdiZWJ1UERMZ3VYZ3N6V1huMm5HSmtTSDJGQlZGS1Q2UnZqSmctV1VjXy1B?oc=5",
+      "publishedAt": "2026-08-17T15:35:00+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
     {
       "title": "보호자의 빈자리를 채우는 세심한 간호 | 아산인 이야기 | 피플",
       "source": "서울아산병원 뉴스룸",
@@ -120,14 +136,6 @@
       "source": "한의신문",
       "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPVnBFd18xaWVWVGU1Q3pWZVRvWW9UNVFwaTFzRjRHVmJwVWpiem52TVBqb3Q0R3FHX1Jtd0N6U3VmeXFPSV9OQVZoSEtOcHloWDY4YVBHRTlWZGQzenQzcnRlVzFhNjlRYjVpYy02OGtsZHJyVmFkdnlaYnl2MFNzc1F6OEpkcGZ2RE1tSFR1eFBxVjgxcWFmVmQtWTl0aE90M3E1T20tMkpfRWN4SGhwVmJfbkNmS2RaZGpYaVdHMGQ5ZVFaVmdaREpNRkNNTXZ4X3gwOFliTGJIQkIzb0NmRGJuczJSOG9MX3BsNlJYcXlZWFFW?oc=5",
       "publishedAt": "2026-08-16T21:25:49+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "‘일본처럼’이라는 오해...의료중심 요양병원의 길을 묻다②",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA0aHBSZ21RQUVlZE5TeUJBekFZcV92MzliSlRwVXRsQ1dTZ3NhV0tjWjdhRjd3TVhUYk5wek1VdTBHZ0NWbWRwa0RRYTlKNHhHNXI2UXc3MDd1aXpOZ1RBN2F5SnlnWGxqN1E?oc=5",
-      "publishedAt": "2026-08-16T20:50:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     },
@@ -269,7 +277,7 @@
     },
     {
       "title": "“괴롭힘 없는 병원, 협약 아닌 현장 변화로 증명해야”",
-      "source": "현대건강신문",
+      "source": "hnews.kr",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE93SHgxczdzd3FrbndyVnhDczRmeWp6YWtHVzBSZEZyZTdmM2dwQ3daSHRPUWdHSGRVYzRJWXRxT0hwOEEzWkNBUFhFdG9fZXZm?oc=5",
       "publishedAt": "2026-08-14T05:21:00+00:00",
       "category": "간호인력",
@@ -333,7 +341,7 @@
     },
     {
       "title": "혜전대 간호학과, 국민건강보험 일산병원서 현장 견학 진행",
-      "source": "411개 대학을 연결하는 '힘'",
+      "source": "한국대학신문",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9SV2hlOGpac1cyamRfVjBLS05XY1ItRHpQRWNiVTZ5MFBFemR6QVV1T0NRRUJSUG5FRm9RR3ZXOFEzeVNRWDV4ZUk0RkFla0lXUTAydWFfVEdFTTZRVWtmRlFiQV9MUQ?oc=5",
       "publishedAt": "2026-08-14T02:08:14+00:00",
       "category": "간호교육",
@@ -396,6 +404,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "[오지은 칼럼] 태움, 간호사만의 문제가 아니다",
+      "source": "세이프타임즈",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5aG1lbEJ2eXg5ZlhGQXJ5MkpMbThSWkNRRnRzSGhxcVA3XzBRQkhQaTFSY0h3WnowaDNxek5LYXNLMGtqM3hxZk9lbTJxRVNXY2dEdGVZY3g0Yk9KbG5jRkgwcDh5MS00QWx3QkMydllNOWPSAXNBVV95cUxQeWhtZWxCdnl4OWZYRkFyeTJKTG04UlpDUUZ0c0hocXFQN18wUUJIUGkxUmNId1p6MGgzcXpOS2FzSzBrajN4cWZPZW0ycUVTV2NnRHRlWWN4NGJPSmxuY0ZIMHA4eTEtNEFsd0JDMnZZTTlj?oc=5",
+      "publishedAt": "2026-08-14T00:51:57+00:00",
+      "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
       "title": "간호협회, 광복 81주년 맞아 ‘독립운동가 간호사 74인’ 재조명",
       "source": "헬스이슈앤뉴스",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TdFJLa2dKQTYyeWczallmRFZ0OGtVQ1VYeFVaV2VOTEJlT1RSM1psQnRoa1BoZjNqWEJ2OUQ1Q0ZsTnlKWHNVZ2ZyZ2lEN09RS2pMVGtBTTgxLVhQM3p1MU9JOWZha0la?oc=5",
@@ -404,18 +420,18 @@
       "contentType": "언론기사"
     },
     {
-      "title": "[오지은 칼럼] 태움, 간호사만의 문제가 아니다",
-      "source": "세이프타임즈",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HX2RXOEhESjBFR1JtR0RCT1kzeTgxUG9zUWVlSldRdXBrbjdwdWozXzlZQXk0d3BfWlBsbVFZeVJCem9ueFFBNlVITWlBeFo0TnBESl9ZNVd2MlBXRzJkaTJkcXlRTlk4ejhqVnU2c9IBc0FVX3lxTFB5aG1lbEJ2eXg5ZlhGQXJ5MkpMbThSWkNRRnRzSGhxcVA3XzBRQkhQaTFSY0h3WnowaDNxek5LYXNLMGtqM3hxZk9lbTJxRVNXY2dEdGVZY3g0Yk9KbG5jRkgwcDh5MS00QWx3QkMydllNOWM?oc=5",
-      "publishedAt": "2026-08-13T23:37:39+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
       "title": "보건부 장관은 공공 병원의 \"서비스 중심\" 접근 방식을 개혁하자는 제안에 대해 답변했습니다.",
       "source": "Vietnam.vn",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMmxTT0JmcFMxV09jazRVZElJeHZadzlvM1ZTTy1ySGgwUS1NNlFkSGUzREZSajFsdlRZeXpPVnlFLXJQUzE1UG5FVXEzSUV0ZmxMd3ZvUmVjejRlZDNkazRobzJsWHBFbEN3U2h6SzlaRVhEXzlGWEVPdjlMZzdZVTRqUVJ6dnRldVVDZ1IyRXUyc0JwMXBxcU1RZjRhNlo3ME5N?oc=5",
       "publishedAt": "2026-08-13T23:26:22+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "\"아니면 말고\"…의료 현장이 정부의 '정책 시험대'인가 [기자수첩-ICT]",
+      "source": "데일리안",
+      "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNZXVHbHVRVDZiNnR2TFAyWkN6OEJOZWpxclJTenBBT2ZPUnRweHAxaVFjRG55d1FTNUJLSnh1bFlEU1FjdnRGY0s4QVk4MXN4a1EwS2xfTVF6V2E4WUFmbDVLOGNJblJuazMyZ1JXUkdwM0pmRWVncTF2QnQ0Mm9hQThFX2g1STlKaTBYTl92djBwbXdob1gxQlNReEQ0UWpNZlB0aHhCOGxNREF5aVh3d1pwU0ZyVkx5anhnLWNPQmlKNWNUei1TT1o3ZGU0RTZsT1BGMTJCdnNpYjh6WG11ZjI1Z1YzRjBFU25aYURWTWttNjNqSkp2VFU3b2tZSkt6UkFHZVlBWW5QMVo5ak5ybjM2dkh1R25p?oc=5",
+      "publishedAt": "2026-08-13T22:00:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     },
@@ -466,22 +482,6 @@
       "publishedAt": "2026-08-13T08:43:44+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "‘일하고 싶은 안전한 병원’ 만든다…정부·병원계·간호계 맞손",
-      "source": "팍스메디컬뉴스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBXVnk3SGJNYWFEY1k4Q2Zzb0QtTHExQUN5amtxbVY1R3M4TEdYcVBmS0kzc3AwYWE2R1RCdFBvNzBWbm5PY3NubVJQMWdhN0lkeGh1LXg5WUU3OUQxMnNCck83cFpZT29HaWpJM19IN1k?oc=5",
-      "publishedAt": "2026-08-13T08:34:38+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "\"태움? 병원이 안전해야 환자도 안전\"…'직장내' 괴롭힘 대응 강화한다",
-      "source": "한국부동산뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE55djJiYjNCNXhYQVRlNTUzS0FxRlBnU1VFQ1g4SW5hcnRfbC1TWUJoYVZrdUs0bGU0eXVjc1BqejNNdG1EWk8yX05RTEtfZ3o0QW5PWXNPeV9BZ1hjYXp3S2taZG42SzdDRFdB?oc=5",
-      "publishedAt": "2026-08-13T08:17:01+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
     }
   ]
 }
