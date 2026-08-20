@@ -1,15 +1,23 @@
 {
-  "updatedAt": "2026-08-20T14:20:30.360921+00:00",
+  "updatedAt": "2026-08-20T19:49:23.628205+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
     {
+      "title": "“간호사 1명당 환자 수 법으로 관리한다”",
+      "source": "메드월드뉴스",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92YWRaa090cVVlTWNHZ0RFOXlGWVJpcmlOWGJMNUNJTFgzSzFCNW5zb1dqZ3p2ZHIzRUNneFhrSnFsM0k1TU5qbFBLTVMzQUZlWV9hNzJPTEVQa0JnaDdvLTRZMW1UN1l4WVhsNlFn?oc=5",
+      "publishedAt": "2026-08-20T13:48:12+00:00",
+      "category": "정부·국회",
+      "contentType": "공식자료"
+    },
+    {
       "title": "간호법 첫 개정안 국회 본회의 통과…간호사 1명당 환자 수 ‘법적 관리’",
       "source": "kmsnews.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5JOFRhdEUzbkNDUEhSY0l4azNOQlJmWG92RjZiNWVMS0E5MVcyZnBISnVjZ2dCUmVFRml6U1NfbGlvVFFsUmtreVFVczVMY3Ria1AtaXJBV09mVUZUM0NTendMbFZ3M0QxYWc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Rd1hubFBCVlkyeGxyeWxWamw4eXV5bm9JVG9DX1Q1dGozdURlNmV4aG8yZ1RDSktCZzhEMTk5cjFSaWdYX1VvWGVJM3dVRlFQb0puWWpUZ3JPcUdxY0laeFRYMjJQdjV1LWN3?oc=5",
       "publishedAt": "2026-08-20T13:35:30+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
+      "category": "정부·국회",
+      "contentType": "공식자료"
     },
     {
       "title": "간호사 1명당 환자 수 법제화…간협 \"근무환경 개선\" 환영",
@@ -44,6 +52,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "정부, 비대면 진료 ‘약 배송 확대’ 추진… 민관협의체 가동",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9HTE1MeGp6OEFWakwzcUNNdWlTNTZ3VDZNR3g1eVRRYTkxT1AxckFkczNTczN4Qk5Td2NGODNGMlgwWEdCeTZqNFNvRUdIem1OQzZiV0oxejk5ME5YeWtDWlFJOVhDSm1LX0YtVU9B?oc=5",
+      "publishedAt": "2026-08-20T09:35:29+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
       "title": "'간호사 1명당 환자수 제한' 통과…\"인력 이탈 막을 것\"",
       "source": "뉴시스",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1zdkVTZmN6VkdxbGEybnB3bk5MVTV3VG9Jcy1RQjFKV3RpMmNRanRIOHlTQnNjZWY3dEdEdTdGWG9sWFY4el9fSW9DWXlYTEJlUG1rMVJ6NWF6MkNlbWFFQkFLQlNRQXVlWmlqOU9MbXVTbDBzMmpZY9IBeEFVX3lxTE1zdkVTZmN6VkdxbGEybnB3bk5MVTV3VG9Jcy1RQjFKV3RpMmNRanRIOHlTQnNjZWY3dEdEdTdGWG9sWFY4el9fSW9DWXlYTEJlUG1rMVJ6NWF6MkNlbWFFQkFLQlNRQXVlWmlqOU9MbXVTbDBzMmpZYw?oc=5",
@@ -64,8 +80,8 @@
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBXRWhmR2tNbmNfTVR4ZDk5Mi1JWHRPSE9JRjFTR3N1TlI1cC1jN2lTYzRNUldyei1qMjExTUtYMlNlcC1rYWtWSjM2aGZjLV82OWREWnF5XzJkalV1dHJYTnh2bjk1QXdyeHlYQjB3?oc=5",
       "publishedAt": "2026-08-20T09:27:33+00:00",
-      "category": "정부·국회",
-      "contentType": "공식자료"
+      "category": "간호정책",
+      "contentType": "언론기사"
     },
     {
       "title": "비대면진료 플랫폼 도매업 금지…간호사 '적정' 환자 수 법제화",
@@ -104,8 +120,8 @@
       "source": "의학신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBndnl4dkctVXkzTnRpaldGd0VmcHhOeHhyOHUwREc3dDkxbDhZR0RGNlFqLUNoMnQ2Z3lPQk5qZ0RPa0lFVVoyeEJwd1A2aVVzdHlNNWUtY3k4dnBRY0hIZnhXX0RzbVJrT3c?oc=5",
       "publishedAt": "2026-08-20T09:01:00+00:00",
-      "category": "정부·국회",
-      "contentType": "공식자료"
+      "category": "간호정책",
+      "contentType": "언론기사"
     },
     {
       "title": "간호법 1호 개정안 본회의 통과… “간호사 1명당 환자 수 법으로 관리”",
@@ -204,6 +220,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "김영학 보건의료정책과장 \"보건의료발전계획 수립·가짜진료 대응 총력\"",
+      "source": "청년의사",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1la0x2RWEtampncUZEbU8tNGg5SVZMdmpWUEZPU0VtSzRIR1hKSW5hb2p4M2ZteUtEZ0M0bWdXd3NVOFRVN3hWUTUtS0FvWUNvZEhVOWt4bmxEb3ZzdzEzZ2Z5T3J2R2xqQ0hnZS02MNIBc0FVX3lxTFB2MzI1Vy1aMk5FVFhVMkxuMHdIWWVsNWZvWE1mMmtRUWRNajYtSTBwcVoyQWhYSlBiSDlCT19NMzY0eDBpbFZvVkJSdUJEdldMS3VsU2hqR2JFZGxRdWxLaFpnNTFQN2xRalVUYnp4UlZ3QXM?oc=5",
+      "publishedAt": "2026-08-19T22:07:33+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "복지부, 비대면·약 전달 정책 첨단의료관 이관…약업계 '초긴장'",
       "source": "약사공론",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1PXzZZNmF0eXdCY210VXc2TmhxOGZlbDBXZEo5OXc3NDVtcE12QVR0dTdsM2tFUDV1VmpoRmdXQ0N2b3VJS01wRGlGallaUnBvbnU5X2VSaWpNS2pyWnVlZDRTWGFjR3VDNWdqWA?oc=5",
@@ -222,7 +246,7 @@
     {
       "title": "주·야간보호기관서 가정간호 제공하고 급여 청구한 병원…법원 “13억원 처분 적법”",
       "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FRDVqbjd4ejIxSnRwcnBJdElrMm8tV0dLZmlPcU16ZEgwQ2hjemtaNVJrVE8xWXZINElwOHdqSkhWczhUcFIxNnVzNUFDemNsckFMWQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE42Mk5fVkVqS0lwTngwbWRoY1R0d0tlMDJGQXg5d3dnRUZHbHA4dmtMZXhra3lsbk1VNVhtdjhVRnZ4Z1F6aVV4SzBjTHl2bk1vcTNGdHhtTQ?oc=5",
       "publishedAt": "2026-08-19T16:08:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
@@ -242,6 +266,14 @@
       "publishedAt": "2026-08-19T12:29:00+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
+    },
+    {
+      "title": "건보공단 특사경, 공소청법이라는 ‘암초’ 만나",
+      "source": "병원신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0OU91bm04SC03ZTVMVG5temZyVkR6OVh2d3kyelBTSzl2VUhQTnVxSUY0dDJCV2tmWUtQSFdKV0pxTE9sM2VUSGhXdGRjMWlsTkFvZ0JBN2tkcWRaQjE4UlRvWWw3eWYyYlE?oc=5",
+      "publishedAt": "2026-08-19T11:50:01+00:00",
+      "category": "질병관리청",
+      "contentType": "공식자료"
     },
     {
       "title": "제주대 간호대학, 홍콩대 학생 제주 방문…‘세계에서 제주로’ 글로벌 간호교육 교류",
@@ -309,7 +341,7 @@
     },
     {
       "title": "프라보워 대통령 “빈곤층 9,680만 명 건강보험료 전액 국고 지원”",
-      "source": "한인포스트",
+      "source": "Haninpost",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9EMU4ybVk4dWJmYzc5cjN1XzZ6MWtCQlVHUXgwSWc5a2ZLYUVSTnBTTWpOSGo5Ml9GajM5RXJnanlLc3UyQzloQlFUbmNMZw?oc=5",
       "publishedAt": "2026-08-19T06:33:01+00:00",
       "category": "보건의료정책",
@@ -404,6 +436,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "전북대 간호학과/사회복지학과 협력 '고립/은둔청년 회복역량 강화' PBL.. 일본 현장연수로 마무리",
+      "source": "베리타스알파",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Za0ZnMjBQc0JMMFRXLVhHWjUwT2hCZXZNVWVMOVo0WlZUWFIxb19JdnUxTGtaVzY4cDBMTW9WaDZaNnczZ0J4ZDVjR1plNXZieVh1RElhYlJiVE01ak1aNFNmdU95MG45U3dudw?oc=5",
+      "publishedAt": "2026-08-19T03:06:35+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "국립대병원 내일부터 보건복지부 품으로",
       "source": "의학신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHT2tjajQyWDd1U0FMX2NBaGdXcmduZldIYnE4ZWR3blF6ak9IQ2I4bTRtdmF0ODlEb3hGdEk0OUdvQ3pBaTI5aWRwTGFtbTBmVFJaWW1VT0YyT0NTN21TY0t3eFNtcFBTcEE?oc=5",
@@ -442,46 +482,6 @@
       "publishedAt": "2026-08-19T02:28:39+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "[기획] 다들 외면하는 자궁경부암 필수 치료… 국립암센터가 지켜낸 25년",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1MVjd5c0Nka01NakNTZnQ0U0VWR2k0cGlzMDJ4bS1aeHZkOGpGeW1HOXRwUGhQYTFzOUlIX0dBc3MxbVpWMjlORW8zYXdfTVA2MHFOWGJTd0V2eGRfU21JNTBJOUNzX3ZWU0tfNjZB?oc=5",
-      "publishedAt": "2026-08-19T02:18:54+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "나고야 가는 길, 감염병 조심… 질병청 예방수칙 당부",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1xSGJ0Zkx2aFZZUzU4akI0SVUxeUNDcFNsazc3VU5zbWFpLXRkUHJ5Z2Y5NlJIVG03el93NEpyMlVvVUJYWG1sdDV4LVd4c18xT0NqNmxmU1AydklQczJQVnhNTDdkQ3IwYWhTN0Zn?oc=5",
-      "publishedAt": "2026-08-19T02:12:12+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "‘환자 7명 사망’ 울산 반구대병원 폐원…복지부, 180여명 전원지원단 파견",
-      "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE82Q2J1VFlUMUp4MHRXakIzVmYwbnl5eS1aLWl4M3o3ZDNiRVhjTUYzRVI1RHZQOGJpOWxOWW1nR1lhTjRzX20tallOQ1RZdWNS?oc=5",
-      "publishedAt": "2026-08-19T02:11:00+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "제주대 간호대학 '제주의 미래, 제대로 건강' 전통시장 상인 건강증진 프로젝트 운영",
-      "source": "베리타스알파",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xczFlb1FRVWM0aGt6NjBDRzcwd2tuc1Jock5fbUdfSmxsOFFDQWdtcDllY2FJOVhYQWJ5dzJvTlhYc3NaRGczcGJVakNYU0NtS1FSdElObVgxdlE3UWlIZ3hUbEc5VHUtSWFhOQ?oc=5",
-      "publishedAt": "2026-08-19T02:08:44+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "\"검체 뒤바뀜 사고, 입법으로\" 이주영 의원 '법적 관리체계' 만든다",
-      "source": "의협신문",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBxQnNUc24wUHFuNFM3V3BHLWQtbVpBdW9PaDlXb1NNUGtrWF9yaHA3RzRWaWh0Qmg0SE5iRGkzN3BDcnlXYWU3dzRDUmtOUWJyUEhEblc4emJ2dThMT3AwZ1owMHZBRVpkSEc3djgzVEM5UQ?oc=5",
-      "publishedAt": "2026-08-19T01:34:10+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
     }
   ]
 }
