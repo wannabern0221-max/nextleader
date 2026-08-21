@@ -1,8 +1,40 @@
 {
-  "updatedAt": "2026-08-21T08:08:49.467055+00:00",
+  "updatedAt": "2026-08-21T14:09:21.901076+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "대구과학대, AI 활용 중환자 간호교육…교수·간호사 24명 참여",
+      "source": "edaily.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUS1TckNkMU1mOVhzOXBjR2dqVHdUQ0lWaXB4ZVNhelp2RFIxTFdSYWtmdGFQcDlvSnE5bHE0eE1sZDN3RmJVZHFGcTNUMHlKNlJncUZtRDJkMXFGVWJ5anQ1UFluZU9rbXBpdDVneFhma2h0WHFrRjJPZjY3dDFrag?oc=5",
+      "publishedAt": "2026-08-21T10:05:13+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "“간호사는 부족하다는데, 취업은 하늘의 별 따기”",
+      "source": "위클리코리아",
+      "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNay1iYVcxWHctZTRlZmVpNGdrdTZ6TV96NUR6TTFjWGo5cFo5cFBpbFVTc2QzTmg4ZzZGNHVFRjVQTlJ1N0c2YV9oRk1QZ3hDUmY3QnRDXzVkVV9qMm51bVp6eUNXbV9SRlc4U0dublRrdHJvZW5wQUc5bFJNTnB2QlhMY0VSM3V0LVdySDBoZC1ZVnpXSEM4RjNtRE1sa3NXMFhCQ255a0FaeHZpTG5LR0JBWmVxYks1U19IR045QTZqVjg2MUpPdlZwYS04VWZnbXhEbGhWZW1YdjhBZTAwMktmUEJmNTBQd0tlLWM0dENTOHc4a2Q0cmZxZkFXbmhmMDg4V2YxSmdGM3JUOEo5UWlNTkpLc3NFcFF4ZUNtaWNCZXZfX3pDenNMREwyNkFrOTFmSkdB?oc=5",
+      "publishedAt": "2026-08-21T09:10:04+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "간호법 개정안 국회 본회의 통과, 간호사 1인당 환자 수 법제화 外",
+      "source": "의약뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6dWhGTHBrelRkaks3X2JOeVpoZkEtMk5pc0t3VDRWd1loVlROdndFRGZ2YVkwTTFISmtwMktCZWRKUC1UandjZ0lydzU2SE1WTWFvcnpuR1VfVkxGRjk5Nkp6TTE2Q2s?oc=5",
+      "publishedAt": "2026-08-21T09:05:15+00:00",
+      "category": "정부·국회",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "대구과학대, AI·시뮬레이션 활용 중환자 간호 교육 강화",
+      "source": "네이트",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBpeUZxWmk2cVpFcEJGRm82azA4X0daYUswcEI2aDByOWhzOGRGV0NRVXF6ZVJfRjY2NTZEcEY4WkZpQURfT1BNOUJsdVdwUGRyUjJ3?oc=5",
+      "publishedAt": "2026-08-21T08:12:00+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
     {
       "title": "복지부 시범사업 54개 중 한의계 참여 4개…한의계 \"양방 위주\" 비판",
       "source": "뉴스핌",
@@ -28,12 +60,12 @@
       "contentType": "언론기사"
     },
     {
-      "title": "“보건의료 정부 시범사업 54개 중 한의계 참여 4개 불과”",
-      "source": "헬스이슈앤뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EXzVGMERqMHQ0cTZsRk14Q1o1N0VHVmVQN182WnZCWlRJb2ZaNF9fLVdweVFkaGNwRGNXX1NvcC1BWkg3ZGhtMHpOWGUzYTNpSHN1RVh5cEJwNXN5ZEN0QjlrSWNXcHFM?oc=5",
-      "publishedAt": "2026-08-21T07:12:34+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
+      "title": "보건의료 시범사업 54개 중 한의계 참여는 4개 불과",
+      "source": "메디팜뉴스",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5TbUVfYUl3QUhIc3BlV0k3S1NhalJCR0ZOUU5EWVpfLUQwbTRWak1jaWZRODFINFdkZHVnQmFSaWtEa19UbUZ5UDAzaVBOYXFpZW5FYWZCVWZ0dHlBUEoyUERjTG85T1pjcGp6ZkUyT2xGZllRMlHSAXZBVV95cUxOU21FX2FJd0FISHNwZVdJN0tTYWpSQkdGTlFORFlaXy1EMG00VmpNY2lmUTgxSDRXZGR1Z0JhUmlrRGtfVG1GeVAwM2lQTmFxaWVuRWFmQlVmdHR5QVBKMlBEY0xvOU9aY3BqemZFMk9sRmZZUTJR?oc=5",
+      "publishedAt": "2026-08-21T07:19:29+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
     },
     {
       "title": "“전담인력 0명은 오해”… 읍·면·동 통합돌봄 인력 대거 확충",
@@ -48,8 +80,8 @@
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12NlMwb1l5UWRRb2QzeUZfQWxqS09OaVZybi1tYU1pZmlCdVliWFJPOVJsM3c3ZWtBWGFsTm9VNi1IY1ZBZXRvRkl6UE5XY0p4YkllSG1UelM2NEUxY0dxR1Bmc2d4aEtTMFFKVkZ3?oc=5",
       "publishedAt": "2026-08-21T06:14:53+00:00",
-      "category": "정부·국회",
-      "contentType": "공식자료"
+      "category": "간호정책",
+      "contentType": "언론기사"
     },
     {
       "title": "54 대 4의 시범사업 불균형…한의계 “공정한 참여 기회 달라”",
@@ -76,6 +108,22 @@
       "contentType": "언론기사"
     },
     {
+      "title": "“보건의료 정부 시범사업 54개 중 한의계 참여 4개 불과”",
+      "source": "헬스이슈앤뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EXzVGMERqMHQ0cTZsRk14Q1o1N0VHVmVQN182WnZCWlRJb2ZaNF9fLVdweVFkaGNwRGNXX1NvcC1BWkg3ZGhtMHpOWGUzYTNpSHN1RVh5cEJwNXN5ZEN0QjlrSWNXcHFM?oc=5",
+      "publishedAt": "2026-08-21T04:55:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "'의사 의료사고 이력' 공개하자는 이소희 의원에 정은경 장관 \"과실범 개인정보 공개, 유사 사례 없어\"",
+      "source": "MEDI:GATE NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NOUNQUE93ZlBkbXhFTi16MGQ4TmhBSWlCNHhCRmVBNjNhVFc2OFprVnc4QWY5dGc1dVFFNE5WQ1RNS0dBcmplMXQyb042Uk5EbHRoMHYxZw?oc=5",
+      "publishedAt": "2026-08-21T04:49:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "정부 보건의료 시범사업 54개 중 한의계 참여는 ‘단 4개’",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDZkxKaVVFYjEzNmxab3NXOHd2UGo1a09rR0NaTlEyMzFOcVNGY0xwNk9haDluR1Y0eUp0N19MeU9wZEZRLVY2dDZXMG1VSDNsc0ozaDhRQ3lpTlE1cjhTX0lvSmw4bm9vdU5rbEdn?oc=5",
@@ -90,6 +138,14 @@
       "publishedAt": "2026-08-21T04:04:42+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
+    },
+    {
+      "title": "평택 3세아 사망, '소아 응급센터' 구축 대전환 예고 : 정책",
+      "source": "의약일보",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE16TEhWQ1daaS1Ya3ZxYTBCcE56X182UEdXdG9QWkNsc3I3T2hWc0piZkdBV1JoYVVDMFJ0VVhfcjhoc1FZTDNfVVhyME9vR3VJM3Bv?oc=5",
+      "publishedAt": "2026-08-21T03:28:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "박주민·김연명 이어 이찬진까지…차기 복지부 장관 후보군 거론",
@@ -108,22 +164,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "대구과학대, AI로 중환자 간호교육 혁신…몰입형 시뮬레이션 워크숍",
-      "source": "한국대학신문",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9xME5ZaklEWlloVlFCOTMtcHF3X0s3RFJNd0VUWnMzaWhIbi1fTTBnTVc4NGZHaldUeVgxZ2RNRjhqY1hwZVpYQ3FBSjNkb0RVdHcxcEw0ck9tYXYxSzZYRUdNdlRtUQ?oc=5",
-      "publishedAt": "2026-08-21T02:26:28+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "국민권익위, 의료기관 직장 내 괴롭힘 신고 기간 운영",
-      "source": "치의신보",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE55Mzk3WkJhSGRkVnhXV0JablpBcE1KLUVWSm00ZUlBNGtIcENISXBGNGRtTWdJZjZRdmZnWDlMQjRTM2ZzVXl4Tk1hNk91THdlaHlUUXdnTFFHaURUaFBDWWd1SXlXTGJLUzdR?oc=5",
-      "publishedAt": "2026-08-21T02:23:35+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
       "title": "간호법 개정안 본회의 통과 “적정 환자 수 법적 근거 마련”",
       "source": "의학신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1SRHdxRlV6Z3E0a0xrNUM3NjloVVBhbkNJNDd1NzZXUjNyNnVIdzZ4eWtBTWpybVRJM0doOWt2amtCdUVrT3daSXF6TF8yNGdRaVJkQVRVNVBxaW9Rei1VV3pGM3FDWm1XekE?oc=5",
@@ -138,14 +178,6 @@
       "publishedAt": "2026-08-21T02:00:42+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
-    },
-    {
-      "title": "간호법 1호 개정안 본회의 통과… “간호사 1명당 환자 수 법으로 관리한다”",
-      "source": "경기메디뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE00N1BVN1NTOVp1cUpiRWw4SkplODJ4WWx6NEVnTThaTEhaWHhVal8wMzNMcEtEOWlvNWNMQVo1cVRYMFVncXVwY1pYeXN0NnlCQW9SZkkxSXh6QUZSY2dQWVJ0Z01HVDRwa0E?oc=5",
-      "publishedAt": "2026-08-21T01:43:45+00:00",
-      "category": "정부·국회",
-      "contentType": "공식자료"
     },
     {
       "title": "간호사 1명이 몇 명 볼까…'환자 수 기준' 법적 근거 마련",
@@ -284,20 +316,20 @@
       "contentType": "공식자료"
     },
     {
-      "title": "화장품도 '산업육성법' 생겨…복지부, R&D부터 수출까지 지원",
-      "source": "히트뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1wbUhPNncyRllqZXFidFowUGxyUzBuU05lRXVBYmRPQWFxVjQ3MEVfeVcwSlhOY2RRVnVLcGpiV2NPclgzQ2RleWFDREJLd3NPRUdqenFJMUdaYVNxaHFrRVczZ3NidjVKR3Zn?oc=5",
-      "publishedAt": "2026-08-20T21:02:00+00:00",
-      "category": "정부·국회",
-      "contentType": "공식자료"
-    },
-    {
       "title": "간호법 1호 개정안 본회의 통과…간호사 1명당 환자 수 법적 관리",
       "source": "헬스포커스뉴스",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Hbi1MelhwbXl5d19CZzR4LXpqXzZZOENLSmt2dHdFcmdIeTA3S3M1M052ZFJsaE42UW5KNnFqSzVXMnV0eDJqd1NJX1RiX2dEXzFCb1V4TGdEV2ZNeDRHaHRvbDZHX01OTVJEY1JnWVRSUQ?oc=5",
       "publishedAt": "2026-08-20T15:08:00+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
+    },
+    {
+      "title": "“간호사 1명당 환자 수 법으로 관리한다”",
+      "source": "메드월드뉴스",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92YWRaa090cVVlTWNHZ0RFOXlGWVJpcmlOWGJMNUNJTFgzSzFCNW5zb1dqZ3p2ZHIzRUNneFhrSnFsM0k1TU5qbFBLTVMzQUZlWV9hNzJPTEVQa0JnaDdvLTRZMW1UN1l4WVhsNlFn?oc=5",
+      "publishedAt": "2026-08-20T13:48:12+00:00",
+      "category": "정부·국회",
+      "contentType": "공식자료"
     },
     {
       "title": "간호법 첫 개정안 국회 본회의 통과…간호사 1명당 환자 수 ‘법적 관리’",
@@ -390,7 +422,7 @@
     {
       "title": "마약류 DUR 확인 의무화·간호사 배치 법적 기준 마련",
       "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5PbmJnc3UwUGRRZm5BTUtvRjV6SE13dXhLY19kZUZfRGtIbzlJLWdsaUUxSTNFUXB4bnVXRkhPVWpmdWtJNlJlSG12d0VSYVlOQXRaU3FfckMydVNfbjBJX2ZwWmxqUlpkdlcw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBndnl4dkctVXkzTnRpaldGd0VmcHhOeHhyOHUwREc3dDkxbDhZR0RGNlFqLUNoMnQ2Z3lPQk5qZ0RPa0lFVVoyeEJwd1A2aVVzdHlNNWUtY3k4dnBRY0hIZnhXX0RzbVJrT3c?oc=5",
       "publishedAt": "2026-08-20T09:01:00+00:00",
       "category": "정부·국회",
       "contentType": "공식자료"
@@ -406,7 +438,7 @@
     {
       "title": "의료 전문직업성 구현을 위한 '의사면허관리원' 필요성",
       "source": "의협신문",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ybjZPWHpJbmk1eUpvQkhBTDc0Z2RjQjBlTl9QbmtZZ3dsajJtTEc2Q0xsRDVmNDVLeXlYcmlDajdyNTFXalRwR1lRZHFpdk90Y1dYZFplZk9EVXdTTDlQc0YwakZJcUhmMk1YcWhWV0Z4dw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PdWxueWI1R09VSkMwY3lmbWdSdTNrMmliRl9hdXZ6R1pCSUVYU1JQR1A2YzhpZnRheGxDZ0h2NHJpbUF6WHNSNTlRelVHTjVlNWNpem5kUDZ6YzZzVElSdzFVYkhsSDQ1WlBlYQ?oc=5",
       "publishedAt": "2026-08-20T08:02:34+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
@@ -417,6 +449,14 @@
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQnBsd0F0ZXN3OXlJc2JMdnBhQ0dmcENUV01fWEVEMWU5WUlhTEZhTmh1aFFaQVVBMVBnZUtxaVBIVFFGU1Jxc0xWdE81MV9POGNUQUlfWWJsM1ZvTUEzZ3J2Q2c4U3N6djdMenpzd3FJemxnN1pKUjZITU9Nb3BFODE0d1lSX3lPTWdz?oc=5",
       "publishedAt": "2026-08-20T07:40:11+00:00",
       "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "제주대학교 간호대학, ‘제주의 미래, 제대로 건강’ 전통시장 상인 건강증진 프로젝트 운영",
+      "source": "지금제주",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrVFlkZlppb0h5blVvMnJtdV9jQU5oYWpGVUlrVDh1RGp2R3pNQ3VjY1JDdE8zQWNiSmNNbEJUVTdPRlRrRWlUYU9Fb3dRU1FhdG1xS2lBQU9MaVpCckprTXZxdkc2eVp5U2dkcGVn?oc=5",
+      "publishedAt": "2026-08-20T06:14:41+00:00",
+      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -441,46 +481,6 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TT29yazMxU1BXTGhoUV9LTW9yNzNfOWdNSEU1LVpMZWZhd1JNZTRwNzZpNi1Da2dsQXlUdHZvYjF5TUxnbGpfQ3BHNnlhWlFjb1hBN3dNN29DXzhpZlRSZTljTjdBNlFuVDZaZ2ZR?oc=5",
       "publishedAt": "2026-08-20T02:48:41+00:00",
       "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "질병 치료 새 지평… 마이크로바이옴 연구 가이드라인 개정",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1BVkRPWnFZLUZxc21hUDhjOWFUOVAwbVlaejV5WjhreS1kWk5QTGVMbGEyNERMeGNLTGFhNXl2LXlLZmVEZjA0cm43dzhiLUg2SUUwVzVkZTJOQ0FHZVdoWlpEck5YY1lBb2NOZGl3?oc=5",
-      "publishedAt": "2026-08-20T01:57:28+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "베트남 간호사의 일본 진출 현황",
-      "source": "브런치",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5IN3M3N2l4cTdrMVVtNG02QmlOMW9NTThhNGcwWWh5dHVjM0R4QVF5SnUxVDZZQVZtaFEzck0tbmxQc05pYl9vUQ?oc=5",
-      "publishedAt": "2026-08-20T01:41:30+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[이슈] ‘섬이 된 농촌 간호사’… 과도한 업무·고립에 이직 위기",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5sNmg0UXgyT2U5d3p3RURHb2tnS3E0aWcwYmlZLVRxUkw0WERUeXRuV2FOVXhnWTZrZXJjelFrdlhCOTNpM2Y3bTdvRjFjSnV0UnNrcm16eGtJYlEtWjlSX3lwYnlhcXZNYVYzYWVn?oc=5",
-      "publishedAt": "2026-08-20T00:03:31+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "뇌종양 신약·백혈병 치료제 건보 적용 확대",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YMGRkelYtQkJKQlljVDZMUWdsV0RqY2Y5MXJMTWxtcHgwRjV5NDFvcU9nWjNESk9mQjRWWFdGRFVjbGw5VWc4XzRyNnN2WEEzWlI2VmVraFNiM0thNG4ydUZtcE5tZzVsNXJCejFR?oc=5",
-      "publishedAt": "2026-08-20T00:00:44+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "5년 연속 A등급 한국한의약진흥원 해체 위기…효율화 덫에 걸린 K-한의약",
-      "source": "아주경제",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hUFo2dUFpNnBIYzVhNG5EMzNQM0N4bjZVRzNjN2VjVmIzTGdMMzN4YkIyb2dxWDA4d0ZmZjllTGxkVlV5WWJBNWtMRzQ5QlNmVmY4SWJSa3M2UdIBWEFVX3lxTE51SFZCMTM3STRtWDF3ZnMwWWpPVzJ2LXZmR0ZCY215RmtFaGZNZlN3UFgyS1FURnVkNUVqN3FXZWpMeE1PMEtWWXJLajhKM3ZmN0tDRE1zT2k?oc=5",
-      "publishedAt": "2026-08-19T23:03:27+00:00",
-      "category": "보건의료정책",
       "contentType": "언론기사"
     }
   ]
