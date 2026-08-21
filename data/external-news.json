@@ -1,8 +1,16 @@
 {
-  "updatedAt": "2026-08-21T14:09:21.901076+00:00",
+  "updatedAt": "2026-08-21T19:33:47.501244+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "보수 우파의 앞날이 캄캄한 이유",
+      "source": "조선일보",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUDQyb0pkQURmYVhlX1JfdXJZaGFCMHNFdGhEOFlmRTFqcXVwLXVhMkJuUWFEWHoyTVNmZC1lRU9TWElCQTc4MkVZbEZVX3dBRld2NjkwazluckRtSGpJVHhyWUxpd0Y4eHpzMWkwTGs4NDY5WVFvc3VOUkxjUG0xSFh6eGk?oc=5",
+      "publishedAt": "2026-08-21T15:40:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "대구과학대, AI 활용 중환자 간호교육…교수·간호사 24명 참여",
       "source": "edaily.co.kr",
@@ -15,7 +23,7 @@
       "title": "“간호사는 부족하다는데, 취업은 하늘의 별 따기”",
       "source": "위클리코리아",
       "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNay1iYVcxWHctZTRlZmVpNGdrdTZ6TV96NUR6TTFjWGo5cFo5cFBpbFVTc2QzTmg4ZzZGNHVFRjVQTlJ1N0c2YV9oRk1QZ3hDUmY3QnRDXzVkVV9qMm51bVp6eUNXbV9SRlc4U0dublRrdHJvZW5wQUc5bFJNTnB2QlhMY0VSM3V0LVdySDBoZC1ZVnpXSEM4RjNtRE1sa3NXMFhCQ255a0FaeHZpTG5LR0JBWmVxYks1U19IR045QTZqVjg2MUpPdlZwYS04VWZnbXhEbGhWZW1YdjhBZTAwMktmUEJmNTBQd0tlLWM0dENTOHc4a2Q0cmZxZkFXbmhmMDg4V2YxSmdGM3JUOEo5UWlNTkpLc3NFcFF4ZUNtaWNCZXZfX3pDenNMREwyNkFrOTFmSkdB?oc=5",
-      "publishedAt": "2026-08-21T09:10:04+00:00",
+      "publishedAt": "2026-08-21T09:11:06+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
     },
@@ -80,8 +88,8 @@
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12NlMwb1l5UWRRb2QzeUZfQWxqS09OaVZybi1tYU1pZmlCdVliWFJPOVJsM3c3ZWtBWGFsTm9VNi1IY1ZBZXRvRkl6UE5XY0p4YkllSG1UelM2NEUxY0dxR1Bmc2d4aEtTMFFKVkZ3?oc=5",
       "publishedAt": "2026-08-21T06:14:53+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
+      "category": "정부·국회",
+      "contentType": "공식자료"
     },
     {
       "title": "54 대 4의 시범사업 불균형…한의계 “공정한 참여 기회 달라”",
@@ -104,6 +112,14 @@
       "source": "중앙일보",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5qVGluRTlfSS1RN0k5VmRoOHZ3eDNJNTZHUFR4ajg5RUdaNlhyVTZtUC02YzlVQ05ySXdDWlVPU0E5bVBuZW44a1N6M3BXUTlMOGpOcjRR?oc=5",
       "publishedAt": "2026-08-21T05:20:00+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "대구과학대 간호학과, AI로 중환자 간호교육 혁신···몰입형 시뮬레이션 워크숍",
+      "source": "네이트",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NSTRLV2xwM2lSTVZIZG81YnY2aTE4MnRMaUMydmhnQkFDa3lmXzJjRm1xeXVrMnhGeUJpYlNDdEprNDRycDBNZ2FHd2dsRGc0NGpV?oc=5",
+      "publishedAt": "2026-08-21T05:03:00+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
     },
@@ -189,8 +205,8 @@
     },
     {
       "title": "남구보건소, 간호학과 학생 대상 보건소 현장실습 운영",
-      "source": "시사일보",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1IeVVMQTEyeG9SUml0dXFFaEZZR2ZHSnQxa19kVEVnazJXMkVxMGhqOS1pdm1ZU2N5ZXhhUS14Q19wcVlNanpaakJ3SGc?oc=5",
+      "source": "정필",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5UejhuMm94Zlc0Rm9GcEROUlVzUFhiMjZYMFJVZk9MbXUzYmVTVG83T3YweEs0eVNwZ21ZUXlJMF9BUWwwZTFz?oc=5",
       "publishedAt": "2026-08-21T00:53:00+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
@@ -465,22 +481,6 @@
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1fWTdRenpiN0t1VTA2STd5SmdaV01ZYTQyOGZnY3RIUTY3R2xISnVTY0FjcjVMajFmQlFSTWFJYkxzdnZQRlJmWUhqUUU4Mmh5MnliR25jTVo2U0Q0bnkyWkdvZU5VSmM?oc=5",
       "publishedAt": "2026-08-20T03:21:58+00:00",
       "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "“비만, 개인 의지 아닌 국가가 관리할 만성질환”",
-      "source": "라포르시안",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE16NHZXaE5DX0xYM1lWdDdGUEY1R1c3YzFUeWRGeWtzZXlab2lTZGpHcEk2YXBhcTdRTmFLS0NoRGdwYksxcmZ4V0VyMGxhT1RscnRUNkpTWTB4TVQ2ZWRmNnNFRXp5U0pYNTJkX193?oc=5",
-      "publishedAt": "2026-08-20T02:55:00+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "정부, 불법 영상 사이트 무력화 ‘고강도 대책’ 추진",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TT29yazMxU1BXTGhoUV9LTW9yNzNfOWdNSEU1LVpMZWZhd1JNZTRwNzZpNi1Da2dsQXlUdHZvYjF5TUxnbGpfQ3BHNnlhWlFjb1hBN3dNN29DXzhpZlRSZTljTjdBNlFuVDZaZ2ZR?oc=5",
-      "publishedAt": "2026-08-20T02:48:41+00:00",
-      "category": "간호정책",
       "contentType": "언론기사"
     }
   ]
