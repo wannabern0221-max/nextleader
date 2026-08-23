@@ -1,8 +1,24 @@
 {
-  "updatedAt": "2026-08-23T03:32:20.159393+00:00",
+  "updatedAt": "2026-08-23T07:51:34.459181+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "“눈치 보지 않고 쓴다”… 난임치료휴가 유급 4일로 확대",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EQ1B2NnFPWkJNeG90LXpBQ3FJa0JnMzM4bVlxaTJ0eHVZcDdMU2t5UXpsMVFRaHRFQ3VXcGgyMllKWlJtTTRnNUtqQUk2NUp3YUV5ZEdQb1hLbERQdzBQSFBIbUFFT3F1bDQ3TGln?oc=5",
+      "publishedAt": "2026-08-23T07:36:18+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "고령화·만성질환 심화에… 전문간호사 자격시험 응시열기 ‘후끈’",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DZUh5MnVTV2hJMmtEVm5SNEZLcTl4OHFtLW1rc25WTFJYWEpnOVI3VU5QM0o0dUpnUWJ3ZWVDMWQ4cDBPcGJUNVJXMGVONWh2QXlQZTBiNGEwVnBHRmI1T1FOMzZhZkZ3ejE0cFpR?oc=5",
+      "publishedAt": "2026-08-23T03:10:18+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "[청년발언대] 배리어프리, 모두를 위한 길…부산의 무장애 환경을 직접 살펴보다",
       "source": "청년일보",
@@ -105,14 +121,6 @@
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUDQyb0pkQURmYVhlX1JfdXJZaGFCMHNFdGhEOFlmRTFqcXVwLXVhMkJuUWFEWHoyTVNmZC1lRU9TWElCQTc4MkVZbEZVX3dBRld2NjkwazluckRtSGpJVHhyWUxpd0Y4eHpzMWkwTGs4NDY5WVFvc3VOUkxjUG0xSFh6eGk?oc=5",
       "publishedAt": "2026-08-21T15:40:00+00:00",
       "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "“간호사는 부족하다는데, 취업은 하늘의 별 따기”",
-      "source": "위클리코리아",
-      "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNay1iYVcxWHctZTRlZmVpNGdrdTZ6TV96NUR6TTFjWGo5cFo5cFBpbFVTc2QzTmg4ZzZGNHVFRjVQTlJ1N0c2YV9oRk1QZ3hDUmY3QnRDXzVkVV9qMm51bVp6eUNXbV9SRlc4U0dublRrdHJvZW5wQUc5bFJNTnB2QlhMY0VSM3V0LVdySDBoZC1ZVnpXSEM4RjNtRE1sa3NXMFhCQ255a0FaeHZpTG5LR0JBWmVxYks1U19IR045QTZqVjg2MUpPdlZwYS04VWZnbXhEbGhWZW1YdjhBZTAwMktmUEJmNTBQd0tlLWM0dENTOHc4a2Q0cmZxZkFXbmhmMDg4V2YxSmdGM3JUOEo5UWlNTkpLc3NFcFF4ZUNtaWNCZXZfX3pDenNMREwyNkFrOTFmSkdB?oc=5",
-      "publishedAt": "2026-08-21T15:11:06+00:00",
-      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -278,7 +286,7 @@
     {
       "title": "박주민·김연명 이어 이찬진까지…차기 복지부 장관 후보군 거론",
       "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBOX21EUDR6QW11c3pFMEV5cUdVb2l3RTUtekdudjZ6YTJWaUpMX0dxWUZkSlFjc3UzUzdla2VpZ2tiOHNfV0JMMW5zcFVSOUh3MGxhaHM3OA?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE94VG5vMzZDMXVvaHczTWt5T2RDTndnZ0NhZVlLWE4xYkNOVk0zaGtRempBZ3h1RkV2dkJqWllOT0dzcjc2Vi1NR0lDcTM2WFdSVHZwdw?oc=5",
       "publishedAt": "2026-08-21T03:08:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
@@ -342,16 +350,16 @@
     {
       "title": "울산 남구, 간호학과 대학생 대상 ‘보건소 현장실습’ 운영",
       "source": "울산종합일보",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBQMVpEamRuN0dpckg3d1VuNFNHbHJ1anBIRlRqT19SNXZWUXVkWnhiN0JNQUpaQTJqeV9GdHJ5MHhjM2xMLTVydFNFUEFfbzFtV25oaUlfRFBSS1N1UXNRRmNxRlppaTlnUWhpcnJ5V2tyTVE?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53TzJXTWNNU3JYVWYtZ1ZIWkxBcGRZX3FDUmF4djF3OENVVmZzY1duT3l0ZGJIZHZ2NHdxNkRhQVdRX3FSdjR4NEppY1dNekhxcFlEa1VJc190U1VaVUlEQlhoNHNPNkhEVEt6WGJCaW4?oc=5",
       "publishedAt": "2026-08-21T00:39:11+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
     },
     {
       "title": "연세대 간호대학, 설립 120주년 기념도서 ‘간호선교로 세계를 잇다’ 발간",
-      "source": "v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9wVnZSc25PaU1Pd3RhbXUzVWQ3UVItZnluUElONUFIbWtMd3NLVHZwUE8wVmJPdjlpUF9aUHRZV291Yi1vN292VTFKTQ?oc=5",
-      "publishedAt": "2026-08-21T00:33:49+00:00",
+      "source": "동아일보",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE43MnBKSTJ2dkNiZXhzdjYwLUdMc2hFRzBHYWJOZjBuRUVHbl9qTml5RGhTMW9Hamx0elNrY2NXTmZRQlUxTVFvVWtDSENVVWo4Q0ZUdl9aYklJRUV6d2NOX1NqVmRIRTRHSlktbmN0ekttWjFiY0HSAWZBVV95cUxNS0Y3aGdSSDZlbzdhc0p5T2g0STI5c3dkeUlaeWU0NFNXeVlUQWxOemxCQ3Qtb0tuRXc5TE1LaTl3Q3BGTW1oMmxzUDhGc01OWTA1MEpZNl9weVN6bEs2YkVpRVo1QXc?oc=5",
+      "publishedAt": "2026-08-21T00:32:08+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
     },
@@ -472,14 +480,6 @@
       "source": "메디파나뉴스",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzdWU0LXhCS0NsT29ZazN6WUpISmVGdlhVZFJ1X05HeHF6VFlRcmY4b0RCWF94VGlKTldqQUdNU2RoNnFLVmk3NVhRZU5sbjFTWkJ6TUZNMHNPdHdoZWlwMzJQYjVBQ3dHVUt3?oc=5",
       "publishedAt": "2026-08-20T10:13:11+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "간호법 1호 개정안 국회 통과… “간호사 1명당 환자 수, 법으로 관리”",
-      "source": "헬스이슈앤뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBaLTRIb2ZpTFhBZ0xjUm9EMDF1WHA4Z3pQcl95M25GOG9BMHdnenduWFhXdV9xNEpCTGpNeFpJUjEtR21BblZ0cVdnUHR1S0lEemgtTzZGby1xLTdiQUFpOFRnbExXRHF0?oc=5",
-      "publishedAt": "2026-08-20T09:55:00+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
     }
