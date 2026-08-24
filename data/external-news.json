@@ -1,8 +1,16 @@
 {
-  "updatedAt": "2026-08-24T14:27:41.307009+00:00",
+  "updatedAt": "2026-08-24T19:48:07.119983+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "‘아시아 1위 웰에이징 대학’ 선포… “초고령 사회 위기를 기회로”",
+      "source": "조선일보",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcURBeWRzNmdhWFJ0Tm5TWnlaRHZvZmtEaHdZVXJFSkZha1lTUkwzaUdUbHJrLWRjZXNoVW1ORmVndlhFZDdUcUpjZTlUWEdLWnFyQjlySWtDVWstMWQtQXVCSVVPbUs2VWl1ZXpRNU5UdFhYR1pINktaaXhmUC1QQ2xYMmZwNWFTS0VldjRB?oc=5",
+      "publishedAt": "2026-08-24T15:35:00+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
     {
       "title": "윤석준 고려대학교 고령사회연구원 원장/ 대한민국 질병예방·건강증진 정책의 산실",
       "source": "news-report.co.kr",
@@ -16,7 +24,7 @@
       "source": "교수신문",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EY3laTFcwY3o1bG0xQTRESFJqODY4dW9aS0czV1FrWG9PWU53OVA1OHR0Y1NqVEsxMlVhSXM2SEFHY25UaUdmUDBtenQwMVlHZGhMLW9kZ2NuT1BLMWRGc2t0S1JKTkk?oc=5",
       "publishedAt": "2026-08-24T10:16:46+00:00",
-      "category": "간호교육",
+      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -32,8 +40,8 @@
       "source": "동아경제",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBleFNIenp5STRuV3kxOWp3M0FDSWFfN2NKT2FONlhCcmR3S21hMWtMREloMlZuZjQ4Rk9UV3hHbS11aVk1YTE3OWpRRnNXMGtRbkdpUVp3RldCaVo5ZVN2VE1B0gFiQVVfeXFMUGV4U0h6enlJNG5XeTE5anczQUNJYV83Y0pPYU42WEJyZHdLbWExa0xESWgyVm5mNDhGT1RXeEdtLXVpWTVhMTc5alFGc1cwa1FuR2lRWndGV0JpWjllU3ZUTUE?oc=5",
       "publishedAt": "2026-08-24T08:19:52+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
+      "category": "환자안전",
+      "contentType": "언론기사"
     },
     {
       "title": "담배 규제의 효과를 높이기 위한 정책 개혁.",
@@ -42,6 +50,14 @@
       "publishedAt": "2026-08-24T08:04:34+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
+    },
+    {
+      "title": "“입원환자 다학제팀의료, 필수의료를 지키는 협력의 힘!”:동아경제신문 & daenews.co.kr",
+      "source": "동아경제",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE93R1N1RXgwTjlmMUFRMmRVLWtDX09SWFJlMkFaSk5MQS05bHhKLURrT1ZfaXdBMHo3dnR3Z2hCY3lGaU42UmfSAWJBVV95cUxQZXhTSHp6eUk0bld5MTlqdzNBQ0lhXzdjSk9hTjZYQnJkd0ttYTFrTERJaDJWbmY0OEZPVFd4R20tdWlZNWExNzlqUUZzVzBrUW5HaVFad0ZXQmlaOWVTdlRNQQ?oc=5",
+      "publishedAt": "2026-08-24T07:48:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "중국 코로나19 확진자 폭증… 질병청 “국내 유행은 작년의 절반 수준 예측”",
@@ -77,9 +93,9 @@
     },
     {
       "title": "부산대병원 의사·약사·간호사가 직접 알려주는 '직업의 세계'",
-      "source": "뉴스1",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1VSWwzVDh2M3A3b2kyLXdxLXQwYjFfMHQ2OVNxR2Zyd0lteU9TZDVZTnJQT0VkMHMzUF9CaFltRWxzenBPZE1sUzVVRWJqTkd2ZUhhOGpfdU1Uc2dEcmlF0gFkQVVfeXFMTThGa1Z6ZjBfX2E3bVFEZ184MU93OEE4cjBfRVRiYzNEZUFUQWRKOGMzTDNrTW9tdi1ObjU0WW1yc1BjZTdLRFVjM2I0RGJhNHRVdjUyNFVOWHBIdlpCWjNsUTRqUA?oc=5",
-      "publishedAt": "2026-08-24T06:23:44+00:00",
+      "source": "v.daum.net",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5lYkdSWlBJN2hhZXpWck9wWGNhOUVsa1puUlA2bUtERWFPVE1VSGN1ZWxCcE50N2x5VXJsZmItSGk2MGdEZG9za09jRTZ0YTJVOHVFRA?oc=5",
+      "publishedAt": "2026-08-24T06:24:51+00:00",
       "category": "부산·지역보건",
       "contentType": "언론기사"
     },
@@ -101,7 +117,7 @@
     },
     {
       "title": "국회 법안 통과에 숟가락 얹는 복지부의 '생색 선언'",
-      "source": "충청탑뉴스",
+      "source": "ctnews.kr",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pMS1WZElXR2VSZ3NHbGZiSmtLWUhqSzB2T2lGUW1aTDJJaFUyYVplbkJOTXhrRDlNTDlBNmNaMmlILS1TdWw3UW5iaE9JWHFBWnZXMFg1WHVFMDlLMjBiVEpKd2w?oc=5",
       "publishedAt": "2026-08-24T04:59:25+00:00",
       "category": "정부·국회",
@@ -121,6 +137,14 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fM3BFLW12dkkyV0xrN19KNS1RclA0RTBmRDJuSFl0dHRnMU5jU3lfejZrWHBqSzZqbTlBQ2lxeVE3Z2ZlY3ByRDdQaElPSV9xYTZ1WTVSOG56QTBYalFsM1pnd3Y3YXc2NDVUMHJR?oc=5",
       "publishedAt": "2026-08-24T04:13:00+00:00",
       "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "국회의정연수원, 지방의회 직원 역량 강화 위한 정책과정 4차 개최",
+      "source": "서남투데이",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtZzJ0d2MxbGRIVTE2TWtFYi1DMkhxOGxCT0tjN2Eta3pCdmdvbDBfb1F0VmZ4RHA4eEFDZ0poN1c3WWhfd3RfTXh1cUpMbXhZWGRKcTJsLUkwdw?oc=5",
+      "publishedAt": "2026-08-24T03:58:14+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -164,6 +188,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "[생명존중 정책토론회] 통합돌봄, 발굴 인력은 늘었지만 손발이 없다…정책 토론회서 현장 목소리 쏟아져",
+      "source": "대한뉴스방송",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00UWtOUGRZd05wSHFlck1maVJWNTBPYjIzcy02VEdUTnFqQXpQMUVNYXBrYXRnREdrS2hBaEowU2RHTEpXank3bll6dHlWeVozZUNnc21ERWt2ZVJZQkVlaHNyNXhEVEF0RzJsMWZn?oc=5",
+      "publishedAt": "2026-08-24T01:28:38+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
       "title": "간호사 기자의 에세이 '나의 간호사, 우리의 간호사' 출간",
       "source": "헬스조선",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBoOGhweTVtSFAxRWdYZmlxTFZVaUNhVGFZbExoQUI1UUM3RUU3S1VGSFo4MTA5TjFPdTFrbktHbUUtekNRY25ZbHZMSUxDamlWQUlOdHJ0UkR6T0NiQS1oTW1hcEpMV05EZkdrcGFvX3RxTC0ySFVmNU9rdHU1SDA?oc=5",
@@ -184,8 +216,8 @@
       "source": "병원신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9wLWN1UUM4NnlyNjNVQ1RjMHNlQTZEVDlkZmppYXFiQkhJajEtakN1R3lKZDc3Y2ZVLXZrd1k2eUVYSVZSeXlwTzZDaHgtSTF3a2N0ZnJLYkg1Q05LMy1mZXJuRUhvYkhLWFE?oc=5",
       "publishedAt": "2026-08-24T01:07:06+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
+      "category": "보건의료정책",
+      "contentType": "언론기사"
     },
     {
       "title": "[신간] 간호사서 언론인으로 33년… 정규숙 전 국장, 자전적 에세이 출간",
@@ -198,8 +230,8 @@
     {
       "title": "[KHF 2026]케어마인더 '케어노트·케어보이스' 공개...“음성 AI 솔루션으로 간호사 업무 대폭 줄인다”",
       "source": "디지틀조선일보",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRmhpbm1WTXlCd0wzbGUxY2k1dzlTS3VLdkpxMzh0TkFYNUkwczBUa1ZLMEdFSEF1dng2VTNDR2tydWNWeTEwQi12VDdkWDRFZFVGeGt4MUZmdGhTS3dWakxwRFQ0SHlkQ25NMFc4WGhLdDBvTHNDdnVnODBCUzVYcFVCaXNIMU3SAXtBVV95cUxPVmR0dVpKTHFldEhBREN4UURnNU9heVhTcU9PZVBlVGk1VGFyWkwzZ2MyNGdxTHNEUWVyWnZ3d0g3Mnk2WDFPcW5nTEJBTGhQbTY3Ri1vUElzTXBYTHl1VDhIRWZNU0hwd0ZBQWQ4UVFxeHp4c1IzNkpkTUk?oc=5",
-      "publishedAt": "2026-08-24T00:21:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9WZHR1WkpMcWV0SEFEQ3hRRGc1T2F5WFNxT09lUGVUaTVUYXJaTDNnYzI0Z3FMc0RRZXJadnd3SDcyeTZYMU9xbmdMQkFMaFBtNjdGLW9QSXNNcFhMeXVUOEhFZk1TSHB3RkFBZDhRUXF4enhzUjM2SmRNSdIBe0FVX3lxTE9WZHR1WkpMcWV0SEFEQ3hRRGc1T2F5WFNxT09lUGVUaTVUYXJaTDNnYzI0Z3FMc0RRZXJadnd3SDcyeTZYMU9xbmdMQkFMaFBtNjdGLW9QSXNNcFhMeXVUOEhFZk1TSHB3RkFBZDhRUXF4enhzUjM2SmRNSQ?oc=5",
+      "publishedAt": "2026-08-24T00:21:54+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
     },
@@ -244,6 +276,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "12월 CT·MRI 이력 제공…“중복촬영 예방”",
+      "source": "데일리메디",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1uWHNsWUtabE81SWdwVGpZdkVvYUpLMDBVWlRMVHRtcG80WFpiVUUxOVUxSXh2eGN2ZVNPcmE4Q29uZ1ptdjl0NEFFZ0tOdEFxdFhXWk1nZmZhSnE3eGgwd2d4R29pa2xO?oc=5",
+      "publishedAt": "2026-08-23T21:42:45+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
       "title": "8년 만에 다시 광화문, 간호사들 “나도 너였다”",
       "source": "매일노동뉴스",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Fd1NaMkZid2I0SU90bDE4U09iMVBWSXNIakV6ZnM2Z1VCVzBCVWhBNldPMGJEUlNfMU9MN29OeVUzbExqZEVCNTVPekJ5VG5BdnRaQnA4Ry1ic29TQzJoUHY5Wk5rcGJ3YWFUSk9RQXg?oc=5",
@@ -264,8 +304,8 @@
       "source": "의협신문",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Va1BRNU5DdFNhdjV3WEJsVTE0WGZEYnFNSmVaMGlfNDdnVEo5UlVyYTRYNUVLdmJDdlRPQ1hQNnNPU256akhGYlNQUDBwWXRBdThhaDN1WlMyVXg1NkJFUm5FSEFxVk5iTTJNX2lKNDc4dw?oc=5",
       "publishedAt": "2026-08-23T21:00:00+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "간호현장 ‘태움’ 철폐…간호인력지원센터의 예방·회복 지원 추진 > 뉴스",
@@ -332,6 +372,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "“눈치 보지 않고 쓴다”… 난임치료휴가 유급 4일로 확대",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EQ1B2NnFPWkJNeG90LXpBQ3FJa0JnMzM4bVlxaTJ0eHVZcDdMU2t5UXpsMVFRaHRFQ3VXcGgyMllKWlJtTTRnNUtqQUk2NUp3YUV5ZEdQb1hLbERQdzBQSFBIbUFFT3F1bDQ3TGln?oc=5",
+      "publishedAt": "2026-08-23T07:36:18+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
       "title": "포항시·시의회·포스텍, 포스텍 의대 설립 추진 방향 논의 기관장 간담회 개최",
       "source": "시사일보",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE56bXgxRlFJZWVFWFU1SThxNVlHaDZfZ0hna2p0emNoa0NaYllwMzJwaTRvRVYwNGl0SC1SczlJM0lFOUFmdEJuVWFuWFg?oc=5",
@@ -358,10 +406,10 @@
     {
       "title": "[기획] 정부가 설계에 나선 ‘AI 네이티브 HIS’",
       "source": "메디포뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5DcnZFUU9Nc2s1UWlPWFBJUGYwZ2NWemFrZGVLYjQ2V1prX0RKdE80S2hETWdJV1FGZ054Qm9vdEhya2lZbGxLcmNrREVUQWNPVXRFUnhLbjJnWXl3b1lvOVYxeTBsNWs?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBCdklhUjJzZGJyZzlhMWtIVkRaRk9HelRRYjdQQVFGcHVyb01xd2Q2MWEwMFd5eVpRQmFzV2JnNGg5QkFXQ1BvRk5WT2dBTXhKS2lMUWU4V2w4ZXJFREFvMmwzTUM?oc=5",
       "publishedAt": "2026-08-23T04:57:10+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "포항시·의회·포스텍, 의대 설립 3각 협력체제 가동…지역의료 혁신 기대 : 정책",
@@ -434,54 +482,6 @@
       "publishedAt": "2026-08-22T20:38:12+00:00",
       "category": "정부·국회",
       "contentType": "공식자료"
-    },
-    {
-      "title": "\"태움으로 더는 죽지 않게\"…8년 만에 다시 광화문 모인 간호사들 > 뉴스포커스",
-      "source": "SeattleN",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1JVzg4WUVZMlYzaW9QWHdoTUlEcE1YVmhITUxxdzE4UFU5OTRFUGtWbjhPRUNTc0NoMm1pWUFZV2pMUGF4RXFSQ1ZXVGY?oc=5",
-      "publishedAt": "2026-08-22T15:53:33+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[생명존중 정책토론회] 통합돌봄, 발굴 인력은 늘었지만 손발이 없다…정책 토론회서 현장 목소리 쏟아져",
-      "source": "한국공공정책신문",
-      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE51anloLWZldlVnbndLbEF6NGQzRDN3NE1RSy1wUHFmTnViZV9CVVpsdllSSXo5c2p5bl9LMXVvT3MtVW8?oc=5",
-      "publishedAt": "2026-08-22T14:52:14+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "한국, APEC 보건협력 주도…‘건강한 고령화’ 등 공동 대응 논의",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5YS1N2WHM0ZWNCR1k3dGVPcFdINVJnNHg5cklISDd4VEpMVFpURDlhZl82ckxFbmhSS1poZ1NwMS12d2tvRmZVelIzek5fNU9QdE5sa0k5Z09vVWg3TTlVd2p6Mm5XRmF0UjZaLTJ3?oc=5",
-      "publishedAt": "2026-08-22T12:17:47+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "경남간호사회, 신규간호사 현장 이탈 방지 위한 교육 해법 모색",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5sNjhLWDkxMy1hSnl0bGpRcHhmTlk0QTRMbXFMdjRlZUNwQ2ZvY0c1TnY4NTB4SjVleDFGVHdMQWFwR0MwLUU1TjZDNk4yOHlCUE11NTJKZnR5WnlkSUxxbU1tTmgwMnlVaG5RdUVR?oc=5",
-      "publishedAt": "2026-08-22T12:12:46+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "부산대병원, 중·고생 400명에 보건의료 진로 ‘현장 이야기’ 전해",
-      "source": "메드월드뉴스",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8yMHBtSHlNNGVtM24xRG5WSXpteU15UVUzZG1oMnduNFd2MWtHd2pVd3pHcHg5TVNaOEVtUWs3SGpZaGhMd1dpX0ttRll2YTgzNy1oMVRCdndiV3R2bk93ODZfamkzZTVSQ0p4OWd3?oc=5",
-      "publishedAt": "2026-08-22T07:00:00+00:00",
-      "category": "부산·지역보건",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "\"폭언·모욕·괴롭힘... 어쩌다 간호사 통과의례 됐나\"",
-      "source": "v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE83QVRKNnlCOXBpNm04YWcwandVcHFNejdsejF3dkV5Qk1BOTd0em95a2JXbjRIYWJMcmVvOXhSVlRNbGl6bzVKbWlJaEVDLTg?oc=5",
-      "publishedAt": "2026-08-22T06:52:38+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
     }
   ]
 }
