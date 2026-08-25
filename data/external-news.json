@@ -1,8 +1,16 @@
 {
-  "updatedAt": "2026-08-25T14:30:37.915685+00:00",
+  "updatedAt": "2026-08-25T19:48:55.219793+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "“한의사, ‘코어팀(Core Team)’ 편입이 일차의료 미래 좌우” > 뉴스",
+      "source": "한의신문",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPUU44MGhFUFhIaEdUaWhhcVVkbVQzZnF3STN1RGpnOUcwSFRHRHIwZWktQWFReHplOGU0b2QweGRVYUdTSGRqSGFyUmxJUkM0NDNJOU05QnpNMXdzWmdwYWVBN3hiT0xESktKanRwZ09pQXRQZmMwTlUzb3hoTDRudnF0TnFJOFRhTzJoT0pmTWsyYUhhaVBPcmFoR1VtOUU4U0tfR1p1aEMwUFZLVjhmX3ROS1NPQlJDTUNpT3BtVkZWR0NraGQtY3NXZ1VSVElfSVdiZnREb3lVemJORzF5OVhrMTVOS0ZzRFRpR3JJc1kweFl1YlpRTERxVS1fa2FnRVRFZ3hRV1BYVEE?oc=5",
+      "publishedAt": "2026-08-25T16:13:27+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "입원환자 팀의료 제도화 시동…\"병동전담약사 역할 키워야\"",
       "source": "데일리팜",
@@ -132,6 +140,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "전남대병원 ‘동행’, 고려인마을서 야간 의료봉사",
+      "source": "남도일보",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE02Y05LNGVrUlVhYUFyS2REbl9rMkhyUk94UGFZM0t4SV95TGJuRm9OYjl6d29OUklnR0pjcmUxMzJoQzAteFRHSUVKeUhEMTZLNmZ2emN1Y1ZNS1pEN1YxS0EyMlh1Ukd5UndTUmV2ZUXSAXBBVV95cUxNNmNOSzRla1JVYWFBcktkRG5fazJIclJPeFBhWTNLeElfeUxibkZvTmI5endvTlJJZ0dKY3JlMTMyaEMwLXhUR0lFSnlIRDE2SzZmdnpjdWNWTUtaRDdWMUtBMjJYdVJHeVJ3U1JldmVF?oc=5",
+      "publishedAt": "2026-08-25T05:33:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "이재명 대통령 \"주사 놓을 때도 위로하면서 해야 덜 아프다\"",
       "source": "위키트리",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBxZXlEQ1UzNV9PSHVfNzdGZ3FLaFNHQVd1N1BMUi0yem5McjdhOEdaOFRjeE1zTVZQelJPR1hTdkRFb0VQS1NmVlgxMV93eFh2bjgyclln?oc=5",
@@ -160,7 +176,7 @@
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94R1ROTnhObmtHSWVxYmtqZTJXR2JOei1WanJSa3djRy1QMC16SWxaajF1VzZJaEZtWklFbXlIaklsUXlqNk5fRnc1YmhYM0N5NmNqOVl1dGJ6QUVEdlNKU0xvRTZVVjhRUEJIZjF3?oc=5",
       "publishedAt": "2026-08-25T04:07:57+00:00",
-      "category": "환자안전",
+      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -196,6 +212,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "청년세대와 함께 만드는 보건의료정책 위해 청년 보건의료인 간담회 첫 개최",
+      "source": "얼리어답터뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9EdkRGcGpjdXJuQWN5RFRDOWN6VmR2ZTN2MTdUbVMycEdVUldSRWtMQnBRTVQydjdndVJJNEZPcHFBVTV6TGVDYw?oc=5",
+      "publishedAt": "2026-08-25T02:37:44+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
       "title": "보건복지부, 청년세대와 함께 만드는 보건의료정책 위해 청년 보건의료인 간담회 첫 개최",
       "source": "정필",
       "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE0xdXhyalVkZHREcVh1Skdfand6dWtVcWJGcVk3T3NwU1FNM2l6RkVMMlJ3R21GVlFBenNoellNdXE5M05Zd3o0?oc=5",
@@ -226,14 +250,6 @@
       "publishedAt": "2026-08-25T01:38:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
-    },
-    {
-      "title": "인증원, 혈액 수급난 극복 동참… ‘사랑의 헌혈 캠페인’ 개최",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1talF4a3hSSE9CNXF4MGJSM3F5WmN0d2FoYjBoaURnV2dNOFVBQldseHRydjlmNVJFcEFZWFZUc0M5d184MmFhWllzTXMxZ19TT3Y3M0ZoYmFGQUJXeGV6RW1mM3M3eTlheVdGdWhR?oc=5",
-      "publishedAt": "2026-08-25T01:34:34+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     },
     {
       "title": "청년 간호사들, “적정 인력 기준 만들어 달라”… 복지부에 요구",
@@ -465,22 +481,6 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9hVDRuNHRBYjZrbU9kMzd1YjBKaUNscWFxVEo2dXF3VjkyNWdNNjA3N3pJWFd1NF9RWndpclVFS1F6ZTVnT3dNeUM1bTA0RkFwYkNVUnBwdkR4SUJFQmtLQjhOTTdiUU1tdDUtM193?oc=5",
       "publishedAt": "2026-08-24T02:53:06+00:00",
       "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[신간] ‘나의 간호사, 우리의 간호사’",
-      "source": "병원신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11ZldVMHBIRzhxUTdLVjRPMHRRcWlXaTlEX3hicG56RDBpS2d0UW8xNmJ3d2dHWnR1WTNaeXJXaHFlblZRVXFTdFA2UTBvOTlkXy1zQWVubkNBZEpmLUx0Z1UzSDRfV1BicGc?oc=5",
-      "publishedAt": "2026-08-24T02:27:24+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "\"규제 개혁·인재가 만든 中 의료 기기 굴기… 기술력은 약점 아냐\"",
-      "source": "economychosun.com",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE50cGxvMU9GRVdheWtmT1BncDI3TGhSTy1NTEtaQ3lGUUFEdmRZTGJVVHBzRk5PczZHWnRkODBZOUlKVGtQaHpVUFhqVjVrV29ibW5jYXpnMDZzdmNkMUtSSDlVaEZ5YmNnVWg4U3dxV3BZdl9yYllKWVZLem53cnc?oc=5",
-      "publishedAt": "2026-08-24T02:00:00+00:00",
-      "category": "보건의료정책",
       "contentType": "언론기사"
     }
   ]
