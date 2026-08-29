@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T21:56:28.561101+00:00",
+  "updatedAt": "2026-08-29T00:19:45.439631+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -68,14 +68,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "가천대, 대한민국 문해교육 정책전시회 대학 유일 참가…AI·문화예술 접목",
-      "source": "경기일보",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1WcWdlaHhLWXk1OE9SMC1vX09xeUNpN1JFTExuZGJueVA3eWphVXUtbFN0TmZmbkhfMDhISUZPZkRMamlNekNWLXN3VndhQmxzaERiR1lHZno4VDA?oc=5",
-      "publishedAt": "2026-08-28T05:59:12+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
       "title": "치위협-복지부 ‘노인 방문 구강건강관리사업 공청회’ 내달 개최",
       "source": "덴탈투데이",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JUU1jdGU0V2VWMVNVWU1uaFZyQkNxU2dsYTg1dEtZODdTTnNuT1R1ZkExSGhLWC1vQVlGSVpaaXNrNDlHWFQ2U2piRUZvN2d0Z25kSmxBZGItMy15c0FiektBZ2ZtcW0x?oc=5",
@@ -101,9 +93,9 @@
     },
     {
       "title": "화성특례시, 29개 읍·면·동장 대상 ‘사회복지 역량강화 교육’ 실시",
-      "source": "이런뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZaHRpaGl1QXdjWFJsTEdpbXphY2tUWjc1QXRsdGo4cnNlcDRyTU9aVXF4MVZXMDdsdHVlbW53OVRRVDZ3X3ZZNHpiUGhycC1zV3o1aktsM0lDNE92U3c?oc=5",
-      "publishedAt": "2026-08-28T03:11:06+00:00",
+      "source": "뉴스 따옴",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wVmN1Ni1YSGR5bTBqVkh3YkljZWZvaVRiMnRFZEprRXpSRjlSajc2RjVaLWRvQlNBNjNOVXBxYXUyd1hZZHlMSTREQnFNMm1fSkxGMF9YX2JRcnY5WUtUUHdUallubmx4bEo0N21lbEdCQdIBckFVX3lxTE1wVmN1Ni1YSGR5bTBqVkh3YkljZWZvaVRiMnRFZEprRXpSRjlSajc2RjVaLWRvQlNBNjNOVXBxYXUyd1hZZHlMSTREQnFNMm1fSkxGMF9YX2JRcnY5WUtUUHdUallubmx4bEo0N21lbEdCQQ?oc=5",
+      "publishedAt": "2026-08-28T03:29:42+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
     },
@@ -156,6 +148,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "최안나 강릉의료원장 \"지역 와보니 의료 살릴 방법은 있다…모두가 외면하고 있을 뿐”",
+      "source": "MEDI:GATE NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5xdHNzdkdlUUtTUUNZOXlqaTVDcjR1cGZ4ZkxHZzhLUXhKanlIckUzUVdmd1ZFbFZ2aXBlZjZlaU9aVjhNRm84NmpxMjY0ZzBNZXVGZFdXbw?oc=5",
+      "publishedAt": "2026-08-28T01:29:50+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "간호사 1인당 적정 환자 수…복지부 “페널티 없다”",
       "source": "데일리메디",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1Zi0xSUZjd2dmZE44S3B0QUZLU2FvaTJqT24tVHo3SEJZMjZMUzJkY3liX0Y5SXhVbkU4QnBWWTdFS2xjYzAwRVlFNUFMMV9KaExPRFYzSzExZUJqSUZQcXBjaUluXzJB?oc=5",
@@ -180,6 +180,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "간협-적십자 서울지사, 의료취약계층 재택간호 지원 ‘맞손’",
+      "source": "후생신보",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1Zc0NZOGRpZ2pnR3RIbG5lREVFdXJvOHNCSWhYcEFERk9Udy04NzlXQll2SVZ2cXhaUVhfSGpKVVE4WTkx?oc=5",
+      "publishedAt": "2026-08-28T00:51:00+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[AI Innovation 2026①] 진단만 하던 AI는 옛말…병원의 개혁, ‘의료 AX’",
       "source": "디지털데일리",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4zeVNpSFFFRzNFWkZfZEpfbFAxS1hlVkNwazNqS2I5Yl9qWEVWZEY1VGs2N3kyLWgxbDFPOXhjNVJaTUduN1dXejBZZ0JCUnlPWHhRWU1HLUp5QjEyTEFCcXgyRlI?oc=5",
@@ -194,6 +202,14 @@
       "publishedAt": "2026-08-28T00:24:12+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
+    },
+    {
+      "title": "복지부, ‘해외 거주 외국인 부양가족연금’ 전면 개선 칼 빼들었다",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TYUVjR1kwSWU1ZHUtN0ktQzJMMmZiWVlFYVE1UHR2RUJ0UGFRS0lhTXVWUTVtWWhqZk1RZDY0TnpXeVYzcnRCamQ5TFdDOGZIZ0xZcGFlUC1jSzAxNl82N2swUURGZDFFMWMtYnNB?oc=5",
+      "publishedAt": "2026-08-28T00:19:12+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "복지부·아동권리보장원, ‘대규모 개인정보 유출’ 고개 숙여",
@@ -220,28 +236,12 @@
       "contentType": "언론기사"
     },
     {
-      "title": "최안나 강릉의료원장 \"지역 와보니 의료 살릴 방법은 있다…모두가 외면하고 있을 뿐”",
-      "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5xdHNzdkdlUUtTUUNZOXlqaTVDcjR1cGZ4ZkxHZzhLUXhKanlIckUzUVdmd1ZFbFZ2aXBlZjZlaU9aVjhNRm84NmpxMjY0ZzBNZXVGZFdXbw?oc=5",
-      "publishedAt": "2026-08-27T22:22:00+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "간병 급여화 모형 장고 돌입...\"간병인력 확보 집중, 연내 요양병원 공모\"",
       "source": "뉴스더보이스헬스케어",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkeTNiRlEwZ04xVTgzQ2JRdFRtdV9nQWxIVU1NSGNkQWtUbmdlNU1PUVUtbGJET25Bb09fdUc0N3lMcDFCV09qd1hSSWdlYTdWWThiVGJpRWI3SGhIZm8zSmFMellLS0RtdzhnNGdn?oc=5",
       "publishedAt": "2026-08-27T21:06:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "프로미넌스 포커 돈 버는법 - 2025년 최신 가이드",
-      "source": "Platea Magazine",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLVppTG1NbmFsQkZQaTBJeEtNY1FzT21lSWhicDNkQ01uZTJaVU9qU1RxVTNIeV9vTEZNVXRxWmpNdTNZQ0tMa2V5eTdKMC1xWkhkVkVxejc1dGNheEF3Ym5wVnFaRnZMT0ZNbWc2WTlPX1lmVjQ3S0VhTmNSUFFweXp1dUVSd1pQQWRzRFloVXA3TnBjQ2tvb0wwSFlIWEYwVnVzYTBzVlRuUQ?oc=5",
-      "publishedAt": "2026-08-27T13:10:08+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
     },
     {
       "title": "보건의약 5개 단체, 차지호 의원 WHO 사무총장 후보 지명 촉구 外",
