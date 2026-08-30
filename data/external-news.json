@@ -1,22 +1,46 @@
 {
-  "updatedAt": "2026-08-30T06:19:51.973528+00:00",
+  "updatedAt": "2026-08-30T12:19:45.765226+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
     {
-      "title": "투석협회, 현장 갈증 채운다...‘임상 중심’ 10년 청사진 제시",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CNmZ0ajFwcXZFY2lNQTRtdFJ5dU03ZVlGUlR1cWVOMkVzQ2tDLTZSWGpfTkdNcEZ5aXZyVXpoUWZoZHE1bkhmMUZINU5aWWNseVlxU2FNOEVPRHgtelNOX1RuamdaZnRUb3c?oc=5",
-      "publishedAt": "2026-08-30T04:53:02+00:00",
+      "title": "해외서도 장애인증명서 아포스티유 ‘즉시 발급’",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1zbmFGdjN1ampRYmw1cU85YVcweE04cXZjTm9VdFVyUFBWNHZreHduU2NuQ3g3U255Mlc5N0t5eFVoR2hQTmRnZ2xpNzhjNmpPdl9PYXFLM3dnLThrWGw2SkNVelllSFRMc01TdmlR?oc=5",
+      "publishedAt": "2026-08-30T10:11:09+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "김민석 \"지금 시대 의식주 중 의는 의료…이천 대표 선수 김윤에 역할 맡겨\"",
+      "source": "네이트",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8xQzJoOWI4Sm5hTzEySzBtM19LWmRxRVhfNmVLYkk3U3M5TEVqTWxTbVlJLUtBT1JhMjNqdldtY2dBd2V2NTFpSkF1SHdLRHRnVG9j?oc=5",
+      "publishedAt": "2026-08-30T09:23:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "대한투석협회, ‘환자 안전·회복’ 최우선 비전 선언···“독립·실용 학회로 도약”",
+      "source": "의사신문",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56dFVhdkp4S3ZBMS1yN1FGOXoyT0NzWHFrY1hGbWdlellSSHBVSWxRME80ZTF1cGxoQlJjMkdLR3dOTGxxRnhqVWhFMnBacFhsd0V4dU5sSlpxTlZqYVQ3a09BMzZLRUY3azZkcUNMYw?oc=5",
+      "publishedAt": "2026-08-30T08:34:09+00:00",
       "category": "환자안전",
       "contentType": "언론기사"
     },
     {
-      "title": "\"현장 배제 '탁상입법·'징벌적 강제수용' 응급의료 붕괴 초래\"",
-      "source": "의협신문",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA4UTd5NnA4ZnJqTDlWTUVTQUFVbERIU1pnUERJQlNNa1JKMjdoUmtGYnNqUS1PaXQxbFJoZk8zVkdoZTVOWERqM2NDVUNCR2pQUjJOcWlsZGRLa1N0ampuNWRjMGJ5VFc3Qlcyc09OY0dWZw?oc=5",
-      "publishedAt": "2026-08-30T04:25:55+00:00",
-      "category": "보건의료정책",
+      "title": "경복대 간호대학, 수술 근접오류부터 감염관리까지 '현장형 교육'",
+      "source": "뉴스웍스",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5TeFY5SmpDdUNPOFJBLTlkaWhEMzhPd01zSUI2MDJQRWJSVjdBUnlvdzFIVE02U1BSVjhwUVpCbGtFaEhkbnVEcFh3TGFmaDlWYWFzZXdVRjdqLVVMVm1oOHB4dEROQU9iN0luTWhBWk1RdHPSAXNBVV95cUxOU3hWOUpqQ3VDTzhSQS05ZGloRDM4T3dNc0lCNjAyUEViUlY3QVJ5b3cxSFRNNlNQUlY4cFFaQmxrRWhIZG51RHBYd0xhZmg5VmFhc2V3VUY3ai1VTFZtaDhweHRETkFPYjdJbk1oQVpNUXRz?oc=5",
+      "publishedAt": "2026-08-30T07:43:16+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "투석협회, 현장 갈증 해소...‘임상 중심’ 10년 청사진 제시",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CNmZ0ajFwcXZFY2lNQTRtdFJ5dU03ZVlGUlR1cWVOMkVzQ2tDLTZSWGpfTkdNcEZ5aXZyVXpoUWZoZHE1bkhmMUZINU5aWWNseVlxU2FNOEVPRHgtelNOX1RuamdaZnRUb3c?oc=5",
+      "publishedAt": "2026-08-30T04:53:02+00:00",
+      "category": "환자안전",
       "contentType": "언론기사"
     },
     {
@@ -49,6 +73,14 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE11SHJqYWh2WDNSZW5BckpLblF3WVE2Vk1QeDFQTjhhZDMzcFl3eVNKR0xZN3ZRNHZsMUZZNmczOFF3dFoxZ19ZNURmNjBEMFdQNFRvaDMwbjVkVXgwZFkwOXQ5LXVLb1BLNFRLdHp3?oc=5",
       "publishedAt": "2026-08-30T02:15:26+00:00",
       "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "광화문서 다시 불린 4명의 이름…'태움' 유족들이 끝내 꺼낸 한마디",
+      "source": "파이낸셜뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9NX09keVRyMnRORE15WUNqVFllejVSTlNrM21Rby1KclZNbTVvaGZSdWlwbDZVYi10M05yeDJhMF9jbThRQmZldkdFdGVBTmZ4c05vb1dLdWY1ZXZHenZRRzFCNA?oc=5",
+      "publishedAt": "2026-08-30T02:10:34+00:00",
+      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -180,12 +212,12 @@
       "contentType": "공식자료"
     },
     {
-      "title": "치위협, 9월 10일(목) 공청회 개최... ‘노인 방문 구강건강관리 사업’ 추진 전략 논의",
-      "source": "덴탈아카이브",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40UzNKeGFuVTZjal84aGFGVXpiRERSMTJZSDlTdnF6bkZ3NDRfMTlSZFc0T2pKV2E3My00NDJRcmlmWmREUmc1SXE1RVdmZ2pRUjg4VXhUMFVHOFVtM1B6OXRUOVBwbFB2cGNGWXVR?oc=5",
-      "publishedAt": "2026-08-28T03:56:08+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
+      "title": "화성특례시, 29개 읍·면·동장 대상 ‘사회복지 역량강화 교육’ 진행",
+      "source": "newspeak.kr",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4ybmI3QmlaelpVOHplTjZUMHdlWDY3Rk83bGZIcV94RmV2Ui1GYm5QdE1vWkhDdU9ZN1l5Q1ZOWWE3M1NPQ3IyTE41czc4WXhpcFhtRnRnaFJKQ0xob19NSVBBRnhucU1x?oc=5",
+      "publishedAt": "2026-08-28T05:00:00+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
     },
     {
       "title": "중환자 관리 패러다임 \"병상 수에서 치료 역량 중심으로\"",
@@ -258,14 +290,6 @@
       "publishedAt": "2026-08-28T01:35:24+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
-    },
-    {
-      "title": "간호사 1인당 적정 환자 수…복지부 “페널티 없다”",
-      "source": "데일리메디",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1Zi0xSUZjd2dmZE44S3B0QUZLU2FvaTJqT24tVHo3SEJZMjZMUzJkY3liX0Y5SXhVbkU4QnBWWTdFS2xjYzAwRVlFNUFMMV9KaExPRFYzSzExZUJqSUZQcXBjaUluXzJB?oc=5",
-      "publishedAt": "2026-08-28T01:22:00+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     },
     {
       "title": "\"의료취약 이웃에 한발 더\"…간협·적십자사 '맞손'",
@@ -358,7 +382,7 @@
     {
       "title": "최안나 강릉의료원장 \"지역 와보니 의료 살릴 방법은 있다…모두가 외면하고 있을 뿐”",
       "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBMT2ZHZnBfU1ZocDdSN0xOYlJ0VG53U2VHWjZOb1hKdmlLNEhmV1ZnNW1kQU1id0NORm1IVlQweFNEMmxjLXMtV2phLWxBNFQtaktMdA?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5xdHNzdkdlUUtTUUNZOXlqaTVDcjR1cGZ4ZkxHZzhLUXhKanlIckUzUVdmd1ZFbFZ2aXBlZjZlaU9aVjhNRm84NmpxMjY0ZzBNZXVGZFdXbw?oc=5",
       "publishedAt": "2026-08-27T22:22:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
@@ -376,8 +400,8 @@
       "source": "병원신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1idG9JbDVOSF81N3JoWFpydllJTWx2eXptdFNHZHFQNDB2MmdkVjJLeGpuYVJudTFWcDBvLUVaeElqZUFpTEIwZVBYREhwZ2hMbnl3VHI3OTRrVWNpdDY0Q3NFVUVCbWxNLXc?oc=5",
       "publishedAt": "2026-08-27T21:00:00+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
+      "category": "정부·국회",
+      "contentType": "공식자료"
     },
     {
       "title": "보건의약 5개 단체, 차지호 의원 WHO 사무총장 후보 지명 촉구 外",
@@ -404,14 +428,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "김윤 의원, 차기 총선 이천 지역구 도전 뜻 밝혀…“의료개혁도 끝까지”",
-      "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE40a1NVandleXRDYWFDUnlKSkJsNnc1ZEtpbEJsa0pyMWhGMV9LN2RIV2s1Y1VFS0gzTWpIenEwY2RTa1NJcy0tdXkyRGRVcUZWd3pyNA?oc=5",
-      "publishedAt": "2026-08-27T08:09:51+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "지방 소멸 위기 속 농어촌 의료 공백, 간호 해법으로 푼다",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5sVF9taGZaVW5qcE9tSU9FcFB0cEdMRlNFUW05SFl3d1BpOFd0YV9seVZDTlRnVDhwU1lvWnB2dVppUkZFcU1veTBxcVdoWFZDaGszc3U5RGdqX21kNnk4cjJsb0pMOVFhZ2FFeW5R?oc=5",
@@ -426,14 +442,6 @@
       "publishedAt": "2026-08-27T07:47:29+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "경복대 간호대, 최첨단 시뮬레이션 센터서 교육과정…학부생 실무역량 강화",
-      "source": "아시아투데이",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80dWJDTHllcl9rWVAyekxPaTJqOHI4UDhuVnNyQ3F6dnNkcXJHQ2dfMU9LR0d5UExrRGVTbEMtczktUFRlZ0NBRXBaZkRIdVVKVVlQMmE1Nm5RRkU0czV2bHBzVDl5Vk1MZ1BsNTlB?oc=5",
-      "publishedAt": "2026-08-27T07:29:21+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
     },
     {
       "title": "[전남광주소식]전남대병원 간호사 임상연구 국제학술지 잇단 게재 등",
@@ -474,14 +482,6 @@
       "publishedAt": "2026-08-27T06:18:52+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "\"병동 경험이 논문\"…전남대병원 간호사들 국제학술지 잇따라 게재",
-      "source": "v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE13RzJiekYyX2htN0hGeFNJUXVLcmVmdDZjOHdzak1GVV9tYngxUUdKb25sMHhiZDV2eW50Z2xfSGFVbzZEM1NDdmNxT2NNRTZyOEN2eQ?oc=5",
-      "publishedAt": "2026-08-27T05:30:09+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
     }
   ]
 }
