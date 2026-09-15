@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T16:58:11.084693+00:00",
+  "updatedAt": "2026-09-15T21:20:06.676539+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -36,14 +36,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "경상국립대 간호대학, 칠암캠퍼스서 ‘새 100년’ 선언",
-      "source": "쿠키뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE15Y05JMjJmYTlUc1NxV3B2eHZSbDA1U2d0VDMwOTlfT3RuRkF6YlJTRVVyeGc2ckp6SXdNSUN1ZE1IOUtfMVBzWUppRDJjUmgyVVhQdzVaQUhycEt0VUljWmJ5RQ?oc=5",
-      "publishedAt": "2026-09-15T07:49:58+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
       "title": "국토연구원장 “수도권 집값 안정 위해 국토균형발전 필수적”",
       "source": "서울신문",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE41bW9GVWxEcWJpTFhUakZYdGZzNzZoTl91eUFYeXRjczRVT2dsb0JNZzNDaGxyUUF5cEVkN2FOY2JLUGNZWDNOQ1FremtVZFdqaVgzeGhOYkszY0lRc0EzQlJYc0l1ZHJoVmN4MC1Wbw?oc=5",
@@ -69,7 +61,7 @@
     },
     {
       "title": "1926년 첫 출발 경상국립대 간호대학, 칠암캠퍼스서 '새 100년' 선언",
-      "source": "베리타스알파",
+      "source": "veritas-a.com",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MbjFFU05zaUJuUC1zRjdjNVFFRm5MZ3NramhIaTBvRkpNV3I4b2hQREFKTS1rM2NodGJaZXZpYzNKclgzN1pNSzR1bTM1bTVrS1hXWjVnbnRVSUNrcnhUR1Zua0k4UjlheHZnLQ?oc=5",
       "publishedAt": "2026-09-15T06:28:53+00:00",
       "category": "간호교육",
@@ -85,7 +77,7 @@
     },
     {
       "title": "[기고] 대한민국 정치는 지역사회를 버렸다. 지역 의료도 함께",
-      "source": "의사신문",
+      "source": "doctorstimes.com",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBKMXZOclhZOGVBVjlLRE5LYk9zSkxUNG05RFRnOGw0R0F4ZUp3ajBoMEczNnN4TGp3ZlF2bEduZjJxa0IzeC1LQ3NYTVlONDBiZm1wV3pjbG1odE5QbjJmdUxITmhFTG5vZno0Q2s2bw?oc=5",
       "publishedAt": "2026-09-15T05:53:49+00:00",
       "category": "보건의료정책",
@@ -172,6 +164,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "경상국립대 간호대학, 칠암캠퍼스서 ‘새 100년’ 선언",
+      "source": "쿠키뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE15Y05JMjJmYTlUc1NxV3B2eHZSbDA1U2d0VDMwOTlfT3RuRkF6YlJTRVVyeGc2ckp6SXdNSUN1ZE1IOUtfMVBzWUppRDJjUmgyVVhQdzVaQUhycEt0VUljWmJ5RQ?oc=5",
+      "publishedAt": "2026-09-15T01:51:26+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "대구보건대, 경북간호사회와 AI 보건의료 인재 양성 맞손",
       "source": "경북신문",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fZ3U0MElFWFh6eXdQUEZDQWpMbEY0ajlESnhrXzdMZ2tKRl9fbUh2M1JQZmJrM2Q2LTllWVJ3RXR1cFZXZ2N2ekFBbnBjdEZjRnJMN2pPRU8?oc=5",
@@ -189,7 +189,7 @@
     },
     {
       "title": "간무협 울산경남지부, 경남형 통합돌봄에 간호조무사 참여 확대 제안",
-      "source": "의사신문",
+      "source": "doctorstimes.com",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9qM1FwMTlmckJDOUZ5YVFCd3NSWVRHSmc5NERlZUZ3cnpFV192N0JjUkNYVFhrX3FXOGlnZWQ5Q0h3aE9TZXB1Mng4emR0ZnEzNGJmR0llSmRmaWp3QU1CaGFBcXQ1OElaTGxIZGVmQQ?oc=5",
       "publishedAt": "2026-09-15T00:55:22+00:00",
       "category": "간호인력",
@@ -202,6 +202,14 @@
       "publishedAt": "2026-09-15T00:16:04+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "대구보건대, 경상북도간호사회와 AX 실전인재 양성 ‘맞손’",
+      "source": "dhinsight.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5NclBRbUNMVTJDS1pDQU4wZFRrUHUyTjFPbFJrcVZFMEV6ZGVhNlR6VUtFNHh4UEJITTBqS0F4QXEtVGJieS1MQnJSUFVRcU5LcG9DanhNS2R3bFNwT1d0UUdxV1VEZG0weS1MTtIBcEFVX3lxTFBWdXk1NzRRMGRRNEF0aG5QRjFQdVNoSUFyd1RicGVhNlRPV1BDYXlkOTEzV3V0LU92S0d2cjdCVHZSd3pPY01tczFyeVQtZzdleTBsXzVKdFVWemVvbHlmSTd3a3VQMnZmOVNiUWRQYUg?oc=5",
+      "publishedAt": "2026-09-15T00:03:10+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
     },
     {
       "title": "‘노인 방문 구강건강관리’ 사업 확산 전략은?",
@@ -284,14 +292,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "[신간] 연세대 간호대학, 간호선교 120년 기념도서 발간",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ySXdSbEpSWW45bUxCemFQSUVCN2x1NHZfWVpIajI4Q043cjRMeUF0eDFGVmZ6Q3lvMTFyUVFiM3lxY1g4S0NiZDZXUFFjVHh2TlItbnBCTFdvbUk5TlVyeU8wb2hfSU96TTA3QzBR?oc=5",
-      "publishedAt": "2026-09-14T08:04:16+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
       "title": "간무협 울산경남지부, 경남형 통합돌봄 간호조무사 참여 확대 나서",
       "source": "한국의약통신",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzS2Z6Ni11ai1SLVhaWm5JMVhiWGhUNTE5eGF3c1BPNHZWRllkYmRIUU1aTE52NHhhNThwVGE0QlJ3eWhhem9XRWJYUjBxcmIzVVFVWGZHNVhvQ09jeGdDZ3hWYkN3c3RJYzVz?oc=5",
@@ -356,6 +356,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "“지역 간호관련 인력 키운다”… 전북서 대규모 채용 박람회 성황",
+      "source": "시사타임즈",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNX295c1dUT29LSzFPUWhqMjhKMkV2eWpDdkhYTmJwQ2lzcC1ENjdvVXdyYlV1enhzUTJEQ3Q1U3ZzRnp6LWZLN25RcGZ2bWxqMDA2Vy1QOFJkUEpTZ2lFbDUwblNGS3FRSGdJQi1wUFg5N284RWNRRnFYMUIwOUVUdQ?oc=5",
+      "publishedAt": "2026-09-14T02:50:40+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "‘방문간호’ 전북 간호박람회서 관심 쏟아져… “병원 넘어 지역으로”",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9TdGMtamx0ZHRxcnJKWUFDT1FnZHE0NV9VSVlkN3dMV1NTQTlHOWVEd3dfQ3ZtWTlTemRRZVVqLWdwRWV2VzQ5MUd5T3FtR1JpWlFOLUJ4ZnRLQWt0ajNwc2VRdFZtZURnb3E0TzZ3?oc=5",
@@ -365,7 +373,7 @@
     },
     {
       "title": "전주비전대, 4개 학과 연합 ‘휴먼라이프케어’로 전북 간호·통합돌봄 취업 지평 넓혀",
-      "source": "todayan.com",
+      "source": "투데이안",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KUjhiM2dRNFhuMTFrRkc0ejZXODR6QmVZX1ZITF9BZVZyUmMxZWYyZzRReEd5TnN5N0hQeEtpZkZVeXIyR0EwdDlpZmpWcTNJazVMZ1B6aV9vQUdJdXRxVTkxeURIUkpz?oc=5",
       "publishedAt": "2026-09-14T02:02:31+00:00",
       "category": "간호인력",
@@ -375,7 +383,7 @@
       "title": "이필수 원장 \"의정갈등, 사회적비용 컸다…갈등 넘어설 '대화·신뢰회복' 관건\"",
       "source": "MEDI:GATE NEWS",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA3UFJHUmpBWUVYaU15YnpvTEVVbW5ISVoxRnU4SnhsUWZSdUhXS3V3MTY4LW1lblJFamlRLU1KZFlqTGNRUVVkeGxJMXJjRkZ4bjhFSWdmVQ?oc=5",
-      "publishedAt": "2026-09-14T01:23:46+00:00",
+      "publishedAt": "2026-09-14T01:22:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     },
@@ -474,14 +482,6 @@
       "publishedAt": "2026-09-13T11:33:41+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
-    },
-    {
-      "title": "형제·자매 1형 당뇨병 위험, 일반 소아의 10배",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDUENhMTctNGdOTFBFZ2xjbnpkRnI3VHBNUFprSmF2dXlFQUZKSm02RnZhOTZJdEJSUkFaTmxjMFBkQ3ZqVVQ4N1FkZWoxLVd3ZTB1VWp4TnB4SzY1NTRCTUhGaXdPOHg3WDJKLWVR?oc=5",
-      "publishedAt": "2026-09-13T08:45:12+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
     }
   ]
 }
