@@ -1,8 +1,32 @@
 {
-  "updatedAt": "2026-09-20T11:22:02.233246+00:00",
+  "updatedAt": "2026-09-20T16:04:47.706951+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "“혼자가 아니야”… 거리로 나선 간호사들, 서울 청소년 품었다",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBIUnBGa0RSa0JFbkhaY3poTnZnX0JjZ2h2a3NJWDhkV2REWGxXNHBPTTExajF1Z1NvQXNqMVNoeHlxM090NktKakZ0ZXBXSzUybkxHbF9Kb0ZacW5EcnA3S253dlV5MHc3X1phVzN3?oc=5",
+      "publishedAt": "2026-09-20T12:02:08+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "[이슈] 간호대학생 “실습 만족할수록 간호사 꿈 단단해진다”",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WWVNsM1NpdUNXZ2FxU0ZNUzJNSFQ2VEpublViT19PY2dja2Zua2dzdUttc2Y5V1EyTW5lQkF5bzVydkduYlVUbzlFVVJPM29VWFpqaEJpZ3l5SXZXQUN2c1l0bC1Pc2ZsM0hsV1pn?oc=5",
+      "publishedAt": "2026-09-20T12:02:05+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "“노쇠, 노화와 다르다”…질병청, 국가 기준 마련",
+      "source": "식약일보",
+      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE93ZXliRlEwdE5mdmFtWEdNbmVNM3YwRG5TOVF5cEQ3S2U5Q1l5NFRXeEFFUmpyek9kQjIw?oc=5",
+      "publishedAt": "2026-09-20T09:09:00+00:00",
+      "category": "질병관리청",
+      "contentType": "공식자료"
+    },
     {
       "title": "[3보]\"이재명 대통령께 호소합니다! 약 배송 중단하라!\"",
       "source": "약사공론",
@@ -21,7 +45,7 @@
     },
     {
       "title": "전북대학교 간호대학, 전북도와 손잡고 통합돌봄 현장 인재 양성...보건·간호인력 대상 실무 중심 교육",
-      "source": "lecturernews.com",
+      "source": "한국강사신문",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBBTy1Rdy1zaUcyeGE0NVdUaGJPNHZUMDNCSGtwY3B1YlByX3h0OWRhMmw4WkRLX3pnWFhkb3JZei1NNVFSS2JIRUxUbHM2TzhFQ0RmNmE4RUc0Y0EzSUF6OHFla0VLVFlHUE1CYkI4Um0?oc=5",
       "publishedAt": "2026-09-20T01:17:00+00:00",
       "category": "간호인력",
@@ -37,18 +61,10 @@
     },
     {
       "title": "파독 간호사 60번째 추석맞이... 그들의 종잣돈, 고국을 키웠다",
-      "source": "chosun.com",
+      "source": "조선일보",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVEFzTnFzMk5rM3QxaE0tYkxXaTIyN3JZZHJrWEpBVmJ3aklrZFJwS3A2WDl3VnJrdEVURnA1SkhOS3VhazVaVGRoUHBUQ1JoQWlpZUVpVTd1bm0yZEdzNE1zMlBndHBoUXVIYkc2ZmtzRUVOUmJ1WUJOaW1WY1htRw?oc=5",
       "publishedAt": "2026-09-19T20:00:00+00:00",
       "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "UC 계열대학 노조원 4만명 내달 파업 예고",
-      "source": "미주조선일보",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVjB1RU96MlpUbUpoYnR1allLSXlYQmloNFhPSW9CQ0tZSlJyUU03cXdWZEVtbzdjM0p0X2hxZFhCTWNCN3BxXzZpbW1hN01TOTNFOVZoeFNLaDNteDJfcDRGZTFTR091dEF0RlpNMXROMk5CMW01RC1tbnpUYlc0UGpqVXVreVZId2FSc0pwX3FteTVwUVhVaVlWS2tLbDNlamFCeTQ3TUdiVFI4NXBDTS1iV1VUUlNTRlg4angtX1R2bGtXLW4xT1hBUQ?oc=5",
-      "publishedAt": "2026-09-19T12:28:14+00:00",
-      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -80,7 +96,7 @@
       "source": "메디파나뉴스",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrYmRuUlZvUHRDdTBPRGw0VDdOQ0Rxa0ZxSmNHaE9xNEsybjAzdzNabXE0QVBlZEx1UUJRWG5lS2VvbHFxM0JmLTJVUXA5LWx4cUVGNW1ZNkhXbnpwSXVOdll3R284UDZvaEV3?oc=5",
       "publishedAt": "2026-09-18T08:40:15+00:00",
-      "category": "질병관리청",
+      "category": "보건복지부",
       "contentType": "공식자료"
     },
     {
@@ -106,14 +122,6 @@
       "publishedAt": "2026-09-18T07:53:29+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "병원 못 오는 환자 찾아간다… 경기도의료원, 돌봄의료 현장 점검",
-      "source": "천지일보",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLOHFjYzlDME4tMW40S1QzQ3NJQkRic2ZyVEFaRnd3TzdGT0JlQnVBXzVxRkIzYjMyNzJGZ2NybjExZG9iRjRKUVFORFY3WnN0WGhiQTBsT3AtYWlXdzRwZlgzbF8tVWJMMUE?oc=5",
-      "publishedAt": "2026-09-18T07:43:33+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
     },
     {
       "title": "[이슈] 방문진료 간호조무사 투입 논란… “의료 안전이 우선”",
@@ -196,17 +204,17 @@
       "contentType": "공식자료"
     },
     {
-      "title": "질병청·예방의학회, 지역사회건강조사 우수논문 18편 선정",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5MRzZLUzJtdzRqdW9VZnBWTzhUUVB2TjlQNHBYVWxZdy15MVZfd3Q0SlduNU1pdDhTNWxJSVdqQzVlcXQ4U181MS1MRTQzQzZfWlRTQVQ5eVF6RlAwUFd3dXU3LURFZUdmOGdFNG1R?oc=5",
-      "publishedAt": "2026-09-18T05:04:03+00:00",
-      "category": "질병관리청",
+      "title": "정은경 보건복지부 장관, 간호·간병통합서비스 병동 운영 현황 점검",
+      "source": "연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE03NHFOZk5SUW9Id2dmRzh0Qlh2TE9Wb0t1UzdibWJYTWRCQmJaYnQ4REp6Qk9QVEZUNFZMR29HMlpIOW5GUXREWWxxU1l6dllSeVBXZFhURUgxMDIwVzFnVNIBYEFVX3lxTE03NHFOZk5SUW9Id2dmRzh0Qlh2TE9Wb0t1UzdibWJYTWRCQmJaYnQ4REp6Qk9QVEZUNFZMR29HMlpIOW5GUXREWWxxU1l6dllSeVBXZFhURUgxMDIwVzFnVA?oc=5",
+      "publishedAt": "2026-09-18T04:33:36+00:00",
+      "category": "보건복지부",
       "contentType": "공식자료"
     },
     {
       "title": "지역사회 건강 증진과 건강격차완화 초석",
-      "source": "뉴스파이어",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1GLXZnUEFwSFNXc0Q3dW1QS3ZvSFpEN3pXcEVpb05xWGJIU0w2WW9kNVZhdHNQRUgzTkxlR0ZiNG56RmpHZ1k1Y1lUVkhPWUNRNHZXUl95MndRSFcyNy1TN2dDOFZscVdxMkxDemllaw?oc=5",
+      "source": "도민연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1pcWpTUmxhYjk1cUt4VVJ2RnIwRFBjMzlpSDdwaEo2VWtmeXJrRTMyZ1prMER4RFhoOUtvcm5xOFhucTROOHVma0NjQjBMa2dqVW1CWUh4U2hMbHNCN1NtTzBOMnVnZDdSbHc?oc=5",
       "publishedAt": "2026-09-18T04:29:19+00:00",
       "category": "질병관리청",
       "contentType": "공식자료"
@@ -268,14 +276,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "정은경 “가족의 간병 부담 덜 수 있게 제도 개선방안 마련할 것”",
-      "source": "헤럴드경제",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51NUQtNzR6bER3SjVxM1ZWY0ZmREt1bHJLZW5VLTJDSEU3MER2TVNuMFlraVZwUmNxa3B6RVR4X2R4OGJ1NlJaY2N6WTQ5MTU2YW0wbW5R?oc=5",
-      "publishedAt": "2026-09-18T01:40:32+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
       "title": "“AI 기본의료, 기술보다 지역의료 기반·인력·제도 마련이 먼저”",
       "source": "경기메디뉴스",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4zSDNjN2x5YVNvcHk3UkZ5ZW5wSWJadzA1N09sSkNQZWEzLVFydjJfeDBWdC1ZUThrQ0FvRzBkR2k0S0FkSXhLYm5ReUxfbXlqSGM0N1JxbFZDTEs3VFpJcW43UUxMQnZvc1E?oc=5",
@@ -317,7 +317,7 @@
     },
     {
       "title": "“간병 걱정 없는 입원 로드맵 마련할 때”",
-      "source": "khanews.com",
+      "source": "병원신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54ajBOTEhMNjF0bmZFeFJ3aUNFaTdENVRPVHJkMXVMU2tnZXpEMGtqdWZMSnRZQV9Jc1ZEZGlRQkdyU0Voa2Q5Q091TWJpN0ZobC1QZ2tHZGJJcFF4U29FTUt5cG1JZkJmelE?oc=5",
       "publishedAt": "2026-09-18T01:00:00+00:00",
       "category": "간호정책",
@@ -349,11 +349,19 @@
     },
     {
       "title": "금융노조, 지방이전·교섭 파행 반발…18일 결의대회",
-      "source": "weekly.hankooki.com",
+      "source": "주간한국",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1hQjJ1NFN3eVZaWHdCNUZkMmZvZEZKbmxBa1JJWUI4RmpKYjc1dVJNaVI4dzVVNUVWamJrR0tZV0NVcDk5ejFDM3JYNEpjZXJ4cS1FSld6aG9QVGxiTTlZSElLbXFzNjlGZ1U2Zy1oZm7SAXRBVV95cUxOWTNxVndmZ0dlS1YzZ2JNaTA5ajBTTnVzQUx4Q3BqQml0SUJ5c1Fja2VXaEtoQnJ5SElvZklHR2ZFVlJ0NXJrM0pIVGFXNUNnVzdWLUY2blE2NzFJa01NWTRkVHc3UGRwN0NMZzZfTkVnbzQwNw?oc=5",
       "publishedAt": "2026-09-17T22:12:11+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
+    },
+    {
+      "title": "“군의관·공보의 복무기간 단축 못하면 군 의료체계 붕괴 우려”",
+      "source": "메드월드뉴스",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1IMUQ1VkN5UFBZNW5xRWJBVjdtNGdVQVNCc2RjZlh6NGY3X0h1bFNkMVluUF9MRlhZMzlZRVc2b3I5RFBPSWdzdG1VRTJEOGZkWF83MUNUc2NWak1mYW42dFpER1JOTlJWWTNwMmVn?oc=5",
+      "publishedAt": "2026-09-17T21:00:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "“연세대 간호대학 120주년, ‘사랑과 섬김’의 유산으로 도약”",
@@ -364,18 +372,18 @@
       "contentType": "언론기사"
     },
     {
+      "title": "대한약사회, 국무조정실ㆍ중기부 항의 방문 外",
+      "source": "의약뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9CY0pYa3dFeFphQVZ2UTdWV2JQY25DUDlpc3NuOTNTdllxS284NnpTZGIyMGtfWU0tWGl6MXZIV2kxdF9KX24tV19sZkVCTHQwNV9ZUzRVdWM0M3oyczhXQmRzeTk2REE?oc=5",
+      "publishedAt": "2026-09-17T09:16:00+00:00",
+      "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[고발칼럼] 노모의 죽음으로 보는 의료개혁 필요성···⑩지방 곳곳 안동병원은 정부 책임",
       "source": "국토일보",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE01RkVpUWNtT2pSZlZHLXJBeGtLelZRbE50WS02bDVsZzJmR1BhTklURnQzRmcySndHemR1S0VoY3I1TWE4WkRkSFNJUlp6ekgzZkpPWEc0eE42bDNaaVVDVW5sTkk?oc=5",
       "publishedAt": "2026-09-17T08:53:00+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "다빈치카지노 비밀 풀기 건강한 생활 완벽한 핸드북",
-      "source": "Histoire pour tous",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOC1VYU5fbXI4TWptMThGdGxVQ1U5WkdGNlJvZUFySmRmQm9NaEF1Y1VJUFBGOENJR0VCdW1YTXZ5bUtYc3RqTnlWUmFRWk5yWXoxb05zb2pYa09wSmNPeE91ZzBYX1NaenNtaXp0dFFoMlhWelg2a2IzTUtPNC1INDI4Snh6dnpGMHhubXZVOW1Sbks0Vk5nRmswbEg0NWRHMmljMnh2NUVPRjQ1U2NESXNrLS1WRUVmN3RhREJ3?oc=5",
-      "publishedAt": "2026-09-17T08:18:51+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     },
@@ -429,7 +437,7 @@
     },
     {
       "title": "인제대, 라오스 간호대학 교원 초청연수… 간호교육·임상실습 노하우 공유",
-      "source": "한국대학신문",
+      "source": "news.unn.net",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9pa1NCN3J6bG9kcDJiZmRkb1ZkQ1E4NFdZekx1Ykd1V2F6Z0ZyeGhrV3V3aF9SWmh0NVR1WFZzS2pjRjkxTGR1SncyM0tIQVlVa0VjWDlxeDJQVXBqRU9IQTBGc21Qdw?oc=5",
       "publishedAt": "2026-09-17T07:50:00+00:00",
       "category": "간호교육",
@@ -474,14 +482,6 @@
       "publishedAt": "2026-09-17T07:03:37+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
-    },
-    {
-      "title": "복지부·중기부, K-제약바이오 육성 위해 손잡았다",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5FcXJHQ3RBeHpCVTIxNFl2cHhidkZnUkhuUzNhOUl2SFdrNmlrVHhiWnJYdjdFYURyTUlRb3JNQVFkeklBZ0pOajNqVC1wWXg2U18wdTZLN3prRUhWN0puaVdocnJMSzNHZHF5TlJR?oc=5",
-      "publishedAt": "2026-09-17T06:29:37+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     }
   ]
 }
