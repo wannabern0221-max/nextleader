@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T11:34:35.173059+00:00",
+  "updatedAt": "2026-09-23T16:57:03.354112+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -10,6 +10,22 @@
       "publishedAt": "2026-09-23T09:24:43+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "“일해서 번 돈만큼 깎인다?”… 복지부, 생계급여 제도 오해 반박",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44ZjV2bVU1NDlhcjRJRzEyMFNKNF9EWXdMcl9jd2dxdEx3VC1leUF4d3RpbDEtZVF5WmlxUm82WnRub2Q1N3RmeVJIQkNHQjZlQTVhajY1bnhGemtTb0ZWQmxySk53OWROQzVSUE53?oc=5",
+      "publishedAt": "2026-09-23T08:45:41+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "서울시간호사회, 보수교육 통해 통합돌봄 간호 전문성 강화 外",
+      "source": "의약뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JRzVjSXIybmFlc2ZvQ09EMFlpTThlemRCUE4xT3dhMU1maHRxaElBUE5wdko5YXVaX1YtbGVmQmJzOFJwOFpTTzBKUEIxcXk5UzdyUDh6SjVIMnMzNURtYUpoYTBuYTZf?oc=5",
+      "publishedAt": "2026-09-23T08:09:01+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
     },
     {
       "title": "이형훈 복지부 차관, 추석 대비 광주·전라 응급의료체계 점검",
@@ -84,6 +100,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "광주대 김동진 총장, 해군 3함대 특강 ‘군인의 삶과 가치, 다음 항해’",
+      "source": "톡톡뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBraU9SRnRkTmxjXy0zbVNVMzdOTklXamdhTHdNdUpULUEwY2FvQ1RKcEhGR2J0WEVkdjZaLUJJWVVYMlYwTUhLZ0k2Mno5RFdUQ3BURHJqRFBieXVPRE5Ranlwaw?oc=5",
+      "publishedAt": "2026-09-23T05:26:00+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "전남광주특별시교육청, 심민철 신임 제2부교육감 부임",
       "source": "톡톡뉴스",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFdWVUS3BtX2U3S1F6RVl4bm5uX3FCeVdOVDMxckpTZXMtX1dqRGlLclU1ZmE5Zm1FQmdiVFgwNlJNdi16WmRFUmhGQzV5dDZ0WExEanpiZm1MWGtQWkR2MnA4dw?oc=5",
@@ -92,16 +116,8 @@
       "contentType": "언론기사"
     },
     {
-      "title": "경기도한의사회·간호조무사회, 교육·인력·근무환경 개선 공동 추진 > 뉴스",
-      "source": "한의신문",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOVVRzeUNfaEt3dkNtUy04S3FBMWJmWVpvX3g2dGg5ZzlZVjRJenAxUHp1X0l4anlrUms1bnpTaDlNSWJpWFF2QVQtZlJVWVloRURUbmZ5Slhxb2s0MXpGNUlNOVlCWnhrS0pmNWh5aFdFaTg5cVZCUHRxMUdBem9Fd0tCazlvWWVCNFZpeVB0c05mbktBZG0tb3V5ZVVpX2lyU00ya1k5aS1sZmxQbzVBNGkyZmgtMkkzd1ZrVDVvQ0d3cklDNDZ2N0FnQWkzY1Y4b3FVOTVwU092SzA?oc=5",
-      "publishedAt": "2026-09-23T04:46:07+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
       "title": "서울시간호사회, 통합돌봄 시대 지역사회 간호 역할 강화",
-      "source": "후생신보",
+      "source": "whosaeng.com",
       "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1UaXctZzFsVHZ2bm9Vemd3OElBMTJUZ3lLVDlxRHp5SmpxWnVlbGdSVllrd2RFM3ZUb0lKMmtEb1p2ak9l?oc=5",
       "publishedAt": "2026-09-23T04:38:00+00:00",
       "category": "간호정책",
@@ -109,7 +125,7 @@
     },
     {
       "title": "의료인 자격정지 처분, 6건 중 1건 국가 패소",
-      "source": "medworld.co.kr",
+      "source": "메드월드뉴스",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5HZ0tkVGw0UmZSei1aSEpKRDVNWDltenlDdHdlYjVIbjVfWGZvR2laSlJTUklPMnVDTmRmU3llRHV2VUtCNnJoM2dua0lLa2ZYNjlaWkRRMEpPd29VN2N6d2daNHZhSHhUX0xESw?oc=5",
       "publishedAt": "2026-09-23T04:32:29+00:00",
       "category": "보건복지부",
@@ -125,7 +141,7 @@
     },
     {
       "title": "서울간호사회, 지역사회 간호 역할 확대 발맞춘 보수교육 개최",
-      "source": "medworld.co.kr",
+      "source": "메드월드뉴스",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFByNHZ3Q2x2NE9raDRtTERsak5lQ2g2aU1oWmlvY0tRY0g1MmxIYko1TWxrWjc4US01RERSS3ZpLXRaREZPQUNLLXQzQUZvekkxNjZ5QlIxQ2VIZVNVdXFRM1RuQ2k0bTdicFNEbVZB?oc=5",
       "publishedAt": "2026-09-23T03:51:13+00:00",
       "category": "간호정책",
@@ -146,14 +162,6 @@
       "publishedAt": "2026-09-23T03:21:03+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
-    },
-    {
-      "title": "의료인 등 자격정지 처분, 6건 중 1건 국가 패소",
-      "source": "재활뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9VUnRCWnJqT0J4WjJhRTFpTkFXQWNJZVAtcUFMbk5qZjdJeFlDVTM1cW4tZDU0bGttWFRSU0VqS3A3M3JhZ19KdXhyMzF1aFlRZ25mYnVEMHJxRlg3dDNHTmVCOTR5d05GZjFR?oc=5",
-      "publishedAt": "2026-09-23T02:58:08+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     },
     {
       "title": "“3년이 분수령”…대통령 지·필·공 테이블에 한의일차의료 피력 > 뉴스",
@@ -181,8 +189,8 @@
     },
     {
       "title": "두원공과대, 파주캠퍼스 반려동물보건과 신설…전문인력 양성",
-      "source": "ABC뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE55b3B1bXFsUHUtZnNNVGg5LVVUblEwT0ZFeGp5S0RaWVhLNmwxUVB2c0daSF9CVUl3N2FLVkEtQ1JFUkg1eW9tSUdlYlpySVhCeHJtWHFMLUtqUjlwWDZLaElkZw?oc=5",
+      "source": "abcn.kr",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE55b3B1bXFsUHUtZnNNVGg5LVVUblEwT0ZFeGp5S0RaWVhLNmwxUVB2c0daSF9CVUl3N2FLVkEtQ1JFUkg1eW9tSUdlYlpySVhCeHJtWHFMLUtqUjlwWDZLaElkZ9IBZ0FVX3lxTE5YN2gzdDE3WXVBdTVvX0V1N2hiS0NCcDdVZHlyYmp3NHBQODNjX3FlQS1TWlptYklqVnl2MVJlMXhKeHBxWDZrSmljb2ZjY3lRcFZCNEltcFZReHRGM3gtdFVMejZvLTA?oc=5",
       "publishedAt": "2026-09-23T02:02:34+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
@@ -197,7 +205,7 @@
     },
     {
       "title": "두원공대 파주캠퍼스에 반려동물보건과 신설 “동물메디컬센터부터 바이오 연구소까지”",
-      "source": "공감신문",
+      "source": "gokorea.kr",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBMcjhnZXVMeTVOekpXM29PX3ppMTdYQ25SMnpFQUY0eG4zcjRhOEptSmFWbVJ6azBwdHAtWXlGMUN2V1lkanZ4eklLUzF4UDl4SnlQdEo0TDdCbXRYVGxxZ3lZSUJqYjZh?oc=5",
       "publishedAt": "2026-09-23T01:30:00+00:00",
       "category": "간호인력",
@@ -221,7 +229,7 @@
     },
     {
       "title": "안산대 간호학과, ‘치매극복의 날’ 건강증진 캠페인 전개",
-      "source": "한국대학신문",
+      "source": "news.unn.net",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBVSlVVdDQyZHd6bUc5UFBIRThGVVZ6Y2FWX3dBM0hjc0d0WmpVYjV1cERweXVTQm5XRXEyUVo1VmotTTdlNFFycVR3R19BRER0WW1mTDhTNXQxUXF4TndJZ2JqQkdBQQ?oc=5",
       "publishedAt": "2026-09-23T00:35:00+00:00",
       "category": "간호교육",
@@ -237,7 +245,7 @@
     },
     {
       "title": "서울대병원 이현훈 교수, 보건복지부 장관 표창 수상",
-      "source": "후생신보",
+      "source": "whosaeng.com",
       "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5BSVBwRE1uak1vbFlJSTd4UTQzVGhoR3NnN2RQbTdSX2tvVm9zZldaM0lvMnc4RkpWUmNtTHBjbER1bHVr?oc=5",
       "publishedAt": "2026-09-23T00:25:00+00:00",
       "category": "보건복지부",
@@ -261,18 +269,34 @@
     },
     {
       "title": "간병인 양성과 교육, 매칭까지 복지부 나선다…\"공적 플랫폼 구축\"",
-      "source": "뉴스더보이스헬스케어",
+      "source": "newsthevoice.com",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1yMkRsSzJMME5NSkdFVDVyUWl2Z0FDazBRT3ByQjQyNVNKMDRrZHQtcVVqejFkQzVwd3Z1YURfZlc5bXNKcTNVSHZRQmU4Qm03UlFLM0lvU2hlZkYzZzQ1OU1Kd3VOYng0WE1lVWp3?oc=5",
       "publishedAt": "2026-09-22T21:02:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
     },
     {
-      "title": "진도군, '간호복지 인력 기숙사'로 인력 이탈 막는다",
-      "source": "진일보",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vZWpPTGRTVVFwa0FzNWVwQ2UxRzFUMDA2cHptdy03cUdTdmdjWHR0bGgyVzhsZmdPbGhVdlRNcTM5WXgwTWtNWm94WU5vWVhvd09SX1R3NjdDUURiNm1od0tYdmJoenViWThmOFNNZw?oc=5",
-      "publishedAt": "2026-09-22T16:40:00+00:00",
-      "category": "간호인력",
+      "title": "경상국립대, 딥테크 창업기업 7개사 유럽 진출 지원…MOU 4건 성과",
+      "source": "jinju.news",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Qc3dXaldCSlNfNjlZM1dKNzFvQmZmcklLeXlpb1I4MnpXLXZabUlpelY1bkNRU0dPNzVXOURkVlhpdmRZdkt4dGJEeUtGNWxkSTFUN01XQWlIeVY1Rzh0X2VyX1dycy1QZEtkOVd1WUlvYmVYZUE?oc=5",
+      "publishedAt": "2026-09-22T21:00:05+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "경상국립대, 외국인 유학생 100여 명과 'K-컬처 페스티벌' 개최",
+      "source": "jinju.news",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE05eUs1NDNwb3hLNzFtWF92aFZVb0FNY2JKVjRpR0prMnZOLVFMWVJLQy13Q3hlZTRDVTFOZ3E4YW9OYlVPV3E0SWVRUE5VUDZ6ZjZwOF9ZNnBEampsVVBTUHY4SUtkOW9XT1NCNDc2TkEta1pKeEE?oc=5",
+      "publishedAt": "2026-09-22T21:00:05+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "진주교육지원청, 교육혁신선도지역 공모를 위한 맞손잡아",
+      "source": "jinju.news",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA4ODNwMTd1MzAxTWRBeEF3OG9iVXFLX0JNR05WQVY4NWlGcFBQZGF5Qk5uS1NVSEVUb1pWV3hHRlhwLVhLSktSR05BREdOUGVXbVFidFBkcURXeDhnUmlJeG80blAzdWRpb096bkFFMWNwTFJsN2c?oc=5",
+      "publishedAt": "2026-09-22T20:00:05+00:00",
+      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -281,14 +305,6 @@
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOEtOVjlGcEVqbWpobWxfNGE3X2pmSGdoam5jSmRIcXZZVGh6Nl9wM2hNd0xfaE9VX3M3aUtob24tcGR4RW9WNy1PbmRIaHpKenRWV0FlU040eVpHUGZqT0NCT1VBTndnOEFVc2hFOXZKUnZ0ZG03WThqYkVEOWJlQlRjM2FsMUI4eEthSmJGZmh1V1BLaThkd2xRRk9YM1Y1UUFHc043VmZlSFhMcmNLTDM3YnZJRy0zdlJNMzdrREdtZw?oc=5",
       "publishedAt": "2026-09-22T15:39:00+00:00",
       "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "진주교육지원청, 교육혁신선도지역 공모를 위한 맞손잡아",
-      "source": "jinju.news",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA4ODNwMTd1MzAxTWRBeEF3OG9iVXFLX0JNR05WQVY4NWlGcFBQZGF5Qk5uS1NVSEVUb1pWV3hHRlhwLVhLSktSR05BREdOUGVXbVFidFBkcURXeDhnUmlJeG80blAzdWRpb096bkFFMWNwTFJsN2c?oc=5",
-      "publishedAt": "2026-09-22T14:00:05+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -309,7 +325,7 @@
     },
     {
       "title": "국민의 건강을 더 잘 돌보기 위해 의료 산업을 현대화합니다.",
-      "source": "vietnam.vn",
+      "source": "Vietnam.vn",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeS1peFI2VWl3X0tPREhSTGJBTFpHSk8tY05oUnFibHBtMGZoeU1VdXFNNllxUW1jUmZFZXFaYVEzRGlPT3BvM0V4U2FnQ1U3aGU0M1V6NFFqakx1N0xVSDBDRV9yRC1KZVdSUGxuVktnblZMazQ3ZE9GMVpCS2Rqd0tQcHgyVi1LTU0tWA?oc=5",
       "publishedAt": "2026-09-22T08:46:14+00:00",
       "category": "보건의료정책",
@@ -321,22 +337,6 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE82MkVfbTBwU3I4bXpNMUkyeWp4R2dCNGN0UjMtOWsxQlQ1QmRUQlhUSXhrSkJMYnl3TlNoXzFFNWZrZUFEalRSNVh3RF9HbnpHNG1BZVJQN2ZCZk3SAWBBVV95cUxPYUFBa3AxdjF2c0hPREFVR202dnFGQjkwYU0zcjJyZTZSZUR1YnlmVWVmcm8tN2g3eWw0YXlBZHlSRGEwYm4wbHJCMVRCSXJGOGM1WGpoc3VVUlFfYllQMnE?oc=5",
       "publishedAt": "2026-09-22T08:22:05+00:00",
       "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "전남광주통합특별시교육청, ‘전남광주교육 정책협의회’ 개최",
-      "source": "톡톡뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QRFZhd1RoN1Fkbld6SzdOSDZLMGhkVGRNdThVeEZiQVdHV09RSWU3TEpjNU03MWgwOEFXWlVDZmRia29LMEY2bWlmWTdKVDJDZl9USkNkTWZ0TTFlLWc?oc=5",
-      "publishedAt": "2026-09-22T07:51:00+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "전남광주특별시교육청, 직업계고 학생 코레일 면접 지원",
-      "source": "톡톡뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB6eFRXYU9ZSW9kQ0NRZkU4MEZPdVhYR0FKTUgybkhmZ25ZalotUVVKck9IT256Vk1OTF9BbnFCeTlfVzBLYVlYdmxRa2VRbVJLWVBlaGJwMG8wOV9BTUE?oc=5",
-      "publishedAt": "2026-09-22T07:50:00+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -381,7 +381,7 @@
     },
     {
       "title": "합리적인 가격으로 현대적인 의료 서비스를 더 많은 사람들이 이용할 수 있도록 합니다.",
-      "source": "vietnam.vn",
+      "source": "Vietnam.vn",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQXhHZGJIUmk2akwxYno4WFVFX1VGcENOc01qclVPLWtvQXFfRUdDLU05NHZUblJfc0c2RmhSVUxHN1RfM1J4b1pQd3BIZnZEQkFYSmhYakRSMWVHdFlqM29LMG5PYl94ckN3ZG1iclZBNU45LWtIUGlBbEhweVdadHBHR21rcDRx?oc=5",
       "publishedAt": "2026-09-22T06:29:50+00:00",
       "category": "보건의료정책",
@@ -397,9 +397,17 @@
     },
     {
       "title": "[보도자료] 정부출연연구기관 유공 포상 수여식",
-      "source": "서울Pn",
+      "source": "go.seoul.co.kr",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1odTE5MTFqcE5DX0o2OHBBQkU3ZEduaFZic1htYno4X3Jyd1lHc3BNcEJXVEpYZmd2WE83dGFjZ2lOT3NVYU5xSDhnTi1oZDNiNjFYUVBlOGFUZlY0amUybVNR?oc=5",
       "publishedAt": "2026-09-22T06:10:02+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "세로형 화면에 어울리는지 보는 해축 사이트 디시 모바일 구성",
+      "source": "Histoire pour tous",
+      "link": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxQbFl0aFpvSnljZmt5b1VZZllxUUQtYzlWTTE5dEpTaHdxZ0pGQ0p5blcybzNMVUxmQ2tvNEtoSDdxeU5FMzdBVVV5RnNNU1lBUF9TVV9hMm9IM20tWDZGeEgybzV1Rl9sMHBxandSd2pacWhLaUR2WERoaUpneXlQc2xZMmRJRHFxRG16V0R0RUI4ZExENkJnZTN6R1lYVjZGX0dNQjdXeFU5WmQ2UjNISjZWdW5HUUJ0YVh5dF9FdnktOG81UEpsUFVjNzZYOFAzc2xoZmRnV0piekhEVHFCU1g1ejNaNmk1OWl4YVFhTmN3b20xUEhKdFRJajBlZnliOGU4RXJ4Q1p5Z2VyVEVnSEtMX0pBTmVGZnpqLWdDVE10Z0xnb3p0TWdxLVc2Uld1bVYydVJJeG5SVUp4NkVlRV9pQktnbEtsekt1NjdLbUdyWFlxNHYtR0dWMXE4NTRnVTlwX3FZaDRieTNmb1k2djRKUXI?oc=5",
+      "publishedAt": "2026-09-22T06:03:50+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     },
@@ -473,14 +481,6 @@
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLM1FtVVdOWUJ4X1lpdHlIdUdzLXNyZEhhRnUzdXRZWk1FZGRac3VMZXVOUlA0M2xlb3VDd1AtMk1tNU52Nm1sME96bWtiZG9WSTFrVk9FLWhjOHlSY0JvNDZSVi1vOEYzN0Jv?oc=5",
       "publishedAt": "2026-09-22T03:05:14+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "대전광역치매센터, 치매 정책 포럼 개최…경도인지장애 통합관리 방안 모색",
-      "source": "cndnews.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9uNmlUVDdGMjQ0ZHoyZlMxeUUxakxoX1NNTDNFMUhyWkFLSWM0QXJuS2JRUGFBcVFiUWtHaUc0UTJuRmp0UXc?oc=5",
-      "publishedAt": "2026-09-22T02:46:41+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     }
   ]
