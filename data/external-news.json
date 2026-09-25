@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T11:49:36.595076+00:00",
+  "updatedAt": "2026-09-25T17:09:56.483898+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -37,7 +37,7 @@
     },
     {
       "title": "홍승권 심평원장, 지역 일차의료 현장 찾아 제도 개선 의견 청취",
-      "source": "데일리메디팜",
+      "source": "dailymedipharm.com",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5EdHVlN0c1RDJZY2FfUlVULVRWSENxTlMwVTF5cnBKMXVwYWYxbEx6eVAzT20zcHg5azU5bkNzY0FGWGtTX2JYaDh1bUhUWlVlRndETlowR1JsUndORTB0QjhXM2pQbF9CbG43MXRB?oc=5",
       "publishedAt": "2026-09-24T00:41:24+00:00",
       "category": "간호인력",
@@ -61,9 +61,9 @@
     },
     {
       "title": "'무상의료' 없앤 北, 병원 신축하며 의료개혁 본격화",
-      "source": "v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1TNTRrc1l0dEtNVTN2UkxUa0dmYkRmc3JYaHBhQmYtc2RxR1RFYWMtWGZnOHhtUDMwendQTVZwcC1EcWtzNFBOTGotWkU5bGc?oc=5",
-      "publishedAt": "2026-09-23T22:02:05+00:00",
+      "source": "연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1KMjhTcXNSZEtfVTdUWGQwc0xlZ05PUk9qUG5fcFNYYlBPVE1CQWJIXzJNNVpSdXRmZ3ZlaDIwZk1LanNlOC1GSTMzV09mYWlPcTZnam9YUmxBZk3SAWBBVV95cUxPaklkb0xLTEFqOWswRnJBWklTdmtOaWlyREJHUmhhTzlSSkhzTzdwWnZ2SjItem1uMkV6dWxueVNvV3B2d0ptUV9RRmc5UGVlbWtUMTF6MXRLME5VY3I0M0c?oc=5",
+      "publishedAt": "2026-09-23T22:00:17+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     },
@@ -98,6 +98,14 @@
       "publishedAt": "2026-09-23T09:24:43+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "임지준 회장 “구강돌봄, 현장에서 작동하는 제도로”",
+      "source": "덴탈이슈",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90Ql8xSm1PcE9RaXFKVi1CQVZKNEJxUERfVUwzazhqRDFLWFNGZEVpNUhCeVVQLWtNWHpjeVVfelczT3gyRXB5cTEzVUJYS1VwWlN1aVIyS3JtWF90ZjRfVVNZakVvUjlT?oc=5",
+      "publishedAt": "2026-09-23T09:13:17+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
     },
     {
       "title": "“일해서 번 돈만큼 깎인다?”… 복지부, 생계급여 제도 오해 반박",
@@ -141,7 +149,7 @@
     },
     {
       "title": "전남광주통합특별시교육청, 학부모 대상 자녀 마음건강 교육",
-      "source": "톡톡뉴스",
+      "source": "newstoktok.com",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBzbHhqRGVwSndEYm1PTFlJdUItZXA1SWF2SHpNejZXaXVOREVYQ09tb2J2Y19jQmlMbV9xQzFNcUJMOHJQSWhoM0hpTWRMbDBKNTBWcVRnLV9tc212bDNINllTMA?oc=5",
       "publishedAt": "2026-09-23T06:56:00+00:00",
       "category": "간호교육",
@@ -165,7 +173,7 @@
     },
     {
       "title": "진도군, ‘간호복지 인력 기숙사’ 개소...직원 주거 안정 본격화",
-      "source": "전남타임스",
+      "source": "jntimes.kr",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE52NmRzMmlqbjhrR3ZFTWZud01JVUNwc0x1UFRLOXdPdmt6X01RWW5XWElqakRYdlRGYk1tSlFuNVJJQ1VQNThsd2dVazh0YkZaWWkwQWtMdDJ2aTZtZ0JsSFlJMzB4UFU?oc=5",
       "publishedAt": "2026-09-23T06:20:51+00:00",
       "category": "간호인력",
@@ -197,7 +205,7 @@
     },
     {
       "title": "광주대 김동진 총장, 해군 3함대 특강 ‘군인의 삶과 가치, 다음 항해’",
-      "source": "톡톡뉴스",
+      "source": "newstoktok.com",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBraU9SRnRkTmxjXy0zbVNVMzdOTklXamdhTHdNdUpULUEwY2FvQ1RKcEhGR2J0WEVkdjZaLUJJWVVYMlYwTUhLZ0k2Mno5RFdUQ3BURHJqRFBieXVPRE5Ranlwaw?oc=5",
       "publishedAt": "2026-09-23T05:26:00+00:00",
       "category": "간호교육",
@@ -205,7 +213,7 @@
     },
     {
       "title": "전남광주특별시교육청, 심민철 신임 제2부교육감 부임",
-      "source": "톡톡뉴스",
+      "source": "newstoktok.com",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFdWVUS3BtX2U3S1F6RVl4bm5uX3FCeVdOVDMxckpTZXMtX1dqRGlLclU1ZmE5Zm1FQmdiVFgwNlJNdi16WmRFUmhGQzV5dDZ0WExEanpiZm1MWGtQWkR2MnA4dw?oc=5",
       "publishedAt": "2026-09-23T04:54:00+00:00",
       "category": "간호교육",
@@ -221,7 +229,7 @@
     },
     {
       "title": "서울시간호사회, 통합돌봄 시대 지역사회 간호 역할 강화",
-      "source": "후생신보",
+      "source": "whosaeng.com",
       "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1UaXctZzFsVHZ2bm9Vemd3OElBMTJUZ3lLVDlxRHp5SmpxWnVlbGdSVllrd2RFM3ZUb0lKMmtEb1p2ak9l?oc=5",
       "publishedAt": "2026-09-23T04:38:00+00:00",
       "category": "간호정책",
@@ -269,7 +277,7 @@
     },
     {
       "title": "공중보건장학생 19명 의무복무 이탈…반환 장학금 7억3천만원",
-      "source": "청년의사",
+      "source": "docdocdoc.co.kr",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5GQnM5WndZblc1WlQtTVJ5X1lJYjlfQ1RkQy1WVUFWS3dHT1BMUmhmYWJsaFlrWThvOWduWEtlVUMtY3ZlVTVfMnlwbkhuYmZOUm5rRTdvSmMycEkxa1dGaVh6OUswYkEtMWYtbTl0VdIBc0FVX3lxTE1PNllWVzE1WEtUWUpOa0VJa191bVRZeE5NaEN3cGl2cm1PN2t4Sm1oempUSFFFc2JMLXRmcXBmcjEwN1htaWxpUFU2dkxKT19tWG1wUnMtODkzOEFzMzVZSV9CQWt1eEhfNlllSklEOFh4Tmc?oc=5",
       "publishedAt": "2026-09-23T02:43:09+00:00",
       "category": "보건복지부",
@@ -277,7 +285,7 @@
     },
     {
       "title": "서울시간호사회, 통합돌봄 시대 ‘지역사회 간호 역할’ 모색",
-      "source": "헬스이슈앤뉴스",
+      "source": "hin.company",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1aNTJuN0NKUi1hQWxHMTJoNnRCcFVvZUpDOHVGcUU2VWdfdHNFU29YMUFXWi1BWTAyU1FTLXNDU0lFNlBFU3cwR1BySDFPT1UxTUxYdFA5Q1VsMEVGZWJDMUx3RTgzN1Y4?oc=5",
       "publishedAt": "2026-09-23T02:35:00+00:00",
       "category": "간호정책",
@@ -333,7 +341,7 @@
     },
     {
       "title": "전남대병원, 임상교육훈련센터 학술대회 개최",
-      "source": "khanews.com",
+      "source": "병원신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB2dm4wd2wxYk5SYlVZdUNBSXpueFhacUswSzlOckd0NjNQRTZ4RTU0ZVA0Q3NzUHdGOE5BUkdIdVBoWF9vLWlSM09menUyYlVjSEVycHdiYWw0SVNhQ2lnOXVHR2E1RGtwY0E?oc=5",
       "publishedAt": "2026-09-23T01:18:55+00:00",
       "category": "간호교육",
@@ -357,7 +365,7 @@
     },
     {
       "title": "서울대병원 이현훈 교수, 보건복지부 장관 표창 수상",
-      "source": "후생신보",
+      "source": "whosaeng.com",
       "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5BSVBwRE1uak1vbFlJSTd4UTQzVGhoR3NnN2RQbTdSX2tvVm9zZldaM0lvMnc4RkpWUmNtTHBjbER1bHVr?oc=5",
       "publishedAt": "2026-09-23T00:25:00+00:00",
       "category": "보건복지부",
@@ -382,7 +390,7 @@
     {
       "title": "간병인 양성과 교육, 매칭까지 복지부 나선다…\"공적 플랫폼 구축\"",
       "source": "뉴스더보이스헬스케어",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1yMkRsSzJMME5NSkdFVDVyUWl2Z0FDazBRT3ByQjQyNVNKMDRrZHQtcVVqejFkQzVwd3Z1YURfZlc5bXNKcTNVSHZRQmU4Qm03UlFLM0lvU2hlZkYzZzQ1OU1Kd3VOYng0WE1lVWp3?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOZ3hfOWN2UGNrME9NeFJjY2VDd0M4VFJqaTlBYnljN3ZsVkotc3owUE54ZHJUaFhjT21EbUI3YWxjWndSWTF4QXl2MlBEUFVPcHJTdlpkMmN0RGtCTGt5LXR6Q0JVaHJXaDk1ZjNRWQ?oc=5",
       "publishedAt": "2026-09-22T21:02:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
@@ -409,14 +417,6 @@
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5SZ0Q0Y1pIVE93eUtBN3BZc0dXSkdXMlNZRFpsNFpjeWVQOEg2LTlxUVhkdjQ5Y3N5WFB3MFpxX0ZyNnVEVWlqMXRqWTNwMHBMNWd5cXBpeFpsZkZILUI5Rk5B?oc=5",
       "publishedAt": "2026-09-22T12:07:44+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "전남광주교육청-전남대 간호대, 학교보건 AI 역량 강화 협약",
-      "source": "전남인터넷신문",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1IU09qeDB2aE5xQXk5VFliNTFTaDAwWkJuV3ZQT19mMG1zUXhkTTFZNXRlWWlqVVhvOTRmdWlsSkxsRG1NS1MwdWJmY01zS3VURGo1MXlmY25sMFU2Z2c?oc=5",
-      "publishedAt": "2026-09-22T10:49:09+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
