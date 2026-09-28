@@ -1,31 +1,39 @@
 {
-  "updatedAt": "2026-09-28T13:52:47.163208+00:00",
+  "updatedAt": "2026-09-28T23:15:25.511121+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
     {
-      "title": "충북대병원, '조혈모세포이식센터' 개소",
-      "source": "헬스미디어뉴스",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE83QU56cGhfdmRGNU0xQWtuNk5PNzdrbEhkQjI5SEF2ZE8ydjNjMVF3ZGRjZWpJOWt2YTJaXzM5U0VFZjJLVktPWk5uUVEzc1JNV2ltQTFBMkVzandVNVRwOE1KZURXeXBZajZpa2lFLXo2Zw?oc=5",
-      "publishedAt": "2026-09-28T12:38:13+00:00",
+      "title": "올해 국감 최대 이슈는 의료개혁 추진 성과 여부될 듯",
+      "source": "메디칼업저버",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE01YVEwakZwaFozcFdHNzkyVzhxcHBzSHptcDRpLVpvME5BQTV4YzRJMnNsZnU0bHVDVHl2RDQ0dG0yVnRESndNQi1ILTczTXk3Uk9UWWkyQm5tMDgzWGp3VUNzVnBhMlZxeTQ4?oc=5",
+      "publishedAt": "2026-09-28T21:04:32+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "일차의료, ‘치료→예방ᆞ관리’로 전환한다",
+      "source": "헬스포커스뉴스",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5jUEhQZmJ1bFVvTkxDQkduVjc2ZXNXWGloQnFRNVFGRzlOd3NYZzFVYWh5TGZwbzBvQVZzMS1EcUZfLTFxLUVPcHloSHJoUHdpSGRPby1LUkUyT1NlQzJsU2lJSDVfek5GN1AydDhmZzhYZw?oc=5",
+      "publishedAt": "2026-09-28T15:14:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "충북대학교병원, 중증 혈액질환 환자 위한 '조혈모세포이식센터' 개소",
+      "source": "충청미디어",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5yeU8wVkhzazZvNl9wQWJsMUpUcXhDTXo4c2ticS04R2Q2aXM4RWNGYjBLTWxzMy1IeTNNT0hwVW5jTlhPa29QQjBrNWdlbzBZVlZyVzRqTnhfY0RGb0t2ZU8wRThVSk9JcmfSAWpBVV95cUxOcnlPMFZIc2s2bzZfcEFibDFKVHF4Q016OHNrYnEtOEdkNmlzOEVjRmIwS01sczMtSHkzTU9IcFVuY05YT2tvUEIwazVnZW8wWVZWclc0ak54X2NERm9LdmVPMEU4VUpPSXJn?oc=5",
+      "publishedAt": "2026-09-28T12:39:29+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
     },
     {
       "title": "동네의원 ‘일차의료 혁신 시범사업’ 시작됐다",
       "source": "메드월드뉴스",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBSRjJibWlnM0tWeVlyaW5kdmh5dVhINkN2aFMtbzlRWi1pT2VMR0tKekF3cm9CUHY1dXpOdjBnYnhYanZwYTBvOEhyWlF6NFVocklmWlpMLUt4UU5oSGE2UF8xdFRPZXFHQkZxNQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqdncwLUZrMTVsaG9tRXMxemttVGRIOTlfNWpBU1ZOYjZPT2NPTFhvX0YyMGlPTEhxdkM3RlE1dnVLZ2wxNk1UcHlZbGpGaFZ0NE5DSWNaUU9xREROQ1ItbWRhTHNFM0lEQmpEZ2hB?oc=5",
       "publishedAt": "2026-09-28T12:17:10+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "영광군, 거동 불편 어르신 찾아간다…의료·돌봄 통합 지원",
-      "source": "전남인뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hbUlfNjN3TFdQczZIVlU3dVZCbWV2LUY2SU9CRUhwTHQ3d2RqMFRnaXFFa3JSMTRNdFExMW5uNGxrNWlRUENGWGtWZEliaVRrNnBZVDl2VFAzNGZiUExjOTVhWnAwdFlpMnc?oc=5",
-      "publishedAt": "2026-09-28T11:35:39+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
     },
     {
       "title": "진도군, 간호복지인력 기숙사 29일 준공식…월 20만 원에 가전·가구까지",
@@ -76,14 +84,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "K-뷰티 유럽 공략…이탈리아·독일·프랑스에 판매 거점 마련",
-      "source": "정책브리핑",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZS1SUDZ2RGdIbUlHc2VkemUtZTVuVzA1LWsydzZnc3h0cFYwbXliQ3VGdnhMaXlIOTRnVi1PSl9kTzJkSU1xUkJ2R09NTDFmWktwX1JmQW5SMF9sQWltWTRfeEpVeGpiSmR6c2hjQjQzMklVVVFJQmRUSUlJM0RTbm5rUHY4ZDh0OUE?oc=5",
-      "publishedAt": "2026-09-28T07:41:15+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
       "title": "지역사회 일차의료 혁신 시범사업 시작",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oem8xSS1BZkt5eWRDQ1FmdTlCN1F0amFCTWpNQ2Q2U3BsODVBRVBOWnE0VVptcTVGQVFyZk95VDE0Q2pQWXNnaTc5R19nZkhvbDg0QS1nbHJUcGxBUHl6WS1mYkFsUVpXT3NYbEd3?oc=5",
@@ -102,14 +102,14 @@
     {
       "title": "간호조무사 빼고 일차의료 혁신?···“한국형 주치의 사업, 동네의원 현실과 엇박자”",
       "source": "의사신문",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JN1ctVDZtcWRyaC1NSjB6UWI3WUhYMGpxUVRfSDQ1Y3ExQmItTy16UzZVNDc0bkZuNWxhSTh2SlBWM0RGRDhIM2VCZXhUN3BBekRzYzFZZHg2SmRidWd0Z1c3R0stSVFaRTIwbEtJTQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYm9FRFJDWWZSRFV0NlU4LVhzUWszRElKSWdQQXpBNW9USzBsMFpVaXBJRDVDeWFXN2FEZW9GRVdkblRYblVydnFlRzhhMVdSdFYwdnY1dmdGczdCS0pxR3ZoeUp0WktjNnFTRWFHNTNtd2dTZURvaE9BdWlhT1Mtd3VOeW8yMW9hcHBQLWlhaE55LVo2NWFB?oc=5",
       "publishedAt": "2026-09-28T06:04:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
     },
     {
       "title": "동네에서 치료부터 포괄적 건강관리까지 'OK'",
-      "source": "메디팜뉴스",
+      "source": "medipharmnews.com",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1JM2NqRExhYUhMc0dTWXhwWGt0UjdFMHhhek5VX1d1Q3kxNUpRNEVqakdKNjMtZ0ZUNzBDOHk4YU1QUDcwZU5aN0w3OFRfQWNaRTRfNnFPd3lsR29BeU1KSUhJQ3VXY0ZLRTlpVlREazdiUdIBdkFVX3lxTFBQNzBEcnhPUE1LSWQ1cWlEWm1mS0lkZmx4Tm55d0NyN0laamF5YUNmNkYwQ21iZ3ZrWEJ1R29GaV91SUVLQi1PTVp6aGxfVW9UeHRVSkR5czBDX0l4VXBENW1sSFhJZF9sOU9KdXZxcnY2dmI0UXc?oc=5",
       "publishedAt": "2026-09-28T05:29:45+00:00",
       "category": "보건복지부",
@@ -124,8 +124,16 @@
       "contentType": "공식자료"
     },
     {
+      "title": "경상국립대 전기공학 석·박사 동문, 베트남 과학기술부 차관 임명",
+      "source": "jinju.news",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5vNThuUUhEZ2p2Qkt4TjJubnFoTnFaSmRGY2E2QzJZTWE1TkxuZGNHVmY0NjZFd0pBTVlwZVBEaHl2RWY4ZHA2Tno2Y1QyaUNKMmRRRHJYa0Qzek5EeGVqTC00a0xoRWZOSEVxNjVIYVkzdzlWOUE?oc=5",
+      "publishedAt": "2026-09-28T03:00:05+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "동네 의원이 통합돌봄 거점으로⋯치료부터 상담, 돌봄 연계까지",
-      "source": "이투데이",
+      "source": "etoday.co.kr",
       "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9rM25tVTh4UlRSMkZ1S3ZheEJnSFRzb2tDY29aUEE1Z05FLVlCRHZUM0tKaEIxNVVyQ25lN0lFTkVNOWY1SGxBTFk2NGtJeGJ5Zklhaw?oc=5",
       "publishedAt": "2026-09-28T03:00:00+00:00",
       "category": "보건복지부",
@@ -197,7 +205,7 @@
     },
     {
       "title": "[희망기획: 희망人, 미래를 바꾸는 보통사람들-③] 병원밖에서 돌봄 “재가요양보호사",
-      "source": "일요서울i",
+      "source": "ilyoseoul.co.kr",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5YTFpJTGhxTlZpS0E3WTI3ak9RakFOek5GclZiOGZYaVQySDUxWFpiZXF2Z3Zsd2FOZHJCQzNGa1ZZYkk4S2FnTHB1dXIyNHk4LUFyTWJCTUR5Vld4OXNrWWdpUEJyVkE3LVhkWkdhUQ?oc=5",
       "publishedAt": "2026-09-28T00:09:10+00:00",
       "category": "간호인력",
@@ -220,14 +228,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "경상국립대, ‘인구변화가 바꾸는 나의 삶’ 주제로 돌봄전문가 양성 특강 개최",
-      "source": "jinju.news",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0tZ0RqQ1VjMG1HTW5yTmIzVGd0aDlfQ2t2bjR6RHFrbHNlOUNzY1hSVHVHOUItVDluUWZzalBPekNUWjZYUGtwZFZYV1R6c3Y0WkpZSjFuR1pPYnladk04WGtULVdPNXJVUWFIVDE2amZKSXZkUUE?oc=5",
-      "publishedAt": "2026-09-27T21:00:05+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
       "title": "[초대석]“필수의료 살려야 산모-태아도 살린다”",
       "source": "v.daum.net",
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9jRkpGV2hrbnhSR01XR2NReE5RbDJoM01DWnFxZjlGMHpibHloTG5JUzRWczhBOXhzNkxXbmlTSWJGWjBEdHY2N2ZYRQ?oc=5",
@@ -236,18 +236,10 @@
       "contentType": "언론기사"
     },
     {
-      "title": "홍승권 심평원장, 일차의료 현장 찾아 제도 개선 의견 청취",
-      "source": "메드월드뉴스",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBweGZSUTJidm5PN3NXN1FQS0gtR1hxUkctVjkxcGJ5OEJjbWdNZExnbEk2eXczYWI0ZnlZU0JjWVZEbnF0b3RTSVhHYkNQLUtMbk5VQm5UTmdNUzhZaGFGWFl2TEVFUTlKLV93RGJn?oc=5",
-      "publishedAt": "2026-09-27T13:12:14+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "중앙대광명, 간호사 스케줄링 소프트웨어 개발 추진",
-      "source": "데일리메디",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBhQmEyZVB3UHVhSDU4aWlkaThGYUkzelBFQkY3S2NVa05DZlZIRVdNVHBuZUJneEpZX3M5aHcwODBsLXdfM1ZEMUpQakxuUTJHVU9zRGxIT2g1SkFlZUswNXNNNlJLUmdYLWc0bUJlamtjSlUt?oc=5",
-      "publishedAt": "2026-09-26T22:50:00+00:00",
+      "title": "영광군, 거동 불편 어르신 찾아가는 재택의료 활발",
+      "source": "진일보",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE55Nk5fa2wxTDhhdXVkVjVJOW1FaE4yTnhGa3h3ajZjVDBKNjBmeUE5aHdvX2o0ZUVkUzZzSExlN3RuTEM5djBHV3R4TV96a0pTWGVYUGxKNmZXdGlJYldUam53V002MEFYOThCZ0tQcw?oc=5",
+      "publishedAt": "2026-09-27T16:50:00+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
     },
@@ -266,14 +258,6 @@
       "publishedAt": "2026-09-26T11:05:02+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
-    },
-    {
-      "title": "공중보건장학생 19명 의무복무 이탈…반환대상 장학금만 7억여원",
-      "source": "헬스경향",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1HTEEtVW5DNU1pWnBQY2ZiWVJ1VV9tTHlYaGl5STFQRG0wanR0Z0R3Q0pBaUN5c0w5ek5QX3ZsQWFWOFVjRlNlZ3lGNVN1UjlkZlhvQ2R1a3Z5YWwwWVpRVWpYUXhaSVFCZmEw?oc=5",
-      "publishedAt": "2026-09-26T02:26:57+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     },
     {
       "title": "[병원소식] 한림대춘천성심병원, ‘간호·간병 통합서비스’ 실시 外",
@@ -381,7 +365,7 @@
     },
     {
       "title": "임지준 회장 “구강돌봄, 현장에서 작동하는 제도로”",
-      "source": "덴탈이슈",
+      "source": "dtissue.com",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90Ql8xSm1PcE9RaXFKVi1CQVZKNEJxUERfVUwzazhqRDFLWFNGZEVpNUhCeVVQLWtNWHpjeVVfelczT3gyRXB5cTEzVUJYS1VwWlN1aVIyS3JtWF90ZjRfVVNZakVvUjlT?oc=5",
       "publishedAt": "2026-09-23T09:13:17+00:00",
       "category": "간호인력",
@@ -400,8 +384,8 @@
       "source": "의약뉴스",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JRzVjSXIybmFlc2ZvQ09EMFlpTThlemRCUE4xT3dhMU1maHRxaElBUE5wdko5YXVaX1YtbGVmQmJzOFJwOFpTTzBKUEIxcXk5UzdyUDh6SjVIMnMzNURtYUpoYTBuYTZf?oc=5",
       "publishedAt": "2026-09-23T08:09:01+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "전남광주특별시교육청, 심민철 신임 제2부교육감 부임",
@@ -437,7 +421,7 @@
     },
     {
       "title": "혜전대 간호학과, 간호사 보수교육 실시기관 4년 재지정",
-      "source": "교수신문",
+      "source": "kyosu.net",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE95VW8wd0FSUktJMUhudDFJcjU3cDh3RWphRlVSZnFaSEZKY0RPWkRxMWtFb0dTQ2VKQlNoU2I2QnlhMnl0NFd1SkxGNHZHLUItZGVJY0x3SnZSeTlFUEIybjVSWVdFWVk?oc=5",
       "publishedAt": "2026-09-23T06:31:51+00:00",
       "category": "간호정책",
@@ -468,18 +452,34 @@
       "contentType": "언론기사"
     },
     {
-      "title": "서울특별시간호사회, “병원에서 지역사회로”",
-      "source": "병원신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5Gbm9oUEVlMlUxZF9OOUJpQ1RIOEptX094VUF2a3dUeU9NLWdJSm9MeWp1SUwzZllOVjUwMkpJdGc0MlRNdnctbG14LUs2S0lUQkhHNlptd1FRQlg4YWRWWHk1bWZfV3g5NGc?oc=5",
-      "publishedAt": "2026-09-23T03:54:14+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "복지부, 10월부터 하반기 사회보장급여 정기 확인조사 실시",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5jWDFBcm9HTV9FU3ZKZjVRNUVGYmR3QUoyajFwZVRocTV3VXphOVMtbXVMVEdnekFTS21xazNtX01tejJpdUdiYjJpcWFCV3dpbjVXMU5TMEV5WVM3VnltajYtRUQ2U2Z1T0g3b1RB?oc=5",
       "publishedAt": "2026-09-23T03:23:25+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "서울시 서북병원, 덴마크·케냐 보건 관계자 잇따라 맞아 공공의료 운영 경험 국제 교류 확대",
+      "source": "newszoom.kr",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1ReUpGR293OWtpVGxJTklvaW0wQTNPdmN2cFR1d0liSW9USU9UbFVjYVlndlB5cEdEbHBiQzhQcHNQbjBl?oc=5",
+      "publishedAt": "2026-09-23T03:09:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "상급종병 조차 경영난 심화와 불합리한 의료정책으로 시름",
+      "source": "메디칼업저버",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zOWlWY0JLMDhWbVM0czFFZE4tMFNGVGFTaFFWTnpHTWhoam56aFRVOHdxV0ZEWUVYOThfVWsxaEJjclFJdVZHaW5oYjkwZjNQVUw3Y2xJRURHcWdhQ1BjOUh3YTEyVUd5eW9z?oc=5",
+      "publishedAt": "2026-09-23T03:07:55+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "의료인 등 자격정지 처분, 6건 중 1건 국가 패소",
+      "source": "재활뉴스",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9VUnRCWnJqT0J4WjJhRTFpTkFXQWNJZVAtcUFMbk5qZjdJeFlDVTM1cW4tZDU0bGttWFRSU0VqS3A3M3JhZ19KdXhyMzF1aFlRZ25mYnVEMHJxRlg3dDNHTmVCOTR5d05GZjFR?oc=5",
+      "publishedAt": "2026-09-23T02:58:08+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
     }
