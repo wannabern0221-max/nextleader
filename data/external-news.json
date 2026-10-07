@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T13:21:25.891771+00:00",
+  "updatedAt": "2026-10-07T23:04:24.117977+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -14,8 +14,24 @@
     {
       "title": "[송현숙의 공통감각]국립의전원이 쏘아 올린 의료개혁 희망",
       "source": "경향신문",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRMmRwTFBsRWV2ekl5c2JheDIzR2tBY0FNVTJrR1hkejJzd3ZuRm5hdk05N0owTTdXOTZBWXBjRVFSQzRscGdycDBBNHlmeVdVOVZULVhXb1dtUdIBX0FVX3lxTE8ycUlhXzdxQ1ZDeHRQMXE5Nk01WmdfN1hfTVJObHkyQWNHcV9hQzh2dTVTZ1dxTkV3aWxSTzBZbkhaODhvZjlJR2s1cjRfMUFwa0NCbzhuSVltMEozWkFr?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8ycUlhXzdxQ1ZDeHRQMXE5Nk01WmdfN1hfTVJObHkyQWNHcV9hQzh2dTVTZ1dxTkV3aWxSTzBZbkhaODhvZjlJR2s1cjRfMUFwa0NCbzhuSVltMEozWkFr0gFfQVVfeXFMTzJxSWFfN3FDVkN4dFAxcTk2TTVaZ183WF9NUk5seTJBY0dxX2FDOHZ1NVNnV3FORXdpbFJPMFluSFo4OG9mOUlHazVyNF8xQXBrQ0JvOG5JWW0wSjNaQWs?oc=5",
       "publishedAt": "2026-10-07T11:08:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "간호사 41% “인권침해 경험”…피해자 76%는 대응 안 했다",
+      "source": "데일리포스트",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0yQ04xSmgzV3NLV3JuOFFfbDQ4M2VBX09SdXlEVnRUS3pNbHFiZFpoWWNYUUV1UVBTeFd2OVhVdi1vOFp3RnhOaDgycWVMaGMxQjAzLWY3c1VxX0lYSTRCY0t6N3RyZFV3OFV0dVlyS01JbVnSAXNBVV95cUxNMkNOMUpoM1dzS1dybjhRX2w0ODNlQV9PUnV5RFZ0VEt6TWxxYmRaaFljWFFFdVFQU3hXdjlYVXYtbzhad0Z4Tmg4MnFlTGhjMUIwMy1mN3NVcV9JWEk0QmNLejd0cmRVdzhVdHVZcktNSW1Z?oc=5",
+      "publishedAt": "2026-10-07T10:57:21+00:00",
+      "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "[2026 국감] 김윤 “비급여 가격관리·건보수가 원가 100% 보전 함께 가야…장관직 걸라”",
+      "source": "MEDI:GATE NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBtUktUdG9wZXBRdTBHVlpuaVhsY2M0VEw2bU1wOWZQdUZpRDloa0RONEtQc1J0b1hyUnd1ZzdkMnAxZzFlbWp6eWlJUWJ1Z3JWbE9HTkRmcw?oc=5",
+      "publishedAt": "2026-10-07T09:57:50+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     },
@@ -28,7 +44,7 @@
       "contentType": "언론기사"
     },
     {
-      "title": "[국정감사] 간호간병통합서비스 확대 로드맵 추진…수가·간호사인력도 검토",
+      "title": "[국정감사] 간호간병통합서비스 확대 로드맵 추진…수가·간호사 인력도 검토",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9HT1RuemVkM3M3YnNJMVNuUGV2MVJMUzBBcm1uQzFvQmVtNjBMemJ2WHVPNVRTVGg4Q0NrZFZEOUpERmVkMkVuenJlaUw3dmxTeF9pMURpWjhJS19qcEhTcGU5Mk9mVXd4X1RYQXV3?oc=5",
       "publishedAt": "2026-10-07T09:26:31+00:00",
@@ -100,10 +116,26 @@
       "contentType": "언론기사"
     },
     {
+      "title": "복지부, ‘소아응급실 압수수색’ 논란에 경찰과 수사 가이드라인 합의",
+      "source": "조선일보",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUU9ReDFubVl1TEFYREJTWXNIYVd6am51VnJhRnBLQ3hUdzltNGp3YmI1b2QxOTNsb1ZhX29zdWVZckgyRTRoS0NPVTlrMFJha3VZVklSWmZQdFFHTjlXNDVlNGhFYUkzR3l5T1BmNVd4RUVXV2JDUnhjZzI1eFliejZ4dmM3cjB0emZGRXhncw?oc=5",
+      "publishedAt": "2026-10-07T08:10:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "충북보건과학대, 미래형 간호교육 본격화",
       "source": "아이뉴스24",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9CQVZYUGNNSFlucDVuZkNRUGJzSW1uay1OT01XMXlDNzc4ODBTbDFQV2VLR2V5VUthUmFmb1I2amhWbUZxUG5rZHQ5dTc?oc=5",
       "publishedAt": "2026-10-07T08:06:04+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "충북보건과학대, 미래형 간호교육 이끌 ‘CHANCE 시뮬레이션센터’ 개소",
+      "source": "한국대학신문",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pRTVyR3o1bzBEb0JjSWhGQWh4V2ZYMDFyVS1FYUk3RTItcE1Dd29NMGxsNUd3SDhHSC1qeldRalR3NjdMUFlDOUI3V1Q2WGxQTDN4V0hudlpFQW9UN1NmdjNsaEo4UQ?oc=5",
+      "publishedAt": "2026-10-07T08:05:00+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
     },
@@ -113,22 +145,6 @@
       "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1DX25FYnpVMk1obGV2OWc0MTc2NnJOcHV0S0dIRFg2TVlYT0dTY2VDcDJrNEljZnlBYk4tQzJXYlhmZlNMcVhVQ29qTmN1XzFxb2xiSzlPd1hiODc5RlNGME82UlB5MUZpRFpRMTVDU1F5QTdOMmZ1NXJxdTk?oc=5",
       "publishedAt": "2026-10-07T08:00:26+00:00",
       "category": "부산·지역보건",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "충북보건과학대 간호대학, ‘CHANCE 시뮬레이션센터’ 문 열었다",
-      "source": "세종경제뉴스",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE45RGR3UkswVlppYXMzeXMtdlcxbDNFNUNodDMxNlhjRW9VZ3ZKdFdXeE5LZW9WbVNSUEczSk9rb1UwYmdIZVJBQ0JtcjB0UksxWHIwUk5udWJYRjh0b0xxRHFJUzJXdC1YR2hpatIBcEFVX3lxTE8xWkpGdGJlS3g3MDZicDJWbUhZMDZVNWpMbG83TlpQcHJGNmYxcVMyWGdGRHEyZjU4aFZkWFV1bFUyTHAzdFVRUDdMSG55Qmc1VmJjNWhHLUNta1FBbXpma2VuNW1GT0pIUWp4b2hHbTI?oc=5",
-      "publishedAt": "2026-10-07T07:56:29+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[2026 국감] 김윤 “비급여 가격관리·건보수가 원가 100% 보전 함께 가야…장관직 걸라”",
-      "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBtUktUdG9wZXBRdTBHVlpuaVhsY2M0VEw2bU1wOWZQdUZpRDloa0RONEtQc1J0b1hyUnd1ZzdkMnAxZzFlbWp6eWlJUWJ1Z3JWbE9HTkRmcw?oc=5",
-      "publishedAt": "2026-10-07T07:54:00+00:00",
-      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -148,11 +164,11 @@
       "contentType": "언론기사"
     },
     {
-      "title": "복지부, ‘소아응급실 압수수색’ 논란에 경찰과 수사 가이드라인 합의",
-      "source": "조선일보",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUU9ReDFubVl1TEFYREJTWXNIYVd6am51VnJhRnBLQ3hUdzltNGp3YmI1b2QxOTNsb1ZhX29zdWVZckgyRTRoS0NPVTlrMFJha3VZVklSWmZQdFFHTjlXNDVlNGhFYUkzR3l5T1BmNVd4RUVXV2JDUnhjZzI1eFliejZ4dmM3cjB0emZGRXhncw?oc=5",
-      "publishedAt": "2026-10-07T06:40:00+00:00",
-      "category": "간호인력",
+      "title": "근거 부족한 비급여, 직권 삭제 추진…건보·실손 심사도 연계",
+      "source": "뉴스더보이스헬스케어",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9lenBqZzNTREtaTER0elpVVHZxM3AwMkdSRWQ3alVVd01UbEItaUk4akl4WUd5djFLbG5RWDRTTGhhck9DT3VaWS1ubUJBeGhVSGlhY0ZaMXNYa042eGp5OEItNjlPRlUtenN0RXhPVQ?oc=5",
+      "publishedAt": "2026-10-07T07:21:00+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -280,8 +296,8 @@
       "source": "보건신문",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5oR3pKSVdqU2s0YjZkS2Q3eWZoVS1ndk5jLWUzNVVXczZsNXhfbjZ5Ums1VXNCZzlIR3ZvVlFrVENCeG9jalhpekZUU2hEWk9FeFg3b05WRDI3RVRBemR1S2JB?oc=5",
       "publishedAt": "2026-10-07T01:15:48+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "간호사 10명 중 4명 인권침해 경험…76%는 신고·대응 안 해",
@@ -356,6 +372,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "‘괴롭힘’ 신고창구 늘었는데 간호사 76.4% 침묵",
+      "source": "Daum",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9kU2htNm1Wd3UzSjEtNWJiQ0RkeW5Lc1JhTV8yazg1MWpEbGwwb2JPMG90RW95MjFVdlZwY1FLTFNKUmllclYzSmxNTWVKREE?oc=5",
+      "publishedAt": "2026-10-06T21:32:35+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "미프진·약배송부터 연금까지…복지위 국감 개막",
       "source": "뉴스1",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE42QjVjTW1tbXY4SGJGaG1xT2djdVljc0E2YTJsT2NiT1h1R0pQajBBcWFHUUlGRkp5Zl92OGRzN0dtblF1OG03dDNueS1CSmNzaDg4d1VYc0c3WTVxcXJrZmVB0gFiQVVfeXFMTjZCNWNNbW1tdjhIYkZobXFPZ2N1WWNzQTZhMmxPY2JPWHVHSlBqMEFxYUdRSUZGSnlmX3Y4ZHM3R21uUXU4bTd0M255LUJKY3NoODh3VVhzRzdZNXFxcmtmZUE?oc=5",
@@ -378,6 +402,14 @@
       "publishedAt": "2026-10-06T19:00:00+00:00",
       "category": "질병관리청",
       "contentType": "공식자료"
+    },
+    {
+      "title": "일반 라운드로 돌아오는 시점, 오구라 유나 유튜브 진행 규칙",
+      "source": "Calgary Roughnecks",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeGQ2aUh6azFBeHlDa01WS0t3NmRJWjk1bVJEOHVZVFdaVW82cS10eExqeU9pbVp5SFpoZW9Qb0hYb0Eybk1jeWhCUFlaS2tscUhBZ0NLLXRnaFdSLXhSbjlXRE9MQnhobmpxOFFLbDk1ZVd1LUs5dEpoenRhc05jSG1zME9wSWpoaGY5VldOZHZRbFZmMGs4Ri1LdU1JejFISUpjQlVkMG4zX1g3WmxhVQ?oc=5",
+      "publishedAt": "2026-10-06T18:55:36+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
     },
     {
       "title": "간호사 10명 중 4명 \"인권침해 겪었다\"…76%는 신고 포기",
@@ -406,7 +438,7 @@
     {
       "title": "간호사 10명 중 4명 인권침해…“신고해도 바뀌지 않는다”",
       "source": "쿠키메디",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JZ3pMc0J0c3FwWG1LNTJMZ0pyM1o2X3NIT2NXR05uNkliMndZZjZpWWJvTFU5aXpWMUthRzVDNDRqZzYteThkWUpESlZLMzY2UXhlR0RIYjZuUWpuTVJnczV2dw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB6eThvZElXVGtRQ01Sd0xMcEhraUVUUlNiSnduVzV0SzVZRVVhRll4TWZsQnJlR3huc1JZY3RPVTdqTTd4cDdyallvTEdxdVRVUTg1QTdrNFRLUHF0WFNXaDktUQ?oc=5",
       "publishedAt": "2026-10-06T14:43:11+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
@@ -449,38 +481,6 @@
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9OdURHZThDZ09MZXNETnNsQjJwODVkYk9VMTU4WGRHVmo2UFpvYTRRWkoxd0RVMGIwLW1kODdMTFJwOFMtdTY5TmdmUQ?oc=5",
       "publishedAt": "2026-10-06T08:50:00+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "\"신고해도 소용없다\"…간호사 10명 중 4명 인권침해, 76%는 침묵",
-      "source": "뉴스1",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBKWHVURTRmMzJ1bG5fWTVEOFBidFRORmJsU0huc1hCdXhQeTg1RF9uRUU3ZHpCYW00akhldFhYYU85YzZzZVpNZUp6RWlBTW51OWVDOFdaSEo0ekZIOHpGYWNR0gFiQVVfeXFMUEpYdVRFNGYzMnVsbl9ZNUQ4UGJ0VE5GYmxTSG5zWEJ1eFB5ODVEX25FRTdkekJhbTRqSGV0WFhhTzljNnNlWk1lSnpFaUFNbnU5ZUM4V1pISjR6Rkg4ekZhY1E?oc=5",
-      "publishedAt": "2026-10-06T08:39:23+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "간호사 40% “인권침해 경험”… “개인 인내 아닌 구조적 개선을”",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBWaE5mTFlZSDVRMFZTdWcwV25ya0ZWZk4wT3J4MzhzZW9mZHVXcklUbXR5elY0Z2RSbXJyN21UekhHZGQ5UVcxdzJaR2pfTVdlWFZlcU9NZWxsNnY3Y05ocTNwTHlMWEwxbksybDZ3?oc=5",
-      "publishedAt": "2026-10-06T08:28:53+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "간호사 41% \"인권침해 경험\"…76%는 신고 포기",
-      "source": "뉴시스",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYMWpoT2hDeFdESTdnY3JYTXlvNGRXXzVPYk1tUzhGNWRaYkEweE1STlVxT0NyMnkwMlJxWE5NeHVBQVlVRkNBZ09TNDZETTBIMThrUW0wNU5UTTJHc1NCMNIBeEFVX3lxTE1mWTkzdUp6cDFyY0NBRzY3V1czYlYtcHY2WEY4YmNvNGpiZEp0QkVQSnZMM3Y3dG9mRXBOR1o5VGo1WndZTkdhd09ESVFrMHJRRXVXNXNia0w1bHh0alVsNVQ2MDAxVDVXeEV3TG9FTzk1UVhWRllGRQ?oc=5",
-      "publishedAt": "2026-10-06T08:25:40+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "간호사 10명 중 4명 인권침해…76%는 신고조차 포기",
-      "source": "후생신보",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE8xVUMwWm9uYkFFOWxXZUM0M0FOYUotSkdEeDVmTkVpeDRqd09NOUR5S01POEZqdEJ4bWpNcS1ud1R4VVRM?oc=5",
-      "publishedAt": "2026-10-06T08:20:00+00:00",
-      "category": "간호정책",
       "contentType": "언론기사"
     }
   ]
