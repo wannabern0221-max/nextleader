@@ -1,8 +1,24 @@
 {
-  "updatedAt": "2026-10-09T22:37:19.160487+00:00",
+  "updatedAt": "2026-10-10T05:51:30.648263+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "양대노총 공공노조 \"기관 통폐합 및 지방이전 반대\"",
+      "source": "OhmyNews",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1PVHdoMUxuQXppSkZXdGFKMXBUeFB4VElFN1pRUjF2ZmJmWUpjeWlBOHJMR052SUcyRXVkRmlJUkZEdlRERjZJLW4xbkxKc2I4dXlDd2N5S3E0RWtfalBBeHFreDZQT1NfeW93R2RSWXNaZjZ0SFdj?oc=5",
+      "publishedAt": "2026-10-10T02:30:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "공공기관 통폐합·지방이전 반발 확산…양대노총 공동투쟁",
+      "source": "에너지타임즈",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE04N041aGpsRk4yaHMweUR1X20xRFVOaFk5azM1MnNxczhoYXVyM3RKaTNTNF9URnNzaENpNXhCQ1Z2LWdjOGo0RktLaEZTdTBhVGViU3dCbV9YWXpXODEwbURIVkZYTDFKZjRITg?oc=5",
+      "publishedAt": "2026-10-09T23:57:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "보건복지위, 복지부·질병청ㆍ국립대병원 등 국정감사 실시",
       "source": "글로벌뉴스통신GNA",
@@ -129,14 +145,6 @@
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB6X1AyZkYtci1WODduX2NuOFBsNHQtcUx6Yi12eDNhalFDMU55bFdQQW5nVmR5bXBBM1VRSl9TTkhGbjE1ek13U2ZMQTFCbTJ6TUtaU1lXZzZkdmRVS3d2MWJvRWs?oc=5",
       "publishedAt": "2026-10-08T15:07:53+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "남인순 의원 “일부 의원, ‘비만주사 자판기’ 전락”",
-      "source": "메드월드뉴스",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1MGt5QXBhZ0ZrX3I2Vi1waEtLQ1NoaU1jZE94cnMxc0pCbzMwVUFWWVh2ZWdmMkg1encxZElBQjV4T0t6Y3dvYXRQa1dfUXpEWDVacWplNEEwakZWUUZGUVdCN0tJY19GaXIwQU5n?oc=5",
-      "publishedAt": "2026-10-08T13:55:52+00:00",
-      "category": "환자안전",
       "contentType": "언론기사"
     },
     {
@@ -320,8 +328,8 @@
       "source": "의사신문",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAyRk9tUHBybEdTS3AxVnFCQm5kNkRSOFQ0b1F2T21oUm5oejY3UmM2VjNnSzNsNmJFSEZvMU9LZTNOMVJGbXlzbjNPdEVTZVhJV1BhT3p5RmlBNWxXWnd1Smd1VTl5Z0RyMEJFa1N2Yw?oc=5",
       "publishedAt": "2026-10-08T00:05:00+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "간호조무사, 전체 보건의료인력 36%…일차의료·돌봄 현장 ‘최대 인력’",
@@ -452,6 +460,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "충북보건과학대, 미래형 간호교육 본격화",
+      "source": "아이뉴스24",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9CQVZYUGNNSFlucDVuZkNRUGJzSW1uay1OT01XMXlDNzc4ODBTbDFQV2VLR2V5VUthUmFmb1I2amhWbUZxUG5rZHQ5dTc?oc=5",
+      "publishedAt": "2026-10-07T08:06:04+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "충북보건과학대, 미래형 간호교육 이끌 ‘CHANCE 시뮬레이션센터’ 개소",
       "source": "한국대학신문",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pRTVyR3o1bzBEb0JjSWhGQWh4V2ZYMDFyVS1FYUk3RTItcE1Dd29NMGxsNUd3SDhHSC1qeldRalR3NjdMUFlDOUI3V1Q2WGxQTDN4V0hudlpFQW9UN1NmdjNsaEo4UQ?oc=5",
@@ -464,22 +480,6 @@
       "source": "MEDI:GATE NEWS",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GbGV0U2tnaGhESEV0YkNwRm9ESEw5Q2pRQ2VyaUxtcjFLVl80OE5VSTVaTWItUjNLaEhvUFZLaGtsbTRRczN5ZnRmeDZMRHdCRGc?oc=5",
       "publishedAt": "2026-10-07T07:54:00+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "\"비급여 면역증강제 1년 2,300억 줄줄\" 비급여 제도 개혁 촉구",
-      "source": "약사공론",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuYndXOGR5NkpLZmNIREZyc3V6TFdYeDBzQzhvSmNTMkROTzFzS2M0RlJmTjVvRkRiakdiYl8zR09jcVlDTEJOZm82Z0ZEMVBQNnMyVWNWTE1RRzFBZ1NvTzVvd3ZkbC0xUjYydQ?oc=5",
-      "publishedAt": "2026-10-07T07:35:00+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "근거 부족한 비급여, 직권 삭제 추진…건보·실손 심사도 연계",
-      "source": "뉴스더보이스헬스케어",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9lenBqZzNTREtaTER0elpVVHZxM3AwMkdSRWQ3alVVd01UbEItaUk4akl4WUd5djFLbG5RWDRTTGhhck9DT3VaWS1ubUJBeGhVSGlhY0ZaMXNYa042eGp5OEItNjlPRlUtenN0RXhPVQ?oc=5",
-      "publishedAt": "2026-10-07T07:21:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
     }
