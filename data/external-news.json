@@ -1,14 +1,22 @@
 {
-  "updatedAt": "2026-10-14T17:09:15.888954+00:00",
+  "updatedAt": "2026-10-14T21:39:58.140939+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
     {
-      "title": "보험심사간호사회 관리자 워크숍 성황",
-      "source": "병원신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzTTQ4YjUtbFdqX2hmYmdQRGJEOU8tejFha3NManE4bmw4b2xMTTV2WXpPMUdHVFFBRVp3c2w3ZVp2dGt2blo0VHFnd2xnUTdPU1NuNWRLZEVjalhzWW5aMzgwemp3ZWMwc2c?oc=5",
-      "publishedAt": "2026-10-14T13:21:09+00:00",
+      "title": "경복대학교 반려동물보건학과 김수연 교수, 동물보건사 제도 발전 공로로 국무총리 표창",
+      "source": "CNB뉴스",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBYbHNkZkd4ZVR3dThGOFNDekRGWGQyU1lwXzNzR29KaHlLUmNudFRTQnpZNFpGaHZwaFNoS0UyLTlKQzFiTXFuTE9UcWtxYWNEdXdwTDg2SlFZS3dpdDJIdEIxdzBmejdReEp3?oc=5",
+      "publishedAt": "2026-10-14T11:50:11+00:00",
       "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "박정율 의협 국제협력위원장, 세계의사회 회장 취임",
+      "source": "메디포뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBHel9xeVhuSUpFMWNlTXBuR3g1ZzFtUDJqdTR6MmVBdy1nQUQ5amMwZnRpcFIxaElpNWFQOHh6cHFRbHE3X3lyOHdpR2doSmVvcnY5enVtTlpqSnhSeUlZNlRGUko?oc=5",
+      "publishedAt": "2026-10-14T10:40:57+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -276,6 +284,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "강원대병원 지역환자안전센터-춘천시간호사회, 환자안전 업무협약 체결",
+      "source": "강원일보",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1SanlwQWh0QkV6am0zb0x4alI4ZnpJcGs4Z1pteVhwMzR6aDJmVkswN1NZaFU3VndWMHFBTGhIOXFEZU5raWRnS19ESGRSQ01UQ0UtS204ZGFZU1JXdmI5YW1iNklQUHFxbXgyd0pkM3AwMXVmZm5SWQ?oc=5",
+      "publishedAt": "2026-10-13T20:32:23+00:00",
+      "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
       "title": "입문자가 놓치기 쉬운 라스베가스 무료 슬롯 모드 표시",
       "source": "Calgary Roughnecks",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcGdqekx2cFFreXJiWnp1TDBITmdpa0RSNkh2MzJvajBmSGNlTTNOVWVzb0JBMXpuZmI4V2xKdElYS3luS1RXanBucXhJVVpsa0piajJVaW9kVk5JSmRrbDFYa18xOWh1dFpLbjg1TGxuTXVCeXc4bGlDenVqbkZMZTRwMnhXdTNzNXhScm1aaUEzTXM5aEN3N2VrTTVCWXhiNldIaW5haENvb0hrTkRCMkZSRzUtZnFFVVFRcm1R?oc=5",
@@ -452,14 +468,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "겨자씨키움센터, 의료현장 문제 해결할 9개 프로젝트 공개",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85WnBXRklCZ3o2aTVPS2pzSDlTUW5sN1ZEdi1vUldfM3hvMi1sUU8yQzhwVzk5cUJrSm5Ra1FuaDFlWHJBdzdTeUtFN3haUjJESlNSZ19hdUd2SkY3dUM5b1ZZMEdEc0VMOUlEVWlR?oc=5",
-      "publishedAt": "2026-10-13T00:42:27+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
       "title": "러시아 폐페스트 의심 사망…질병청 \"국내 위험도 낮음\"",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43Y2kwN3lvRVhCUzAtN3ljWEJqWExnZlVHeTg0UFBJUm9LckZWbGh4VHdDYlVOdWpUaU81NjFtNUt2Wnd4dFdCUmFWZEFZcm9EWl9ENEVxUm1NYU5YYk5JNDdUNUQxN0R4ZloyaGhB?oc=5",
@@ -474,14 +482,6 @@
       "publishedAt": "2026-10-13T00:14:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "내주변 간호·간병통합서비스 병원 쉽게 찾는다",
-      "source": "메디팜뉴스",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBwSW9lWHM3ZksyS0gycEw1VXg1QjNjSFZOQmQ4LTlSVDVSVnlvUGVzd0dIXy03VnN6amh1bzNHbUxRVHRVc2Y3bGgxOEoxZnlpZkNLQzlDNk83aFVuOF9TeEw4bHlrZUs0eldKOUo3OEg3Z9IBdkFVX3lxTE1KeUNIZUZWUDRmYnB0RURaS1pabUt6NFRxRGpzdmlQbFZnTlNfWUZFSDctakdtVlc1V1daem5pUkctZll1MEpwb2xPV3dXQWlxUjRIUkxRUXN4c0F1UXNKZHRmcjJDZERlZDB4c3lxVmN1NVRHQlE?oc=5",
-      "publishedAt": "2026-10-13T00:13:58+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
     }
   ]
 }
