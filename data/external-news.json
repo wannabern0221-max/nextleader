@@ -1,8 +1,24 @@
 {
-  "updatedAt": "2026-10-16T16:38:15.227268+00:00",
+  "updatedAt": "2026-10-16T21:06:41.783017+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "건보재정 적자 전망 확대…비급여 풍선효과·신약 급여심사 도마",
+      "source": "메디팜스투데이",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zTEgwM195N1BIVm9pX0lWZFJNY3daVFZmZDRPUkE1TTNUODYxVGdIUF9WSmQyYzBiZ2hZSXZ0NDhhZ2g3STYzbVc3R2M4NnIxM0pNYVVnQ2M0ODlxMFBiT19jZUFwdWVk?oc=5",
+      "publishedAt": "2026-10-16T21:00:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "인천광역시간호사회 창립 80주년…“인천 간호 역할 넓혀갈 것”",
+      "source": "미디어생활",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpYkFfYUR0bWRFN2Q3cDRodDYyN3VaNlU0WExabmZsdlMwVGMtbjhPbHdTOW8xR2RRSTdSSi1UYjZjeEd5bUVFQW8yN1VwbUNubmJ1ZENjTFdZYlZNWm82R3R6REo0MW02QXFlTldRZw?oc=5",
+      "publishedAt": "2026-10-16T17:48:48+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "\"건보 국고지원 확대해야\" 여야 한목소리…건보공단 역할론도 부상",
       "source": "의협신문",
@@ -33,14 +49,6 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDeDA1TC1wOFZqWk1JZkNyTnR6Mjl5bEJRQnYzaDdMX29XaHlUSWFTTEYzMlJhZ0VwZEFua0s3cE1sR2Fzd18zeGxwSFZVYkR4OGZCX1NpRW1BV29BNmwwbGtKc3dwVTV5MW5hVnBR?oc=5",
       "publishedAt": "2026-10-16T08:35:46+00:00",
       "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "게임 설명 속 변동성이라는 말, 유전 알고리즘 룰렛 휠 용어 풀이",
-      "source": "Calgary Roughnecks",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeXNCLUxERkFWbWJsY3ZTdnJETUFDcHppcF9iM2dRTFRZdzRncDJpem14S0tYbDZTYmYxV3RESlJUMnBwUGl6WUhXVnFlTXhCaHJsYmlRdDVBdVFvMDlnTDRpU1BISWJuMGJUWWFKeUFhY1JWSUJwRnMwZFJTRUJ6Vkl6MUFtYmJxMVN5a1dxbw?oc=5",
-      "publishedAt": "2026-10-16T08:29:35+00:00",
-      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -97,14 +105,6 @@
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE15N0ZBWXVCN0puNnoxN1JwbGVKbHpZQ0dxdWFJVG84TmtIV0lsdXd1RE4zYl90Q25iQXk2ZXNEd0RCTEdBRUhNV3YtQ3k5ZmJFRjZVX3ZDaTkxc2VGbVZ3X3g3dEo?oc=5",
       "publishedAt": "2026-10-16T06:55:26+00:00",
       "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "인천광역시간호사회 창립 80주년…“인천 간호 역할 넓혀갈 것”",
-      "source": "미디어생활",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpYkFfYUR0bWRFN2Q3cDRodDYyN3VaNlU0WExabmZsdlMwVGMtbjhPbHdTOW8xR2RRSTdSSi1UYjZjeEd5bUVFQW8yN1VwbUNubmJ1ZENjTFdZYlZNWm82R3R6REo0MW02QXFlTldRZw?oc=5",
-      "publishedAt": "2026-10-16T05:44:47+00:00",
-      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -228,9 +228,17 @@
       "contentType": "언론기사"
     },
     {
+      "title": "처음 보는 효과를 기능과 연결하는 소닉카지노. 화면 읽기",
+      "source": "Calgary Roughnecks",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZ2dyak1TdVNYSGZFWmZRUTdmWGtVTU9VQnBKMEFiV0NPOGVWOTk5TGI1TjhIWFpiRTd5TDdlVzVXVG80QU5PQWVtV3k1Q1pTX1F6UEY2dlF1NXpvN2d6dFRuSDFSS3l5TWJfSG1ZZzdFcjJwc1RiRGJNamhRNkNZN1NFdXVadkFhLWhwZTN3Y1ZCQl9DbEtSdi13ajVROFhBaFBGT3RxMFVOTGRRcjdDSFMtM01hVzhzTmpfS2p6b1NDSEUzQk1WemVLbS1rRzIxd3c?oc=5",
+      "publishedAt": "2026-10-16T01:24:29+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "인천간호 80주년.. \"새로운 100년 비전 선포\"",
-      "source": "www.incheonin.com",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9SZW9fLUFUdGdLTC1zNkxzR1lGYzVva0ZrVWdHLWlhR3RCQnducHVaV05XRmhNbXF1bnEtdXZQM0ktWi11eXVSZVJmODBQQnR3c0FYS3BiZzU4a3JSUGUxNTNiX1IwTG8xeUFF?oc=5",
+      "source": "인천in 시민의 손으로 만드는 인터넷신문",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9NM25ISGZZVzBwWHpmWE1jZXJvNloxWmd6NHk4UEtyMFZfZUtpR05hSzhTb0VRNVJBOVNZeDJadVJDbVQ3amFVQVY1bzV2WXo2ZVNPaVpLVzFPWGNBdktnMW5qeFczb0tZczJqTg?oc=5",
       "publishedAt": "2026-10-16T01:21:49+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
@@ -300,6 +308,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "재택의료 확대 넘어 '질 관리' 본격화…평가·표준화 기준 논의",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1zbm9mdTZ6RS1MVzlDOTJIS0t0SWJhUlI4bnJpUU9Yc3hJZlJ4RndlRjRlUEZOa1VmU3ZTdm9QcTE2MF8zNHIzWmhYTjY1eEJmc1FVUldWaXZhMmk3YlpBSXJsaXdYVjRQSnc?oc=5",
+      "publishedAt": "2026-10-15T13:06:24+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "단국대학교병원, 충남권역 간호사 프리셉터 교육 개최",
       "source": "메디포뉴스",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1teWFPNkFBcFV2b2N4M0JGM29PRDg0UTVUWTZHdjNZeVJpV3Zha1FmNDRIaWx4bmEyYkdWS0JFRUF0aUFBbmZ2RFFObjR4ODhwTXZoZGpoYkx2a2I0OE5aSWMwdHc?oc=5",
@@ -332,14 +348,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "‘방문구강관리’ 현장 실무 총정리... 스마일재단, 17일 워크숍 마련",
-      "source": "덴탈아리랑",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9jMFV2SEVpWW5GVjVJOU9HYnRCQ0t6cDQ3eG1NRHEwRUdrQlpiWGJZZ2FpbzBRR3d4dHFHMlZsc01CUkpHalhuNTNjQXE0UUlPLTFEZVMwNHVIR2lvWGE4RlZVTXV0bUtlalJxeWdYTmk?oc=5",
-      "publishedAt": "2026-10-15T08:17:33+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "40대 자살률 상반기 19.5% 뚝… 복지부 “위기 가구 선제 지원”",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5EVUp3blloRjdJbWFzQTk2R1FXa1hqSl9HRmZta2VwQmxDN283MHdMd0FQV1RNbVB6QjBrbFljNnpFWGNWTDNqRGFoN0E2blppeWpUcHl5MmpUV0VnTUpwdXNjOGljMDc5OWRURVRR?oc=5",
@@ -369,14 +377,6 @@
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBiZVIzS1FLQkdjbkFMdEpmN1phdXZCNlliXzdYR1RsTHJhbmlzTTRUZWlXRzRrMDJBbE05YWNKbzZIVkhEMUdkRlhkTDRKWktuOHMxbldZQnd6ZzJhekpITjlQUEY1UQ?oc=5",
       "publishedAt": "2026-10-15T07:35:00+00:00",
       "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "국립군산대, 글로벌 헬스케어 전문가 특강 개최",
-      "source": "투데이안",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HWlFDWUZIbWhMRjEwdU1Mbzk5Y1AtbW9Rb0VNd0RxMDd2bDNaa1lad0oyUVNZX3JVS3VKbDJhWExnSzVNZlBMTjNnVkdTektzX0FpM2JIcXZRRnJlajVpN0ZES3ZQQ2NoT0E?oc=5",
-      "publishedAt": "2026-10-15T07:01:05+00:00",
-      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -448,8 +448,8 @@
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE10Smp0ZmFRbEt2bm41aGItOWxXWG5nY0VVaHpyb3R0eldCOXlaZHBTUmlrOE8za0hkZVUwNzZqMzl6T2xIVDZVb21CLTUwdmU1VldzcTlHWmJVWkkzY19qNGpxc18zNXhJS013a2Z3?oc=5",
       "publishedAt": "2026-10-15T02:44:37+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "[사설] 초고령사회 장기요양, 전문 간호 체계 없이 노인 건강 못 지킨다",
