@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T15:51:03.304365+00:00",
+  "updatedAt": "2026-10-18T20:41:10.996529+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -36,19 +36,11 @@
       "contentType": "언론기사"
     },
     {
-      "title": "빚·불법사금융에 갇힌 19만명… 정부 ‘복지 사각지대’ 캔다",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4wQmNYdnFGaW5FcmdyWmIzSFdTQ1I5Zm9xeEVNaXZVMXpRN0d6T25KaXRHMl9mTlU5c3RMRUJZeUVRQzlGUkNzR3FLNUgtTGFhUjU3LU8wN3dnVUVZcXpTRGFveHVVcTlVSnd0cmpR?oc=5",
-      "publishedAt": "2026-10-18T07:47:00+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
       "title": "韓, WHO 서태평양 총회 참석… ‘AI 기본의료 전략’ 알린다",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1qcFBPT2ZURm9CdGtkMDVMem9SdGVrRzNVeWxrNWFRUU03bnhXb0owbFMwWXFqcWppemhPVHZOc2Y1eTgxRnpaRTBvdngwMXNwUElpdTR4NzVKdGlZYzBJQVpuSlVsc3FKWEstQjRn?oc=5",
       "publishedAt": "2026-10-18T07:44:10+00:00",
-      "category": "보건복지부",
+      "category": "질병관리청",
       "contentType": "공식자료"
     },
     {
@@ -481,6 +473,14 @@
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5hQTkwN045QTFKRmFXeFdyRy00QWp1M2pMdmJTa3gxMGZNcmdxdUhjZk00X1d1MVB0THhiM0N3R3VkUVNYSm80SDc1dks1Zk16Yjl3NHNzRHJkZWdFeXZtOGhab1A2XzRR?oc=5",
       "publishedAt": "2026-10-15T02:45:26+00:00",
       "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "[사설] 초고령사회 장기요양, 전문 간호 체계 없이 노인 건강 못 지킨다",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vS1RMMERORVBIa2JnZ2tXcDRkU01falVIekMxNkFlVjJWZ2NjdkZFSEowZFhVZlRtLU9RRGNwbTE1alI4TU9SeHhJaDd5ZUFKZnkyUjdQaWNpX0UyZ29tTFVEbmkwS21jdktWQkpn?oc=5",
+      "publishedAt": "2026-10-15T02:18:46+00:00",
+      "category": "간호정책",
       "contentType": "언론기사"
     }
   ]
