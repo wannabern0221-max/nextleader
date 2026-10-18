@@ -1,8 +1,16 @@
 {
-  "updatedAt": "2026-10-18T11:02:29.647390+00:00",
+  "updatedAt": "2026-10-18T15:51:03.304365+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "퇴근길 환자 도운 간호사 수사… “선의 처벌 말라” 탄원",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RLUFCa1ZrY0NTYXhJbDBnWEtkNXRzeWJfaHZEODNWS1AtbHBSUjlYYzZINGQ5RTg1eEVNUlZUWXQwM1ZnbkRvaXBPZGlpcGs1eWppNVEyNXFETFh0MllINE1DZ2EzVVBSWDB3MWZB?oc=5",
+      "publishedAt": "2026-10-18T12:23:53+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "공평하고 지속 가능한 의료 서비스를 보장하기 위해 의료 자원의 우선순위를 정해야 합니다.",
       "source": "Vietnam.vn",
@@ -110,7 +118,7 @@
     {
       "title": "진도군, ‘농어촌 기본소득 시범사업’ 읍면 순회 설명회 성료",
       "source": "일등방송",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZ3EzVnhscEJxS0dkMnhHUUJ0RlhmaGF3Y1JPa1hEWUpLUGtTUlNQaG9icGpHcnhiT1k4dnBYUTdKQUk1Zy0xSVhRTWFPdnBvWHotNC1yUGtCb2daVFg3RzF2VGFQcUJlUXdyakllNWdiS3BJMFhqTFowUmhOaDVQM2V4Sk9Jc1BPVUN3c1pZMkhJNVd3SmZ3Vy1VZjhSVUk?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWHNXUVRsNU5VMVNHSXl1TE1WN05JY2RIMXpMMnUwOURmM0ZvYkJ0Y1lkdm40OTJWcldMdXZ4RFgtanEtbkdyV3hHZ0Nvb1NKOGloUGhKZVR6T3hjR3hqMjZJNWxPbXpncTBRMlU2N0tYcEp1VG9tQ1BDVTdjakRtTE5DN2FnY3M2SEFUcHgyNEVSRlNDU2lsTlVGZUNaRHNGdlBtcFVaQmFzUTNY?oc=5",
       "publishedAt": "2026-10-16T09:34:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
@@ -164,6 +172,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "[2026 국감] 건보 적자 위기지만 정부 매년 지원율 위반…간납사 카르텔 재정 부담도",
+      "source": "더팩트",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5lMXhtdFVqT0NmRXNfZGhVUS00MlBleDEyWTJYMnZNNk5Gd0I5Z2ZuTTNiemlDeHlXaWdHZWZ2eFh6Mng0QkJtMlJmbFQxU2FrZVBvYmJ30gFQQVVfeXFMUDV1alY0MmN4b0RvbDR2dmF2M0dFbmdIZzV0c3Z2c3M4NGxULWlVSW9qQkdSRnBQTkdNYmZZSGNReThlaEZiZGlLWjRHZmJxTWQ?oc=5",
+      "publishedAt": "2026-10-16T07:49:27+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "간호사 처우개선비 2460억 방치… 심평원은 ‘방임 행정’",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA2RjNPVzBaUkJzTVRDT0pvQW1ldWc3R2ZEdnF3RUxhS2JrOTJpVkNra1lTTENJd2MyYWJGdE9YcktsbnBhWFVEZzEyVm1RYXNoQ0hWVW5IdWhicmpxMVZRa0k5X0E5VFdPR1g1UjF3?oc=5",
@@ -176,14 +192,6 @@
       "source": "의학신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBJVUpIZjZ1NDNHbjdHeERFTkNQNkhJZXEwMXROb3dXWFRDRmdRdVRKbXp5VTVpRXItUVZmZEM1S1pfWkxKV21TYUxCeXZxT1BOM1Z0T0NRcm9jejZqU205WHFlbkYwc09rN3c?oc=5",
       "publishedAt": "2026-10-16T07:20:25+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "[국감]간병비 급여화 5조3700억 투입, 정책 실효성 도마",
-      "source": "e-의료정보",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrWWRtSGgzVWp3OS1vQXhPNUpRMzN5WEcwM2lublFWaF9aVUc3a3ZYWUhnSDd2c2ppM3Y0ZHlMbDJEV1hycXVZQlViOVAyVkUwdE5CbWJEd3JYRlppQjktUWt4cTBUMEtCZUxZT0NmONIBb0FVX3lxTFBrWWRtSGgzVWp3OS1vQXhPNUpRMzN5WEcwM2lublFWaF9aVUc3a3ZYWUhnSDd2c2ppM3Y0ZHlMbDJEV1hycXVZQlViOVAyVkUwdE5CbWJEd3JYRlppQjktUWt4cTBUMEtCZUxZT0NmOA?oc=5",
-      "publishedAt": "2026-10-16T07:17:28+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
     },
@@ -364,14 +372,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "국립중앙의료원, 생애말기 의료·재택의료 실무교육 운영",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hRnhoYXZ1Z2tJbTZHTUN6RXBqT0Q0bG1pYmxzR0lmdlFmZHA5dU8xUWNQd3M2Sk1Sb0N1Q0JmN21Lam41X29sQWZyWklLQTg2dzFGQ0NBR0M4ZWlQUTNGZ0pMa1UzQlRtbmFXbHdR?oc=5",
-      "publishedAt": "2026-10-16T00:03:12+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
       "title": "동원과기대 \"강의실 의료 지식, 간호 현장 직결\"",
       "source": "양산신문",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB5TTFYV29PTVpsakNjZ3BSdU5xM0NrazA4T1Z1bWJYcy1MS25Wd2Z2NGVFOXZoVWFOTDN0MFN6dnRPZ1lMS2FOaEdLZUJKRElaaGhITzhyOE0wVEF2Z0lIY3lPSm9ULW5oNjcyUG5fNA?oc=5",
@@ -444,14 +444,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "충남대 간호대학-심평원, 보건의료 빅데이터 인재 양성 협력",
-      "source": "충남일보",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1rekFuc2gyWkVjaDYxOTl0Y0ZZUVhIY1UwQWhOSk9IN01HNllvNW9PaWRteEdhMjllM25HTDRKNzF1WkN0eHNKV1V1R2N1NlJsZ1BGaDBqS1QwNDh3MmhvRjZrOFJOUGJKQXhyZEl1X0pwYkk?oc=5",
-      "publishedAt": "2026-10-15T06:56:08+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
       "title": "인천시간호사회 창립 80주년…“등불 80년, 미래를 밝히다”",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pd1pxLVllSmE4THM4ckEteTM1dGUtOGk1dXNBNVpudWU2dFVBRGpzRXJHejhkQWxCSkg1Q0stckgxQ3FGUUpWLU9kZHFHQkFUVFVPZ3FKTEFFNXlqaTZXQWZqWEZ4YXY5R3pjVWd3?oc=5",
@@ -482,6 +474,14 @@
       "publishedAt": "2026-10-15T03:35:30+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "“지역에 갈 수도, 병원에 남아 배울 수도 없다” 전공의, 현장 빠진 의료개혁 성토",
+      "source": "의약뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5hQTkwN045QTFKRmFXeFdyRy00QWp1M2pMdmJTa3gxMGZNcmdxdUhjZk00X1d1MVB0THhiM0N3R3VkUVNYSm80SDc1dks1Zk16Yjl3NHNzRHJkZWdFeXZtOGhab1A2XzRR?oc=5",
+      "publishedAt": "2026-10-15T02:45:26+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
     }
   ]
 }
