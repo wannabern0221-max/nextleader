@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T20:35:28.722134+00:00",
+  "updatedAt": "2026-10-18T04:31:13.279034+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -52,14 +52,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "복지위, 건보 재정 지속가능성 우려 '국고 지원 확대ㆍ지출관리 개선' 주문",
-      "source": "의약뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBpUFRFNW1hZGQzTEFKM3NwQ3VPbXZadHRQMlVQS0NCZDhzOFFlb1Q3MVNnRlBwMGVmcXRQLUNwazBJamQxcFdsc0gwaENmVy14czdiTFlrSVp5SGxCRWlaWklIelBVenc?oc=5",
-      "publishedAt": "2026-10-16T20:59:00+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "인천광역시간호사회 창립 80주년…“인천 간호 역할 넓혀갈 것”",
       "source": "미디어생활",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpYkFfYUR0bWRFN2Q3cDRodDYyN3VaNlU0WExabmZsdlMwVGMtbjhPbHdTOW8xR2RRSTdSSi1UYjZjeEd5bUVFQW8yN1VwbUNubmJ1ZENjTFdZYlZNWm82R3R6REo0MW02QXFlTldRZw?oc=5",
@@ -73,6 +65,14 @@
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9PaVJSZ2dFZFFmRVNhN2lOeXR4NThTRm1JV0N5TlBJMWdST3BWN1FTR25TVkhKdnNlZHZ0bW9ROXFEdGN6ODN4bTdkN014YWxPQ3dSYWY5XzNtMG1DTU8wSnlDcEVLOUhXdjNPdU00eWdKUQ?oc=5",
       "publishedAt": "2026-10-16T12:30:00+00:00",
       "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "SRC재활병원, 아이치·나고야 아시안패러게임 의무팀 참여",
+      "source": "메디포뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBHdWNGYmpocklpN0liT0VCazNPdnhIRkJaNlRscVZOQ3M1SURPRzlBZ0VUU0JkNkN4ZzFOcHJXQlh3MlZ5N2J4YzlKT09KbVoyeUVremFMQmwzb3ZCcG1qaDVoMkQ?oc=5",
+      "publishedAt": "2026-10-16T11:28:34+00:00",
+      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -108,14 +108,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "복지부, 혁신의료기술 ‘이해충돌·안전관리’ 수술",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82MFRncmhxQlJPTHNIVk9GWHhianloeHhiSnVtT1RSU1FCMkxEVHRQSHdwLVlrVnZWNHJ6TEtfaUkyaTdGS2d3d0gtRjZ1Q255LVZnNWEtNWtZNUwySThDZFA4dWkwSlZxQnpzb0hR?oc=5",
-      "publishedAt": "2026-10-16T08:18:53+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
       "title": "보험심사간호사회, 관리자 워크숍서 심사·평가 방향 공유",
       "source": "메디포뉴스",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE94eVJHU0JsVlJpeHJWbWJxSlplYTZjYkVTWUZJRXFNVVdLMzRwdXF5dUJmbkVfR2JfSHFoY2F1SVkwN1FkYW1CT3ZSaDYzS01KMmZ2RGdYNE1FM0hNR1dVdFRCRXI?oc=5",
@@ -137,6 +129,14 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA2RjNPVzBaUkJzTVRDT0pvQW1ldWc3R2ZEdnF3RUxhS2JrOTJpVkNra1lTTENJd2MyYWJGdE9YcktsbnBhWFVEZzEyVm1RYXNoQ0hWVW5IdWhicmpxMVZRa0k5X0E5VFdPR1g1UjF3?oc=5",
       "publishedAt": "2026-10-16T07:26:55+00:00",
       "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "지역 우대수가 확대에도 의료취약지 소외...지원 기준 재설계 요구",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBJVUpIZjZ1NDNHbjdHeERFTkNQNkhJZXEwMXROb3dXWFRDRmdRdVRKbXp5VTVpRXItUVZmZEM1S1pfWkxKV21TYUxCeXZxT1BOM1Z0T0NRcm9jejZqU205WHFlbkYwc09rN3c?oc=5",
+      "publishedAt": "2026-10-16T07:20:25+00:00",
+      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -292,12 +292,28 @@
       "contentType": "공식자료"
     },
     {
+      "title": "국립군산대, 글로벌 헬스케어 역량 강화 위한 전문가 특강 개최",
+      "source": "아시아뉴스전북",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBGVlBYMTVtbDdULXNFcW9OT0Q2VEYxbHBPbUY5YWV1b01GbEFDZlpIOGU3Y3pFWDVsdXFQWU9tVHZfT0FBYU1ka0trRjZIbGZRRlZlTGZ6LWtKM3QzSWZEelo4MVRib1ExVVpn0gFuQVVfeXFMTkVqLTRyM3NMQmJtd1NvS1NHZTRHNDJHYTNuZVZJMXNZNm9LMDhfWno1LURCOG1pVjdEU1ZEQUY3WS1UcnIxWWRSNy1PbEF0dU5jNWZGeXprdGVQaDktaVBZcnZ3b0x4WDBycXJQTUE?oc=5",
+      "publishedAt": "2026-10-16T01:19:06+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[정책 교차로] 공간은 늘릴 수 있지만 사람은 바로 못 늘려…통합돌봄 59곳의 숙제",
       "source": "조달경제신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5kd1hEckF1VUVrdE5YZHBmMmxERWVwNTNmcVBTaXZJcVp5U1E5WVN4R3BnY1J3dXZGampXMERkWktUUkNHVGdKc1BTeDhHdFl0al9pV01uZDEyY3NpZF8yRFNFOTVYVWVObGs1QUxR?oc=5",
       "publishedAt": "2026-10-16T01:00:00+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "[교육타파] 전북교육청 공유재산 계획안 '좌초'… 123억 학생건강증진센터·138억 완주 체육공원 부결",
+      "source": "전북미래교육신문",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9vV2l2S1QycHhvLVBnSkFQQkFDWHNSbmZoeEctZGRxa29hNUZ1S2hTNTVHekhyZ09jZ3U5NzE4a2NGNTQ0MUZycDVZdXIzN3VHa2VWX1gyelpmODFXUllz?oc=5",
+      "publishedAt": "2026-10-16T00:22:00+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
     },
     {
       "title": "CPR 하면 생존율 3배… 시행률은 30% 그쳐",
@@ -314,6 +330,14 @@
       "publishedAt": "2026-10-16T00:05:16+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "국립중앙의료원, 생애말기 의료·재택의료 실무교육 운영",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hRnhoYXZ1Z2tJbTZHTUN6RXBqT0Q0bG1pYmxzR0lmdlFmZHA5dU8xUWNQd3M2Sk1Sb0N1Q0JmN21Lam41X29sQWZyWklLQTg2dzFGQ0NBR0M4ZWlQUTNGZ0pMa1UzQlRtbmFXbHdR?oc=5",
+      "publishedAt": "2026-10-16T00:03:12+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
     },
     {
       "title": "동원과기대 \"강의실 의료 지식, 간호 현장 직결\"",
@@ -348,14 +372,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "‘방문구강관리’ 현장 실무 총정리... 스마일재단, 17일 워크숍 마련",
-      "source": "덴탈아리랑",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9jMFV2SEVpWW5GVjVJOU9HYnRCQ0t6cDQ3eG1NRHEwRUdrQlpiWGJZZ2FpbzBRR3d4dHFHMlZsc01CUkpHalhuNTNjQXE0UUlPLTFEZVMwNHVIR2lvWGE4RlZVTXV0bUtlalJxeWdYTmk?oc=5",
-      "publishedAt": "2026-10-15T08:17:33+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "40대 자살률 상반기 19.5% 뚝… 복지부 “위기 가구 선제 지원”",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5EVUp3blloRjdJbWFzQTk2R1FXa1hqSl9HRmZta2VwQmxDN283MHdMd0FQV1RNbVB6QjBrbFljNnpFWGNWTDNqRGFoN0E2blppeWpUcHl5MmpUV0VnTUpwdXNjOGljMDc5OWRURVRR?oc=5",
@@ -370,6 +386,14 @@
       "publishedAt": "2026-10-15T08:05:22+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "[병원계 소식] 10월 15일",
+      "source": "의사신문",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5MaUkxS3FKc3Fmc1l0NGFnRVBqYTdHWTlFZFNabFBqWko3YlBQQ0Q4SUpqRWhhMkNVYW1uS3hucVFtYnpnYzg0bDhlYnJBZHRwc0RIZndBeFo2WkVTeWtGMFI4TXFRUGJSX2NaZk01Zw?oc=5",
+      "publishedAt": "2026-10-15T07:00:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
     },
     {
       "title": "충남대 간호대학-심평원, 보건의료 빅데이터 인재 양성 협력",
@@ -414,7 +438,7 @@
     {
       "title": "“지역에 갈 수도, 병원에 남아 배울 수도 없다” 전공의, 현장 빠진 의료개혁 성토",
       "source": "의약뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsdUNxMi10UjBaamgyZGFIOTNFRkp3cm5OVThqRFBsT3d3THBaT04wbXg5QmtncjdIU3pMYzFXMU9mdklub0NYVlRpNjFUbTJrOUlwN3BXcVZNc3NKSm1pUlhEU3FlZnc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5hQTkwN045QTFKRmFXeFdyRy00QWp1M2pMdmJTa3gxMGZNcmdxdUhjZk00X1d1MVB0THhiM0N3R3VkUVNYSm80SDc1dks1Zk16Yjl3NHNzRHJkZWdFeXZtOGhab1A2XzRR?oc=5",
       "publishedAt": "2026-10-15T02:45:26+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
@@ -454,33 +478,9 @@
     {
       "title": "단국대병원, “Z세대 신규간호사 맞춤형 소통·역량 강화”",
       "source": "충청뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9ZazVRWXlZcV9NQTRWX1lVSTg5Sll5c25mMDdjcUdURk9BU2xVUnNnTVktdHlqaXFhTWNaOGlWWnZocmFDc0tJemR6UlVXb25UZkdpcVl4MlktdnFabDU4UHZxdFdndl9JQ1M0?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DbWRwbnd2aTZtc3JaS2xjaXduTi0xemJsOFplX2U5Nk1JZDUyWjJZZEhtVzFkNlBVZVZRcGFQeVJ0S05odzBFMDk0SjVhOVBCY3BQdTZxd0g2R0VFOFhKNXlJc3ZPUTlFamxKYg?oc=5",
       "publishedAt": "2026-10-15T01:51:31+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "‘국가 바이오 빅데이터’ 문호 넓혔다… 국민 누구나 참여",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ZU0VpVXRHMGNoenI4aFpReERpTmtFbDd2bmNUVHhpQjByUkVjd1pkVFpRLVJMcVJrZWxkdUFDZDBDdXdhUlBhdUhZbUVhUEU5Mldvb2J0OTlPTExoTDBjTlB4LS1HeXZqWHpDRlJB?oc=5",
-      "publishedAt": "2026-10-15T01:37:45+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "국립중앙의료원, 공공기관 교육전담간호사 양성 과정 마무리",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9XVEQ2eUN6aEk4LXhZazBRcjZPOWRDQU53WmdqMDBQaUd5ajFuX3BEeFpaZ0lEYXhFcW5LZUh4V0JmbFp4LWJ3bm5VRC1MaWJiV0lRZG1ZX1drU2RhWkIxdDNRTEpCX3JvOHhuMDFB?oc=5",
-      "publishedAt": "2026-10-15T01:24:20+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "키메스 부산 2026, 오는 23일 벡스코 개막···융복합 의료기술 한자리에",
-      "source": "의사신문",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBVeEVvS2pqcGdEQmVndEUxVjFmLUJNM2NMZ0s2SGZqNFlSU2RHYWp6TVlsMUh3ZjFZblIwVmtFOGp0MGtHUG93VzVFb09EVlQ0NHlXcUJLcVpCMXpibVg0Q21CWUliSW1oQkNScEk0RQ?oc=5",
-      "publishedAt": "2026-10-15T01:15:38+00:00",
-      "category": "부산·지역보건",
       "contentType": "언론기사"
     }
   ]
