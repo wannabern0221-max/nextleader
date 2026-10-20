@@ -1,8 +1,32 @@
 {
-  "updatedAt": "2026-10-20T17:01:38.090904+00:00",
+  "updatedAt": "2026-10-20T21:36:13.334766+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "정부, 의료취약지 간호사 방문·의사 비대면진료 시범사업 도입 신중",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tNlRXVi1qNm5WdWpQai14YjJtOUZrQzB5MUZDRTE1WjltSHZaMG9Bak9fcmRWVEZKS1lONGQ4dmJKZGRmcmJvdGM4bjRab3g0NkR4eFFwVmFVTUZQamZSZlJaVDVXcmMteFE?oc=5",
+      "publishedAt": "2026-10-20T21:00:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "의협 면허신고 업무 국고 지원 요구에 복지부 신중론",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBneHZQeGpOY01XMC1IcVZCVGE3YzluZmFYZFhuZjczeFowdC1aVW9Yd1pzc1JOOWFsMEllSXFPUDh0T0NzcE54d0JOa2FISWRrdmxVa0dHOGd2dkFDOXdwUDhfd3VsZFluVFE?oc=5",
+      "publishedAt": "2026-10-20T21:00:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "日, 교육·스포츠 등 분야에 '재활 인력 확대' 추진",
+      "source": "재활뉴스",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5vRlFTeUdTazkxZTM3XzlBaGZRdGpGY0RQTGFYeVBQWUZoV0lfVWxoTm9CR01ndFdMaVEyNzhDVmVFQUwwOGpsUEJBVjRtT0xVbWcwVGZDQVB1UUZDSW9GNWE2SnN0cVdFQlpv?oc=5",
+      "publishedAt": "2026-10-20T20:30:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
     {
       "title": "보건복지위, 17개 보건의료 기관 국정감사 실시",
       "source": "글로벌뉴스통신GNA",
@@ -244,14 +268,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "설명서의 예시가 실제 규칙과 어떻게 연결될까? 슬롯 보증",
-      "source": "Calgary Roughnecks",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeFF6Ykc3Vnd6Nk0xZ1hrWGlsdUhOYzVyeXFTbFUtUjVuaEJKZ2hKTE1BN0xBOHZ5TzRYT2VhT1M2ZWd3Z29hQVJXWUVzcnloMkoxQW1RaE5Kcnk2OUdCQjROclZpcUgwbkJWSklQYkR5aS1NVUtoSlc0NEVERHBBcXM3Yll2TUNhT1lDYzhNeWREOTRBMHB5LTZNNGpQcWxSSUJ4RGg4OHJwZkZZOWJEclJORl9xOGxjQ2NpTUllS2lKNngzLWNfeA?oc=5",
-      "publishedAt": "2026-10-20T01:47:12+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
       "title": "의원급 환자안전사고 97% 약국 통해 보고?",
       "source": "약사공론",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBSNGdZSmJzaUNKa1RlVWVnRmNQQ3IzV29JUUpFTk11TFFueVQ5Nm9aLVZ2V0wxbG52Y0VMa0NCYllFTkFnQ1d5WEtRSXlkUVJrZmlocUhBdjkwS0pTNzlIc0wtbjJOU29LQzVTTg?oc=5",
@@ -337,6 +353,14 @@
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5jNU10bTRwZk9ScHhjYXRQbG1MNzRuLURlWkhWYnFRRTVqakx3MUJtX0JfTmlmSk45bi1WR3U2WmVHWUhaRUI4bllkUmh3Q2x0T2tiMGJYR2cwNmdMLUxUZVVEM1FzN3E4VDVB?oc=5",
       "publishedAt": "2026-10-19T20:30:00+00:00",
       "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "자동 진행 기능이 있다면? 온라인 판매 사업을 한다는 것 설정 확인",
+      "source": "Calgary Roughnecks",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9RbEZrYjliVFNVY3REOUJZcWhFMS1DbkNXdlN1UzFxOExiYVZvYVdza3FMcGNUQ1lrQXh4UHp5eHZ4dkJ4aWFLWFRYclVtQVR2MjluOVFKWEN1X3hYT25GOTN3YmhNQ3BiY3BN?oc=5",
+      "publishedAt": "2026-10-19T18:42:10+00:00",
+      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -456,30 +480,6 @@
       "source": "의학신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40WmMtcXg2Q205VExlRVlzR2tGZ0R3Q2V5Rko3ZkVJUnlHVUNsMnlmVUVpUHNyMnZNSHBiNXJyaW95M1VTeUotaTkzRERwQkRwTHNxUTUwazNMWmlpUjlwZVRBOW9ZZmJSSnc?oc=5",
       "publishedAt": "2026-10-19T04:59:55+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "심평원 제주본부, 전국체전 현장 의료지원",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9LV1RUdDhsR0RDRW52YVhGUldSRjFoc2o4eThPaUlPdU9JOVRLa3RJYXdRR0Z0bThUQUUzN3U1R0liMkVwQWFYUDdYaVdDa2U0ZlRCN25qVF8wLThKUm5vYm9NRXlaYlV0Q1E2WllR?oc=5",
-      "publishedAt": "2026-10-19T04:55:12+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "내년 병원·의원 수가 일제히 인상… 환산지수 확정",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBMbi11Ym9Ic0d6NnR0SzZLRmpaY2tKakc3WmpzbldqdXBTNFNQaXlXWkVFNFlpZENVYU9senhGeG51RDdOajlCbGE4aG1mLWFldjc4bndQM1I0NWppeHBGU3NMck9ySlZFakpRaTBB?oc=5",
-      "publishedAt": "2026-10-19T04:41:02+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "케냐서 에볼라 환자 발생… 질병청, 검역 강화",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YeUhRTmdZMDJ3UXpRb0VVSXZfSjNtQnlXVTlXZDNfX0h0VzVNVm1JbGhHQWVQdFBvTGVNVEpzYW81NWZaY3g5RDd5cTBpSVNHZi1uSThkSEtnNmJOd09MdnUyaktudWgzMHlobE5R?oc=5",
-      "publishedAt": "2026-10-19T04:26:07+00:00",
       "category": "질병관리청",
       "contentType": "공식자료"
     }
