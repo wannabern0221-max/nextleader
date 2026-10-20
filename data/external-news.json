@@ -1,8 +1,32 @@
 {
-  "updatedAt": "2026-10-20T11:34:23.199925+00:00",
+  "updatedAt": "2026-10-20T17:01:38.090904+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "보건복지위, 17개 보건의료 기관 국정감사 실시",
+      "source": "글로벌뉴스통신GNA",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBIQzMwcXN0VmxZaTliblJUaURYX1BaRWxTUng0cXpJN0RYUjM2WHRDdUhBX1A1TFFsSm1fcHh0YUR0YUk5NTlSQlRQczRPRlhCQmZmbzltNjFvMjE3czdORHc0MUFSVmpsV1I4NFFodktGNFVZ?oc=5",
+      "publishedAt": "2026-10-20T16:33:25+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "인천광역시의료원, 일차의료인력 대상 심화 술기 교육 실시",
+      "source": "경기도민일보 미디어",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAyTlIzRUhLUmVpSnYzZWVabUxnS3dlaWdkdkhWQlQwWEphUVZ6LXBqenhkS2hBRTFWODB0TFd2Z3kwSlBOVWhOTy0zcld3Y1JhXzZfY0xTMDM0YjBDMnY1NWtyaEhCclZMMUE?oc=5",
+      "publishedAt": "2026-10-20T14:46:31+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "호스피스의 날, 종사자·기관에 장관 표창 40점",
+      "source": "메디포뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4tS2V0eEhVV0wzZENBMTE3UVplRThueU1zU2ZSU1I0RTMtbm8tbUdDOXhBUk8wR3hvZ1NUNUtrZmFQWjV2UlRfYi1Za2haV1pvMW5aZ09la1pSN1FyWmQtQmNHano?oc=5",
+      "publishedAt": "2026-10-20T12:03:54+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
     {
       "title": "보건진료소 지침 개정… 고혈압 복합제 처방 바뀐다",
       "source": "간호사신문",
@@ -68,7 +92,7 @@
       "contentType": "공식자료"
     },
     {
-      "title": "[IHF]“한국 의료, AI·지불제도 개혁으로 지속 가능성 모색”",
+      "title": "[IHF] “한국 의료, AI·지불제도 개혁으로 지속 가능성 모색”",
       "source": "병원신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZcG9jWjFIZEJ2WVJWbnplc25JT0drMm5aaURhYi1Lc2ZWNkxYcUthaHJkMGw4Z3BOeUJkdWpmYW8td3N6YnZqUFZIVXpJd0cxUERrdFZrNW8wWEVpZ0JZOHFJNmNmeEFLSFE?oc=5",
       "publishedAt": "2026-10-20T07:44:42+00:00",
@@ -109,9 +133,9 @@
     },
     {
       "title": "안산대학교 간호학과, 4학년 대상 취업설명회 개최",
-      "source": "대한투데이",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43MG9TdElJVXpfM0pzRFlVdUdXUkpJeWdBRHdxOG5qSTI0dHhFbnF1WHVOVTBEUWxiajNRZ2E0Z3dqQVNxb1E5Y3hsWjM1c3lyZmswelloaFN2M1RFazAya0hBd19UMGJWcHc?oc=5",
-      "publishedAt": "2026-10-20T06:30:51+00:00",
+      "source": "경기매일",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE42OVExU3N4d1Z1YldidUxoNzZOWUtHSmpDYVNBVUpQaXNabnpZTl9TeUxOY2ItcnhfWGRLTTZzUEQtWmRHWmpGdGw4ZzB2MXVSX0FUdVJJSFhuVWR1b2hDMDdVc29Vazg?oc=5",
+      "publishedAt": "2026-10-20T06:30:50+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
     },
@@ -190,8 +214,16 @@
     {
       "title": "1천억 들여 병상 늘린 국립암센터…간호사 66% 임용 포기",
       "source": "청년의사",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0ycE5nWDEtVFNGd0xvNXZyVjNaNHAzTzU5aWhFeTVHd2p1SkxfWld6NG5ET2hBckM3OVJRSTg4MXpDN0pzN3NKcUdFSnI4eEcxN0Q5VEt5SFAxYVBrUWhvRUprSXFRcEI0MFFCaTFUYVPSAXNBVV95cUxNVE9DUHloVG85dzFkbTlZcXo3c0FoUlhfV2U4VEJfak9uM1ZyQ2ZNM3NBaVI3TzFOTndFR2tSYkV0dUtSdzF5ZUVSY2Qzbng0MXhOWXJHeUVUZHQ0V0NXSDJ5Zk1tTXZ2SnFyTGoySVZ1MHln?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1URW5GM0lhYjlncGxaS0gxcml4S28zSzdEY1c4VFlPWk5kM1B0RllLMF94UjgtNWRuOHFLOHNHZTZDYzVOTlFmQk5KRnhDY0VKaEdYTE8wTUdfWUt5dlVxX0tQeklGMDdJampBbnBIONIBc0FVX3lxTE1UT0NQeWhUbzl3MWRtOVlxejdzQWhSWF9XZThUQl9qT24zVnJDZk0zc0FpUjdPMU5Od0VHa1JiRXR1S1J3MXllRVJjZDNueDQxeE5Zckd5RVRkdDRXQ1dIMnlmTW1NdnZKcXJMajJJVnUweWc?oc=5",
       "publishedAt": "2026-10-20T03:32:36+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "연세의료원, 간호·행정직원 개발 AI 사례 공유",
+      "source": "메디포뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tem4yT1JUOE9aLUZ2NWtSdFBfWjhfZlJ0Yl9DRHRPdDR3ZUFxdEFOaVl1OTBBTUxuaHdzdy1jckxPV0UzeXNpTHVBQ29vZFdqRzRIaEFTTWktY0stV25lNmtUbFo?oc=5",
+      "publishedAt": "2026-10-20T03:03:37+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
     },
@@ -208,6 +240,14 @@
       "source": "경기메디뉴스",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE91SzFkX19vZ0lFdzY1a01Qdkd5WDlzVFpROWFMSW45V19fdVhNb1dsUndXM1NOLVV1Y1BKa01WUUZCYnJ1Z2FNektPeTRkcU9yUHVjY1dGeV8wRDR6dWxtWTlLaXpvTk9CdURZ?oc=5",
       "publishedAt": "2026-10-20T01:57:56+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "설명서의 예시가 실제 규칙과 어떻게 연결될까? 슬롯 보증",
+      "source": "Calgary Roughnecks",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeFF6Ykc3Vnd6Nk0xZ1hrWGlsdUhOYzVyeXFTbFUtUjVuaEJKZ2hKTE1BN0xBOHZ5TzRYT2VhT1M2ZWd3Z29hQVJXWUVzcnloMkoxQW1RaE5Kcnk2OUdCQjROclZpcUgwbkJWSklQYkR5aS1NVUtoSlc0NEVERHBBcXM3Yll2TUNhT1lDYzhNeWREOTRBMHB5LTZNNGpQcWxSSUJ4RGg4OHJwZkZZOWJEclJORl9xOGxjQ2NpTUllS2lKNngzLWNfeA?oc=5",
+      "publishedAt": "2026-10-20T01:47:12+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
     },
@@ -297,14 +337,6 @@
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5jNU10bTRwZk9ScHhjYXRQbG1MNzRuLURlWkhWYnFRRTVqakx3MUJtX0JfTmlmSk45bi1WR3U2WmVHWUhaRUI4bllkUmh3Q2x0T2tiMGJYR2cwNmdMLUxUZVVEM1FzN3E4VDVB?oc=5",
       "publishedAt": "2026-10-19T20:30:00+00:00",
       "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "자동 진행 기능이 있다면? 온라인 판매 사업을 한다는 것 설정 확인",
-      "source": "Calgary Roughnecks",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9RbEZrYjliVFNVY3REOUJZcWhFMS1DbkNXdlN1UzFxOExiYVZvYVdza3FMcGNUQ1lrQXh4UHp5eHZ4dkJ4aWFLWFRYclVtQVR2MjluOVFKWEN1X3hYT25GOTN3YmhNQ3BiY3BN?oc=5",
-      "publishedAt": "2026-10-19T18:42:10+00:00",
-      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -444,42 +476,10 @@
       "contentType": "공식자료"
     },
     {
-      "title": "“임상과 교육의 만남”… 전북간호사회 굴업도 워크숍",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxX3ZEV1BnYkhIRVZVMGdBREYzbFFuLTdiel9zTVROYU1KdUtuSkYtcjhrbWtUSkdMRk15cEZUWkpPV25taG5faDRzc2o4b0diR2JmVkppMVJLczhsQU9ZaFgyeFhzdTJXejdBS1Rn?oc=5",
-      "publishedAt": "2026-10-19T04:27:19+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
       "title": "케냐서 에볼라 환자 발생… 질병청, 검역 강화",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YeUhRTmdZMDJ3UXpRb0VVSXZfSjNtQnlXVTlXZDNfX0h0VzVNVm1JbGhHQWVQdFBvTGVNVEpzYW81NWZaY3g5RDd5cTBpSVNHZi1uSThkSEtnNmJOd09MdnUyaktudWgzMHlobE5R?oc=5",
       "publishedAt": "2026-10-19T04:26:07+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "종합병원 60%가 중환자실 전담전문의 없다",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE42Q1JNVGdzYmdETFFJYWlacWlwcDNGWUFpV0wzcDQ5Y0x1R3J5R3Ywb21QRHVOR24wWFFQaElUczd2aGRaVGYtWkU5VUE4czFaX09qTExSMThzYVNTcXJORXY3dk1wNE5oX0E?oc=5",
-      "publishedAt": "2026-10-19T04:21:41+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "질병청 간행물 『지역사회 건강과 질병』 10주년",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBabWp1N0V2ZVVsLThralN6RmMzRTdiamRJWWtjYk9RMVJoQ01jQXFxbzF3NmdORTJKLWpITVN1MlpUZDBfamxFT3V4R2J4QmFrcXZOQUxYVWFBM0ZZa0NkUFdsOUNCcTYwZTZ2cmtB?oc=5",
-      "publishedAt": "2026-10-19T03:40:39+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "질병청 지역사회 건강과 질병 10년 2200편 실무 활용 72% : 책",
-      "source": "의약일보",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9yZkZyVW1ITWNpcVR5RkQzT19faUdybVdvNWRPUS0wLXpqNGlVN3hNM1pJTmNUbFFZU005RUJrd293c0dFY0JFMzdxcTJtMFJFTG12LQ?oc=5",
-      "publishedAt": "2026-10-19T03:21:00+00:00",
       "category": "질병관리청",
       "contentType": "공식자료"
     }
