@@ -1,8 +1,24 @@
 {
-  "updatedAt": "2026-10-21T17:10:55.493451+00:00",
+  "updatedAt": "2026-10-21T21:41:39.726849+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "의사도, 간호사도 모자라…핵심인력 줄줄이 빠진 병원 수두룩",
+      "source": "뉴스1",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BOVgyMTFuZC1jZDhZM0VNcFJXY1hKdGNkN2JiMkw5eEhQcDg1ZGx6NEY1LVhNTS12MjlUS1ZiZndrQ1Z2X1lJM184eUtyTTBhQzM0TFVaYjFCVnl3?oc=5",
+      "publishedAt": "2026-10-21T21:20:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "복지부, NICU 수유 목적 경구위관 삽입 교체 일반 간호사 업무 '해당'",
+      "source": "뉴스더보이스헬스케어",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9GeVFtcVgtZWFzdmo0QUdDRWZuV0dVNFl1WDBJa19xR295MERpNU5hMVY1bjBFWGlPR2FOUzlmUmpwNzB2X1dvSEZ0ZlczRkFoSVNjN3NFSC1SbVVlU3RIeWxpSEFxeVBRbVd0M2xkWQ?oc=5",
+      "publishedAt": "2026-10-21T21:00:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
     {
       "title": "\"파독 간호사 60주년 기념전 국회 개최, 대한간호협회\"",
       "source": "선데이뉴스신문",
@@ -10,6 +26,14 @@
       "publishedAt": "2026-10-21T16:12:48+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
+    },
+    {
+      "title": "36회 분쉬의학상 본상에 연세의대 박영년 교수 선정 外",
+      "source": "의약뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EOUdtenNKb3JCcnY0V3hyMV9lX0xPdkxjM0dkM2FubFR5THk2QVViUEoyTV9oUjlXaC1zVmVOXy1PcE9rV2NhZ3dhMFo2U0ZRQk5TSWVBWXpLekJpRVVadFplc3VSUURW?oc=5",
+      "publishedAt": "2026-10-21T14:29:44+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "“간호사 죽음은 20년째, 대책은 제자리”",
@@ -40,6 +64,14 @@
       "source": "안티에이징뉴스",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE94TmtuSndRX3dYZVNfQ0d4NDRCNFdKRzZObFowNmk1R2otVHRZb2tINkJKbVhkeXcxejUtMWl6dG5QZzhVTl8tRUlsX3R2SnN1bE1vcFpQX2c?oc=5",
       "publishedAt": "2026-10-21T09:48:06+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "자생의료재단, 파독 간호사 60주년 기념 의료봉사·문화 행사 개최",
+      "source": "디지틀조선일보",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMzU2S3ZYNnpxSnNHUkN1UHhTc1BrQWlnZ0MzU1BoM1RDNXlZSVh6czUzemx5Z19Qc0x0RldUcWU5RlhnaUlIUFkxMVI1YkwwZ21SUEJab2Q5bjR0WHY5WTJzR0dqSDc5MjBmd2VqclNtM2UweFdqYTRZWW9YYlVBdTk0OTdRbm_SAXtBVV95cUxPV2Q1TjNZcnYwdGFwSUdRaDBsajdNYVpBaDJib0FqcmdSOVRycG5vYXJJUGJvajFxWkJOV1NYT21YcEo3OVJ3eG5GVFlfYUk1c2NZWXB5cHJQYVpmdmVUZmE3WkpUaEVKaDJZOW9sSllvbGhYQ182anFaY0U?oc=5",
+      "publishedAt": "2026-10-21T09:41:00+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
     },
@@ -112,7 +144,7 @@
       "source": "병원신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lSmx6VTVJX2pFZ1pVallyU2J4ZFdacTVnNHF0UVF5c3Y5NkRkaXZ6OTQ5VkUwSmRpYWdBTEo2eFFLUjJ0UzViYmJhV29iV1pQdWdDTUVTOXk2YWdRRDdsaTBTUUlBTFVNaEE?oc=5",
       "publishedAt": "2026-10-21T06:06:47+00:00",
-      "category": "간호정책",
+      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -146,14 +178,6 @@
       "publishedAt": "2026-10-21T04:25:16+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
-    },
-    {
-      "title": "복지부-WHO, 2026 세계 바이오 서밋 ‘AI 헬스케어 서울선언’ 채택",
-      "source": "의약뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8yR3FpTEJGZGdNZ2RILVE1LWVZcl82REtTZFB5SVJmNS1yMVZya2doQ24yMDVEeHhwTHZoaGF3eW4zcWJCMHI0OEtVUl9TZFdZSHJhZ09Xay1vanQ3QkZVN0ZZOWFvRWs?oc=5",
-      "publishedAt": "2026-10-21T04:19:00+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     },
     {
       "title": "“환자 돌보듯 자신도 돌봐야” 군산의료원, 공공의료 간호사 역량 강화",
@@ -458,30 +482,6 @@
       "publishedAt": "2026-10-20T03:32:36+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "19년 만에 한국 찾은 세계 병원 리더들 “AI 시대에도 환자 중심”",
-      "source": "청년의사",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5UQW9GdGhZdHIwZ1lNamFITzRpV29vYkpFaHZXMzBfckpZWGdmcFl6WTBfUzhJM3RXMWliR1BIblFIZWNaVkxBcS1WaFZNbVExQVJQd0tSV3Rpa0FqaUtGOHpVUUg5V0dla0NwdXBUQdIBc0FVX3lxTFBzakREY01sa2lPT21zUzBxQkhmMjJDM3oxYm03ZUszQWtWbW1QZ2ZKWmt1eTRlZ0ZOY0xKMWJGN214bXptS0tMYjlBNEg2R3c0XzctWDh6Z3pFclhaY1NiR2ZzZzNUdlh2UWk4Vkd3Ukh1czQ?oc=5",
-      "publishedAt": "2026-10-20T03:08:19+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "연세의료원, 간호·행정직원 개발 AI 사례 공유",
-      "source": "메디포뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tem4yT1JUOE9aLUZ2NWtSdFBfWjhfZlJ0Yl9DRHRPdDR3ZUFxdEFOaVl1OTBBTUxuaHdzdy1jckxPV0UzeXNpTHVBQ29vZFdqRzRIaEFTTWktY0stV25lNmtUbFo?oc=5",
-      "publishedAt": "2026-10-20T03:03:37+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "소득은 더 꼼꼼히 걷고, 재산은 덜 걷나…건보료 개편의 두 얼굴",
-      "source": "바이오타임즈",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE44a3NPLXVIV2Vfb1M4aTJaSHB6U2tsVFI4ajN4dDFfRm81VHZnQmQ3UUprNnZCdm9Rem52dXVfZkdtcWVfUEN2SWhhWjgwMWRQV0JQWEluaVdscE9sX2F0M2k0Vmtaa3Z2RkQ5Yw?oc=5",
-      "publishedAt": "2026-10-20T02:36:49+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
     }
   ]
 }
