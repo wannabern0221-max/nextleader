@@ -1,8 +1,88 @@
 {
-  "updatedAt": "2026-10-23T04:47:28.442150+00:00",
+  "updatedAt": "2026-10-23T11:37:10.014179+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "국립중앙의료원, 신종감염병 중증환자 이송 대응 모의훈련 실시 外",
+      "source": "의약뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2RHA3OGlEYlFKdDlZT1BzYUt1Z0JNVENvOGVVcEZLdF9HcS1QcXY2R05TVnhHVnYySHNwQzV5ZXktSmk5V2I5WUNEazkydEMxX3U1cUh0ZDRKb3REaHBsbWY3cmd1Z2c?oc=5",
+      "publishedAt": "2026-10-23T09:51:00+00:00",
+      "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "원광대병원, 제22회 간호학술제 성황리 개최",
+      "source": "병원신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pUXpvQjg5RXZJeUFtNEFZMWIzSDRZSWExNnVZbjhvUVVwbk9kZ3dSYlY1M19fcmktaVVPSVdZQndIV3VDMHFZSXZsN3JOUlZfM0xRQ3dNamlMNXlfUVc0RFc4WFRjaXJUWHc?oc=5",
+      "publishedAt": "2026-10-23T09:14:22+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "공공의료 현장의 어려움은?…경상국립대병원, 실무자 의견 공유",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1kZjd6RWZGWExSQ21WLVJnYXozWnVUejlNYzMwWm9iLUUyZkl5c1MzUDE1THZ4dXhidUlHZnBjYnpGZGhiaWJ6a3VsYmJzS2R5NmZTbFFDSXJSelh2WGZBb0FuOVNNcjRweXp1X0NB?oc=5",
+      "publishedAt": "2026-10-23T08:38:49+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "“공동체를 아는 것은 좋은 진료의 일부”",
+      "source": "건치신문",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE85Y3pPcVBsMzhhaVYzeWhfVWl5SVlYUmQtdXV0UzhxVi13bXU5LTJfc0syZC1vczNVMXZhcXdnUEhMWnpoTVZFNVZGR2lDM1E3QnBlaVQ2clJ5cFNwcmowN2djX3ZtZw?oc=5",
+      "publishedAt": "2026-10-23T08:01:48+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "호출벨 듣고 달려간 간호사…환자 사망 후 고소당하자 1만명 탄원",
+      "source": "동아일보",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5sU0hOdkZEVUo1ZHo2dm1PVUNlMkpxenhFdEo3c2ZSWUc4R0pFTzdWYU0wcnlDTVpYZHR4WXFYUldLQlZyblQwcFJlWWRMSFFrTVo0V1RsekZXWXI3OGc1emZPVVQybVR6bWVDbU94Rm8teTZ0S1HSAWZBVV95cUxOWVgxMjB1UERoaDYyRHV2UDNSbS0ydFhKQnRSVGU1VnhrZlI1SGtEVWNtT014OHZGZTFoVXJ4ZUxEU2ZxNlZJSUZYOFlCTDE0WWFqWHFkUDFRXzNsTmpkaUFGQ1RoOGc?oc=5",
+      "publishedAt": "2026-10-23T07:58:00+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "서울대병원 28일 전면파업 예고···‘필수 인력 충원’ 요구",
+      "source": "참여와혁신",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9GaEk5VDd6ODBsWlVyZ2pKNmJGSnc3YUNySTRVMHF3MS1CcEpDRmctVUJvMnJibVVyaUY4ZlFxQ1BnakNfMUxfM2NxUzB4c3FTOXY3V0NBMzNIaEkwWXFBaFl2S19OSm9EZnpuTURR?oc=5",
+      "publishedAt": "2026-10-23T07:52:46+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "서울대병원 노조, 28일 전면 파업…\"간호인력 확충하라\"",
+      "source": "청년의사",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8ySnE0a09QUGRha3VMN0dqV0tkWTZwbkRuNlZ1VXBILXNicnZCYy1IN1htM2gtWFJVRFFCdWc0dmR5b2xEXzVLUVc3Qnc2QWVudjJBMjVxV1ZyNzR5UU5rcmpkMnYtTElySUw3X1I2MEdMR0HSAXNBVV95cUxPMkpxNGtPUFBkYWt1TDdHaldLZFk2cG5EbjZWdVVwSC1zYnJ2QmMtSDdYbTNoLVhSVURRQnVnNHZkeW9sRF81S1FXN0J3NkFlbnYyQTI1cVdWcjc0eVFOa3JqZDJ2LUxJcklMN19SNjBHTEdB?oc=5",
+      "publishedAt": "2026-10-23T06:47:24+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "대구가톨릭대병원, '간호과학연구소 국제학술대회' 개최...국제 협력 방안 등 모색",
+      "source": "경북도민일보",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1IbVhJQWFYcXRkdTN2c0xlWmM4N1YyOHJkSG5LZlZFQnFmbkh5VkRhWmZFSkNEUTVkZXZKamNzc0dVVmJIY09wNURfR3RkMnExdGVIbHZYOUZBT3pSLWxWOHV2LXZNejBoWWc?oc=5",
+      "publishedAt": "2026-10-23T06:28:50+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "강태규 전 인천백병원 부원장 “국민 건강권 헌법에 명시해야”… 공공의료 개혁 제안",
+      "source": "우리일보",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1yNTYxM2xZeWZYTXR5UzBEa1BSNHFRSUdTZ05YWDlScW83b0llSERMT1BtcEdhZkJsZGFXazg1UGtTUUNWemFGZHB3UEx1Nk1zbUNGcnNhdm1XUVZYcHV6a3dFaw?oc=5",
+      "publishedAt": "2026-10-23T05:18:30+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "\"처벌 대신 학습\"… 간협, 중소병원 환자안전 문화 확산",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9OZWdqRWR6SVFVdFU5X0J3SVJmMEc1TVQzWUJiNnAxWHlYYW9ZNDRxdGYyclZmN3FHOG9vQWRqU1JEa2cwTXA4N3p3YmRSUDdwMWdEMGk1SGducl9Sc0IxRnphbFN1bXg5ZUJjeEFB?oc=5",
+      "publishedAt": "2026-10-23T04:53:27+00:00",
+      "category": "환자안전",
+      "contentType": "언론기사"
+    },
     {
       "title": "복지부, 장애인 부모단체와 ‘발달장애인 국가책임제’ 논의",
       "source": "간호사신문",
@@ -12,9 +92,17 @@
       "contentType": "공식자료"
     },
     {
+      "title": "“향기로 지친 마음 힐링”… 가천대 길병원, 경력간호사 교육",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBQekdNaHJnSTRkZDhmaGhlRDV4cUczSGxMVDJkNmNNaVlWTWlQaW04TUlmelNCMk5WZ2JPMXZCRlhranNiYlZ1M1NVbHoxMVkyX1REQjl2cXFhV0FySlIyMHl1TnhvdHozTXY3NkN3?oc=5",
+      "publishedAt": "2026-10-23T04:21:44+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "\"전공의 사직·상종 구조전환 이후 병원 현장 급변\"…서울대병원 노조 28일부터 파업",
       "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBDVVprWFJDTVZmS1FIWVRjTWlMLWZEQTVDbVFtUkg1c1dFejVvNm1pWlJYWkM3YmFfMVhGM3l2YnRxZTV4azNzdnZrX1hWdWEzQTYteHA5OA?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1JaTlXSUlyalUwaThoVFEwUkhxQmJieVFRUEhsNUV3WUcyN19paVVXelFDNk9VUXo0V0RjZ1ZWa2F4VmxydzVaVTV0Z281R0dqbkdHSEZ3?oc=5",
       "publishedAt": "2026-10-23T04:10:00+00:00",
       "category": "간호인력",
       "contentType": "언론기사"
@@ -26,6 +114,14 @@
       "publishedAt": "2026-10-23T04:01:31+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "간호조무사 94만명 중 활동 25만명…처우 개선 촉구 : 사회",
+      "source": "재경일보",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB4UzNJWS1KeWlSVjczamhRTUdERVFrblQ5WFdoSTAwaGo3M3VyWmM2SnNFUGl6QkxVOEtxVDZCMEtKckxRZXJrTTVuVQ?oc=5",
+      "publishedAt": "2026-10-23T03:51:26+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
     },
     {
       "title": "CM병원 이도영 이사장 부부 ‘서울대 발전공로상’ 동반 수상",
@@ -52,19 +148,27 @@
       "contentType": "공식자료"
     },
     {
+      "title": "치과의사·방문간호사·치과위생사 ‘방문구강관리 협업’ 본격화",
+      "source": "https://www.dentalkoo.com/",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hdXlwN19PZUNoMTVaUGhRRU5XVnhOdTRjMWVROUJPdGhveVhXMDZud0xVeTRhZ1VWWXZNTG5BX3ljSjc0MWxPSXF5cDRxLXlWa1JLdGF5Nk9admxaWlVyUlZWM2gxY0s4eDZz?oc=5",
+      "publishedAt": "2026-10-23T03:06:15+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "치과의사·치과위생사·간호사 한자리에... 방문구강관리 협업·제도 개선 방안 모색",
+      "source": "덴탈아카이브",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5PZWhpXy1RZHFvOHhlSWpnOFZZbUtUMEk4enlGTzZtUDM3VU1uY2RPRzhMMzBxa0N1VVpFTGI5YkpVQ2ZUblZRSEVFZzdEcUVteE5LMGFIajNDTm9SRkJocjZ6QW5nenJJUkJib3pR?oc=5",
+      "publishedAt": "2026-10-23T02:39:16+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "원광대병원, 간호학술제 개최…임상간호연구 8편 발표",
       "source": "라포르시안",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40Vmw3cXlwaFlWZEp0ZG1WcTVYU3paOWlVUWRabi1UOXg5VFNSV2xOdlFwaFhacldidDJUalRrOU1kbWFyUEdmYTFvVzB2Q1F2ajJIVWNZOGNfcUVFZHJhSi1yeWxHQzhrZTVjRXVR?oc=5",
       "publishedAt": "2026-10-23T02:01:00+00:00",
       "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "원광대학교병원, 제22회 간호학술제 성황리 개최",
-      "source": "익산열린신문",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVTlpwd2h6YkxudEhwaE5zb19GcVozYjlLcWthNUktNUl0OGUzSHlqa2hHa2RrSldaQUw5QTVTMEVFQzFBYXZYT3RSV2o3bDR3SHlhaUtvZ3dyUkp3Rll6TERfSldlaHlNekMyMVd5Ql9vdw?oc=5",
-      "publishedAt": "2026-10-23T01:51:00+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -84,6 +188,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "\"AI 도입하면 끝?\"…세계 병원들 \"AI 성과를 숫자로 증명하라’”",
+      "source": "MEDI:GATE NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOYkpNVVN1TFltcExfbWRoYTI5bDk1c0lCY1VMcEI3THVyZ092UkN6Z0xseFQweGV5dWxiNG5KYVJKX2wyeVJTeFlGVUhYc0RXeDFrVHVn?oc=5",
+      "publishedAt": "2026-10-22T21:21:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "일차의료 혁신, 지속관리·지역 협력 보상 강화해야",
       "source": "의학신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1d3FWbi1ORWI2S0pVTVhtTlpWaWRiekpJWmFOSkFKeklkdl9lcFVFY3gwaks2RXNDODRIb1QxOVlMNVEycm00SUR1Q0xxUm5vRUhNMW1jOFo2VkxCUUZta2FrLUY3SkpYQkE?oc=5",
@@ -97,6 +209,14 @@
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE12V3BENGM2WE5GbGpJQ01ycFBZMGNiY3o2WHBkak56ckI4U3RzNy1PWGdsOUctWnJXTmo5S0Qzd0Vxb1pfaE1ITlpVd0k0ajg0WGdhNUlKVm9ET2ZCUFJyLUdGR0Y?oc=5",
       "publishedAt": "2026-10-22T11:50:50+00:00",
       "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "충북보과대 외국인 유학생, 첼로병원서 의료·돌봄 현장교육",
+      "source": "더퍼블릭",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBZRW0tU2JERlg2VEpQSGstQmZhaTFOVDc4WXJTbnBLS3E1dzFKS0VXRjRTcVBWUWItOWNSdmdPTWJGTjFsZDhVMjZYSnBJbXpkWEhuZGU5SzRBSkNGUV9oTzVvazEyVWhNdUdPam0zTdIBb0FVX3lxTFBZRW0tU2JERlg2VEpQSGstQmZhaTFOVDc4WXJTbnBLS3E1dzFKS0VXRjRTcVBWUWItOWNSdmdPTWJGTjFsZDhVMjZYSnBJbXpkWEhuZGU5SzRBSkNGUV9oTzVvazEyVWhNdUdPam0zTQ?oc=5",
+      "publishedAt": "2026-10-22T11:05:35+00:00",
+      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -132,6 +252,22 @@
       "contentType": "언론기사"
     },
     {
+      "title": "충북보건과학대 글로벌휴먼케어학과, 의료현장 찾아 전공역량 높이고 지역사회 진로 탐색",
+      "source": "베리타스알파",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CcVg3bEFCc2VTR3NvR1hsLTVac0tfd0ZhdllYaTI4Z3lWM3ZCVTRoako5S3RLVGxjNmJzOTZUWmg5SHEyd19KOXBKbTJjSVFrVHQxVDhNd3ZnaDVRXzctWGp4V0NLbW92czNnZw?oc=5",
+      "publishedAt": "2026-10-22T07:42:16+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "국경 넘어 배운 돌봄의 가치…충북보과대 유학생들, 의료현장에서 미래 찾다",
+      "source": "충청리뷰",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBYQS1OVlZwSl9oY2g2Q0pRNmlfZm5zRUVnM2YtTmoySmxlSkFIWlVBSHRNT2FsZzR3NlBzUmhKRWp1Rkxmd0FmZndGLXZIYzEtOXI4bXRQVC1PeEg0d0lrSXZuanBVWjF1NFFZNW1PV1Y4UdIBckFVX3lxTFBYQS1OVlZwSl9oY2g2Q0pRNmlfZm5zRUVnM2YtTmoySmxlSkFIWlVBSHRNT2FsZzR3NlBzUmhKRWp1Rkxmd0FmZndGLXZIYzEtOXI4bXRQVC1PeEg0d0lrSXZuanBVWjF1NFFZNW1PV1Y4UQ?oc=5",
+      "publishedAt": "2026-10-22T07:23:52+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[대구소식] iM사회공헌재단 창립 15주년 기념식",
       "source": "연합뉴스",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE12N3RLeFM2UGZjQW1DM21DNGVfVV94eDluX3cxc3JMcEt5YlNtRGtYLWJHX1BwM2FVakVBbFdubFRoamZrQURPVDBCUTBZQU9LZEx4ZVlhdVhfdGfSAWBBVV95cUxORGxSbmlQVjlROGxpLVVBVUZYaFpNbU9teE4ycHlVSHRPaVYta0YtQ1IyWWZKNjdiZ3dFODA5eUJ2OTZrV2hwR3UxbG5fZGdCUnRHS2tRYzljZVItYWF1QWc?oc=5",
@@ -153,6 +289,14 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9EWDBMSHZvODNXRjJ6RktvRzZweE96a2w1SlJXLXkxLWsxeWtDdW9hc2tWWTRaYS1vOU5nMHR4WXFhRm4yTFZWSUtTRkVUZ2pSV0dmZnRRTndKc0hXQzU1MTR0eGZFeGxjcXB1UmhR?oc=5",
       "publishedAt": "2026-10-22T06:50:04+00:00",
       "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "“잠복결핵 채용 거부 금지”… 결핵예방법 개정안 공포",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE11SlpfTnJLeTZwWDVpTEJIczF1eXU5ZXBEQ2hUa1JQYTNaYVVEaXJfOF9RWFZtUXV6dzNlQTZkLXk3X0NjVFphTzgwRDJQQXozbzBCa0tSSi1yalFrajBsVVcwSFYzeHhkMWNqWmdn?oc=5",
+      "publishedAt": "2026-10-22T06:36:54+00:00",
+      "category": "질병관리청",
       "contentType": "공식자료"
     },
     {
@@ -220,6 +364,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "강원도, 파독간호사 91명 초청 행사 개최…헌신과 노고에 감사",
+      "source": "일간투데이",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfUFQzUFc1LXd4MnoyLWdPdXB1c0N3Qnd5ZVBvVVNpQlE2dmFvUnVxRWJvTWdsekVSTWdyc1NpcHgzcUZuazRDRjluMjFhRjlhVm9FQzdvTlVQZEs4RWpHcGxDU214S3RWRno4?oc=5",
+      "publishedAt": "2026-10-22T04:28:47+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "소득·지역별 건강수명 격차 해소 방안 논의",
       "source": "메디포뉴스",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBHRDc5RGlVZ1hod1RZSDg4YWtiWm0yejNLYnJtT1ZKaFdxVEtOcXlzNjNXZGRobHdPWl9BRkd6NzExUW5VZXBIOEhVbzljbDY1NExxby1oSm9SSmxfSlVpN1k5WGY?oc=5",
@@ -242,6 +394,22 @@
       "publishedAt": "2026-10-22T03:39:17+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "“간호 현장 잇는다”… 서울시간호사회, 조직문화 우수작 발표",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1RWUl2WlgyOGwtYmZ4dmVkdHRyLUF2Y3R3dUgtbk5GSUVFNWdjQ045c1FjR3hWdmRQMXJjYW9mUFYxYnRhR2I2ZVpXdW1KRFRmSnhwTXE5SGRWZVRUOHlSQlZlTHlVT2tXNHpiU3hR?oc=5",
+      "publishedAt": "2026-10-22T03:32:10+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "[NMC] 공공기관 중환자실 간호사 CRRT 교육 개최",
+      "source": "병원신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5KSTg3RG5fMGNqUHdsQWZLTVNCZE9EeGpuLXp3UTJ6akhqNmxsbzYzZlZuMHJacEZtaU9LOGtTNzVBOThHY3U4REp6M0lMdVZMVDZJWHNudEJ5c0wzS0drT2pVV2Z4c0FmZ3c?oc=5",
+      "publishedAt": "2026-10-22T03:23:26+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
     },
     {
       "title": "파독 60주년… 국회, 고령 파독 간호사 복지·기록화 추진",
@@ -284,6 +452,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "서울디지털대학교 요양보호사 교육원, 11월 국비지원 특별반 개강",
+      "source": "피앤피뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5wR1lUWGNBZEVoT0NLR0dkRm9Tdk1LTDZ1cmNpcVFQNkV1c25PUEtFVlAxRGVCZ3JsRkhHVUpGd2pUeXl1WnViWFRFZEpJWUJBWDFzU0V3?oc=5",
+      "publishedAt": "2026-10-22T01:37:25+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "병원에서 지역사회로…국립재활원, 통합돌봄 속 재활 역할 논의",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9LMVNwSWN6SlZ6bDRSWFN2OUpwbDBkbEYzUHU5elhJRjY4UUYyanBfN1RvcEd3UUNZcHc3ZS1wLTVDZ3ZENEtYaU1fNzFOQWdwTndMMm80YWFoZFBkU1d1bXh3YkNEWHpCX0FTZURR?oc=5",
@@ -292,19 +468,11 @@
       "contentType": "공식자료"
     },
     {
-      "title": "국립중앙의료원, 지속적 신대체요법 투석간호 교육",
-      "source": "메디포뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBCb3JhOVRvakRJWG5OcDAtU0c2dGdoZzcyRXRMejBXaWRrM1laMXBFYlF1XzJWNjFrX3U2dnluVjEyNEhiTWgwM1NhODBpOXBkZHdmNjlJMG91TjV0dWR0ZS1vSjA?oc=5",
-      "publishedAt": "2026-10-22T01:05:22+00:00",
+      "title": "국립중앙의료원, 공공병원 중환자실 간호사 대상 ‘CRRT 투석간호’ 교육 실시",
+      "source": "라포르시안",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40enI1aW0yU2otNnJCLUZXN1lQRXJfd1NNTWZrdkQxTUV4OUwtWHM3cVozQXRITVJaQjVrWVV6c1lYWm9TckdHM0pxYklRLW56YkZNM1FhQmV6WVhqd2d1anhxbzg4RkQwTHpGN1R3?oc=5",
+      "publishedAt": "2026-10-22T01:15:00+00:00",
       "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[이슈] “말이 곧 실력”… 간호대생 의사소통이 역량 가른다",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA5eUhKSWI5Qk02RjljQWstR2ZCWExveXJBSHQ2ZXpyd21pVmlfdjFTVjVvS1E0X2UtOEdHd2lpcVlxVTA4UFZaTEFtNmdRSm82d2pwaU9sUTAzd3hnUEEyVW55QUxIMFp1X1NGNV9n?oc=5",
-      "publishedAt": "2026-10-22T00:54:45+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -312,176 +480,8 @@
       "source": "메디팜스투데이",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjNEhWVUZfNmpfX1BESVpEaW9ySmVJUmMtUmNmSEVZSW0xSnZHMS1RWlZOMjBxQ1BoT2FfNm02VnlVZGg0TUNPR2dLaG5oYTdra0xhSzVPeTYyMU5QRGFNcGc4OTR3M1hP?oc=5",
       "publishedAt": "2026-10-22T00:36:13+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "“초고령 답 찾자”… 日 돌봄 현장 간 간호사들",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9adXhJV1FyV21ScTVZU1lISkR3N3N1cFJESW1WZnY1R093MW42OUhuTEZCc1NtTHVjSDJpdVpLeTR2N01DTHBxSlpPeDYyUWE4WDhldEh4UVR4dXRXNUs4X1cxRHRLczFQeUN1ZXVn?oc=5",
-      "publishedAt": "2026-10-22T00:06:31+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
-    },
-    {
-      "title": "‘최초의 K-프로페셔널’ 파독 간호사 60주년 기념전 국회 개최",
-      "source": "한국방송뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9vd2tuMGxIUHR1LWFQSHhVMHVzaTUxal9MbWdyZ1RLSG9aWlFDbW9Kb04tUGVYUVVNTVFGRDBzMERUWmNnMzcyUTluNlVyZF9nZGVhZlNpS01IOFpuVVE?oc=5",
-      "publishedAt": "2026-10-21T23:48:12+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "36회 분쉬의학상 본상에 연세의대 박영년 교수 선정 外",
-      "source": "의약뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EOUdtenNKb3JCcnY0V3hyMV9lX0xPdkxjM0dkM2FubFR5THk2QVViUEoyTV9oUjlXaC1zVmVOXy1PcE9rV2NhZ3dhMFo2U0ZRQk5TSWVBWXpLekJpRVVadFplc3VSUURW?oc=5",
-      "publishedAt": "2026-10-21T14:29:44+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "“간호사 죽음은 20년째, 대책은 제자리”",
-      "source": "메드월드뉴스",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBybi1JSXhiYlEwdF9YQXRLWFFlOWloeHpDUVpiN1BLTG1CSlpiZmVBaThtVWxnRjl2M2ZuRzlsRm9wMmRMalZUTnlvc29yMXppSE13aFUtT1BIeGpyTURVVmpWdzJsWVVZRkpHU25B?oc=5",
-      "publishedAt": "2026-10-21T13:20:56+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "전남광주, 반도체산업지원실장 등 1∼4급 9개 직위 외부 전문가 공모",
-      "source": "https://www.theleader.co.kr/",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5qRkVtbnA1eWJSRUVuZHFXeWJKakRUenk1M0xKT1RjUE1nV0JpbDZJRzJCNUlzSE5DbHc1ZGI3eGZ3VjEwbW94aV9VX1NoUmFYalFoWC13NG5wN3pxRGZtVl9iZlJFc3lZaDhIR3dR?oc=5",
-      "publishedAt": "2026-10-21T12:33:50+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "치의 1명당 치과위생사 1.99명…구인난 고충 여전",
-      "source": "치의신보",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBFRmdBRUN0UjhIX2RrQlNJR09uU3hhQW1qUExzNVl2OEttaWU3ZGpjV2xVUTVnMW5DblJ3Tm9LMEZjMC10QlRScmFBYzNNZE5BTkVZN1FnN2NlR3pZMTlpdzVEcmFTdXBn?oc=5",
-      "publishedAt": "2026-10-21T11:57:50+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "간호사 1명당 환자 수 법으로 정한다…병원 이탈 막을까",
-      "source": "쿠키뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4zSGFkWk5uVnhZZ0JJUUNFbC14eWFfWFpWR0hKNzVBMVBaZTlEOXhYQ3NydXhkUnJfNF8yTm85N1JwZV82RE1PVFQ5R19vdHZpOGxXaExBQklweDdCZ2pOYzNIVQ?oc=5",
-      "publishedAt": "2026-10-21T11:45:20+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "[사설] 의료 공백 메울 ‘방문간호·비대면 협진’, 미룰 이유 없다",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE50WEJsSElYZF94cTZqZ2tIajVURm9uQTMwMUl1UEtSRGxCZzc2VmtfeDA4NFB5Uk1iX3kwbXFhVlFXLTcweVNBYXVKVElpelpRZk5xWFU2SjE1MXJ5SXgtYUR4MXgwQXViY2wtV0dB?oc=5",
-      "publishedAt": "2026-10-21T09:04:03+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "“파독 간호사님들, 고생많으셨습니다” …자생한방병원, 재독한인간호협회 100명 고국 방문 기념행사",
-      "source": "문화일보",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5zLXB6d0RublN2b3lrc0hCOVk5dTNvQzBvQUFUajZHTlBmRDdpYUtrU1AxUU5JS3FNLVdieVpjU1FCN3AxNk9TdzRPb1hlZVE1?oc=5",
-      "publishedAt": "2026-10-21T07:56:31+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "전남광주, 반도체실장·의료혁신본부장 등 9명 개방형 공모",
-      "source": "뉴시스",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE81d3hmM21XTFNHdjFvNzVDaFRNMXp6QkZrTmtyc1FTUmY3Vk1HMElJQmFlWlZFMnB6YlRBbWVLRHZaVFNlLTd5cnljOXBFYmlYNm82czdnclVSd0h4MkxQcEFXT3l1NTdjTmhockdSVGlaZk9jY1NkctIBeEFVX3lxTE81d3hmM21XTFNHdjFvNzVDaFRNMXp6QkZrTmtyc1FTUmY3Vk1HMElJQmFlWlZFMnB6YlRBbWVLRHZaVFNlLTd5cnljOXBFYmlYNm82czdnclVSd0h4MkxQcEFXT3l1NTdjTmhockdSVGlaZk9jY1Nkcg?oc=5",
-      "publishedAt": "2026-10-21T07:20:37+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "파독 간호사 60년 발자취, 국회서 되새긴다",
-      "source": "e-의료정보",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5kUHgzd1JnWjRZRnJXUXJPZUpOYXFobWZ0LTYyM3E4b2xXZTBuTS1JLUZiVWtpMjlUSHY5R25oZnRSRkpiWE5lVFUxeGVfMTM5WVBLbm1WTzlMZ1VNdHFMOXZNR2dPMXFyZElHdUw0SdIBb0FVX3lxTE5kUHgzd1JnWjRZRnJXUXJPZUpOYXFobWZ0LTYyM3E4b2xXZTBuTS1JLUZiVWtpMjlUSHY5R25oZnRSRkpiWE5lVFUxeGVfMTM5WVBLbm1WTzlMZ1VNdHFMOXZNR2dPMXFyZElHdUw0SQ?oc=5",
-      "publishedAt": "2026-10-21T07:06:46+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "병원체 분석부터 백신 설계까지 AI 활용…질병청, 국제협력 논의",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40V0oxcGVqNU92a00wcWlsVFBrdjhzVmdIdmEzS0hPYWFyZkt0SDZsQUZ3TFAyM3QwN0laaVc2MXU4cDUtaUc1OWJYM1pWeHE3SVFLRUQtMVhlOUlHVnUxbGVrRFlYVGJMY05FNkRB?oc=5",
-      "publishedAt": "2026-10-21T06:25:46+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "[강원대병원] 강원 지역 간호사 ‘Match Making’ 실시",
-      "source": "병원신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lSmx6VTVJX2pFZ1pVallyU2J4ZFdacTVnNHF0UVF5c3Y5NkRkaXZ6OTQ5VkUwSmRpYWdBTEo2eFFLUjJ0UzViYmJhV29iV1pQdWdDTUVTOXk2YWdRRDdsaTBTUUlBTFVNaEE?oc=5",
-      "publishedAt": "2026-10-21T06:06:47+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "등기임원·특수관계인 고용실적 제외…복지부, 노인친화기업 관리 강화",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9vcXdzR2htalJpbnRRTXowS3p0bHFCdElMaDhlYXpTN0RYcDd6R1hkMHVyMmpOMFdNcFYzWHVLd1E1MW5HTVlveGdQUU5EdFRYMWhOR0lWRllXVmtIVmczRFNHSFVXNm1JeElSQnNB?oc=5",
-      "publishedAt": "2026-10-21T06:05:15+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "간협, 파독 간호사 60주년 기념전 국회 개최",
-      "source": "메디포뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5iZnoycGFid0J4RlZTVlh2c1Z2VEVDSnBmRXREbElIYS10NEk0Tno4SFBuRGIwOERQZGdhRUdEeGlXT0ZlM0thRHVCUEpkTXFBOVZya0hicS1KTGd5RDJ4LWhzTTY?oc=5",
-      "publishedAt": "2026-10-21T05:58:44+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "“환자 돌보듯 자신도 돌봐야” 군산의료원, 공공의료 간호사 역량 강화",
-      "source": "전라일보",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tNUhqcVRpUDN1QWRaalRyd1FTMHQzZWtLMVFmekJmb2pUVDhuNkJxNTJvSVBlRTNmVlJENjNkaVRwWHMwVGxkV0xsbUVnNldLVHZLRDdNSy1PSHZjTUg0dmZobTJmWXdqY3JfVXNLZkPSAXBBVV95cUxNLTVIanFUaVAzdUFkWmpUcndRUzB0M2VrSzFRZnpCZm9qVFQ4bjZCcTUyb0lQZUUzZlZSRDYzZGlUcFhzMFRsZFdMbG1FZzZXS1R2S0Q3TUstT0h2Y01INHZmaG0yZll3amNyX1VzS2ZD?oc=5",
-      "publishedAt": "2026-10-21T02:37:44+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "‘AI 기본의료’ 첫 공식 선언… 복지부-WHO, 서울서 손잡았다",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5IR3g3dHNTb0lQWC04bklXYWpYNGotaExWYlk1Q1ZuM3B6Q3FxcFczc3hRbWR5OTEwOFRsZmh6QXIwa2RmWi1SWS1xMHgxR2FfLUNqMlNBSnVmSXJHS3ZKclJHVjBYc0ExazlHS3NR?oc=5",
-      "publishedAt": "2026-10-21T02:23:15+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "오진아 인제대 간호대학 교수, 라오스 국립보건과학대 명예교수 추대",
-      "source": "경남도민일보",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DcTNkNjdWanR6M3pGZi05Nk5xSXJ6ZkVxUnZfU1hCeTltdVRjQlg3SWg5OXN4MjNrNWtaTktyVzg1TXRLWFM2djhhak5zTUdlQldoZHoyTVRyck1jdUJscVZKaUM5cVNTS3c?oc=5",
-      "publishedAt": "2026-10-21T01:36:09+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "심평원 부산본부, 지역 보건의료 정책협력 체계 구축 > 뉴스",
-      "source": "한의신문",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1jbjJHSzJsdUsxZklBZnJhRThrRlMydUtUbDZDYWMwVEhjalg3a3puN2VnVUxRMXJjVjhUb1JIbVBZNm1ud0ZQelVRY1NRSTZWcUx5TUx2SkZfMEZGZThWNE5wWWZKdnVMNGdSUmZIX0J6dw?oc=5",
-      "publishedAt": "2026-10-21T01:19:00+00:00",
-      "category": "부산·지역보건",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[부산ㆍ경남 대학 브리핑 모음(10월21일)] 경상국립대 개교 78주년…“떠나지 않고도 세계와 겨루는 대학 만들 것” 등",
-      "source": "대한경제",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1MZFVLbmFNb1FmOWxUYlpWelNYNkpCel9oWU1jOWlqY21uU3h0VGh2M192OExraXQ0OXFpS3FJdzhVNUZVOE83SWlGaWhRWUFzaUU4cGJIZTQzMVdpLXJoQWxfbHA0ZFVscWRKMERseXIydTI1?oc=5",
-      "publishedAt": "2026-10-21T01:03:00+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "‘방문 간호’ 띄운 재택의료… 인력난·수가 벽에 갇혔다",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBzcm1aUzdGRFRobDdVUUxtX01VS1ZqQkx6LTNDMVFGNEx4VjdpanNGeTdJSENiWURHU1ZRa09JeXZkNHpOYVRrOEU0eG5EY09DQTQ4elNZVS02UEFHMFFxNVlCTy1mTUJfWDNrVUNR?oc=5",
-      "publishedAt": "2026-10-21T00:56:26+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     }
   ]
 }
