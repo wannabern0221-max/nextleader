@@ -1,8 +1,16 @@
 {
-  "updatedAt": "2026-10-23T17:05:31.458901+00:00",
+  "updatedAt": "2026-10-23T21:23:11.863448+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "윤단비 부천시의원·부천시의료원설립시민공동행동과 전국보건의료산업노동조합 인천부천지역본부, 부천시립노인전문병원·요양원 운영 총체적 문제 제기 정상화 촉구…“운영재단 경찰 수사중…공공의료 책임 강화해야”",
+      "source": "뉴뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0tYjFIVnRoNkdpZDJrQlBKdktxaXkyOVJZMVRNY0RHZ1pTSm9GdzFxSlRuSVlHdm5DelIwMGNwRTFhZEJnNWhRSlU3Qmgyb0JRNWRBNXBuWDN4d1lMc2ZqQ0dmV19rQQ?oc=5",
+      "publishedAt": "2026-10-23T18:41:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
     {
       "title": "국립중앙의료원, 신종감염병 중증환자 이송 대응 모의훈련 실시 外",
       "source": "의약뉴스",
@@ -28,14 +36,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "“공동체를 아는 것은 좋은 진료의 일부”",
-      "source": "건치신문",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE85Y3pPcVBsMzhhaVYzeWhfVWl5SVlYUmQtdXV0UzhxVi13bXU5LTJfc0syZC1vczNVMXZhcXdnUEhMWnpoTVZFNVZGR2lDM1E3QnBlaVQ2clJ5cFNwcmowN2djX3ZtZw?oc=5",
-      "publishedAt": "2026-10-23T08:01:48+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "서울대병원 28일 전면파업 예고···‘필수 인력 충원’ 요구",
       "source": "참여와혁신",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9GaEk5VDd6ODBsWlVyZ2pKNmJGSnc3YUNySTRVMHF3MS1CcEpDRmctVUJvMnJibVVyaUY4ZlFxQ1BnakNfMUxfM2NxUzB4c3FTOXY3V0NBMzNIaEkwWXFBaFl2S19OSm9EZnpuTURR?oc=5",
@@ -57,14 +57,6 @@
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1IbVhJQWFYcXRkdTN2c0xlWmM4N1YyOHJkSG5LZlZFQnFmbkh5VkRhWmZFSkNEUTVkZXZKamNzc0dVVmJIY09wNURfR3RkMnExdGVIbHZYOUZBT3pSLWxWOHV2LXZNejBoWWc?oc=5",
       "publishedAt": "2026-10-23T06:28:50+00:00",
       "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "서울대병원분회 \"간호인력 공백\" 28일 전면파업",
-      "source": "뉴스클레임",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1VSEpiaVhLZks0Q0szd2VEM1lJN3JsOFpxTkkxcFlZWUNsRjBMdlA5QkxzVFZCZktLMjR2Y2gxSFFSQUN2RHZQR1FzWWNmWm8wb0JkYlBwUG5xOGNVd2U3bVVNeEszb1VneEtZVWlYeFo?oc=5",
-      "publishedAt": "2026-10-23T05:42:32+00:00",
-      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -270,7 +262,7 @@
     {
       "title": "[대구소식] iM사회공헌재단 창립 15주년 기념식",
       "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE12N3RLeFM2UGZjQW1DM21DNGVfVV94eDluX3cxc3JMcEt5YlNtRGtYLWJHX1BwM2FVakVBbFdubFRoamZrQURPVDBCUTBZQU9LZEx4ZVlhdVhfdGfSAWBBVV95cUxORGxSbmlQVjlROGxpLVVBVUZYaFpNbU9teE4ycHlVSHRPaVYta0YtQ1IyWWZKNjdiZ3dFODA5eUJ2OTZrV2hwR3UxbG5fZGdCUnRHS2tRYzljZVItYWF1QWc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5EbFJuaVBWOVE4bGktVUFVRlhoWk1tT214TjJweVVIdE9pVi1rRi1DUjJZZko2N2Jnd0U4MDl5QnY5NmtXaHBHdTFsbl9kZ0JSdEdLa1FjOWNlUi1hYXVBZ9IBYEFVX3lxTE5EbFJuaVBWOVE4bGktVUFVRlhoWk1tT214TjJweVVIdE9pVi1rRi1DUjJZZko2N2Jnd0U4MDl5QnY5NmtXaHBHdTFsbl9kZ0JSdEdLa1FjOWNlUi1hYXVBZw?oc=5",
       "publishedAt": "2026-10-22T07:04:27+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
@@ -481,6 +473,14 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9adXhJV1FyV21ScTVZU1lISkR3N3N1cFJESW1WZnY1R093MW42OUhuTEZCc1NtTHVjSDJpdVpLeTR2N01DTHBxSlpPeDYyUWE4WDhldEh4UVR4dXRXNUs4X1cxRHRLczFQeUN1ZXVn?oc=5",
       "publishedAt": "2026-10-22T00:06:31+00:00",
       "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "의사도, 간호사도 모자라…핵심인력 줄줄이 빠진 병원 수두룩",
+      "source": "뉴스1",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BOVgyMTFuZC1jZDhZM0VNcFJXY1hKdGNkN2JiMkw5eEhQcDg1ZGx6NEY1LVhNTS12MjlUS1ZiZndrQ1Z2X1lJM184eUtyTTBhQzM0TFVaYjFCVnl3?oc=5",
+      "publishedAt": "2026-10-21T21:20:00+00:00",
+      "category": "간호인력",
       "contentType": "언론기사"
     }
   ]
