@@ -1,14 +1,38 @@
 {
-  "updatedAt": "2026-10-24T20:47:48.256819+00:00",
+  "updatedAt": "2026-10-25T04:39:26.100429+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "포트리아와 오미코, 바이오마커 기반 항암 신약 개발 발전 위한 협력 추진",
+      "source": "AI경기방송",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE53MGp3TGJRbmRmRmdiYjRvbmtrWU1ha2ZxUng1VGhZcDBtTlZKVzNHMG5vYndfSkczQ1luTGpKNlc5bXVZaDdwUW1vcHFfS3ZiOHc?oc=5",
+      "publishedAt": "2026-10-25T01:34:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "따뜻한 아침 한 끼에 마음을 담는 간호사들",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Zb0cwQVhSX2ZseUpCQkJVNlBYbFF2MG1OY0hkWkptcjR0X1hFRUFnSHdDbWRydHF2cnhlN25WTllkNVdYd0FaZG5kRzZzU25IT21iZ0pMb3VTVnVhN1lHaGlMWFp0cFJrQjBCS253?oc=5",
+      "publishedAt": "2026-10-24T22:15:58+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "화순군, 거동 불편 어르신 재택의료 연계 강화",
       "source": "중앙이코노미뉴스",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5sd2FiaEppX2RLRVA1X3FJSUFJZHpXdmJPYWNoeEljbEN4cnVFb3h6TVFEbF9JQzd6OHdtd09kek5CQUtCcFRLT1FYS01iQ3RHR0dGZF9zd0hzTjhqOEJVeldxM0lVZDJxM3dYdHh1OWVQdw?oc=5",
       "publishedAt": "2026-10-24T12:47:30+00:00",
       "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "세계 노인의료기관의 국가별 운영 모델과 정책적 대안",
+      "source": "브런치",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBmaXVldnVuVkRTS2l4dmxCa2VoTE1LYm9vN09rQkxWVUN5RHZPamswakJoTG50XzludnAzNkhTYll1T29yZW15Ug?oc=5",
+      "publishedAt": "2026-10-24T06:00:01+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -25,6 +49,14 @@
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0tYjFIVnRoNkdpZDJrQlBKdktxaXkyOVJZMVRNY0RHZ1pTSm9GdzFxSlRuSVlHdm5DelIwMGNwRTFhZEJnNWhRSlU3Qmgyb0JRNWRBNXBuWDN4d1lMc2ZqQ0dmV19rQQ?oc=5",
       "publishedAt": "2026-10-23T18:41:00+00:00",
       "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "고소당한 간호사, 구제 탄원 1만명 넘어",
+      "source": "동아일보",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04OGd5Y3pmLVJPeGk3d25xaUpaeDdITG9VcjlSTmJKbXhLUTd2UDBZb1J2bGJjbUpFdUtZam5NbUdRMDgxTjFQM2VUdFVhVTBSX0phcWZFc3hhZE5Mc09hQ0hiYTV4SmJRQ1Q4a0w4YTNORVRl0gFmQVVfeXFMT2MzZjJFanpZc0pQSzcwWkNDRjdmWUpRWlVHSGRmTDAyZnZSVDdqSFNUbjRIbjRWR2hkTzZ1T3FUM3ExTkdDOFVoS0xCZmRhOXctLVFTN04wd3hleGYwc3dmUWhDWmtn?oc=5",
+      "publishedAt": "2026-10-23T16:40:00+00:00",
+      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -450,38 +482,6 @@
       "publishedAt": "2026-10-22T02:06:26+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "국립중앙의료원, 공공병원 중환자실 간호사 대상 ‘CRRT 투석간호’ 교육 실시",
-      "source": "라포르시안",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40enI1aW0yU2otNnJCLUZXN1lQRXJfd1NNTWZrdkQxTUV4OUwtWHM3cVozQXRITVJaQjVrWVV6c1lYWm9TckdHM0pxYklRLW56YkZNM1FhQmV6WVhqd2d1anhxbzg4RkQwTHpGN1R3?oc=5",
-      "publishedAt": "2026-10-22T01:15:00+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "파독 간호사 60주년 기념전 국회서 개최…헌신과 도전 재조명",
-      "source": "메디팜스투데이",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjNEhWVUZfNmpfX1BESVpEaW9ySmVJUmMtUmNmSEVZSW0xSnZHMS1RWlZOMjBxQ1BoT2FfNm02VnlVZGg0TUNPR2dLaG5oYTdra0xhSzVPeTYyMU5QRGFNcGc4OTR3M1hP?oc=5",
-      "publishedAt": "2026-10-22T00:36:13+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "“초고령 답 찾자”… 日 돌봄 현장 간 간호사들",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9adXhJV1FyV21ScTVZU1lISkR3N3N1cFJESW1WZnY1R093MW42OUhuTEZCc1NtTHVjSDJpdVpLeTR2N01DTHBxSlpPeDYyUWE4WDhldEh4UVR4dXRXNUs4X1cxRHRLczFQeUN1ZXVn?oc=5",
-      "publishedAt": "2026-10-22T00:06:31+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "의사도, 간호사도 모자라…핵심인력 줄줄이 빠진 병원 수두룩",
-      "source": "뉴스1",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BOVgyMTFuZC1jZDhZM0VNcFJXY1hKdGNkN2JiMkw5eEhQcDg1ZGx6NEY1LVhNTS12MjlUS1ZiZndrQ1Z2X1lJM184eUtyTTBhQzM0TFVaYjFCVnl3?oc=5",
-      "publishedAt": "2026-10-21T21:20:00+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
     }
   ]
 }
