@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-11-01T13:21:29.086994+00:00",
+  "updatedAt": "2026-11-01T22:00:20.501119+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "‘간호계의 Uber’ 앱들이 의료 규제 완화를 추진하자 간호사들이 경고에 나섬",
+      "source": "GeekNews",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9mVHBqR0M2eF8yNWIwNHhRMGhpblNCa1NmZXVTWkNOYklPaTd0X1E3SVdIZW9nYzNfYzFDVkhwVk1kaXpNMW5wbW1Hbw?oc=5",
+      "publishedAt": "2026-11-01T20:36:12+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "의료 수요를 충족하기 위한 의료 정책 개혁.",
       "source": "Vietnam.vn",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUklUZlRRRm1aSXNoYmJONFdGaWp2M1NuY2wxZHRTVE13N0lheG1wTENEMTRRTERqZEdockxOTzdqZlBfWmVsM21EQnBGZXY2Sk1FdU9qdXJYbmxHNDVKRlQ1ZXZQcXhUaTA1NERqZGtEemhwbkthSnJ5aFp4Y3BTTWpyY3pUSm5kMlU0?oc=5",
       "publishedAt": "2026-11-01T09:57:29+00:00",
       "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "불충분한 보상은 의료 종사자들이 일선 현장에 머무르기 어렵게 만듭니다.",
-      "source": "Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONVpqWkdZSmV1M2t2MHZqZUY4UjRSdHplSkFUdi1NNXo5cng0UC1NYmU5QWYyanBKZm5xSE5GR2Z6anJia29WZ0FlTUtENGZWVWxQczY5RGdCVEpjNnJGbW95SE5ybFlnUnU2YVdUZS1rTG5odnZrWDAtRGRVOG1Yd00yRjBNWG54a1VCR3dSSUZhSEU?oc=5",
-      "publishedAt": "2026-11-01T04:23:38+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -49,6 +49,14 @@
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA0ZlhteUkyOC1EYXFzcUQtVFRBR00tN1ByVEdHakszeEZNa244RzFESFlub1JlUldZcGJIUjZpalNOSzMwSFRlbjBoSDB4eWxWNGQyZldKWTZRdHRocGltU0xKQjdyUk5mbGc?oc=5",
       "publishedAt": "2026-11-01T03:24:08+00:00",
       "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "건강보험 1분기 3조9000억원 적자…연간 적자 전환 우려",
+      "source": "쿠키뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9YTjFRSndxbm84dmNCZlh3Wk15N21YeDlKVUdOQ0ZQcXJfd0tzN2NkeV9lbDZvR24xWk84ZEJvdmx4ZFVpdVNBaGE1Y1kwRndNUU9NRm9WOWdtQTVYYXU0eFJfVQ?oc=5",
+      "publishedAt": "2026-11-01T02:15:49+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -308,6 +316,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "경상국립대 간호대학, 2023학년도 나이팅게일 선서식 개최",
+      "source": "www.jinju.news",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE94d2xrRHl1MEVjSEMyM2JHTUdSQWdrVl83R3lMZWp0bnhRVl9mYVprbGc4ekdVeEpBSXRBU0VYUVdzbTB1LXBvdjZuRHQtY3hUWVQ0b3hsUndXWjVHM212b0tfYXAwRDNYYTgzZEtha29CSkZKbDZB?oc=5",
+      "publishedAt": "2026-10-30T03:50:02+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "예비 간호사들의 다짐",
       "source": "뉴시스",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9OQ0kyRUkwYm9sckw3S3A0emdmWVhibGVBMG5Jay1RYlQtQklzM01VVnVVM1pMRUl2ZGx5NGJHSGpmdjB5RTl2UjhERlFBbzc4bHFKRjlkcGM0SFV2N05WNXdxMGpicVAtNnZjUQ?oc=5",
@@ -392,8 +408,8 @@
       "source": "쿠키뉴스",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1pdXNyWldNTUxpSXA4VVNzaDVDdVRQelR5dkdVSDRZVGFKYkd4NXJlTHZrdmlxRTFkQ3JMNzEtSUpmUzhIQ29BNDdlTzZ5VUpxZHNfNy1hVmxwcXNBWDFUU0lYSQ?oc=5",
       "publishedAt": "2026-10-30T01:21:08+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "“일차의료·통합돌봄서 간호조무사 배제 부당, 제도 개선·입법 필수”",
@@ -446,7 +462,7 @@
     {
       "title": "간호조무사협회, 전국임상협의회 개최 “일차의료·통합돌봄부터 병원 현장까지, 권익 지킬 것”",
       "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9oLTk1a1RtVl9DTV9EOHRkbENfRDdsTXJJd1BzNVM3QjR2V2xRUW1vbkZGMHVNYklhXzUzS3pZWG9PbExkVHg2c1BOT0VTeF9IVlItdU5R?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1JYnp5LTNBTWpNWUJIcVZKaktCOGNZU08xelRNOEdNYjRuUmF4bGV1Y1ZrUFV0NGIteXpjVEtLenZNWTJVeTdhVmxaNEJlQThTRXZzdQ?oc=5",
       "publishedAt": "2026-10-29T23:52:00+00:00",
       "category": "정부·국회",
       "contentType": "공식자료"
@@ -464,23 +480,7 @@
       "source": "Vietnam.vn",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNR0Jhc3k2eTI5eHdBQ2FhNzc1YW9WSUE2aDJfWlZpbHRPaEdweWpzLWxoWWN0bTd2UVJJLVVJSXhzbjFfU1doWjdQSGZiNzB6djluYkxyczc1TktMVXg1YnYwbEk2RUVLSjFMRmJiQW03UGN6QWRUOFRidnF5a2ZNQXpEUjB0RmlNNWR2MFRtLUx1cW9Sc3llODBwTW9hWlNl?oc=5",
       "publishedAt": "2026-10-29T23:09:15+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[의료개혁 권고] 경상의료비 216조 돌파…의료혁신위, '혼합지불제' 도입 권고",
-      "source": "CBC뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnS045V1M2TWVveW96WEtfUmJ3b04yN1pzcWl0cGN2WGlZXy12OWNwekN1SVNXR19fNkVLM3dvNzZqa3pCS1FQTlAwYm1tT3l3MXhjdlJzR05uZHBIRXNzOEVqQzBOT1Jx?oc=5",
-      "publishedAt": "2026-10-29T20:30:00+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "서울시간호사회, 고시지원장학금 신청 접수…12월 9일까지",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pekllSl80ZkdfREtxSWd5Mkc0b0N6bUgyWTFZaFlkbm42ek1GOWhydFNvc0ZvYk5KWV9LM1h2Z1BMVU1qY2Izb2QzYUdEeG1WdzFXT1lxMlpnMTJlV0ZoSFk1MnpCRG5qS0NIT1Vn?oc=5",
-      "publishedAt": "2026-10-29T09:31:28+00:00",
-      "category": "간호정책",
+      "category": "간호교육",
       "contentType": "언론기사"
     }
   ]
