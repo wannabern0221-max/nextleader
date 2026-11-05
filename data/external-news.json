@@ -1,8 +1,64 @@
 {
-  "updatedAt": "2026-11-05T06:43:53.268583+00:00",
+  "updatedAt": "2026-11-05T19:55:48.815247+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "간협, ICN 아시아 포럼서 한국 간호 혁신 성과 공유",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9YbWwtRVpzN3ZfNHlBdFpKdDdlV19vNlVycV9aNFdxWGYxd1JtOWZQLU9MQmJORWRkZW9LbVJpYm1Nd01WQW9SbHpYTnhfeGhqT1g2MkoyejNEaG9nZ25kSEUyUEN4Y29LQW9hSkNn?oc=5",
+      "publishedAt": "2026-11-05T08:56:36+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "고당센터, 2028년 ‘만성질환 통합관리센터’ 전면 개편",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1RaHRVVmNTaDRJTXFQdDZpR3h5Z0JrLTFnalBTQnlWWVFyRmUxQldJeXRLSEJWYlgwM2UwRGk4N2YyUHBUZ2F4SlM4N2VQdVhGVTBSeW55S0w0eXZHU3ZNNGZ2eTMtZUwzNEhhV0R3?oc=5",
+      "publishedAt": "2026-11-05T07:56:26+00:00",
+      "category": "질병관리청",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "건보공단, 간병 부담 줄인 의료기관 38곳 선정…'간병 걱정 없는 병원' 확산 주목",
+      "source": "서울경제TV",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5lZy1zY0FibUlLSUhzaHZWc19aX1FGWXlTTG04bm9LSkFGU3NpbDI4NUUzZE4xc3hlZ0NRaUlYR21tZ0pGbkpEb3gwcUltQWo0M3VTaU9lVkNaU1gxS2hoY2JzM3g?oc=5",
+      "publishedAt": "2026-11-05T07:43:23+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "검사·신학생·무슬림 의사…너무다른 세 청년 美 정치 뒤집다 - 머니투데이",
+      "source": "머니투데이",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9fQklJaUoyRUFkODhOM2hHT0I1N242T0FtcFVMSWlSaW5Hc3d1eXNRazVRTDRZUW1aa0E1cHFoNlFyNUNxNXNCLWltSW5VdkdUU0lxOGQ5Q2p0M3ROcEVLdUw0Vm96U0g50gFuQVVfeXFMTkJqMURNMjFCWGxrcVVJTUtaRXpTZTZjak1OSVNFdDJxbWMzWVRHeVU3Y0JXcUNud3NjeEkxRl9HNlpsMENJLUFTLWhpYWQ2ckExa3RTdWRJUVBhT1JuWlR1bGxEbUdjV1ZpbjMwR3c?oc=5",
+      "publishedAt": "2026-11-05T07:03:46+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "[초점] 비급여 관리 제정법안 발의에 의료계 강력 반발…진료 자율성·환자 선택권 침해",
+      "source": "경기메디뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XYWM3VkNVSXI3YWdHTUpxMEFpb1U4azJkUk0xeTh2MFVCM3VneVMwLVNWZTFlYkdkcGpBaDhxZnhtSFhkaXZzUjJhcjNXanRBcG1ma2IxejNaX1lZU2VPbVlDNjB2Uzc1d2c?oc=5",
+      "publishedAt": "2026-11-05T06:54:52+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "토카예프 대통령, 2026년 국정연설서 카자흐스탄 국가 발전 청사진 제시",
+      "source": "외교문화뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB1WUxkc3NFNUxCVzhtVndnMTdfakgwWTN5bGt3bk1SUW51SXh0amxGS29tWWNfUFNvMW1NNmdDSUFnVm5maGQ5dTBPb0JpMGVCWi1NcFdUMEpKdjMtMEQtR29mUms?oc=5",
+      "publishedAt": "2026-11-05T06:50:45+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "'의사 수급 추계' 복지부 거짓 설명 들통? 'ARIMA 모형 논란'",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBKY3RPa2JBdlY4YkdJTGllWEVUU3NOU25oalBfRmhNRlRXRExfU2pYWU9yRDh3VzZ3TF9ablhLRjUydmo2cl9BVC0xSzhGSU5XTEVHNXVOR3VldUwwdmNMdTVNQk40Uk1NUmg3R3Y4dVhxZw?oc=5",
+      "publishedAt": "2026-11-05T06:45:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "경상북도간호사회 80주년, 간호인 800여 명 모였다",
       "source": "전국도민일보",
@@ -18,6 +74,14 @@
       "publishedAt": "2026-11-05T06:11:24+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
+    },
+    {
+      "title": "복지부 “공공의료 운영체계 전환”…5개년 기본계획안 공청회",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Fd09kVnRiUFVTRGY1X2xXZVI0Rl90bFNGNEgzWWRFVTMxYUtKTTZoeWt6WEdkeEVNdWxBazFFNlpGLWtpZWFIVXpnZlI3ZHdBVHV1dTlJckJ0cjNDOWgyZnVtZjBCMzZjaEtxQUFn?oc=5",
+      "publishedAt": "2026-11-05T06:09:17+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "경북간호사회 창립 80주년…간호인 800명 한자리에",
@@ -50,14 +114,6 @@
       "publishedAt": "2026-11-05T05:20:06+00:00",
       "category": "질병관리청",
       "contentType": "공식자료"
-    },
-    {
-      "title": "간호·간병통합서비스 우수기관 선정",
-      "source": "병원신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8wZWRDQmswVmZzUTFDZWt5eWwxNUFDaWp0Y1pncDR4cW9KV2lNMlhaM1VUZkROR0lsRUFEY3BNdHVLMEF6S2o0RjV5cmR0MFdXcG1lSDBXMEFrdGYxeHhmckRfb3BZSFJZdVE?oc=5",
-      "publishedAt": "2026-11-05T04:59:25+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
     },
     {
       "title": "경북 의성군, 지역 간호대학과 연계해 경로당 건강증진 프로그램 운영",
@@ -148,12 +204,12 @@
       "contentType": "언론기사"
     },
     {
-      "title": "삼성서울병원 수술 경험 기반 간호인력 자동 배정 기술, 미국 특허 획득",
-      "source": "메디칼업저버",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBMdTl5dWIyN3JZUDBGaWRudG1adXZxUVUyb2d5TDhnQ1g5TmczWWFfWXZQQXpfSkJMdVZ0QWZodkFscEpvdEswR3BxVXczSDBKMDlaREQ4RUZhc1Z6X0ppZUFhTFdxUEg1VFBn?oc=5",
-      "publishedAt": "2026-11-04T23:27:29+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
+      "title": "복지부, 간병인력 표준교육과정 시범사업 실시",
+      "source": "메디팜뉴스",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE90cGwtQjY0R3FQVXBQcUo3cXhrbVQ5U0xyYzRtWkEwYVhpWGZLSmhOWVZPeTROb3pLWEI3ZTZva09TbHBYOVhlMjNyQ3lfWTE2Q0lsdU1sTG5wNktlQWkwaHlDNUNBUDdpekhNLTVxc0VoQdIBdkFVX3lxTE1qSFhvVElsTWJxS1VELUF0RVo5NGdEaDdCZm93Q3JhZDFQMmhBTU5nNV9iSnZ3cnA3d0Q1M2E4cnRmZmJ2X09EMzkyWmx3cGJ2T1R1NG5HeFYwQnJFb0JudDdlSzhZa3B4Mkx3THI4S0hvaHZ3cHc?oc=5",
+      "publishedAt": "2026-11-04T22:17:19+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "통합돌봄 시군구 99곳, 의료연계 5%↓…정선·순창·울릉 '0건'",
@@ -228,6 +284,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "가천대 길병원, 건보공단 선정 간호·간병통합서비스 우수기관 선정",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ka0lsT19nX3NFaGN3dnEzNWhDenhuQ014SWZVYlVWQU15YmlQcE5Dd1d0dmVNTlFNd3ZpS0NlYXBtNUlVZzlxeGMxMzFHWVZwRWRBMnA0MF9IZ01kNk55MlhYZFExUHM3Vnc?oc=5",
+      "publishedAt": "2026-11-04T08:14:45+00:00",
+      "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
       "title": "대한민국 의료 이원화 올바른 개혁의 전제조건",
       "source": "의협신문",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBxc0g4RXZoTVRNOVRmV0dhYzhXMFA5Y01nQ05mbk0ydW5kT01fUUhxeUZlRHdIS283SFdnOTFZTXpqaWNlZWwwNk51NWRrdGwxVXpsWk9zNWI0RnFSbmxTa3BEZV9waGgzM0ZCOUNJZ0xzdw?oc=5",
@@ -252,11 +316,11 @@
       "contentType": "언론기사"
     },
     {
-      "title": "[11월 4일 병원·의료소식] 성빈센트병원·가천대 길병원·분당서울대병원·세브란스병원·부민병원그룹·건협 서울서부",
-      "source": "e-의료정보",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81R3U2SUJHbTJxM0RoY1NBTzJ4ZlJMY2pseUtRYlNaZXFCd1EwekplT2ZwYktaWjg1U3FGd0cyMVlEdTNjOHNOTFQzZW9lNG0yUHFvSE5UTktjSTFtNWxhNTFXTW1kcENMeF9B0gFvQVVfeXFMUENlZEppNGdqeEhEN1ZTU3NIMm9PWFVuaFhNTkgwQW5yZ00zUGZyaUpMVjVaQVFib1VwR3dMNEdhSF92NE5hOFU5Vlk2Ynh4ZEtGcU5Da09PMnNBQnQ2TlZlNkw2ZnFkM0ZoankwTms4?oc=5",
-      "publishedAt": "2026-11-04T07:24:40+00:00",
-      "category": "간호인력",
+      "title": "가천대 길병원, 간호·간병통합서비스 우수기관 선정",
+      "source": "경기일보",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Qa2ZRelBKM3k1ejkxN3FmNFZDbjZWVWZkeXprcGJZajVkTkxtdVJiQ1dTdzFUcWY5Q2dYcFRVenk0REhYWXBPNmxZSF9WNGFWLTBHMVM1aG1GUXc?oc=5",
+      "publishedAt": "2026-11-04T07:07:23+00:00",
+      "category": "환자안전",
       "contentType": "언론기사"
     },
     {
@@ -297,6 +361,14 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92TndwODkxRTl6ZmRlUjVhRFJJcTEyaDQwM211d0NFZE9GY2lpNFFKOFpXLVhqUllpUmVTa3JBUTR3VWpOOFdPQ1RfZzlqRXlwQjlNYU1CODVqLWg5NVRqMHlxbWZrSVo3ODVXVE5n?oc=5",
       "publishedAt": "2026-11-04T05:00:00+00:00",
       "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "동양대 간호대학, 제14회 휘장수여식 개최...88명 나이팅게일 선서",
+      "source": "경북신문",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SaWkwdHNwUE9GUWtNWE9VUm8zc1A5R2NkNFNSLXJfdnZIYTk5VVJiTWpzVFlPdmhYUmI5cUEyNWVCMmdiU2gyVzUxN29sZXE1MWloV185TUo?oc=5",
+      "publishedAt": "2026-11-04T04:58:34+00:00",
+      "category": "간호교육",
       "contentType": "언론기사"
     },
     {
@@ -356,6 +428,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "희귀·중증난치질환 본인부담 10%→7%…12월 인하 추진",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLY1BfOXFxMTFWN2pJZDBpbWgxZElsVWdncENkaU9tdE4xcGNZalVReC1YaXhDLW15MnlndnZCQ0tGV3B2d1VqRENCUGludmI1Y2NPbjJONUFKenFZNnoyTUIxTl85eHd5WmctMlJ3?oc=5",
+      "publishedAt": "2026-11-04T01:22:05+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
       "title": "[사설] 초고령사회 노인돌봄, 간호 전문성을 외면하는 정책은 실패다",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jTThtVnNYWDg5Q25CdjByVnR2bEM0Tmp3d3ZfbmctZTNYM0pZYVY5SGlUX284WXgySjVrRzJ3YVpLZjlpZ1lLbkJ0SHNsa2I0T0xGSHd4YjgxX3JRblBtWTNnWVE1Wmw1TG1fSXN3?oc=5",
@@ -388,27 +468,11 @@
       "contentType": "언론기사"
     },
     {
-      "title": "80년 헌신의 역사…경북 간호인 800명 한자리에 모였다",
-      "source": "http://www.reporternside.com/",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE03VmJZcXZtLURNbFkwaGNGRVEwbEQwLXQwMjVGc05LdU5HNmowalhVUnR2amdrNER3ZDItdjkyX2haNnc2VGY0RlhLcWV5dkpCNktaRFJtSk9HMDV5ZXRIOXRYTGRmd2gwY1F4VHluUmFQdw?oc=5",
-      "publishedAt": "2026-11-03T23:47:17+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
       "title": "대한간호조무사협회, 2026년도 자격신고·보수교육 및 대국민 홍보 광고 송출",
       "source": "한국의약통신",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE16TGxaXzBkcDJPakYzc1RDSFpCNDdibWo4b3FTZ0MwQkM5ZGJsVkpqcDdVX2h6c1J4YU9hSUs3eHFhdjhaeWpjMEUzUi12ZVpMUlhzV2dXLURmUDRLdklnNjJvNnpSazk5U293?oc=5",
       "publishedAt": "2026-11-03T23:28:51+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "첫 보건의료발전계획 밑그림…공공병원 별도 수가체계 제안",
-      "source": "코리아헬스로그",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9UeXBvdkVGMlRJZU9wNFg3WHUtTkp4cjJod255TzR2YVNYZWdLNUpleDgtbVZLXy1URFBGdnZrT3BOZERRMmc0WlRsTGlFcnNtM0xoYjA2QzBoVGd2dXB2OENKX0VRNlNIT213T3ZmLWY0ZXc0akHSAXZBVV95cUxPVHlwb3ZFRjJUSWVPcDRYN1h1LU5KeHIyaHdueU80dmFTWGVnSzVKZXg4LW1WS18tVERQRnZ2a09wTmREUTJnNFpUbExpRXJzbTNMaGIwNkMwaFRndnVwdjhDSl9FUTZTSE9td092Zi1mNGV3NGpB?oc=5",
-      "publishedAt": "2026-11-03T23:05:36+00:00",
-      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -418,70 +482,6 @@
       "publishedAt": "2026-11-03T19:15:54+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
-    },
-    {
-      "title": "[사설] 노인요양시설 간호사 배치 기준 손질, 건보 재정 아껴야",
-      "source": "서울신문",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9zRXJWdHpwNUdXd1R6Y1VUZGljdGp5OTFsX2dQUEMzQVA2WVRSaFJKWkFENU9tU1lteEkzdWVDS3dzYTJuZGpTOVJrVzFXV1ZnY1c4Q2tDRQ?oc=5",
-      "publishedAt": "2026-11-03T15:09:29+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "식약처, 성인 원발성 IgA 신병증 치료제 ‘반라피아’ 허가",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iMTdheWEwN2d6czVLdlpEMWstUUxnR2RyYkNGdFVIU1hIVTZDb0x6bUhMakJ1WWFNOVpWZTV2RUkxb1VDTG44Nk1rRW1vM3FMdjBISG9IYnE4V0UtY2RzNlpiUFJYdURxOW1ERndB?oc=5",
-      "publishedAt": "2026-11-03T09:31:16+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "간병인 표준교육과정 시범운영…3일부터 수강생 모집",
-      "source": "팍스메디컬뉴스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5EekJCNTRjSzZ3WGFaS0ROUVRQZjFfMFhJcmRRQmNDUE9YOGZ4VE9VT0EtMFdxbmxwckZFa1dsVG5SS1BFTUZxRmtQTFlib2JGSmRuTUVVTk5Ec0pjaHZ4bC1ITHFYNUNDZ3BlLWJ2Wnk?oc=5",
-      "publishedAt": "2026-11-03T08:23:38+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "정부, 검체검사 원가 오류 일축…\"수가 인하 로드맵대로\"",
-      "source": "데일리팜",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE40RmxlNExXTmcyRjZlZnhjRDlrMzQ3VklNU2k2ZUhlUWZ5TUhwMFFSOEJVdDBBd003bEltZVhLR2ZZRDJRWDZtdlo4dWZvcmozN1VON1p3?oc=5",
-      "publishedAt": "2026-11-03T07:50:10+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "의료집중형 장애인거주시설 대전 ‘로뎀’ 개소",
-      "source": "재활뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4bDBXTzI4R0hTblFhTzBJdUdUcjc3Ul83X2FqNWtPdzJDUENsQXhrUW44RUw4bVk1MHpLTDF2a29uRUZvZk9ld0hYcXNzOExpZHRubFVCX3l0T0F4Yms4YjlPVUJTRmJldmVN?oc=5",
-      "publishedAt": "2026-11-03T07:31:44+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "“요양시설 숙련 간호사 늘리니 건보 진료비 7.7% 감소”",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1nZENXREVrS2NDR3h2NFlmMmNrZ016WjNCRGdTMFJlNl9qWC1SYVMtS3lPMHJwYUpNV082Wjlib1ZUanVpZjAyMWFaUzZ6aXJTdk5Ta2tJODcwUHhPTTV6NEU1MlN1SU1xSmc5UEl3?oc=5",
-      "publishedAt": "2026-11-03T07:01:37+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[이슈] “임종간호 시간 부족하다”… 경력별 맞춤 지원 시급",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9aS3JHU0JvMGhHSFB2c2RnOUI0REF2cmxBbVpxcDZEUmtQbGh1MXpwLUktczBIbVNZRGFpOHhkaldEQ1V0VXVPOXRueUhZN19HOVpwR21PSVVoN2lYeDdRbmMxU1J2Y2pvRkhhQlpR?oc=5",
-      "publishedAt": "2026-11-03T06:29:57+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "국회·의료기관평가인증원·정책학회, 보건의료정책 발전 위해 맞손",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1oaFNNVG9aTHBQVnkzY1JkeHpZVGllbEZ1ckZBMFVqRkRwb3JlSURyUGRaOS0ybGFvOW5HcHRIU1BpY1ZIdUp4U2tJdGt5UmNMLVlhemsyM2FIXzhSX1NJcWNFVHhYU04yNFE?oc=5",
-      "publishedAt": "2026-11-03T06:19:07+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
     }
   ]
 }
