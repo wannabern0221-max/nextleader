@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T12:58:38.151535+00:00",
+  "updatedAt": "2026-11-07T21:48:36.453263+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
@@ -18,14 +18,6 @@
       "publishedAt": "2026-11-06T23:15:36+00:00",
       "category": "정부·국회",
       "contentType": "공식자료"
-    },
-    {
-      "title": "\"가격부터 내용 다 정부 통제인데 무슨 비급여…사실상 '강제 급여'\"",
-      "source": "청년의사",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5BZEl6dnhoOXUwNERpOU1vVV80ZjFBME5VVVZoaTNxZU9aek01bWhfMXAwR2I0UEZieEpOc1hibkJYNkRLcHFkdGptZ1ZadHFBNXJicFRTTEI2NVA1LXczWnd3ZmlUOG9EbE5ianh2ckw?oc=5",
-      "publishedAt": "2026-11-06T22:27:08+00:00",
-      "category": "보건의료정책",
-      "contentType": "언론기사"
     },
     {
       "title": "[이기자의 메디컬나우] ‘류근혁·박민수’ 靑보건비서관 중 복지부 출신 44%",
@@ -60,19 +52,19 @@
       "contentType": "언론기사"
     },
     {
+      "title": "서구새일센터, 메디허브 일자리사업 ‘간호조무사실무·병원서비스’ 과정 수료식 개최",
+      "source": "국제신문",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTmdaUEhwWlA4b0wwbW43NGhQMG84X0FjVE5qd3A0a3hHb244MTJJVEVIQWp1dU8tZkVMMmJPUG12T2o2S1k2Rm5WTkZRaHEyZVA5Nzk3UF9aaE05czlkWmcybWhoOEJLVE5xWlZzWXlieXdwSmtPOVBlUlpDUkUtcU1Ea28xSXJYY2VPTXh1dG1VSmM?oc=5",
+      "publishedAt": "2026-11-06T08:12:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
       "title": "세브란스 의료진 피습에…복지부, 진료현장 보안강화 방안 보완 추진",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE11NjZGajF0UjEyRXlwclpFSVVjUnZxZ3J3bFV6TENha09CSW9RV3lwUTNETjBfVWtkMU1XblI4X2VZaGtFSDIzejhQbGl0ZGtQY2syRElxV091a1NMM1FyMHJvN0NEd1oyUVNWSDFn?oc=5",
       "publishedAt": "2026-11-06T07:55:12+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "요양시설 간호사 많으면 의료 비용 줄어",
-      "source": "이투데이",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wMTZkVF94dU9oaGo2QmExemZqbjh4d1kwVDZTUC14c19aS2w1Rm5aWG45anJ5X1FJcnRKYzJuakVEb3N5Z2ZiQ3ZoazYzM2lnMW5EZ0Y1eWV2UQ?oc=5",
-      "publishedAt": "2026-11-06T07:07:00+00:00",
-      "category": "간호인력",
+      "category": "환자안전",
       "contentType": "언론기사"
     },
     {
@@ -180,6 +172,14 @@
       "contentType": "공식자료"
     },
     {
+      "title": "남서울대, '제3회 전국 간호대학 심폐소생술 경연대회' 우수상",
+      "source": "충청뉴스",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE96aDNUWVgwbDBkd3dUX1B6YUpxYnl6Z2U3SXhMODVTdFlNVXAxN19SU1FnRW1pR2hQeE94V3VUTU5WX3U0RVRXY2VQSmhiX01Ibk81WWxLLXY4aExnbktqdVNsYXU5WVNaRW44?oc=5",
+      "publishedAt": "2026-11-05T15:16:51+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "순천향대서울병원 최유리 간호사, 백혈병 환자에 조혈모세포 기증 外",
       "source": "의약뉴스",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBxUC1jRkdYTXVpS2JUYkdGUnBzNDJucE5qM0RiM0NzcF9qelN5dEhGdl9oT2tXUUxSWjdLUXVKX2V0cTBFRS0wVzNJRGwza3FyM2dWS2tXb2FnMzkwWXVNSENjUUtrVS1t?oc=5",
@@ -193,14 +193,6 @@
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBMbE1CR3IwOHptYjdiUHNYSG5WUzRUTmpBby1mM0R1NHJuRnZnQzU3LXIydFFJTnIzdnNoLS1GU1NkNllRZ2JaaXlsc3U1dVJMOFJXd1BKZzZNS2tJaTgzOVN3MnlJQQ?oc=5",
       "publishedAt": "2026-11-05T09:44:52+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "간호사 늘리면 건보 진료비 7.7% 줄지만···요양시설은 '채용 유인' 부족",
-      "source": "여성경제신문",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52YWN4UjY1SXNaUEp1UFBGNWQxdDdseEg5ak9ORHpjQ1d5a1lxWkMteHFyNjBvdVN6dTU1anJXQnJ3WFVoSG9uT3pmU3NIdXVjZy1DOWU2NXloZU9GMlMwaFpZVVYyTElVRnB1Y0lDdGpYN1XSAXdBVV95cUxQbV9mVDc3VnBKMDlkTHVRdjBHN1J3WEdEZjRYUHpac05mZEoyMzlCUm0yNTlwbzB0Y2J4Ul9KUndzdE42NGdCc0tETU1IUlA3RFJXSU1zOUY3c1VGS3pMZnBaOFI1WDJFT2lxU2FHVktfMDZpQ3FlMA?oc=5",
-      "publishedAt": "2026-11-05T09:05:03+00:00",
-      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -241,14 +233,6 @@
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1PQ0xZbEY0TVp5UDhkc2lkc0dheUNmYl9GOTE0VEZtLXFrTV9YMnNtZklHQlFnbFFvYmR0TDd0c2E0YWM3NFBUczV6RWd6UFB5VWpwSkFTNEIzVWowZXNKZWNYdlZGSGs5c1Jz?oc=5",
       "publishedAt": "2026-11-05T06:54:52+00:00",
       "category": "보건의료정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "[포커스] 요양원, 최저임금으로 간호사 대신 조무사 채용…의료비 부담 오히려 늘어",
-      "source": "대한데일리",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE01cEN2OVMwSkpSRWJHTGRuUTlwNUFvaGlIMVhQR2NUbDVjY184SnQ3QVY4VGEwNmtaQ3VVaTlMcjlNZlpSeHA4cUZUdHZZWHZnSzJhZU1DYTVsaWlES2RzTXZ5WGl2R201Uk5R?oc=5",
-      "publishedAt": "2026-11-05T06:11:30+00:00",
-      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -376,7 +360,7 @@
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BaTNRd2NWLVJUalNKMThIdk9zMHFGekxkY0ZIMXBULUFKcUJaNjVlMm9uZklJM1BWS3dPLWFMN1lNclVqZ2E2OGNWQW1Rbm5aU0t1OXpsUVFfaC14UmZKVlZoZlJHNEVFV2pWV3Vn?oc=5",
       "publishedAt": "2026-11-05T01:31:35+00:00",
-      "category": "간호정책",
+      "category": "간호인력",
       "contentType": "언론기사"
     },
     {
@@ -393,6 +377,14 @@
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBITFl0S0stYy16R1Q2Rnl0SU1LTWVrQnNPRlZNQnFHRS01c1l5ZEtNREVEcVBEYzdBZG1faDRXdVRBMVNxeDdkc2ppZnFvZHBEcDlZeGYtMmdiZTZIRC1uak9wc1U?oc=5",
       "publishedAt": "2026-11-05T00:54:52+00:00",
       "category": "환자안전",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "요양시설 4곳 중 3곳 간호사 없어…“인력 확충하면 진료비 감소”",
+      "source": "쿠키메디",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBEVTdiUUZRRmRIV2xvTENxUXUtbHFHUUU0eWV2RExCR0tFcndLT0x3WGNfMS1zU295YXRDT0pjZVhaaXg4enBCRzZ1Ym9sVXhSVkN3WHVUV3RaQ1MzRlRva0lUTQ?oc=5",
+      "publishedAt": "2026-11-05T00:02:53+00:00",
+      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -420,12 +412,12 @@
       "contentType": "공식자료"
     },
     {
-      "title": "내년 장기요양 재가서비스 확대…1등급 방문요양 월 최대 48회",
-      "source": "대한민국 정책브리핑",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE10VDU0ZERpQ243LURYNWlZZVdjd0pObWhpMENLWTBtX29CeGFOSWxvZERwQ0lqa0lsdnV4b1JXZXVaMkR5a25tNExURC1LQjVMZkFOWG1jSUhiYUxXaS01eUlqaDJMMlB1YlhWXw?oc=5",
-      "publishedAt": "2026-11-04T12:55:21+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
+      "title": "수도법 2026: 국민을 위한 사회복지 확대, 기강 강화, 행정 개혁.",
+      "source": "Vietnam.vn",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcUFGT203U21mbWVXVW1KaXdVWmdPQV9WTWdTSzhqd0FvMVBSLWpxemRaLVlMWnF6QjkxZVlzWXp1LTZDSFY0eDhBLWJjY1JFb21GOXhrUDBlUjRmQXpLQ1BsTDFwcVRSZWRDMVBLandyVWVhaFZaMTBreW8wLTNTdWgzdWJkMWZxMTdUTm9OVXE2S21BdGNZcngxcEQzQ0sxX2Z4MmdtRWU?oc=5",
+      "publishedAt": "2026-11-04T11:23:40+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
     },
     {
       "title": "경북간호사회 80년 역사 발자취… “건강한 경북의 미래 이끈다”",
@@ -481,6 +473,14 @@
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9iNmhDSGxmYWN2b2pNd1RZLW1xX1dxckxhRTBSQTZvMzJGMWlCY0ROU3NZYTFPOUNIT1lqOEZEQ3E3QXFfQ3piRTNRWnc2STN4alFJc3ZabkhzbFZpSG1jNmVQYTZqMEpqVWc?oc=5",
       "publishedAt": "2026-11-04T07:30:18+00:00",
       "category": "부산·지역보건",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "[11월 4일 병원·의료소식] 성빈센트병원·가천대 길병원·분당서울대병원·세브란스병원·부민병원그룹·건협 서울서부",
+      "source": "e-의료정보",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81R3U2SUJHbTJxM0RoY1NBTzJ4ZlJMY2pseUtRYlNaZXFCd1EwekplT2ZwYktaWjg1U3FGd0cyMVlEdTNjOHNOTFQzZW9lNG0yUHFvSE5UTktjSTFtNWxhNTFXTW1kcENMeF9B0gFvQVVfeXFMUENlZEppNGdqeEhEN1ZTU3NIMm9PWFVuaFhNTkgwQW5yZ00zUGZyaUpMVjVaQVFib1VwR3dMNEdhSF92NE5hOFU5Vlk2Ynh4ZEtGcU5Da09PMnNBQnQ2TlZlNkw2ZnFkM0ZoankwTms4?oc=5",
+      "publishedAt": "2026-11-04T07:24:40+00:00",
+      "category": "간호인력",
       "contentType": "언론기사"
     }
   ]
