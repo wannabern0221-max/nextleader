@@ -1,8 +1,24 @@
 {
-  "updatedAt": "2026-11-08T13:22:34.009669+00:00",
+  "updatedAt": "2026-11-08T22:02:57.969982+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "국민 속으로 뛰어든 간호조무사들···“이해와 공감 통해 정책을 입법으로”",
+      "source": "의사신문",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8yYk9mZUR6NlFMXzlsVV9tZHFvWjlaMDlTbFFXbUFpdWV5MnNIMEc3VHhRbTBPYzFCSm9uWnpNcXN1OEowd1NBcGRpMkRQeVpqLTUxREd2S2laVXI3ZzNRTlRqRm1vem44RVF2SkpQTQ?oc=5",
+      "publishedAt": "2026-11-08T21:00:00+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
+      "title": "일본의 초고령사회 대응법이 한국에 던진 숙제는?",
+      "source": "병원신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA5eUgyNHZoV2FLT1Q5MlNub1BZc09OTnVlRktINE9xaWhNNHRraTFQSkZhMXA2ZjdERk1jSHFQa3dLN0ZUb1pBSmcxUGRqdUdDTFRySndReGZSdHNYb0pmTHlvcFZMVC1wRWc?oc=5",
+      "publishedAt": "2026-11-08T20:50:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
     {
       "title": "[청년발언대] \"언어의 장벽이 의료의 장벽이 되지 않도록\"…다문화가족 의료 접근성과 환자 안전",
       "source": "청년일보",
@@ -16,8 +32,8 @@
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1RQzRtSVBlZk1wVG9mUVRvbVlMUUV2cmRCcjF6SjJnTVBEbzN2YkdrWnFMX3pIUDJXSURzc1JSeHdLbW1GQUV4dldybmFWWldCN1lFc0NzMGxvZVgyZnBlZXYxbmVsRkQzUU50b2lB?oc=5",
       "publishedAt": "2026-11-08T05:51:10+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
+      "category": "보건복지부",
+      "contentType": "공식자료"
     },
     {
       "title": "학대 피해 장애인 자살률 2.1배… 복지부, 안전망 강화",
@@ -37,7 +53,7 @@
     },
     {
       "title": "국가 장기이식 코호트 12년…85개 센터·2만4천여 쌍 자료 구축",
-      "source": "메디컬월드뉴스",
+      "source": "medicalworldnews.co.kr",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9LRXFSekRVeWdYNGJPWm9WVFBISkVHQW1fTGdaQkQ1Z2tfX1pIQzFON2k3ZmlVajAtYVFuVWZHWHJrRjFqWXFXUGEyY3d1dkZaeG9xMDFyaXZkZnVkYnFwNlNPOWU2QmhzdDNNQmdRQ2o?oc=5",
       "publishedAt": "2026-11-08T02:09:50+00:00",
       "category": "질병관리청",
@@ -268,6 +284,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "CT, 검사 건수 3.8%지만 피폭선량 67.1% 차지",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZWTBlem9qcFJhYXZqQjhhQXZfV3didG1MbEZVWDRVaU1pQXUwOU83LW02b0J1M3k5RGU0dW5UOHozeUwzNE56eW9Ub01qZ2lPdUNCcW9lZnZVR3JOMzJ4bzNMYUk5b08yQTlUZDZR?oc=5",
+      "publishedAt": "2026-11-05T05:20:06+00:00",
+      "category": "질병관리청",
+      "contentType": "공식자료"
+    },
+    {
       "title": "경북 의성군, 지역 간호대학과 연계해 경로당 건강증진 프로그램 운영",
       "source": "매일일보",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00Vy10cG9LYWh3VkZMLWZFXzllTGxrWHpmYmFzVG1wVlBXYUgyNFFrbHFOd0lSQXVZNVFVcUdNRzd4QVFQRnBYWDBRZXY0Tm5OM0hncUItVnNMMWVEd19uajVfc20?oc=5",
@@ -412,6 +436,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "남서울대, 간호학과 심폐소생술 경연대회 우수상 수상",
+      "source": "한국대학신문",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5SbWdYXzUwLXhEcE9LeWo5ZVRpWW9Sd3VzeWE2YTZieG5nMUdPakhFRktqeTVqVVdoM2tVaUlfZmtUOW81YklnNjZpYW1TZDYzSW8zMjdicjE5MXB4TXBudTlqMkVOQQ?oc=5",
+      "publishedAt": "2026-11-04T08:00:00+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "대한민국 의료 이원화 올바른 개혁의 전제조건",
       "source": "의협신문",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBxc0g4RXZoTVRNOVRmV0dhYzhXMFA5Y01nQ05mbk0ydW5kT01fUUhxeUZlRHdIS283SFdnOTFZTXpqaWNlZWwwNk51NWRrdGwxVXpsWk9zNWI0RnFSbmxTa3BEZV9waGgzM0ZCOUNJZ0xzdw?oc=5",
@@ -449,38 +481,6 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Qa2ZRelBKM3k1ejkxN3FmNFZDbjZWVWZkeXprcGJZajVkTkxtdVJiQ1dTdzFUcWY5Q2dYcFRVenk0REhYWXBPNmxZSF9WNGFWLTBHMVM1aG1GUXc?oc=5",
       "publishedAt": "2026-11-04T07:07:23+00:00",
       "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "충북보건과학대 간호대학 제15회 나이팅게일 선서식 개최",
-      "source": "베리타스알파",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Qa2VGOWltVGVfTjdYRkZIU3lyc0xXajk0dVZkTHBxMEZyLU1ZNDNsXzhScVpCRFUwQnJuN0x1eklxd1pnbUhHMmRZOFZuWmxaTVl2NE5uOHlfSHR6ZVNmdVUweEQ2Y3B1Y25zeQ?oc=5",
-      "publishedAt": "2026-11-04T06:17:22+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "심평원, 뇌혈관질환·심근경색 자율형 분석심사 공모",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92TndwODkxRTl6ZmRlUjVhRFJJcTEyaDQwM211d0NFZE9GY2lpNFFKOFpXLVhqUllpUmVTa3JBUTR3VWpOOFdPQ1RfZzlqRXlwQjlNYU1CODVqLWg5NVRqMHlxbWZrSVo3ODVXVE5n?oc=5",
-      "publishedAt": "2026-11-04T05:00:00+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "동양대 간호대학, 제14회 휘장수여식 개최...88명 나이팅게일 선서",
-      "source": "경북신문",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SaWkwdHNwUE9GUWtNWE9VUm8zc1A5R2NkNFNSLXJfdnZIYTk5VVJiTWpzVFlPdmhYUmI5cUEyNWVCMmdiU2gyVzUxN29sZXE1MWloV185TUo?oc=5",
-      "publishedAt": "2026-11-04T04:58:34+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "수원여대 간호학과, 나이팅게일 선서식 개최…간호교육 경쟁력 입증",
-      "source": "교수신문",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55NVZYN1JkSVduRWZLOTlGcVBsOGZqQlktZkI3ZWpaSDdXRTdSU1F2OU5ZS0xUeUVUdktYZ3ZnbFJxMTR2dXo5aFB1cFVvWW9ZU09yRDYyRmJWLUF3d3VwWkYzQ3pnb0E?oc=5",
-      "publishedAt": "2026-11-04T02:58:03+00:00",
-      "category": "간호교육",
       "contentType": "언론기사"
     }
   ]
