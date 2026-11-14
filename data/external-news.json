@@ -1,8 +1,24 @@
 {
-  "updatedAt": "2026-11-13T19:40:21.846905+00:00",
+  "updatedAt": "2026-11-14T06:19:38.012646+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "선배의 촛불 이어받아 생명존중 다짐…경북전문대 나이팅게일 선서식",
+      "source": "경북일보",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1GRkJLYm94M3p0b3ZvZGtYcGhzYXAzbmVReUhVV3ZXUEhtRjhpUzhlTEVmY0M3di1xR3lINDY5QmpzdF9VanhLejhMQjZldWlvZGtuZzdZQndkb21BQUJsQnUxcTg3Ri05VHVCaVlTOA?oc=5",
+      "publishedAt": "2026-11-14T03:11:08+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "재택의료 확대에도 위축되는 상급종합병원 가정간호…\"역할 분담 필요\"",
+      "source": "청년의사",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1kNGMtSEhoaTgyTlM2M1ViSGN6aW56UXRuVWpyYWswVXpWak5kM3FWUnNnR0kzR29ESWdpSFVPZjJqc1EyM0w3dV9WV1JUMWRVNlpmb2Z5bThkUjk5djc2bmpaMXVNbVhSVnRaTHRER0M0NkXSAXNBVV95cUxNZDRjLUhIaGk4Mk5TNjNVYkhjemluelF0blVqcmFrMFV6VmpOZDNxVlJzZ0dJM0dvRElnaUhVT2YyanNRMjNMN3VfVldSVDFkVTZaZm9meW04ZFI5OXY3Nm5qWjF1TW1YUlZ0Wkx0REdDNDZF?oc=5",
+      "publishedAt": "2026-11-13T22:32:34+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
     {
       "title": "[이슈분석] 인건비 쥐어짜기 끝났다…요양 인력 아웃소싱, B2B 전문화로 돌파구",
       "source": "아웃소싱타임스",
@@ -188,6 +204,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "위기의 이웃 곁에서 16년…복지부, 통합사례관리사 노고 기려",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE54Q0pSRV85TTVIeldwTEs4NEFRQWJoNmlOSk1hQjdlNjQ3MXpnZ1oycjlIbXMyUWU2T3B2aW1HYVhLYzdwN3BpM0VPcHR3UEJJV3RiemFfNE5vVTdPejRhajhmeVZ1MDhnZVN3VDh3?oc=5",
+      "publishedAt": "2026-11-13T04:09:39+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
       "title": "“미래 간호사 꿈, 대학 실습실서 미리 키운다”… 동의과학대, 전공체험 성료",
       "source": "스포츠동아",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE44Y29pdmMtbFpvZGtzcmVqT19lOUFiNlU5UzNpdFJGRks4SlRFUkhURXRUYzk4d3p6el9OemJYbnZrWE1lVmdiS1dHVzRUOUlfUFU1MlVrLWNoVVh3UzE3UVAzRVMtQ2Jvb2pUcTVNVXF6Zw?oc=5",
@@ -202,14 +226,6 @@
       "publishedAt": "2026-11-13T02:29:41+00:00",
       "category": "질병관리청",
       "contentType": "공식자료"
-    },
-    {
-      "title": "동의과학대 간호학과, 남성여고 학생 대상 간호 전공체험 운영",
-      "source": "파이낸스투데이",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aZWhnRm8zVGJtdkhCeDVfWVdTcWZGZ096azFSbWlaaWZmMmZHMWV2N3FEeGZXNDRhekxPYV9oczRad1k1YmU1YXJtOWtTeFZFTmczak5QaGZpZlFhd2VZRU5EcXNFZTVvbEZ6WA?oc=5",
-      "publishedAt": "2026-11-13T02:19:49+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
     },
     {
       "title": "“의무 끝나도 현장 지킨다” 공중보건장학 간호사들",
@@ -234,22 +250,6 @@
       "publishedAt": "2026-11-12T20:01:00+00:00",
       "category": "정부·국회",
       "contentType": "공식자료"
-    },
-    {
-      "title": "분만의료 기반 확충으로 아이 낳기 좋은 제주 만든다",
-      "source": "파이낸셜경제",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oV2ZnXzlyTVhBbzNjaE9NU0JldjAxZVhRMjByZXp2RzJLa3VkMWF3ejRzazZqTWd2dHcxR0c5MnZ2MzhfUmJGVDhsdmdtRG41cnhCZEIzZnFoaEJyWEJxdl9IcjQyeDZ4VkJtZ0Zqa1Y?oc=5",
-      "publishedAt": "2026-11-12T11:05:09+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "강원대병원 간호부, 병동 돌며 환자안전 점검…환자·직원 의견 청취",
-      "source": "안티에이징뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ZVlpJdDV4bUV6UzM4T3pjR1A2d1pZOVFpWFUzTHlOMUxBdTFKczFNRFp0aGQ5ejdBTkNJcktHN0prQmV0Rm9CQmtCU2otdlR6ZDh5REhLUTk?oc=5",
-      "publishedAt": "2026-11-12T09:20:38+00:00",
-      "category": "환자안전",
-      "contentType": "언론기사"
     },
     {
       "title": "의료연대본부 “복지부 정책위원회서 현장 노동자·시민 배제” 주장",
@@ -278,7 +278,7 @@
     {
       "title": "함께한 10년, 임신·출산·육아 의료 정보박람회 「2026년 맘 편한 부산」 개최",
       "source": "한국방송뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9SeWJHUVQtc3VsNFNjSHF1SVdSdW16aWdTRFZJNk9IaWdIdEF4OHlUMnpFOXBDUXBjdHVmeUNBZ2pIYXE2d203cGtmWURocWtJLXhXQVFwWC1GVFI0N0E?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9MQXhRQmpFeVVKSlVnV1NvVVBxWnNsc0FYVTlrVmRlU3VLZG9ycXZMSnJDbS1ZQVp2dzhENlhwQ2lqVWpuYWlxR2VFSHdhUDV4bzBLX0YyT05CVTE2?oc=5",
       "publishedAt": "2026-11-12T06:45:58+00:00",
       "category": "부산·지역보건",
       "contentType": "언론기사"
@@ -310,7 +310,7 @@
     {
       "title": "건보 일산병원, 간호·간병통합서비스 전국 3위",
       "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xeDdUcFVQbS1YRkFMRmVFSlMybjcwMUx3MHpHRXVHTk1fb3NfMFFOd2JycEVlVlJ3Um9XSmNqeUFXdTl6ck9sU3lPLW8xWmtRdm5oSEd1STBlMC1hV2JRYnFVdlZvczZ2clE?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5nTFVVbWVqN1BMTmRNdkNVYnRnRVdnVWNTNFFLWkRIdk5ZMVYwX0VyTW9HOUNNbHIyeDFkdW9xeEpBRjFaTDMySHBURmNNTzBud1U3SlpZSklGMFViaEdIRFFUMGNpeWNWU0JJ?oc=5",
       "publishedAt": "2026-11-12T03:55:16+00:00",
       "category": "환자안전",
       "contentType": "언론기사"
@@ -460,14 +460,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "은성의료재단 좋은병원 3곳, 간호·간병통합서비스 우수기관 선정",
-      "source": "병원신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11a2JJMlhJcHZVVUFSeXJPRUpGX2NoZjN5V1plclhNZGw4bmUtVnE4Uld6TmlOVnpDZjFMS05CQV9TZVg1NUQzbW5sSTVnbTFjVi04NkZ5djRnM2dlSXFaSG5iU1c3WDhnamc?oc=5",
-      "publishedAt": "2026-11-11T06:12:17+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
       "title": "좋은병원들 3개 병원, 간호·간병통합서비스 첫 우수기관 동시 선정",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UOFUwVGtENV9TUlNJUklZd2VON2dTeG5EZGNlMkt5cHdwWkRlb29UQTByZzVfbDZ3dGd6RGk1WmxTZWVWVl9rMmlGN3l5dzZhQVI1QXJnTzZoSlZ3aFpBeTJqTjdWMVlHTjJSNXhR?oc=5",
@@ -482,6 +474,14 @@
       "publishedAt": "2026-11-11T05:00:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
+    },
+    {
+      "title": "질병청, 만성질환 예방관리 콘퍼런스 개최 : 정책",
+      "source": "의약일보",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1XRkdmZTkyNFk2VVRBakx1Y09VZjdaWXlJdGVmUDRhTjdIRzhIVlUzOW1RMmFILTJiTF9UZnlFQV95UVp0VXN3bk9kWUd6WHdibS1kQg?oc=5",
+      "publishedAt": "2026-11-11T03:46:37+00:00",
+      "category": "질병관리청",
+      "contentType": "공식자료"
     }
   ]
 }
