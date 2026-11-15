@@ -1,8 +1,16 @@
 {
-  "updatedAt": "2026-11-15T06:29:00.733933+00:00",
+  "updatedAt": "2026-11-15T18:49:57.064915+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "정신병원 병상 9천여개 줄어든 사이, 정부 정신건강 정책은 상담 인원 늘리기로 갔다",
+      "source": "https://www.seoulilbo.co.kr/",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ueDRKdDdrNTZ0OVd0SncwSmNaN1RqOUpxcmdtWTFUSFdIN01aLUlxWENXQmZTQlZaaTBlNFlQMWV2bWN4Z25vMmRvSlFXd3pwWWlxZjRBLTAzcEx6OWZDX0E4bkNjVkVkeXMyejdR?oc=5",
+      "publishedAt": "2026-11-15T06:25:59+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
     {
       "title": "[청년발언대] '1년의 벽' 앞에 선 신규 간호사들…실질적 처우 개선이 곧 안전한 의료의 시작",
       "source": "청년일보",
@@ -52,19 +60,19 @@
       "contentType": "언론기사"
     },
     {
+      "title": "\"간호사 1명당 환자 5명 법제화\"…간협, 17일 정책 선포",
+      "source": "데일리팜",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5oVTdpdVZUaUtieXJ0NG12azlFYWlqd0pVd2hQNXg2SlY0aTJuZkRTOWI1S3NXbl9PdXpyWHVsMXkzdXVSZXBLS1lfTkhIdlRUdmw3dnRR?oc=5",
+      "publishedAt": "2026-11-13T14:36:40+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[이슈분석] 인건비 쥐어짜기 끝났다…요양 인력 아웃소싱, B2B 전문화로 돌파구",
       "source": "아웃소싱타임스",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fckwxRnFfUXJtRkJfaWxGY0pCT3JUUzZQdmhWaW9QR0JObFpwcHlYdWgzSi1mUVpGRzdweDhNLWlHYnZCWktvbFZjSHV2SndpbDN6ZVRsSF9POUxNSzBzMWczbER5cWxOM1p2ZUJaZS0wQQ?oc=5",
       "publishedAt": "2026-11-13T13:29:40+00:00",
       "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "간호사 1명당 환자 5명 법제화… 간협, 17일 정책 선포",
-      "source": "일간대한뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1fTmxDdkRuUTFSMVZmWEk0YVRVbEwwVTN3YUdWWFN0SF8wWGZOMEF6d1dMREpMbkd3bFA4amZ6WnJnOEE3bDdpaXJXV2F6a2xxNkVUT1I3VFJjVFRjOG9NZUVhbGR5VlE?oc=5",
-      "publishedAt": "2026-11-13T12:46:13+00:00",
-      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -113,14 +121,6 @@
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jMHFvdFV5NVI3U2hmb3QzNUQ5YTdZLWVUYVo0T3JTdEFuaU90TDlZR1NCRzVpTU9xQml4dGlFTUo4bEFBSGV6V09kQkRMYXhXeDc0UjZCZFZuRTdOWGFmalRYa3BBclE?oc=5",
       "publishedAt": "2026-11-13T07:55:22+00:00",
       "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "미국 11개 주, 2027년 건강보험료 추가 지원…보험료 부담 줄이는 4가지 방법",
-      "source": "메디컬투데이",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14VjdEbkxfMktlalpacGE0Wk40NjhselIzR2FvNzByOEgwYWJJUFBfMU8ybWxrUkJBS0R5TXFOR0RXOXpxTDNsVkRnZlRzb1R0aG1hY3Zxay1aRHlmLVFGTGlJTUtKUWVHQVhhaA?oc=5",
-      "publishedAt": "2026-11-13T07:46:52+00:00",
-      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -244,6 +244,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "위기의 이웃 곁에서 16년…복지부, 통합사례관리사 노고 기려",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE54Q0pSRV85TTVIeldwTEs4NEFRQWJoNmlOSk1hQjdlNjQ3MXpnZ1oycjlIbXMyUWU2T3B2aW1HYVhLYzdwN3BpM0VPcHR3UEJJV3RiemFfNE5vVTdPejRhajhmeVZ1MDhnZVN3VDh3?oc=5",
+      "publishedAt": "2026-11-13T04:09:39+00:00",
+      "category": "보건복지부",
+      "contentType": "공식자료"
+    },
+    {
       "title": "“미래 간호사 꿈, 대학 실습실서 미리 키운다”… 동의과학대, 전공체험 성료",
       "source": "스포츠동아",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE44Y29pdmMtbFpvZGtzcmVqT19lOUFiNlU5UzNpdFJGRks4SlRFUkhURXRUYzk4d3p6el9OemJYbnZrWE1lVmdiS1dHVzRUOUlfUFU1MlVrLWNoVVh3UzE3UVAzRVMtQ2Jvb2pUcTVNVXF6Zw?oc=5",
@@ -284,11 +292,11 @@
       "contentType": "공식자료"
     },
     {
-      "title": "분만의료 기반 확충으로 아이 낳기 좋은 제주 만든다",
-      "source": "파이낸셜경제",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oV2ZnXzlyTVhBbzNjaE9NU0JldjAxZVhRMjByZXp2RzJLa3VkMWF3ejRzazZqTWd2dHcxR0c5MnZ2MzhfUmJGVDhsdmdtRG41cnhCZEIzZnFoaEJyWEJxdl9IcjQyeDZ4VkJtZ0Zqa1Y?oc=5",
-      "publishedAt": "2026-11-12T11:05:09+00:00",
-      "category": "간호인력",
+      "title": "복지부 소관 공공기관 47개→39개…진흥원 기능 대폭 확대",
+      "source": "청년의사",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9qU0RNWHJyY1R2VjF6ZzlORzdveGZEdnQ1LWtESjQxSDk1SFNOd2xEaF9aMXphMjhsd2dJSVAxZ2FfaEdVeFFHSUVFdy1nR0VtclRrWUI2d2gyYTNQZDloc1haTThycU8tY05HdXMzY9IBc0FVX3lxTFBiSlJOczZib3VnQ3B5cnhveXVLdWIwTkFkM3dhRVdsY3JFR1lOZXRXdFlQZ2txeFRPakV6Q2ZqNU1OR2t4Tmg3ajJUOVpFaHc0bjFBVS0tMEd1VG1LRGlmY2dxd0F1Z0dFTGtOTFJQMzhVeGs?oc=5",
+      "publishedAt": "2026-11-12T09:54:41+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -318,7 +326,7 @@
     {
       "title": "함께한 10년, 임신·출산·육아 의료 정보박람회 「2026년 맘 편한 부산」 개최",
       "source": "한국방송뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9MQXhRQmpFeVVKSlVnV1NvVVBxWnNsc0FYVTlrVmRlU3VLZG9ycXZMSnJDbS1ZQVp2dzhENlhwQ2lqVWpuYWlxR2VFSHdhUDV4bzBLX0YyT05CVTE2?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9SeWJHUVQtc3VsNFNjSHF1SVdSdW16aWdTRFZJNk9IaWdIdEF4OHlUMnpFOXBDUXBjdHVmeUNBZ2pIYXE2d203cGtmWURocWtJLXhXQVFwWC1GVFI0N0E?oc=5",
       "publishedAt": "2026-11-12T06:45:58+00:00",
       "category": "부산·지역보건",
       "contentType": "언론기사"
@@ -353,14 +361,6 @@
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZnZhdHZUNFM3U1RxdEVzaDFhZURVQTJRWDR0amdTR2xHQ0JnVDJ1d01XT2lBSHRTOU5KYTNqNzVVX3dmLUY3cFN0WnYwclFDbl9fbk1JSC1pOUQ5NUF6ZVdUVVk3VG55bTZjU2N5ZjJyeWVFZzNMM0FaczVqSVRFQkpkcklDYUhsclZEZw?oc=5",
       "publishedAt": "2026-11-12T04:55:00+00:00",
       "category": "부산·지역보건",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "건보 일산병원, 간호·간병통합서비스 전국 3위",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xeDdUcFVQbS1YRkFMRmVFSlMybjcwMUx3MHpHRXVHTk1fb3NfMFFOd2JycEVlVlJ3Um9XSmNqeUFXdTl6ck9sU3lPLW8xWmtRdm5oSEd1STBlMC1hV2JRYnFVdlZvczZ2clE?oc=5",
-      "publishedAt": "2026-11-12T03:55:16+00:00",
-      "category": "환자안전",
       "contentType": "언론기사"
     },
     {
@@ -438,7 +438,7 @@
     {
       "title": "서울시간호사회, 경로당 노쇠예방 시범연구 결과 공유",
       "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1kdUpkLWczUmtZOUxmY01QOG5yNWNYT0k4a3NmS254Tnk2a21Qd1I1OE85Y3c0aEFkSEVZWjR4YlNSM3lOQlExX1FLQ2F1TWl4V0xJ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52R3VWdVNYc21hSWxiQy11VkhSSHdMMGtidnVXZkhwWE5rZlNiNDZ3bExzLXR0Q2ppZk1zNVdrdnFyXy04VzJIdXhNNndRSnZNbVMzdzZ3?oc=5",
       "publishedAt": "2026-11-11T08:47:00+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
