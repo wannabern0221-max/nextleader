@@ -1,8 +1,24 @@
 {
-  "updatedAt": "2026-11-14T22:22:37.836042+00:00",
+  "updatedAt": "2026-11-15T06:29:00.733933+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "[청년발언대] '1년의 벽' 앞에 선 신규 간호사들…실질적 처우 개선이 곧 안전한 의료의 시작",
+      "source": "청년일보",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1vaDNXNENnRmJLNFpOcFIzMThGSmdWcUZjTEFxY2xsT01KNjhnZU9nRXQ5cGQ3akRGMzlFc0VIUDBjQlBhcF9NRXQyTjlzelVvQkZRWEJJX0FrOGNZYmV5TmgzOXc5cVk?oc=5",
+      "publishedAt": "2026-11-15T04:00:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "“숨이 넘어가겠는데 받아줄 응급실이 없다”…환자는 병원 문 앞에서 왜 떠돌아야 하나",
+      "source": "서울경제",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HQkpKNUV2NFU4NE8tSC1LLW51akpzU3JVd2ltcmxZeVh0R1FQek9SV3U3MlFRQWlZREE1NTFURmUtZkZxTzJJTWIxaFc0VFZlZ2c?oc=5",
+      "publishedAt": "2026-11-15T02:55:07+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
     {
       "title": "간무협-대개협, 간호조무사 구인·구직 플랫폼 공동 구축",
       "source": "청년의사",
@@ -68,14 +84,6 @@
       "contentType": "언론기사"
     },
     {
-      "title": "\"간호사 1인당 환자 5명으로\"…정책 선포식 연다",
-      "source": "뉴시스",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kUFAzaE9BR3RCaDVRSHhaVmtfclZleW1XakFGN3VFc29BckhGX0lpVmlZSVFkenNObmJfQUdIVDIxS0VtcEx0NmhHZ2VYdFJBRDVMV3BSVWd5bml1U0dNM3dn?oc=5",
-      "publishedAt": "2026-11-13T08:34:24+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
       "title": "순천향대, 4개 부속병원과 간호 연구성과 공유…교육·임상 협력 강화",
       "source": "한국대학신문",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1oREttaWMyZDVfdjY5YjRkMU9jamZ5ZV9jdnVlOFZuYlE3VVdHVFd3d2V2MmNucTRVZW9ISWdYdWdyNkZES1lzM0xFd1VfQktjZXV4UXlYYlhQblgyVmxVTVk2cUtxUQ?oc=5",
@@ -92,11 +100,19 @@
       "contentType": "언론기사"
     },
     {
+      "title": "\"간호사 1인당 환자 5명으로\"…정책 선포식 연다",
+      "source": "뉴시스",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE42NkhaMFkwcXh6TWRqZ0VOeUliSHh2V2Z6ZEF1ajMwXzJINkhWMXJEbC1LN3FleVVSRGhrYkVCQ21qU25zVjBzSFJSeEhoUW9Oa0VKRHFSdEJLTHpSZVJqeXVMbnZqNE9GX29GY01jM3NCMHF5NVFOVtIBeEFVX3lxTE42NkhaMFkwcXh6TWRqZ0VOeUliSHh2V2Z6ZEF1ajMwXzJINkhWMXJEbC1LN3FleVVSRGhrYkVCQ21qU25zVjBzSFJSeEhoUW9Oa0VKRHFSdEJLTHpSZVJqeXVMbnZqNE9GX29GY01jM3NCMHF5NVFOVg?oc=5",
+      "publishedAt": "2026-11-13T08:02:33+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "[Medical Report] 서울대병원, 신장 섬유화 혈액 신호 발견…보라매병원, 로봇 갑상선 수술 난도 예측 外",
       "source": "헬스코리아뉴스",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jMHFvdFV5NVI3U2hmb3QzNUQ5YTdZLWVUYVo0T3JTdEFuaU90TDlZR1NCRzVpTU9xQml4dGlFTUo4bEFBSGV6V09kQkRMYXhXeDc0UjZCZFZuRTdOWGFmalRYa3BBclE?oc=5",
       "publishedAt": "2026-11-13T07:55:22+00:00",
-      "category": "환자안전",
+      "category": "간호정책",
       "contentType": "언론기사"
     },
     {
@@ -262,8 +278,8 @@
     {
       "title": "병원급 全보건의료인력 적정기준 제도화 추진",
       "source": "데일리메디",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1WMUlxaklaWnQwdzJOVDFvaGZpNDRwSjBNb3BlYXdKa2JEclNDUXUxbVBUUWJjUlJMUlpHcmFHSHlfTXVUeWxLMkNQOU83THBKOTNhZWhhU0JsLVFhbHBGOXRnZ3VnT0lISFdYWkdXS2l4YTRS?oc=5",
-      "publishedAt": "2026-11-12T20:01:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zTFNJNE1xd1lyMkVxMl9COEJoTlNwOG9kdGp6cHpQSi1mdFBZdzBKZUZJc0Zuc085OFl1eG03dEQxc1lJZ3JucHZUZkppT2xlQ0VrblpwbFoyaFB0OHdtU0dYMVFWWm9E?oc=5",
+      "publishedAt": "2026-11-12T20:04:00+00:00",
       "category": "정부·국회",
       "contentType": "공식자료"
     },
@@ -290,6 +306,14 @@
       "publishedAt": "2026-11-12T07:20:16+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
+    },
+    {
+      "title": "간호사·의사·약국이 함께 돌본다…日 방문간호에서 찾는 통합돌봄 해법",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBGZWg5eGVLQW1yVzdMN0RmR0lzWUF3UkE2bjdYOVlqMTdlT2tFZXlLMDdvZGZhOENkUzVaQWRjRGtXakV0M1g5R3hRenJUZWFDMVF6ZDA3SThibndiV3JiTUdGc2JGLWF6akxTRm1B?oc=5",
+      "publishedAt": "2026-11-12T07:17:43+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
     },
     {
       "title": "함께한 10년, 임신·출산·육아 의료 정보박람회 「2026년 맘 편한 부산」 개최",
@@ -334,7 +358,7 @@
     {
       "title": "건보 일산병원, 간호·간병통합서비스 전국 3위",
       "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5nTFVVbWVqN1BMTmRNdkNVYnRnRVdnVWNTNFFLWkRIdk5ZMVYwX0VyTW9HOUNNbHIyeDFkdW9xeEpBRjFaTDMySHBURmNNTzBud1U3SlpZSklGMFViaEdIRFFUMGNpeWNWU0JJ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xeDdUcFVQbS1YRkFMRmVFSlMybjcwMUx3MHpHRXVHTk1fb3NfMFFOd2JycEVlVlJ3Um9XSmNqeUFXdTl6ck9sU3lPLW8xWmtRdm5oSEd1STBlMC1hV2JRYnFVdlZvczZ2clE?oc=5",
       "publishedAt": "2026-11-12T03:55:16+00:00",
       "category": "환자안전",
       "contentType": "언론기사"
@@ -358,7 +382,7 @@
     {
       "title": "간호사가 만든 '서울형 노쇠예방 모델'…지역사회 확산 추진",
       "source": "보건신문",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE93bmlLc05FemtWNEV2SnlyUVhNdEtkcmVBMVpFMXJmbEJsLVZCM1RDYUVibGxNc1JnRnNCXzc1endLYV9Bc0JLTmtZWUxPRU9URk1PMEdVQlNReFJTRnhJ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UQmxiMFJKdFloRmlTTS1VZXJYNEs3eGdFc0hyTjFLcTBMbG43MnBoTUhmYXllYXFsRTFEemNicWVPWGgxTWhCRDVPOTgtM3lWcDhrOVF4ZHNqaEViSnRnaE92SQ?oc=5",
       "publishedAt": "2026-11-12T02:34:22+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
@@ -402,22 +426,6 @@
       "publishedAt": "2026-11-11T13:52:21+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
-    },
-    {
-      "title": "인력 부족·폭언에 멍든다…병원 떠나는 간호사들",
-      "source": "쿠키뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5TNldGUXA0bWtFS3d4WW9XQWJwdXU3OEdJTFFmbnRyYmI5NURwWl9yd1c3OHVNejJycjh4MXFMWElVcXpuQjF0LTVHQnBJa3EtNERwSm9sZ19zWFUwSnhGQXp4OA?oc=5",
-      "publishedAt": "2026-11-11T12:20:58+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "국민건강보험 일산병원, 건보공단 '간호·간병통합서비스 우수기관' 선정",
-      "source": "팜뉴스",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWa1Zpel9tdzRyelRWOFpHczA4VExtalk2VzJ2N1ZNQWtmUWZ0MDdYaUxKSjFnTVhLUVFnZnVrMkNsOFNCMjhxWjExYjlnQjFmdHNjd1IyZHRyTkJRUXlRNkJETW1kZ3BuOF95Rg?oc=5",
-      "publishedAt": "2026-11-11T09:13:57+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     },
     {
       "title": "\"공공기관 개혁 밀어붙이지 마라\"…양대노총 정면 반발",
@@ -468,19 +476,11 @@
       "contentType": "언론기사"
     },
     {
-      "title": "종양전문간호사 등 의료인력·수가 기준 명확화… 건보 대폭 개정",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE01RTFvTEJBZXpldzlCektsLW9LcUxlbkN0TVNjRTEzdGQ5SjhsdmJoQmg2T1dUTFJ2MVgtSHB2cFJERVBUNEVpZW1taDVPeTZsQmJOSE5EbVpvMzRoZTlXM003cW81R3ZPR1k4V1Jn?oc=5",
-      "publishedAt": "2026-11-11T06:17:45+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "좋은병원들 3개 병원, 간호·간병통합서비스 첫 우수기관 동시 선정",
-      "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UOFUwVGtENV9TUlNJUklZd2VON2dTeG5EZGNlMkt5cHdwWkRlb29UQTByZzVfbDZ3dGd6RGk1WmxTZWVWVl9rMmlGN3l5dzZhQVI1QXJnTzZoSlZ3aFpBeTJqTjdWMVlHTjJSNXhR?oc=5",
-      "publishedAt": "2026-11-11T05:52:28+00:00",
-      "category": "간호인력",
+      "title": "복지부, '공공의료 AI 고속도로' 첫발…2029년 전국 완성",
+      "source": "뉴스핌",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4wV211anZVVWYwc3BpQ19DbDlzYTcwSVE5R0QydFhmZnZwQm04NVRuOW05cy1RZjVPdE95czJOZjJhX293aFNZODcyY1BLUmoxSXV4cTJ4R2JjTmRD?oc=5",
+      "publishedAt": "2026-11-11T05:00:00+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     }
   ]
