@@ -1,8 +1,16 @@
 {
-  "updatedAt": "2026-11-20T20:15:27.809939+00:00",
+  "updatedAt": "2026-11-21T07:04:29.528034+00:00",
   "refreshHours": 6,
   "description": "공식기관 자료와 기자 작성 언론기사를 함께 제공합니다.",
   "items": [
+    {
+      "title": "\"병동은 누가 지키나\"…PA 간호사 법제화에 지방종합병원 '직격탄'",
+      "source": "뉴스1",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBmc3VpOEllejZyN19uZF9QYXkweU9uR01TeW5KZWxqQUFEeU52aVI1ek1zX1hQb2t4SjZLeEQwWWpaQWF4MF9nSmJQVjFhQklmR0xVVm9TaWw4eW9pSEhJ?oc=5",
+      "publishedAt": "2026-11-20T22:00:00+00:00",
+      "category": "간호인력",
+      "contentType": "언론기사"
+    },
     {
       "title": "한의사 엑스레이 사용 법안, 24일 국회 법안소위 심사… 의료계 반발 확산 : 정책",
       "source": "의약일보",
@@ -10,6 +18,14 @@
       "publishedAt": "2026-11-20T09:00:19+00:00",
       "category": "정부·국회",
       "contentType": "공식자료"
+    },
+    {
+      "title": "의협 \"한의사 X-ray 허용은 무면허 의료행위 조장\"",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBEbUFpTFZtZ1hzbTZ5OVNXV1lMbTJIa3NDZzhaUV8tREhyZU5ubFdTdDFiQXlfWFctT1VNMnFOd2JHTXM1VlJJWnRfSjVZZTFOZWZqNTJpTXViUmNuZzR3dGkwQmFqSzJRd1F1WWp1YmV0Zw?oc=5",
+      "publishedAt": "2026-11-20T07:33:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
     },
     {
       "title": "간협, ‘1:5’ 배치기준 법제화 요구…노동·돌봄·교육·보상 혁신 선포",
@@ -28,27 +44,19 @@
       "contentType": "공식자료"
     },
     {
+      "title": "프랑스 지역 의료정책을 보며 우리나라도 현실적인 소생 방법을 찾아야",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lb2F4d1pGbU5IblJlVVFYVFRqUkhZeF9iY2VpSm1ia3lXN1ZiWnJnNWFCVmc3RVhhNDJlUVhTeUppdmxaNjN1UUdUcld6aFFIaVAybW5odFZRSXg3akhGRU9ZMndwbVdzSk10U0V4VGhXQQ?oc=5",
+      "publishedAt": "2026-11-20T06:05:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "복지부, 제주 건강주치의 사업 점검…일차의료 시범사업 개선 논의",
       "source": "간호사신문",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBycHVOc2JicUVRMnhBVDVXRFYzd25vSmVkVXd5NGI2Q0xPWjlJeUR3UWtScWIycmFPTjBzZDFiLWhEellJTVRwV3F2YzRfbEhNZ2h1SUlURTRHMkE1eVRfU2xMU2ZGNWlNTTFUVjV3?oc=5",
       "publishedAt": "2026-11-20T05:07:54+00:00",
       "category": "보건복지부",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "“공정 거래와 윤리경영은 의료기기산업 신뢰의 기반”",
-      "source": "메드월드뉴스",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xT2tKV0NkRFFYN28tdmpXdHJaa3lkSTQ5N2RvRDNKZHJvTVZnQXVBV3BidUZmRFNIT09sT1c3YnZKTWp4TEZ4eVpoa3BQRHE2WGhCVHo0Vnd1ei1HMGJTV1ZDYjhvTGRsdTZEQQ?oc=5",
-      "publishedAt": "2026-11-20T05:03:17+00:00",
-      "category": "부산·지역보건",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "한·미, 감염병 위협 공동 대응을 위한 협력 논의",
-      "source": "병원신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TcVF3a3owYjhNdUZyd2NIRVBad1d0YjlwY3hoOXhwZE5TcTc2eUxCeklfM21qYk5yMnV1elJRd3U1Y1FEV1RyVkpNR3R0alY0dC1QRHBRVjhwcHVrT2pfUUxxeGVldVBJMEE?oc=5",
-      "publishedAt": "2026-11-20T03:38:06+00:00",
-      "category": "질병관리청",
       "contentType": "공식자료"
     },
     {
@@ -60,10 +68,34 @@
       "contentType": "언론기사"
     },
     {
+      "title": "전북대 간호대, 대한라이프스타일의학회서 연구 역량 ‘주목’",
+      "source": "아시아뉴스전북",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1kR3gxUDZSUE85Sks2bmsxSVNVSGxkZERNU3hxa2ZHNzRDdnVZVTRLUjlGZjNFSkxvcWRaQVdOSVVKNEhfQ1M2YnNEVHVvbUNzSlFxQWY0NG5OdWNIX19LOXZ4SW41allvWVHSAW5BVV95cUxQbGJJaU1mLWtmWVJ6NUFxLW10b3RoYTdOdXJEQlRhbVBqZFJYVXZLVy01VjBwbTVlYnFtMi1ud3FQWmRMcDlZNUNRczVnSjdiU19qNnpfUlM4b3VqSXVFUHQzUF84aEt4d3hudVlfZw?oc=5",
+      "publishedAt": "2026-11-20T03:04:23+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
       "title": "전북대 간호대학원생 2명, 대한라이프스타일의학회 우수연구상 수상",
       "source": "투데이안",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8wTXlBaDVaek5tTElWRkpQdm9zQlhHNFZVZW8yUVpJbDd0bnRDd21GNkZjN0o4bld6ZE9TT0Q4NkhlSi1DbVNRRXk3YU0wcGZDd0NIWmFGMHM5c2wtQ2I0NXZfRnlqQ0twV3c?oc=5",
       "publishedAt": "2026-11-20T02:54:23+00:00",
+      "category": "간호교육",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "\"응급실 압수수색, 기피 의료 부른다\" 의료계, 미래 의료 해법 모색",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE80QUJxTWpBcWc1WlpEbFc2RVdiaDJwY2hmQ1o0TlFCS0ZqVlFJOWJncnpCZy1DanB4aDNjUXB5Y2UyWmxlNzRwVHBHVEJXSGV1enN1QXlqRklFaUZsaDhoMElVTlhSVFNQb0FQVGdPQ0tXQQ?oc=5",
+      "publishedAt": "2026-11-20T02:16:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "경상북도간호사회 창립 80주년, “경북 간호의 100년 미래를 설계하는 출발점”",
+      "source": "BBS불교방송",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA2Njl3Q3BBQmlQX2ZBa2M0VENnOFZtWXBxQzlKR0NVbGgtbmVjMmhNZzJkNl80UjdXaGhCUllhNkFMSjFBYndqclAzSVFVdF92cVExUlhtNDFHcHBWc25EWU0tekNKYjFSS25B?oc=5",
+      "publishedAt": "2026-11-20T02:00:37+00:00",
       "category": "간호교육",
       "contentType": "언론기사"
     },
@@ -110,7 +142,7 @@
     {
       "title": "송금희·곽경선·임규섭 후보 당선...보건의료노조 새 지도부 출범",
       "source": "현대건강신문",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10cEhTT0piRlZKMG44M3hYaGlENy1CX183V0ZMSjV3Uk1ENDBZTklySnhkNGFsYTU5a3NRRWFzdG91NzNCX25TTmM5Wm1mOEp5Y2FhRWtR?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5FZE53aUg5azVCSlUxQm5EelNVOXJ4cGloZTFsUHRGLTFDdHVPNUpiQ3BLS252MHpuR0VQSmdNaDNBc3RKMXdFZXlhSlpNZzNkY3Vz?oc=5",
       "publishedAt": "2026-11-19T23:29:00+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
@@ -148,6 +180,14 @@
       "contentType": "언론기사"
     },
     {
+      "title": "건강보험 1분기 3조9000억원 적자…연간 적자 전환 우려",
+      "source": "쿠키뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9YTjFRSndxbm84dmNCZlh3Wk15N21YeDlKVUdOQ0ZQcXJfd0tzN2NkeV9lbDZvR24xWk84ZEJvdmx4ZFVpdVNBaGE1Y1kwRndNUU9NRm9WOWdtQTVYYXU0eFJfVQ?oc=5",
+      "publishedAt": "2026-11-19T18:17:32+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "보건의료노조 제11대 지도부에 송금희 위원장 후보 당선",
       "source": "병원신문",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5rZFJYTEt4X1JMMGNrWXAzLWFvMXhjd21ZZ3JFZ1NWaHJRM2NCR1JhejYyUE5xVXQ4dXpCdTg2VGVyYkhqeUJ3QlBvbGFMb0FvYW8xYXNxWmtOdXJqdFo1OFM3OGdvUldtNFE?oc=5",
@@ -174,7 +214,7 @@
     {
       "title": "노조뉴스 - 보건의료노조 제11대 직선 임원 송금희(위원장)-곽경선(수석부위원장)-임규섭(사무처장) 후보 당선",
       "source": "보건의료노조",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ETjRva1E5RHh6UFBjaFJTQktidmJheFFPNUdPM2RfVnZVYWFxQlhBSkpvcDZjaWZBLXBMZnlxSUNNQUxhaWxuWDBpdE9kUTlUTmdFVm9uRQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB4NURJekpUMXl5OHlLTE51Y2FVM3dRVm1ZWll5WnFnd1ZjYjlDWGpTQ1c4ZklKSkVGdC1sa3M0bUFFSlZLVVR3ZGpB?oc=5",
       "publishedAt": "2026-11-19T12:24:27+00:00",
       "category": "보건의료정책",
       "contentType": "언론기사"
@@ -236,30 +276,6 @@
       "contentType": "공식자료"
     },
     {
-      "title": "항생제 내성 '보이지 않는 팬데믹'…AI·박테리오파지로 정밀 타격 : 학술",
-      "source": "의약일보",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Pa1hXSm5PRW53UHF2djdhaVhKeTFvellYeDFIQ3R5Um4wdHdocVMwUDB3Z3VSWEVyNXUzMlNCVHFNaUZpeXZ4Um82NlVhU3lFalBMVw?oc=5",
-      "publishedAt": "2026-11-19T08:54:25+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
-      "title": "경상국립대 간호대학, 재난간호 도상훈련",
-      "source": "뉴스경남",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XdzhzZ3lQekJJb1RoNERZb1FLeTB1YVZvWnVHZlcxcjNMZ2oydVlvWnFMRVNqWlpVbVZlRW5GUnZ3RXRKcWM4VHQ3MGlwWEp1LU9KeFBWYktWOFRFakxoUWJjQzZnMmFM?oc=5",
-      "publishedAt": "2026-11-19T08:50:00+00:00",
-      "category": "간호교육",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "질병청, 선천성 대사이상 환자용 저단백밥 현장 점검 : 정책",
-      "source": "의약일보",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1kc21LbmY0WXhuUmFrU3dVZGsxaHRnNFM0VlRhVi1ldDlINlRLMWtBb3RfTXVGS1p3bE9QUG9Edk00dUhobllUSjI1Q1R3R3piZVRXeQ?oc=5",
-      "publishedAt": "2026-11-19T07:32:48+00:00",
-      "category": "질병관리청",
-      "contentType": "공식자료"
-    },
-    {
       "title": "간호사 교대제 1년, 현장은 바뀌었나…간호인력 정책 전환점 진단 논의",
       "source": "서울경제TV",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95TDJscWtTaGNJTVVCN1VvSUJwWC1DamJCRTh2WFMzeWNoX1FFWkd4cXBOMS11NEQ4U2tuX05rLV9SYVRqV0ZNa09ZUlZVU25aVEVHd1BkVkZUZ3ZVLWlUbnRRQVg?oc=5",
@@ -282,6 +298,22 @@
       "publishedAt": "2026-11-19T04:06:23+00:00",
       "category": "정부·국회",
       "contentType": "공식자료"
+    },
+    {
+      "title": "의사·약사·간호사 국시 부정행위 제재 강화…응시 제한 확대",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SZWg0SVNpa2ZBSEdHS2pXS0RBb1FTaVB3dU5iUmlYQjF2dF91eWpQY0NmcVdkakIzTE1ycnNHcEZfVkE5OEsxeHA2NnR0OEtzVTByeWpKbHdndzNMOE1UZmVNdWR2bXlBNk1jQjN2b3lrdw?oc=5",
+      "publishedAt": "2026-11-19T02:31:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "엑스레이 안전관리책임자에 한의사를? 국회 심사대 오른다",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB1b3k5Smt2YWdjOWtfbThPYlBMTG5ZejZra2dVR2t5VGJPM0FVVUxXMUlOd0RyNFc1N1JTbVFLZzJ2aVZUclIxbG4wNTNFTGVHaU1tb0NUd0JGYTByTnJWeFp6dWo5UG8wa21weG5vTUJMUQ?oc=5",
+      "publishedAt": "2026-11-19T01:59:00+00:00",
+      "category": "보건의료정책",
+      "contentType": "언론기사"
     },
     {
       "title": "항생제 내성 대응, AI로 내성균 찾고 파지로 치료하는 방안 논의",
@@ -329,6 +361,14 @@
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9yZ3pnWFFvVGdFOE1JS0FxLVBFMm9xeWd3YkViQjh1LUdXTUROdjVWV2hkdFc3eFE5Wk1aWVprNHJGX3l6TFpMQ0h5M1lLdjNQR283Q3BLelBuR1dVMDNDLURXRm4tVUF4cWVnbg?oc=5",
       "publishedAt": "2026-11-18T13:50:37+00:00",
       "category": "간호인력",
+      "contentType": "언론기사"
+    },
+    {
+      "title": "다오 쑤언 꼬 차관: 베트남은 의료 분야에서 강점을 보여줄 기회를 갖고 있습니다.",
+      "source": "Vietnam.vn",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUUNEQzd0VFk4YldZX3dBU2JXcUV5TWhyVXR1d1FpU3c2WkZvZkR5SG5tSkZGTndxbllMMi1aRnVQanF1UDUxeENWb1RtZzRJUE50RmVxcVQzckpNX09PbzBvNzRvZTlRVEowZERPUURUb3Q1SEg1U240NE5wWHYtd21IaVQ5WUlJQjU0MEt3ZUhSX2RWemRhbVEzbw?oc=5",
+      "publishedAt": "2026-11-18T10:39:07+00:00",
+      "category": "보건의료정책",
       "contentType": "언론기사"
     },
     {
@@ -420,9 +460,17 @@
       "contentType": "공식자료"
     },
     {
+      "title": "[데일리투데이] “간호사 1명당 환자 5명 법제화해야\"… 간협 '4대 혁신' 선포”",
+      "source": "www.dailytoday.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9DNXBWM0V4S3ItWUxkdDJaMXZuTkUyZWNDc2FkQmZNZzR2TTc0SUFnMHZnS2pkbFlGT25EbHdNdzJ2dTVRSmIzVU1xT0s5elBP?oc=5",
+      "publishedAt": "2026-11-18T01:48:51+00:00",
+      "category": "간호정책",
+      "contentType": "언론기사"
+    },
+    {
       "title": "“간호사 1명당 환자 5명 법제화해야\"",
       "source": "부산일보",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xQ041d0c5TWFIVnB3RGp4Sy1JbDgwS1hpR3ZLLXI2d3huOUIyMFFlYnlEVGpDTTM1OUdDNVdrMUNlTkcxN29xVWl1RTEya2NhN1JTVHIzSlltcTU4LXFUUDgxOWhqLU1pcGZCTHE4NUNYRUxjcVI0?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1LaVFvNUU1RlRXWVJtRnVzM25xR19aRWRpY3VQb1BEUF9ELUxmckhILUxNSmJQcG15T2lDdXJvS081eWprWDZrSFpjcWlLS01RVXpPVkxYWWpOQVBOVUhPR2NHR203Nk5TZFdicnBiV0NzLUprQ3FUZQ?oc=5",
       "publishedAt": "2026-11-18T01:19:51+00:00",
       "category": "보건복지부",
       "contentType": "공식자료"
@@ -434,54 +482,6 @@
       "publishedAt": "2026-11-18T00:22:58+00:00",
       "category": "간호정책",
       "contentType": "언론기사"
-    },
-    {
-      "title": "간호사 1명당 환자 5명…간협, 인력기준 법제화 촉구",
-      "source": "보건신문",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1lZG5FLVZ3WW8tdzRhWWJwZE84Z052LXEwNnRXRkphWHRSODlFWFNVRVBVNkVTYlZPekMyVGxyUXJwazA3QU0xZlM2bzhlRUZaQUoyaHdZWjRkMGtlRnhBaUVwQQ?oc=5",
-      "publishedAt": "2026-11-18T00:07:14+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "간협 \"간호사 1명당 환자 5명으로\"…인력 배치기준 법제화 촉구",
-      "source": "메디팜스투데이",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5lX3BzRjJQOFlwYXhMNV92R0czYi1HcWtRNHI1eDBZTklpbTdDdnRvN2tXVVhnMnpGQU5fTWpwbzVMaFBDRlNfUEVSQXV6cVlFQ1RFOHo2bjhGeDIwdVlYRzdRNUE5Wldj?oc=5",
-      "publishedAt": "2026-11-17T23:41:53+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "보건의료 인력기준 마련 '제자리'…후속 연구 예산도 미편성",
-      "source": "메디컬투데이",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9qbkpZNmlhQ0V6MUtEeXJtX3FNSURiYUZMR3JtejhRTUw1Q0hLWUNPQ0diczVIVlF0YmhOZHNsV001a24yN0d6U0VuMGh1QmJfdjd4bHF6b3QycWptVThETTBzcE9ZclphQ3FvbA?oc=5",
-      "publishedAt": "2026-11-17T23:24:50+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "\"간호사 1명당 환자 5명 법제화를\"…간협, 4대 혁신 선포",
-      "source": "데일리팜",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5laF8wTFphOU5rZUE1akRNQmdBNWVKRWZEQng1b1paaXVMMjZKV3llZzNpOTRBTm0xVXptYmRoODcwREMyZFNkSGxfaC1fd0NxQmpQMll3?oc=5",
-      "publishedAt": "2026-11-17T22:50:13+00:00",
-      "category": "간호인력",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "\"간호사 역할 커졌는데 보상은?\"…간협, 보상체계 개편 촉구",
-      "source": "청년의사",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1maU81aXhmYUdmM3gyLTh1TVVhWnNEQ1RwcEZnMUl1bGZQMlVId3VkUTdta3JCcW93VXJjcXp2S2E5MzFtZGdXQTUtdlF1Q3YySmVFOUNMX1FTUkNzODNvLUtJQ1VDQ2loLU5ldUI4dDc3aTDSAXNBVV95cUxNZmlPNWl4ZmFHZjN4Mi04dU1VYVpzRENUcHBGZzFJdWxmUDJVSHd1ZFE3bWtyQnFvd1VyY3F6dkthOTMxbWRnV0E1LXZRdUN2MkplRTlDTF9RU1JDczgzby1LSUNVQ0NpaC1OZXVCOHQ3N2kw?oc=5",
-      "publishedAt": "2026-11-17T22:24:34+00:00",
-      "category": "간호정책",
-      "contentType": "언론기사"
-    },
-    {
-      "title": "간호조무사 월평균 임금 258만원…경력 보상도 ‘찔끔’",
-      "source": "청년의사",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Ua1ZPT1FBbjZtSjQyZFhUWGgxN3VhOVdWSWRQN1pkRVZINlc3NXI1b05RSlp4SnJOS0dDWVk2NjFLMTlHdHdYZ3NuSXo0NV8tM3MtTEhXbm9OWWFRdEhsbldZTG95aXZWNzBOeVh6NjLSAXNBVV95cUxNSm1DSUV1QW9fbzFZMncyN1lBRjZXbWpQU3BpTC16Nk9aUDZCa0JPMjVyYzA1eDh5ZlZUc3lUWXVIWS1hWHFEUW1PQ1hwZVNYMVhEZExqWXpsclRtSFBTODc0SlRDdFR3YW9pZExxbURjek9R?oc=5",
-      "publishedAt": "2026-11-17T21:50:21+00:00",
-      "category": "보건복지부",
-      "contentType": "공식자료"
     }
   ]
 }
